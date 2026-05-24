@@ -1,0 +1,260 @@
+@import "tailwindcss";
+
+:root {
+  --parchment: #f4efe3;
+  --ink: #182016;
+  --night: #172015;
+  --cream: #f8f2e7;
+
+  --rust: #6f8f4e;
+  --rust-dark: #476235;
+  --rust-deep: #2e3f24;
+
+  --peach: #e8d8bd;
+  --soft-green: #dbe7c9;
+  --deep-green: #26391f;
+  --card: #fffaf0;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--parchment);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: var(--rust); color: white; }
+
+.prose {
+  max-width: 70ch;
+  line-height: 1.85;
+  font-size: 1.125rem;
+  color: rgba(17,17,15,0.85);
+}
+.prose h2 { font-size: 1.875rem; font-weight: 700; margin: 2.5rem 0 1rem; color: var(--ink); line-height: 1.2; }
+.prose h3 { font-size: 1.4rem; font-weight: 700; margin: 2rem 0 0.75rem; }
+.prose p { margin-bottom: 1.5rem; }
+.prose strong { font-weight: 700; }
+.prose em { font-style: italic; color: var(--rust-dark); }
+.prose blockquote { border-left: 3px solid var(--rust); padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: var(--rust-dark); font-size: 1.15rem; }
+.prose ul, .prose ol { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+.prose li { margin-bottom: 0.5rem; }
+.prose a { color: var(--rust); text-decoration: underline; text-underline-offset: 3px; }
+.prose pre { background: #0d0d0b; color: #f5eadc; padding: 1.5rem; overflow-x: auto; margin: 2rem 0; font-size: 0.875rem; }
+.prose code { font-family: monospace; background: rgba(196,87,42,0.1); color: var(--rust); padding: 0.15rem 0.4rem; font-size: 0.9em; }
+.prose pre code { background: none; color: inherit; padding: 0; }
+.dark {
+  --parchment: #11170f;
+  --ink: #f4efe3;
+  --night: #070a06;
+  --cream: #f8f2e7;
+
+  --rust: #9dbb6f;
+  --rust-dark: #bfd98c;
+  --rust-deep: #dbe7c9;
+
+  --peach: #2a3524;
+  --soft-green: #26391f;
+  --deep-green: #dbe7c9;
+  --card: #182016;
+  .dark article,
+.dark article p,
+.dark article li,
+.dark article blockquote,
+.dark article h1,
+.dark article h2,
+.dark article h3,
+.dark article h4,
+.dark article strong {
+  color: #eee9df !important;
+}
+
+.dark .prose {
+  color: #eee9df !important;
+}
+
+.dark .prose p {
+  color: rgba(238, 233, 223, 0.78) !important;
+}
+
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3,
+.dark .prose h4 {
+  color: #eee9df !important;
+}
+}.essay-content,
+.essay-content p,
+.essay-content li,
+.essay-content blockquote {
+  color: rgba(17, 17, 15, 0.78) !important;
+}
+
+.essay-content h1,
+.essay-content h2,
+.essay-content h3,
+.essay-content h4,
+.essay-content strong {
+  color: #11110f !important;
+}
+
+.dark .essay-content,
+.dark .essay-content p,
+.dark .essay-content li,
+.dark .essay-content blockquote {
+  color: rgba(238, 233, 223, 0.78) !important;
+}
+
+.dark .essay-content h1,
+.dark .essay-content h2,
+.dark .essay-content h3,
+.dark .essay-content h4,
+.dark .essay-content strong {
+  color: #eee9df !important;
+}.essay-content {
+  font-size: 1.18rem;
+  line-height: 1.9;
+  color: rgba(17, 17, 15, 0.78);
+}
+
+.essay-content p {
+  margin-bottom: 1.5rem;
+}
+
+.essay-content h1,
+.essay-content h2,
+.essay-content h3,
+.essay-content h4 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: serif;
+  color: #11110f;
+}
+
+.dark .essay-content {
+  color: rgba(238, 233, 223, 0.82) !important;
+}
+
+.dark .essay-content p,
+.dark .essay-content li,
+.dark .essay-content span {
+  color: rgba(238, 233, 223, 0.82) !important;
+}
+
+.dark .essay-content h1,
+.dark .essay-content h2,
+.dark .essay-content h3,
+.dark .essay-content h4,
+.dark .essay-content strong {
+  color: #eee9df !important;
+}
+  /* =========================
+   READER MODES
+========================= */
+
+.essay-content {
+  font-size: 1.18rem;
+  line-height: 1.95;
+  transition:
+    font-size 0.25s ease,
+    line-height 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+/* FONT SIZES */
+
+.reader-small .essay-content {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.reader-medium .essay-content {
+  font-size: 1.18rem;
+  line-height: 1.95;
+}
+
+.reader-large .essay-content {
+  font-size: 1.38rem;
+  line-height: 2.15;
+}
+
+/* HIGH CONTRAST */
+
+.reader-contrast .essay-content {
+  background: #ffffff !important;
+  color: #000000 !important;
+  padding: 2rem;
+}
+
+.reader-contrast .essay-content p,
+.reader-contrast .essay-content li,
+.reader-contrast .essay-content h1,
+.reader-contrast .essay-content h2,
+.reader-contrast .essay-content h3 {
+  color: #000000 !important;
+}
+
+.dark.reader-contrast .essay-content {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+.dark.reader-contrast .essay-content p,
+.dark.reader-contrast .essay-content li,
+.dark.reader-contrast .essay-content h1,
+.dark.reader-contrast .essay-content h2,
+.dark.reader-contrast .essay-content h3 {
+  color: #ffffff !important;
+}
+.reader-small .essay-content {
+  font-size: 1rem !important;
+  line-height: 1.8 !important;
+}
+
+.reader-medium .essay-content {
+  font-size: 1.18rem !important;
+  line-height: 1.95 !important;
+}
+
+.reader-large .essay-content {
+  font-size: 1.38rem !important;
+  line-height: 2.1 !important;
+}
+
+.reader-xl .essay-content {
+  font-size: 1.6rem !important;
+  line-height: 2.2 !important;
+}
+
+.reader-contrast main {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.dark.reader-contrast main {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+.reader-contrast .essay-content,
+.reader-contrast .essay-content p,
+.reader-contrast .essay-content li,
+.reader-contrast .essay-content h1,
+.reader-contrast .essay-content h2,
+.reader-contrast .essay-content h3,
+.reader-contrast .essay-content strong {
+  color: #000000 !important;
+}
+
+.dark.reader-contrast .essay-content,
+.dark.reader-contrast .essay-content p,
+.dark.reader-contrast .essay-content li,
+.dark.reader-contrast .essay-content h1,
+.dark.reader-contrast .essay-content h2,
+.dark.reader-contrast .essay-content h3,
+.dark.reader-contrast .essay-content strong {
+  color: #ffffff !important;
+}
