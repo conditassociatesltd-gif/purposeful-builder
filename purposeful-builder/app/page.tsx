@@ -22,13 +22,14 @@ const portfolio = [
 
 export default function HomePage() {
   const allEssays = getAllEssays();
-const featuredEssay = allEssays[0];
+const featuredEssay =
+  allEssays.find((essay) => essay.featured) || allEssays[0];
 const essays = allEssays.slice(1, 4);
 
   return (
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
       <header className="sticky top-0 z-40 border-b backdrop-blur-md" style={{ background: "rgba(238,233,223,0.9)", borderColor: "rgba(17,17,15,0.1)" }}>
-        <div className="max-w-7xl mx-auto px-5 py-5 flex items-center justify-between gap-6">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4 overflow-hidden">
           <Link href="/" className="flex items-center gap-3">
             <div className="w-14 h-14 border-2 border-[#c4572a] flex items-center justify-center overflow-hidden">
               <Image src="/logo.png" alt="Austin Okechukwu logo" width={52} height={52} className="object-contain scale-110" />
@@ -55,7 +56,7 @@ const essays = allEssays.slice(1, 4);
             <ThemeToggle />
           </nav>
 
-          <div className="lg:hidden flex items-center gap-4">
+          <div className="lg:hidden w-full flex items-center justify-between gap-3 text-[10px] tracking-[0.18em] uppercase">
   <div className="flex items-center gap-4 text-[10px] tracking-[0.2em] uppercase">
     <Link href="/writing">Writing</Link>
     <Link href="/about">About</Link>
@@ -219,34 +220,50 @@ const essays = allEssays.slice(1, 4);
       </section>
 
       <section id="subscribe" style={{ background: "var(--rust)", color: "var(--cream)" }}>
-        <div className="max-w-7xl mx-auto px-5 py-20">
-          <p className="font-serif italic text-2xl md:text-3xl max-w-3xl leading-relaxed">
-            Get new essays in your inbox. No noise, just reflections worth your time.
-          </p>
+        <div className="max-w-6xl mx-auto px-5 py-6">
+  <div className="grid md:grid-cols-[1fr_380px] gap-10 items-center border border-white/10 p-5 md:p-6">
 
-          <form
-  action="https://formspree.io/f/xqejdpnz"
-  method="POST"
-  className="mt-8 grid md:grid-cols-[1fr_0.35fr] gap-4 max-w-4xl"
->
-  <input
-    type="email"
-    name="email"
-    placeholder="email address"
-    required
-    className="bg-transparent border px-5 py-5 outline-none placeholder:text-white/40 text-white"
-    style={{ borderColor: "rgba(255,255,255,0.4)" }}
-  />
+    <div>
+      <p
+        className="text-[10px] tracking-[0.35em] uppercase mb-4 opacity-70"
+      >
+        Subscribe
+      </p>
 
-  <button
-    type="submit"
-    className="px-5 py-5 text-xs tracking-[0.35em] uppercase font-bold"
-    style={{ background: "var(--peach)", color: "var(--rust-deep)" }}
-  >
-    Subscribe
-  </button>
-</form>
-        </div>
+      <h2 className="font-serif text-3xl md:text-4xl leading-tight max-w-xl">
+        Reflections worth returning to.
+      </h2>
+
+      <p className="mt-2 text-sm md:text-base opacity-70 max-w-lg leading-relaxed">
+        Occasional essays on identity, faith, discipline, masculinity, building, and the quiet work of becoming.
+      </p>
+    </div>
+
+    <form
+      action="https://buttondown.com/api/emails/embed-subscribe/arc_austin"
+      method="POST"
+      className="flex flex-col gap-3"
+    >
+      <input
+        type="email"
+        name="email"
+        placeholder="email address"
+        required
+        className="bg-transparent border px-5 py-4 outline-none placeholder:text-white/40 text-white text-sm"
+        style={{ borderColor: "rgba(255,255,255,0.2)" }}
+      />
+
+      <button
+        type="submit"
+        className="px-5 py-4 text-[10px] tracking-[0.3em] uppercase font-semibold"
+        style={{ background: "var(--peach)", color: "var(--rust-deep)" }}
+      >
+        Subscribe
+      </button>
+    </form>
+
+  </div>
+</div>
       </section>
 <div className="border-t border-white/5">
   <div className="max-w-7xl mx-auto px-5 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-[10px] tracking-[0.25em] uppercase opacity-40">
@@ -300,7 +317,7 @@ const essays = allEssays.slice(1, 4);
           </div>
 
           <div>
-            <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "var(--rust)" }}>Elsewhere</p>
+            <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "var(--rust)" }}>Platforms</p>
             <ul className="space-y-3 opacity-65">
               <li>
   <a href="https://www.instagram.com/arc__austin?igsh=bGp6M3hpdm5sNXgz" target="_blank" className="hover:text-[#c4572a] transition-colors">

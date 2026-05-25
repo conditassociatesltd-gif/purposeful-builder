@@ -258,3 +258,17 @@ body {
 .dark.reader-contrast .essay-content strong {
   color: #ffffff !important;
 }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+video {
+  max-width: 100%;
+}
