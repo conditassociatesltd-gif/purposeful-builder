@@ -241,7 +241,7 @@ const essays = allEssays.slice(1, 4);
 
     <form
       action="https://buttondown.email/api/emails/embed-subscribe/arc_austin"
-      method="POST"
+      method="post"
       className="flex flex-col gap-3"
     >
       <input
