@@ -240,7 +240,7 @@ const essays = allEssays.slice(1, 4);
     </div>
 
     <form
-      action="https://buttondown.com/api/emails/embed-subscribe/arc_austin"
+      action="https://buttondown.email/api/emails/embed-subscribe/arc_austin"
       method="POST"
       className="flex flex-col gap-3"
     >
