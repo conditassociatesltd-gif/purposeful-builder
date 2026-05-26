@@ -5,7 +5,7 @@ import { ArrowLeft } from "lucide-react";
 const categoryNames: Record<string, string> = {
   identity: "Identity",
   purpose: "Purpose",
-  faith: "Faith",
+  "faith-process": "Faith & Process",
   "marriage-life": "Marriage & Life",
   building: "Building",
   wealth: "Wealth",
@@ -15,7 +15,7 @@ export function generateStaticParams() {
   return [
     { slug: "identity" },
     { slug: "purpose" },
-    { slug: "faith" },
+    { slug: "faith-process" },
     { slug: "marriage-life" },
     { slug: "building" },
     { slug: "wealth" },
