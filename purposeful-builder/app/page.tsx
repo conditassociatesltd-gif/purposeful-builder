@@ -126,7 +126,7 @@ const essays = allEssays.slice(1, 4);
   <section className="max-w-7xl mx-auto px-5 pt-8 pb-12">
     <Link
       href={`/writing/${featuredEssay.slug}`}
-      className="border border-[#d8d2bd] bg-[#fffaf0] dark:bg-white/10 p-6 md:p-10"
+      className="grid md:grid-cols-[1.1fr_0.9fr] gap-8 border border-[#d8d2bd] bg-[#fffaf0] dark:bg-white/10 p-6 md:p-10"
     >
       <div>
         <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "var(--rust)" }}>
@@ -150,7 +150,17 @@ const essays = allEssays.slice(1, 4);
           {featuredEssay.date} · {featuredEssay.readingTime || "4 min read"}
         </p>
       </div>
+<div className="hidden md:flex items-end justify-end">
+  <div className="max-w-sm">
+    <p className="text-sm uppercase tracking-[0.3em] opacity-40 mb-4">
+      Reflection
+    </p>
 
+    <p className="font-serif text-2xl leading-relaxed opacity-60 italic">
+      “Writing became a form of excavation.”
+    </p>
+  </div>
+</div>
       {featuredEssay.heroImage && (
         <div className="relative h-72 md:h-full min-h-[320px] overflow-hidden">
           <Image
