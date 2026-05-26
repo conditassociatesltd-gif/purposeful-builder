@@ -137,7 +137,7 @@ const essays = allEssays.slice(1, 4);
           {featuredEssay.title}
         </h2>
 
-        <p className="mt-5 text-lg leading-relaxed opacity-70 max-w-2xl">
+        <p className="mt-5 text-lg leading-relaxed opacity-70 max-w-4xl">
           {featuredEssay.excerpt}
         </p>
 
