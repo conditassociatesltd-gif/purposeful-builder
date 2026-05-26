@@ -5,7 +5,7 @@ import { ArrowLeft } from "lucide-react";
 const categoryNames: Record<string, string> = {
   identity: "Identity",
   purpose: "Purpose",
-  "faith-process": "Faith & Process",
+  faith: "Faith",
   "marriage-life": "Marriage & Life",
   building: "Building",
   wealth: "Wealth",
