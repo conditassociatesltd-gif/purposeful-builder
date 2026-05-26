@@ -141,6 +141,11 @@ const essays = allEssays.slice(1, 4);
           {featuredEssay.excerpt}
         </p>
 
+<div className="mt-8">
+  <span className="inline-flex items-center border border-black dark:border-white px-5 py-2 text-sm tracking-wide hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors">
+    Continue Reading →
+  </span>
+</div>
         <p className="mt-8 text-xs tracking-[0.25em] uppercase opacity-50">
           {featuredEssay.date} · {featuredEssay.readingTime || "4 min read"}
         </p>
