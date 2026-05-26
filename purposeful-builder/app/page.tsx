@@ -126,7 +126,7 @@ const essays = allEssays.slice(1, 4);
   <section className="max-w-7xl mx-auto px-5 pt-8 pb-12">
     <Link
       href={`/writing/${featuredEssay.slug}`}
-      className="grid md:grid-cols-[1.1fr_0.9fr] gap-8 border border-[#d8d2bd] bg-[#fffaf0] dark:bg-white/10 p-6 md:p-8 group"
+      className="border border-[#d8d2bd] bg-[#fffaf0] dark:bg-white/10 p-6 md:p-10"
     >
       <div>
         <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "var(--rust)" }}>
