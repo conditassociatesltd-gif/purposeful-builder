@@ -7,7 +7,7 @@ import { getAllEssays } from "@/lib/essays";
 const categories = [
   { title: "Identity", slug: "identity", text: "Formation, healing, boyhood, masculinity.", icon: Users },
   { title: "Purpose", slug: "purpose", text: "Discipline, becoming, calling, process.", icon: Landmark },
-  { title: "Faith", slug: "faith", text: "Reflections on God, growth, and obedience.", icon: BookOpen },
+  { title: "Faith & Process", slug: "faith-process", text: "Reflections on God, growth, and obedience.", icon: BookOpen },
   { title: "Marriage & Life", slug: "marriage-life", text: "Love, home, relationships, responsibility.", icon: Home },
   { title: "Building", slug: "building", text: "Lessons from construction and leadership.", icon: Building2 },
   { title: "Wealth", slug: "wealth", text: "Real estate, patience, value, stewardship.", icon: PenLine },
