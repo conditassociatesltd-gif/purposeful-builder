@@ -128,51 +128,53 @@ export default function HomePage() {
   <section className="max-w-7xl mx-auto px-5 pt-8 pb-12">
     <Link
       href={`/writing/${featuredEssay.slug}`}
-      className="grid md:grid-cols-[1.1fr_0.9fr] gap-8 border border-[#d8d2bd] bg-[#fffaf0] dark:bg-white/10 p-6 md:p-10"
+      className="relative grid md:grid-cols-[1.1fr_0.9fr] gap-8 border border-[#d8d2bd] p-6 md:p-10 overflow-hidden group"
+      style={{ minHeight: "420px" }}
     >
-      <div>
-        <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "var(--rust)" }}>
+      {/* Background image */}
+      <Image
+        src="/images/featured-writing-bg.png"
+        alt=""
+        fill
+        className="object-cover transition-transform duration-700 group-hover:scale-105"
+        priority
+      />
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/60 to-black/40" />
+
+      <div className="relative z-10">
+        <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "#e8a87c" }}>
           Featured writing
         </p>
 
-        <h2 className="font-serif text-4xl md:text-6xl leading-tight group-hover:text-[#6f8f4e] transition-colors">
+        <h2 className="font-serif text-4xl md:text-6xl leading-tight text-white/95 group-hover:text-[#e8a87c] transition-colors">
           {featuredEssay.title}
         </h2>
 
-        <p className="mt-5 text-lg leading-relaxed opacity-70 max-w-4xl">
+        <p className="mt-5 text-lg leading-relaxed text-white/75 max-w-4xl">
           {featuredEssay.excerpt}
         </p>
 
 <div className="mt-8">
-  <span className="inline-flex items-center border border-black dark:border-white px-5 py-2 text-sm tracking-wide hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors">
+  <span className="inline-flex items-center border border-white/40 text-white px-5 py-2 text-sm tracking-wide hover:bg-white hover:text-black transition-colors">
     Continue Reading →
   </span>
 </div>
-        <p className="mt-8 text-xs tracking-[0.25em] uppercase opacity-50">
+        <p className="mt-8 text-xs tracking-[0.25em] uppercase text-white/40">
           {featuredEssay.date} · {featuredEssay.readingTime || "4 min read"}
         </p>
       </div>
-<div className="hidden md:flex items-end justify-end">
+<div className="relative z-10 hidden md:flex items-end justify-end">
   <div className="max-w-sm">
-    <p className="text-sm uppercase tracking-[0.3em] opacity-40 mb-4">
+    <p className="text-sm uppercase tracking-[0.3em] text-white/35 mb-4">
       Reflection
     </p>
 
-    <p className="font-serif text-2xl leading-relaxed opacity-60 italic">
-      “Writing became a form of excavation.”
+    <p className="font-serif text-2xl leading-relaxed text-white/55 italic">
+      &ldquo;Writing became a form of excavation.&rdquo;
     </p>
   </div>
 </div>
-      {featuredEssay.heroImage && (
-        <div className="relative h-72 md:h-full min-h-[320px] overflow-hidden">
-          <Image
-            src={featuredEssay.heroImage}
-            alt={featuredEssay.title}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-700"
-          />
-        </div>
-      )}
     </Link>
   </section>
 )}
