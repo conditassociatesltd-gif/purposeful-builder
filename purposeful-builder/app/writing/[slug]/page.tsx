@@ -38,7 +38,7 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
     <>
   <ReadingProgress />
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
-      <header className="border-b" style={{ borderColor: "rgba(17,17,15,0.1)" }}>
+      <header className="border-b border-black/10 dark:border-white/10">
   <div className="max-w-6xl mx-auto px-5 py-6 flex items-center justify-between">
     <Link href="/" className="flex items-center gap-4">
       <Image src="/logo.png" alt="Austin Okechukwu logo" width={44} height={44} />
@@ -50,8 +50,7 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
 
       <Link
         href="/writing"
-        className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase"
-        style={{ color: "rgba(17,17,15,0.5)" }}
+        className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase opacity-50"
       >
         <ArrowLeft size={14} /> All essays
       </Link>
@@ -59,7 +58,7 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
   </div>
 </header>
 
-      <section className="max-w-3xl mx-auto px-5 pt-16 pb-12 border-b" style={{ borderColor: "rgba(17,17,15,0.1)" }}>
+      <section className="max-w-3xl mx-auto px-5 pt-16 pb-12 border-b border-black/10 dark:border-white/10">
         <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>
           {essay.category}
         </p>
@@ -68,12 +67,12 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
           {essay.title}
         </h1>
 
-        <p className="font-serif italic text-xl leading-relaxed mb-8" style={{ color: "rgba(17,17,15,0.6)" }}>
+        <p className="font-serif italic text-xl leading-relaxed mb-8 opacity-60">
           {essay.excerpt}
         </p>
 
         <div className="flex flex-wrap items-center gap-4 mb-8">
-          <p className="text-xs tracking-[0.25em] uppercase" style={{ color: "rgba(17,17,15,0.5)" }}>
+          <p className="text-xs tracking-[0.25em] uppercase opacity-50">
             {essay.date} · {essay.readingTime || "4 min read"}
           </p>
 
@@ -96,7 +95,7 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
       <article className="essay-content max-w-3xl mx-auto px-5 py-14 prose prose-lg dark:prose-invert">
         <MdxRenderer content={essay.content} />
       </article>
-      <section className="mt-20 border-t border-black/10 pt-12">
+      <section className="mt-20 border-t border-black/10 dark:border-white/10 pt-12">
   <div className="max-w-3xl">
     <p className="font-serif text-2xl leading-relaxed">
       If something here resonated with you, challenged you, or even unsettled you,
@@ -116,14 +115,14 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
     <div className="mt-8 flex flex-wrap gap-4">
       <a
         href="mailto:hello@austinokechukwu.com"
-        className="border border-black px-5 py-3 text-sm tracking-wide uppercase hover:bg-black hover:text-white transition"
+        className="border border-current/30 px-5 py-3 text-sm tracking-wide uppercase hover:bg-[var(--ink)] hover:text-[var(--parchment)] transition"
       >
         Send a Message
       </a>
 
       <a
         href="/#subscribe"
-        className="border border-black px-5 py-3 text-sm tracking-wide uppercase hover:bg-black hover:text-white transition"
+        className="border border-current/30 px-5 py-3 text-sm tracking-wide uppercase hover:bg-[var(--ink)] hover:text-[var(--parchment)] transition"
       >
         Subscribe
       </a>
@@ -131,7 +130,7 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
   </div>
 </section>
       <section className="max-w-3xl mx-auto px-5 pb-16">
-  <div className="border-t border-[#d8d2bd] pt-10">
+    <div className="border-t pt-10" style={{ borderColor: "var(--peach)" }}>
     <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>
       Related writings
     </p>

@@ -30,7 +30,7 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
-      <header className="sticky top-0 z-40 border-b backdrop-blur-md" style={{ background: "rgba(238,233,223,0.9)", borderColor: "rgba(17,17,15,0.1)" }}>
+      <header className="sticky top-0 z-40 border-b backdrop-blur-md border-black/10 dark:border-white/10" style={{ background: "color-mix(in srgb, var(--parchment) 90%, transparent)" }}>
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4 overflow-hidden">
           <Link href="/" className="flex items-center gap-3">
             <div className="w-14 h-14 border-2 border-[#c4572a] flex items-center justify-center overflow-hidden">
@@ -70,7 +70,7 @@ export default function HomePage() {
         </div>
       </header>
 
-      <section className="relative border-b overflow-hidden" style={{ borderColor: "rgba(17,17,15,0.1)" }}>
+      <section className="relative border-b overflow-hidden border-black/10 dark:border-white/10">
         <div className="relative max-w-7xl mx-auto px-5 py-20 w-full">
           <div className="max-w-3xl pt-16">
             <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "var(--rust)" }}>
@@ -90,7 +90,7 @@ export default function HomePage() {
                 About me <ArrowRight size={16} />
               </Link>
 
-              <Link href="/writing" className="inline-flex items-center gap-3 px-6 py-4 text-xs tracking-[0.25em] uppercase border border-black/30">
+              <Link href="/writing" className="inline-flex items-center gap-3 px-6 py-4 text-xs tracking-[0.25em] uppercase border border-black/30 dark:border-white/30">
                 Read writings
               </Link>
             </div>
@@ -106,7 +106,7 @@ export default function HomePage() {
         <Link
   href={`/category/${item.slug}`}
   key={item.title}
-  className="bg-[#fffaf0] dark:bg-white/10 shadow-sm border border-[#d8d2bd] p-4 hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+  className="shadow-sm border p-4 hover:-translate-y-1 hover:shadow-md transition-all duration-300" style={{ background: "var(--card)", borderColor: "var(--peach)" }}
 >
   <div className="flex items-center gap-3">
     <Icon size={24} style={{ color: "var(--rust)" }} />
@@ -188,7 +188,7 @@ export default function HomePage() {
 
         <div className="grid md:grid-cols-3 gap-7">
           {essays.map((essay) => (
-            <Link key={essay.slug} href={`/writing/${essay.slug}`} className="group bg-[#fffaf0] dark:bg-white/10 border border-[#d8d2bd] p-6 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+            <Link key={essay.slug} href={`/writing/${essay.slug}`} className="group border p-6 hover:-translate-y-1 hover:shadow-md transition-all duration-300" style={{ background: "var(--card)", borderColor: "var(--peach)" }}>
 
               <div>
                 <p className="text-[10px] tracking-[0.3em] uppercase mb-4" style={{ color: "var(--rust)" }}>
@@ -212,8 +212,8 @@ export default function HomePage() {
       <section
   className="max-w-7xl mx-auto px-5 py-12">
         <div
-  className="grid lg:grid-cols-[1fr_1.2fr] gap-10 border border-[#d8d2bd] p-8 md:p-12 rounded-sm"
-  style={{ background: "#eef3e7" }}
+  className="grid lg:grid-cols-[1fr_1.2fr] gap-10 border p-8 md:p-12 rounded-sm"
+  style={{ background: "var(--soft-green)", borderColor: "var(--peach)" }}
 >
           <div>
             <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "var(--rust)" }}>
@@ -229,7 +229,7 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 gap-5">
             {portfolio.map((item) => (
-              <div key={item.title} className="border border-[#d8d2bd] p-5">
+              <div key={item.title} className="border p-5" style={{ borderColor: "var(--peach)" }}>
                 <h4 className="font-bold uppercase tracking-wide">{item.title}</h4>
                 <p className="mt-3 text-sm leading-relaxed opacity-70">{item.text}</p>
               </div>

@@ -51,7 +51,7 @@ export default async function CategoryPage({
           {categoryTitle}
         </h1>
 
-        <div className="divide-y border-y border-[#d8d2bd]">
+        <div className="divide-y border-y" style={{ borderColor: "var(--peach)" }}>
           {essays.map((essay) => (
             <Link key={essay.slug} href={`/writing/${essay.slug}`} className="block py-8 group">
               <p className="text-xs tracking-[0.25em] uppercase mb-3" style={{ color: "var(--rust)" }}>

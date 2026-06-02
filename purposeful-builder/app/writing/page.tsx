@@ -14,7 +14,7 @@ export default function WritingPage() {
 
   return (
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
-      <header className="border-b" style={{ borderColor: "rgba(17,17,15,0.1)" }}>
+      <header className="border-b border-black/10 dark:border-white/10">
         <div className="max-w-6xl mx-auto px-5 py-6 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-4">
             <div className="w-12 h-12 border-2 border-[#c4572a] flex items-center justify-center overflow-hidden">
@@ -29,13 +29,13 @@ export default function WritingPage() {
             <span className="font-black tracking-tight uppercase">Austin Okechukwu</span>
           </Link>
 
-          <Link href="/about" className="text-xs tracking-[0.3em] uppercase" style={{ color: "rgba(17,17,15,0.5)" }}>
+          <Link href="/about" className="text-xs tracking-[0.3em] uppercase opacity-50">
             About
           </Link>
         </div>
       </header>
 
-      <section className="max-w-6xl mx-auto px-5 py-20 border-b" style={{ borderColor: "rgba(17,17,15,0.1)" }}>
+      <section className="max-w-6xl mx-auto px-5 py-20 border-b border-black/10 dark:border-white/10">
         <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>
           Writing
         </p>
@@ -46,7 +46,7 @@ export default function WritingPage() {
       </section>
 
       <section className="max-w-6xl mx-auto px-5 py-12">
-        <div className="divide-y divide-black/10 border-y border-black/10">
+        <div className="divide-y divide-black/10 dark:divide-white/10 border-y border-black/10 dark:border-white/10">
           {essays.map((essay, index) => (
             <Link
               key={essay.slug}
@@ -57,7 +57,7 @@ export default function WritingPage() {
                 <p className="text-xs tracking-[0.3em] uppercase" style={{ color: "var(--rust)" }}>
                   {essay.category}
                 </p>
-                <p className="mt-3 text-xs tracking-[0.2em] uppercase text-black/40">
+                <p className="mt-3 text-xs tracking-[0.2em] uppercase opacity-40">
                   {essay.date} · {essay.readingTime || "4 min read"}
                 </p>
               </div>
@@ -66,7 +66,7 @@ export default function WritingPage() {
                 <h2 className="font-serif text-4xl md:text-5xl leading-tight group-hover:text-[#9a4c2b] transition-colors">
                   {essay.title}
                 </h2>
-                <p className="mt-5 text-lg leading-relaxed text-black/60 max-w-3xl">
+                <p className="mt-5 text-lg leading-relaxed opacity-60 max-w-3xl">
                   {essay.excerpt}
                 </p>
               </div>

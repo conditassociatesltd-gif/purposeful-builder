@@ -59,7 +59,9 @@ body {
   --soft-green: #26391f;
   --deep-green: #dbe7c9;
   --card: #182016;
-  .dark article,
+}
+
+.dark article,
 .dark article p,
 .dark article li,
 .dark article blockquote,
@@ -85,7 +87,8 @@ body {
 .dark .prose h4 {
   color: #eee9df !important;
 }
-}.essay-content,
+
+.essay-content,
 .essay-content p,
 .essay-content li,
 .essay-content blockquote {

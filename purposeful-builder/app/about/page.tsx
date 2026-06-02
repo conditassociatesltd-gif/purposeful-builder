@@ -10,14 +10,14 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
-      <header className="border-b" style={{ borderColor: "rgba(17,17,15,0.1)" }}>
+      <header className="border-b border-black/10 dark:border-white/10">
         <div className="max-w-6xl mx-auto px-5 py-6 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-4">
             <Image src="/logo.png" alt="Austin Okechukwu logo" width={44} height={44} />
             <span className="font-black tracking-tight uppercase">Austin Okechukwu</span>
           </Link>
 
-          <Link href="/" className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase" style={{ color: "rgba(17,17,15,0.5)" }}>
+          <Link href="/" className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase opacity-50">
             <ArrowLeft size={14} /> Home
           </Link>
         </div>
@@ -32,7 +32,7 @@ export default function AboutPage() {
           I spend most of my life building.
         </h1>
 
-        <div className="space-y-7 text-xl leading-relaxed font-serif" style={{ color: "rgba(17,17,15,0.75)" }}>
+        <div className="space-y-7 text-xl leading-relaxed font-serif opacity-75">
           <p>Sometimes it’s buildings. Sometimes businesses. Sometimes ideas. And sometimes, it’s myself.</p>
 
           <p>

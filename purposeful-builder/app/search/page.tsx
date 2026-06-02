@@ -42,7 +42,8 @@ export default function SearchPage() {
           placeholder="Search essays..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="w-full border border-[#d8d2bd] bg-[#fffaf0] px-5 py-5 outline-none mb-10"
+          className="w-full border px-5 py-5 outline-none mb-10"
+          style={{ borderColor: "var(--peach)", background: "var(--card)" }}
         />
 
         <div className="space-y-6">
@@ -50,7 +51,7 @@ export default function SearchPage() {
             <Link
               key={essay.slug}
               href={`/writing/${essay.slug}`}
-              className="block border-b border-[#d8d2bd] pb-6"
+              className="block pb-6" style={{ borderBottom: "1px solid var(--peach)" }}
             >
               <h2 className="font-serif text-3xl">{essay.title}</h2>
               <p className="mt-3 opacity-70">{essay.excerpt}</p>
