@@ -98,7 +98,7 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
       <section className="mt-16 border-t border-black/10 dark:border-white/10 pt-16">
         <div className="max-w-3xl mx-auto">
           <div className="p-8 md:p-10 border-l-4 border-[#c4572a] bg-black/[0.03] dark:bg-white/[0.03] rounded-r-sm">
-            <p className="font-serif italic text-xl md:text-2xl leading-relaxed opacity-90">
+            <p className="font-serif italic text-lg leading-relaxed opacity-80">
               If something here resonated with you, challenged you, or even unsettled you,
               I'd genuinely like to hear your thoughts. Feel free to reply, disagree, ask questions, or share your own experience.
             </p>
@@ -107,7 +107,7 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
               <span className="text-[#c4572a] font-bold">→</span>
               <a
                 href="mailto:hello@austinokechukwu.com"
-                className="text-xs md:text-sm tracking-[0.2em] uppercase opacity-60 hover:opacity-100 hover:text-[#c4572a] transition-colors font-semibold"
+                className="text-sm tracking-wide opacity-60 hover:opacity-100 hover:text-[#c4572a] transition-colors font-medium lowercase"
               >
                 hello@austinokechukwu.com
               </a>
