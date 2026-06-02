@@ -77,7 +77,7 @@ export default function HomePage() {
             alt="Welcome to my digital space"
             fill
             priority
-            className="object-cover object-[75%_center] group-hover:scale-105 transition-transform duration-[2s] ease-out"
+            className="object-cover object-[75%_15%] group-hover:scale-105 transition-transform duration-[2s] ease-out"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
