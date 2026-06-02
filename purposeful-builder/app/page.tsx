@@ -268,8 +268,8 @@ export default function HomePage() {
                 Books
               </div>
               <h3 className="font-serif text-2xl mb-5">Writing & Publishing</h3>
-              <div className="aspect-[4/3] bg-[#f5f0e6] rounded-xl mb-6 flex items-center justify-center overflow-hidden">
-                 <BookOpen size={48} strokeWidth={1} className="opacity-20 text-black" />
+              <div className="aspect-[4/3] rounded-xl mb-6 flex items-center justify-center overflow-hidden relative">
+                 <Image src="/images/card-books.png" alt="Writing & Publishing" fill className="object-cover" />
               </div>
               <p className="text-sm opacity-70 leading-relaxed mb-10">
                 Exploring identity, wounds, and becoming through published works and essays.
@@ -285,8 +285,8 @@ export default function HomePage() {
                 Mentorship
               </div>
               <h3 className="font-serif text-2xl mb-5">Boys Mentorship</h3>
-              <div className="aspect-[4/3] bg-black/40 rounded-xl mb-6 flex items-center justify-center overflow-hidden">
-                <Users size={48} strokeWidth={1} className="opacity-20 text-white" />
+              <div className="aspect-[4/3] rounded-xl mb-6 flex items-center justify-center overflow-hidden relative">
+                 <Image src="/images/card-mentorship.png" alt="Boys Mentorship" fill className="object-cover" />
               </div>
               <p className="text-sm opacity-70 leading-relaxed mb-10">
                 Teaching responsibility and safe masculinity through faith and practical life guidance.
@@ -302,8 +302,8 @@ export default function HomePage() {
                 Construction
               </div>
               <h3 className="font-serif text-2xl mb-5">Condit Associates Ltd</h3>
-              <div className="aspect-[4/3] bg-[#f5f0e6] rounded-xl mb-6 flex items-center justify-center overflow-hidden">
-                <Building2 size={48} strokeWidth={1} className="opacity-20 text-black" />
+              <div className="aspect-[4/3] rounded-xl mb-6 flex items-center justify-center overflow-hidden relative">
+                 <Image src="/images/card-associates.png" alt="Condit Associates Ltd" fill className="object-cover" />
               </div>
               <p className="text-sm opacity-70 leading-relaxed mb-10">
                 Building environments, commercial spaces, and projects that stand the test of time.
@@ -319,8 +319,8 @@ export default function HomePage() {
                 Real Estate
               </div>
               <h3 className="font-serif text-2xl mb-5">Condit Homes Ltd</h3>
-              <div className="aspect-[4/3] bg-[#f5f0e6] rounded-xl mb-6 flex items-center justify-center overflow-hidden">
-                <Home size={48} strokeWidth={1} className="opacity-20 text-black" />
+              <div className="aspect-[4/3] rounded-xl mb-6 flex items-center justify-center overflow-hidden relative">
+                 <Image src="/images/card-homes.png" alt="Condit Homes Ltd" fill className="object-cover" />
               </div>
               <p className="text-sm opacity-70 leading-relaxed mb-10">
                 Helping people find places they can truly call home. Real estate and property thinking.

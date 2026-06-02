@@ -51,7 +51,7 @@ export default function BuildingPage() {
       </section>
 
       {/* 1. BOOKS */}
-      <section className="border-t border-black/10 dark:border-white/10 py-24" style={{ background: "var(--card)" }}>
+      <section id="books" className="border-t border-black/10 dark:border-white/10 py-24" style={{ background: "var(--card)" }}>
         <div className="max-w-6xl mx-auto px-5">
           <div className="mb-16">
             <h2 className="font-serif text-4xl md:text-5xl mb-4">Books</h2>
@@ -103,7 +103,7 @@ export default function BuildingPage() {
       </section>
 
       {/* 2. BOYS MENTORSHIP */}
-      <section className="border-t border-black/10 dark:border-white/10 py-24">
+      <section id="mentorship" className="border-t border-black/10 dark:border-white/10 py-24">
         <div className="max-w-6xl mx-auto px-5">
           <div className="mb-16 md:flex justify-between items-end gap-10">
             <div className="max-w-2xl">
@@ -143,7 +143,7 @@ export default function BuildingPage() {
       </section>
 
       {/* 3. CONDIT ASSOCIATES LTD */}
-      <section className="border-t border-black/10 dark:border-white/10" style={{ background: "var(--soft-green)" }}>
+      <section id="associates" className="border-t border-black/10 dark:border-white/10" style={{ background: "var(--soft-green)" }}>
         {/* Condit Hero */}
         <div className="relative min-h-[60vh] flex items-center justify-center overflow-hidden border-b border-black/10 dark:border-white/10">
           <div className="absolute inset-0 bg-[#26391f]/90 z-10 flex flex-col items-center justify-center text-center p-5">
@@ -191,7 +191,7 @@ export default function BuildingPage() {
       </section>
 
       {/* 4. CONDIT HOMES LTD */}
-      <section className="border-t border-black/10 dark:border-white/10 py-24 bg-[#fffaf0] dark:bg-[#182016]">
+      <section id="homes" className="border-t border-black/10 dark:border-white/10 py-24 bg-[#fffaf0] dark:bg-[#182016]">
         <div className="max-w-6xl mx-auto px-5 text-center mb-20">
           <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>Condit Homes Ltd</p>
           <h2 className="font-serif text-5xl md:text-6xl mb-6 max-w-3xl mx-auto leading-tight">
