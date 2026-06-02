@@ -223,7 +223,7 @@ export default function HomePage() {
       </section>
 
       <section className="max-w-7xl mx-auto px-5 py-12">
-        <div className="grid lg:grid-cols-[1fr_1.2fr] gap-10 border p-8 md:p-12 rounded-sm bg-animated-gradient" style={{ borderColor: "var(--peach)" }}>
+        <div className="grid lg:grid-cols-[1fr_1.2fr] gap-10 border p-8 md:p-12 rounded-sm" style={{ background: "var(--soft-green)", borderColor: "var(--peach)" }}>
           <div>
             <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "var(--rust)" }}>
               What I’m building
@@ -247,7 +247,7 @@ export default function HomePage() {
                 <p className="text-sm opacity-80 leading-relaxed font-serif italic text-[#c4572a]">Teaching responsibility and safe masculinity.</p>
               </div>
               <div className="bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 p-4 hover:bg-black/10 dark:hover:bg-white/10 transition-colors">
-                <span className="text-[10px] tracking-widest uppercase opacity-60 font-bold block mb-1">Condit Associates</span>
+                <span className="text-[10px] tracking-widest uppercase opacity-60 font-bold block mb-1">Condit Associates Ltd.</span>
                 <p className="text-sm opacity-80 leading-relaxed font-serif italic text-[#c4572a]">Building environments that stand the test of time.</p>
               </div>
               <div className="bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 p-4 hover:bg-black/10 dark:hover:bg-white/10 transition-colors">

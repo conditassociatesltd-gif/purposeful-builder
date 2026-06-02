@@ -38,7 +38,8 @@ export default function BuildingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="max-w-4xl mx-auto px-5 py-24 md:py-32 text-center">
+      <section className="max-w-4xl mx-auto px-5 py-24 md:py-32 text-center relative">
+        <div className="absolute inset-0 bg-animated-gradient opacity-20 -z-10 rounded-[3rem] m-4"></div>
         <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>
           What I'm Building
         </p>
