@@ -222,12 +222,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section
-  className="max-w-7xl mx-auto px-5 py-12">
-        <div
-  className="grid lg:grid-cols-[1fr_1.2fr] gap-10 border p-8 md:p-12 rounded-sm"
-  style={{ background: "var(--soft-green)", borderColor: "var(--peach)" }}
->
+      <section className="max-w-7xl mx-auto px-5 py-12">
+        <div className="grid lg:grid-cols-[1fr_1.2fr] gap-10 border p-8 md:p-12 rounded-sm" style={{ background: "var(--soft-green)", borderColor: "var(--peach)" }}>
           <div>
             <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "var(--rust)" }}>
               What I’m building
@@ -240,13 +236,25 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-5">
-            {portfolio.map((item) => (
-              <div key={item.title} className="border p-5" style={{ borderColor: "var(--peach)" }}>
-                <h4 className="font-bold uppercase tracking-wide">{item.title}</h4>
-                <p className="mt-3 text-sm leading-relaxed opacity-70">{item.text}</p>
+          <div className="flex flex-col justify-center items-start lg:items-center">
+            <div className="grid grid-cols-2 gap-4 mb-8 w-full max-w-sm">
+              <div className="aspect-square bg-black/10 dark:bg-white/10 flex items-center justify-center border border-black/5 dark:border-white/5">
+                <span className="text-[10px] tracking-widest uppercase opacity-40">Books</span>
               </div>
-            ))}
+              <div className="aspect-square bg-black/10 dark:bg-white/10 flex items-center justify-center border border-black/5 dark:border-white/5">
+                <span className="text-[10px] tracking-widest uppercase opacity-40 text-center px-2">Boys Mentorship</span>
+              </div>
+              <div className="aspect-square bg-black/10 dark:bg-white/10 flex items-center justify-center border border-black/5 dark:border-white/5">
+                <span className="text-[10px] tracking-widest uppercase opacity-40 text-center px-2">Condit Associates</span>
+              </div>
+              <div className="aspect-square bg-black/10 dark:bg-white/10 flex items-center justify-center border border-black/5 dark:border-white/5">
+                <span className="text-[10px] tracking-widest uppercase opacity-40 text-center px-2">Condit Homes Ltd</span>
+              </div>
+            </div>
+
+            <Link href="/building" className="inline-flex items-center gap-3 px-8 py-4 text-xs tracking-[0.25em] uppercase border border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors w-full max-w-sm justify-center">
+              Explore the ecosystem <ArrowRight size={16} />
+            </Link>
           </div>
         </div>
       </section>
