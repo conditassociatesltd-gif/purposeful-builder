@@ -97,17 +97,17 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
       </article>
       <section className="mt-16 border-t border-black/10 dark:border-white/10 pt-16">
         <div className="max-w-3xl mx-auto">
-          <div className="p-8 md:p-10 border-l-4 border-[#c4572a] bg-black/[0.03] dark:bg-white/[0.03] rounded-r-sm">
+          <div className="p-8 md:p-10 border-l-4 bg-black/[0.03] dark:bg-white/[0.03] rounded-r-sm" style={{ borderColor: "var(--rust)" }}>
             <p className="font-serif italic text-lg leading-relaxed opacity-80">
               If something here resonated with you, challenged you, or even unsettled you,
               I'd genuinely like to hear your thoughts. Feel free to reply, disagree, ask questions, or share your own experience.
             </p>
 
             <div className="mt-8 flex items-center gap-3">
-              <span className="text-[#c4572a] font-bold">→</span>
+              <span className="font-bold" style={{ color: "var(--rust)" }}>→</span>
               <a
                 href="mailto:hello@austinokechukwu.com"
-                className="text-sm tracking-wide opacity-60 hover:opacity-100 hover:text-[#c4572a] transition-colors font-medium lowercase"
+                className="text-sm tracking-wide opacity-60 hover:opacity-100 hover:text-[var(--rust)] transition-colors font-medium lowercase"
               >
                 hello@austinokechukwu.com
               </a>
