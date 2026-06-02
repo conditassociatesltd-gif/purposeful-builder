@@ -96,6 +96,40 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
       <article className="essay-content max-w-3xl mx-auto px-5 py-14 prose prose-lg dark:prose-invert">
         <MdxRenderer content={essay.content} />
       </article>
+      <section className="mt-20 border-t border-black/10 pt-12">
+  <div className="max-w-3xl">
+    <p className="font-serif text-2xl leading-relaxed">
+      If something here resonated with you, challenged you, or even unsettled you,
+      I'd genuinely like to hear your thoughts.
+    </p>
+
+    <p className="mt-6 text-lg leading-relaxed opacity-75">
+      Feel free to reply, disagree, ask questions, or share your own experience.
+    </p>
+
+    <p className="mt-6 text-lg leading-relaxed opacity-75">
+      And if these reflections speak to something deeper in you, subscribe below.
+      I'll continue writing honestly about faith, formation, masculinity, purpose,
+      and the quiet process of becoming.
+    </p>
+
+    <div className="mt-8 flex flex-wrap gap-4">
+      <a
+        href="mailto:hello@austinokechukwu.com"
+        className="border border-black px-5 py-3 text-sm tracking-wide uppercase hover:bg-black hover:text-white transition"
+      >
+        Send a Message
+      </a>
+
+      <a
+        href="/#subscribe"
+        className="border border-black px-5 py-3 text-sm tracking-wide uppercase hover:bg-black hover:text-white transition"
+      >
+        Subscribe
+      </a>
+    </div>
+  </div>
+</section>
       <section className="max-w-3xl mx-auto px-5 pb-16">
   <div className="border-t border-[#d8d2bd] pt-10">
     <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>

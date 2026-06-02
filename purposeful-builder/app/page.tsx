@@ -36,7 +36,7 @@ const essays = allEssays.slice(1, 4);
             </div>
 
             <div>
-              <p className="text-[10px] tracking-[0.35em] uppercase" style={{ color: "var(--rust)" }}>
+              <p className="text-[20px] tracking-[0.35em] uppercase" style={{ color: "var(--rust)" }}>
                 Austin
               </p>
               <h1 className="text-2xl md:text-3xl font-black uppercase leading-none">
