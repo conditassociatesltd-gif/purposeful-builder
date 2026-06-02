@@ -70,27 +70,40 @@ export default function HomePage() {
         </div>
       </header>
 
-      <section className="relative border-b overflow-hidden border-black/10 dark:border-white/10">
-        <div className="relative max-w-7xl mx-auto px-5 py-20 w-full">
+      <section className="relative border-b overflow-hidden border-black/10 dark:border-white/10 min-h-[80vh] flex items-center group">
+        <div className="absolute inset-0 w-full h-full">
+          <Image
+            src="/images/hero-bg.jpg"
+            alt="Welcome to my digital space"
+            fill
+            priority
+            className="object-cover object-[75%_center] group-hover:scale-105 transition-transform duration-[2s] ease-out"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-black/10" />
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-5 py-20 w-full z-10">
           <div className="max-w-3xl pt-16">
-            <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "var(--rust)" }}>
+            <p className="text-xs md:text-sm tracking-[0.35em] uppercase mb-6" style={{ color: "var(--peach)" }}>
               The Purposeful Builder
             </p>
 
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-7xl leading-[1] md:leading-[0.92] tracking-tight">
+            <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1] md:leading-[0.92] tracking-tight text-[#fdfbf7] drop-shadow-lg">
               Welcome to my digital space
             </h2>
 
-            <p className="mt-6 text-xl md:text-2xl leading-relaxed max-w-xl">
+            <p className="mt-8 text-xl md:text-2xl leading-relaxed max-w-xl text-[#fdfbf7]/80 drop-shadow-md">
               A builder’s reflections on identity, faith, family, masculinity, discipline, wealth, and the quiet work of becoming.
             </p>
 
-            <div className="mt-9 flex flex-wrap gap-4">
-              <Link href="/about" className="inline-flex items-center gap-3 px-6 py-4 text-xs tracking-[0.25em] uppercase text-white" style={{ background: "var(--rust)" }}>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Link href="/about" className="inline-flex items-center gap-3 px-8 py-5 text-xs tracking-[0.25em] uppercase text-white font-semibold transition-colors hover:bg-[#5a743e]" style={{ background: "var(--rust)" }}>
                 About me <ArrowRight size={16} />
               </Link>
 
-              <Link href="/writing" className="inline-flex items-center gap-3 px-6 py-4 text-xs tracking-[0.25em] uppercase border border-black/30 dark:border-white/30">
+              <Link href="/writing" className="inline-flex items-center gap-3 px-8 py-5 text-xs tracking-[0.25em] uppercase text-white border border-white/30 backdrop-blur-sm transition-colors hover:bg-white/10 hover:border-white/50">
                 Read writings
               </Link>
             </div>
