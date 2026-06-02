@@ -76,7 +76,7 @@ const essays = allEssays.slice(1, 4);
             </p>
 
             <h2 className="font-serif text-4xl sm:text-5xl md:text-7xl leading-[1] md:leading-[0.92] tracking-tight">
-              Welcome to my corner of the internet
+              Welcome to my digital space
             </h2>
 
             <p className="mt-6 text-xl md:text-2xl leading-relaxed max-w-xl">
