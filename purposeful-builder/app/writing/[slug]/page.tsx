@@ -166,7 +166,7 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
         </div>
       </div>
 
-      <footer style={{ background: "var(--night)", color: "var(--parchment)" }}>
+      <footer style={{ background: "var(--night)", color: "#f4efe3" }}>
         <div className="max-w-6xl mx-auto px-5 py-10 flex justify-between items-center">
           <Link href="/" className="flex items-center gap-3">
             <Image src="/logo.png" alt="Austin Okechukwu logo" width={40} height={40} />

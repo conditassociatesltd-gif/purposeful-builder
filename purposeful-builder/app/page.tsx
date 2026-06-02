@@ -303,7 +303,7 @@ export default function HomePage() {
     <p>The Purposeful Builder</p>
   </div>
 </div>
-      <footer className="border-t" style={{ background: "#121310", color: "var(--parchment)", borderColor: "rgba(255,255,255,0.06)" }}>
+      <footer className="border-t" style={{ background: "#121310", color: "#f4efe3", borderColor: "rgba(255,255,255,0.06)" }}>
         <div className="max-w-7xl mx-auto px-5 py-16 grid md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
             <div className="flex items-center gap-4 mb-6">
