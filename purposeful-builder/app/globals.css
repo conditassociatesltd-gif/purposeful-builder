@@ -470,3 +470,7 @@ img,
 video {
   max-width: 100%;
 }
+
+.scrollbar-hide::-webkit-scrollbar { 
+  display: none; 
+}
