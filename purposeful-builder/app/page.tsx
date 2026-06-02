@@ -22,9 +22,11 @@ const portfolio = [
 
 export default function HomePage() {
   const allEssays = getAllEssays();
-const featuredEssay =
-  allEssays.find((essay) => essay.featured) || allEssays[0];
-const essays = allEssays.slice(1, 4);
+  const featuredEssay =
+    allEssays.find((essay) => essay.featured) || allEssays[0];
+  const essays = allEssays
+    .filter((essay) => essay.slug !== featuredEssay.slug)
+    .slice(0, 3);
 
   return (
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
