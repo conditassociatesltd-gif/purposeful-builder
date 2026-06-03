@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight, MessageCircle, ChevronDown } from "lucide-react";
 
 export default function MentorshipForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isFormVisible, setIsFormVisible] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -55,8 +56,22 @@ export default function MentorshipForm() {
     );
   }
 
+  if (!isFormVisible) {
+    return (
+      <div className="flex justify-center">
+        <button
+          onClick={() => setIsFormVisible(true)}
+          className="inline-flex items-center gap-3 px-8 py-4 text-xs tracking-[0.2em] uppercase text-white font-semibold transition-colors hover:bg-[#5a743e]"
+          style={{ background: "var(--rust)" }}
+        >
+          Open Registration Form <ChevronDown size={16} />
+        </button>
+      </div>
+    );
+  }
+
   return (
-    <form onSubmit={handleSubmit} className="border p-8 md:p-12 rounded-sm bg-[var(--card)]" style={{ borderColor: "var(--peach)" }}>
+    <form onSubmit={handleSubmit} className="border p-8 md:p-12 rounded-sm bg-[var(--card)] animate-in fade-in slide-in-from-top-4 duration-500" style={{ borderColor: "var(--peach)" }}>
       {/* Honeypot for FormSubmit */}
       <input type="text" name="_honey" style={{ display: "none" }} />
       {/* Disable captcha for seamless experience */}
