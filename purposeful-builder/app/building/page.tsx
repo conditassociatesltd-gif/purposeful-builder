@@ -146,15 +146,14 @@ export default function BuildingPage() {
       <section id="associates" className="border-t border-black/10 dark:border-white/10" style={{ background: "var(--soft-green)" }}>
         {/* Condit Hero */}
         <div className="relative min-h-[60vh] flex items-center justify-center overflow-hidden border-b border-black/10 dark:border-white/10">
-          <div className="absolute inset-0 bg-[#26391f]/90 z-10 flex flex-col items-center justify-center text-center p-5">
-            <p className="text-xs tracking-[0.35em] uppercase mb-6 text-[#9dbb6f]">Condit Associates Ltd</p>
-            <h2 className="font-serif text-5xl md:text-7xl text-white max-w-4xl leading-tight drop-shadow-md">
-              Designing with precision, building with purpose.
-            </h2>
+          <div className="absolute inset-0 bg-[#1a2316]/85 z-10 flex flex-col items-center justify-center text-center p-5">
+            <h2 className="font-serif text-4xl md:text-5xl mb-6 text-[#bfd98c] tracking-wide">Condit Associates Ltd</h2>
+            <p className="font-serif text-3xl md:text-5xl text-white max-w-4xl leading-relaxed drop-shadow-lg opacity-95 italic">
+              "Designing with precision, building with purpose."
+            </p>
           </div>
-          {/* Placeholder for Condit Associates background image */}
-          <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-             <span className="text-white/30 text-sm tracking-widest uppercase">Background Image Placeholder</span>
+          <div className="absolute inset-0 bg-black">
+             <Image src="/condit-associates-bg.jpg" alt="Condit Associates Construction" fill className="object-cover object-center opacity-50" />
           </div>
         </div>
 
@@ -205,23 +204,29 @@ export default function BuildingPage() {
       </section>
 
       {/* 4. CONDIT HOMES LTD */}
-      <section id="homes" className="border-t border-black/10 dark:border-white/10 py-24 bg-[#fffaf0] dark:bg-[#182016]">
-        <div className="max-w-6xl mx-auto px-5 text-center mb-20">
-          <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>Condit Homes Ltd</p>
-          <h2 className="font-serif text-5xl md:text-6xl mb-6 max-w-3xl mx-auto leading-tight">
-            Helping people find places they can truly call home.
-          </h2>
-          <div className="flex justify-center gap-4 mt-10">
-             <a href="https://wa.me/yourwhatsappnumber" target="_blank" className="inline-flex items-center gap-2 px-6 py-3 text-xs tracking-widest uppercase bg-green-600 hover:bg-green-700 text-white transition-colors">
-               <MessageCircle size={14} /> WhatsApp Enquiries
-             </a>
-             <a href="mailto:hello@austinokechukwu.com" className="inline-flex items-center gap-2 px-6 py-3 text-xs tracking-widest uppercase border border-black/20 dark:border-white/20 hover:bg-black/5 transition-colors">
-               <Mail size={14} /> Email Us
-             </a>
+      <section id="homes" className="border-t border-black/10 dark:border-white/10 bg-[#fffaf0] dark:bg-[#182016]">
+        {/* Condit Homes Hero */}
+        <div className="relative min-h-[60vh] flex items-center justify-center overflow-hidden border-b border-black/10 dark:border-white/10">
+          <div className="absolute inset-0 bg-[#2b1d12]/80 z-10 flex flex-col items-center justify-center text-center p-5">
+            <h2 className="font-serif text-4xl md:text-5xl mb-6 text-[#e8c08a] tracking-wide">Condit Homes Ltd</h2>
+            <p className="font-serif text-3xl md:text-5xl text-white max-w-4xl leading-relaxed drop-shadow-lg opacity-95 italic">
+              "Helping people find places they can truly call home."
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 mt-10">
+               <a href="https://wa.me/yourwhatsappnumber" target="_blank" className="inline-flex items-center gap-2 px-6 py-3 text-xs tracking-widest uppercase bg-[#c4572a] hover:bg-[#a64720] text-white transition-colors border border-[#c4572a]">
+                 <MessageCircle size={14} /> WhatsApp Enquiries
+               </a>
+               <a href="mailto:hello@austinokechukwu.com" className="inline-flex items-center gap-2 px-6 py-3 text-xs tracking-widest uppercase border border-white/30 text-white hover:bg-white/10 transition-colors">
+                 <Mail size={14} /> Email Us
+               </a>
+            </div>
+          </div>
+          <div className="absolute inset-0 bg-black">
+             <Image src="/condit-homes-bg.jpg" alt="Condit Homes Real Estate" fill className="object-cover object-center opacity-60" />
           </div>
         </div>
 
-        <div className="max-w-6xl mx-auto px-5">
+        <div className="max-w-6xl mx-auto px-5 py-24">
           <div className="grid md:grid-cols-3 gap-8">
             {[1, 2, 3].map((item) => (
               <div key={item} className="border p-5 bg-white dark:bg-[#11170f]" style={{ borderColor: "var(--peach)" }}>
