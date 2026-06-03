@@ -67,6 +67,12 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
           {essay.title}
         </h1>
 
+        {essay.subtitle && (
+          <h2 className="font-serif text-2xl md:text-3xl leading-relaxed mb-6 opacity-80">
+            {essay.subtitle}
+          </h2>
+        )}
+
         <p className="font-serif italic text-xl leading-relaxed mb-8 opacity-60">
           {essay.excerpt}
         </p>

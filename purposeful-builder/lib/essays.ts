@@ -7,6 +7,7 @@ const essaysDirectory = path.join(process.cwd(), "content/essays");
 export type Essay = {
   slug: string;
   title: string;
+  subtitle?: string;
   date: string;
   category: string;
   excerpt: string;
@@ -37,6 +38,7 @@ export function getAllEssays(): Essay[] {
       return {
         slug,
         title: data.title || "Untitled",
+        subtitle: data.subtitle || null,
         date: data.date || "",
         category: data.category || "Essay",
         excerpt: data.excerpt || "",
