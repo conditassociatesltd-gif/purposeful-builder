@@ -149,7 +149,7 @@ export default function BuildingPage() {
           <div className="absolute inset-0 bg-[#26391f]/90 z-10 flex flex-col items-center justify-center text-center p-5">
             <p className="text-xs tracking-[0.35em] uppercase mb-6 text-[#9dbb6f]">Condit Associates Ltd</p>
             <h2 className="font-serif text-5xl md:text-7xl text-white max-w-4xl leading-tight drop-shadow-md">
-              Building homes, commercial spaces, and environments that stand the test of time.
+              Designing with precision, building with purpose.
             </h2>
           </div>
           {/* Placeholder for Condit Associates background image */}
@@ -173,11 +173,25 @@ export default function BuildingPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="group cursor-pointer">
-              <div className="aspect-[4/3] bg-black/10 dark:bg-white/10 mb-5 relative overflow-hidden flex items-center justify-center">
-                 <span className="text-xs tracking-widest uppercase opacity-40">Residential Project Image</span>
+              <div className="aspect-[4/3] mb-5 relative overflow-hidden rounded-sm flex snap-x snap-mandatory overflow-x-auto scrollbar-hide">
+                 <div className="min-w-full h-full snap-center relative">
+                   <Image src="/projects/abuja-terrace-1.jpg" alt="Abuja 4-bedroom terrace front view" fill className="object-cover" />
+                 </div>
+                 <div className="min-w-full h-full snap-center relative">
+                   <Image src="/projects/abuja-terrace-2.jpg" alt="Abuja 4-bedroom terrace side view" fill className="object-cover" />
+                 </div>
+                 <div className="min-w-full h-full snap-center relative">
+                   <Image src="/projects/abuja-terrace-3.jpg" alt="Abuja 4-bedroom terrace angle view" fill className="object-cover" />
+                 </div>
               </div>
-              <h4 className="font-serif text-2xl group-hover:text-[#c4572a] transition-colors">Residential Mastery</h4>
-              <p className="opacity-70 mt-2 text-sm">A brief description of best residential projects.</p>
+              <h4 className="font-serif text-2xl group-hover:text-[#c4572a] transition-colors">Abuja 4-Bedroom Terrace</h4>
+              <p className="opacity-70 mt-2 text-sm leading-relaxed">
+                A premium residential development in Abuja featuring 1 living room, dining, modern kitchen, and 4 en-suite bedrooms.
+              </p>
+              <div className="flex gap-2 mt-3">
+                <span className="text-[10px] tracking-widest uppercase px-2 py-1 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10">Abuja</span>
+                <span className="text-[10px] tracking-widest uppercase px-2 py-1 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10">Residential</span>
+              </div>
             </div>
             <div className="group cursor-pointer">
               <div className="aspect-[4/3] bg-black/10 dark:bg-white/10 mb-5 relative overflow-hidden flex items-center justify-center">
