@@ -81,7 +81,7 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
         </div>
 
         {essay.heroImage && (
-          <div className="relative w-full h-[520px] mt-12 overflow-hidden rounded-sm">
+          <div className="relative w-full h-[340px] mt-12 overflow-hidden rounded-sm">
             <Image
               src={essay.heroImage}
               alt={essay.title}
