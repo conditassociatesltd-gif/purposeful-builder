@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowLeft, ArrowRight, ExternalLink, Globe, Mail, MessageCircle } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
 import MentorshipForm from "@/components/MentorshipForm";
+import BuildingHero from "@/components/BuildingHero";
 
 export const metadata = {
   title: "What I'm Building — Austin Okechukwu",
@@ -38,17 +39,7 @@ export default function BuildingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="max-w-4xl mx-auto px-5 py-24 md:py-32 text-center">
-        <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>
-          What I'm Building
-        </p>
-        <h1 className="font-serif text-5xl md:text-7xl leading-tight tracking-tight mb-8">
-          A home for the things I am actively building, writing, and stewarding.
-        </h1>
-        <p className="text-xl md:text-2xl leading-relaxed opacity-70 max-w-2xl mx-auto">
-          Beyond writing, this space connects the businesses, books, mentorship, and construction work that shape my life.
-        </p>
-      </section>
+      <BuildingHero />
 
       {/* 1. BOOKS */}
       <section id="books" className="border-t border-black/10 dark:border-white/10 py-24" style={{ background: "var(--card)" }}>
