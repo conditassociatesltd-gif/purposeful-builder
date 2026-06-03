@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowRight, ArrowLeft, Mail, Search, BookOpen, Building2, Users, Home, Landmark, PenLine } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
 import { getAllEssays } from "@/lib/essays";
+import EcosystemCarousel from "@/components/EcosystemCarousel";
 
 const categories = [
   { title: "Identity", slug: "identity", text: "Formation, healing, boyhood, masculinity.", icon: Users },
@@ -222,116 +223,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden py-24 text-white">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <Image 
-            src="/images/building-bg.png" 
-            alt="Background" 
-            fill 
-            className="object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-[#121619]/80 backdrop-blur-sm"></div>
-        </div>
-
-        <div className="relative z-10 max-w-7xl mx-auto px-5">
-          {/* Header Row */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-16">
-            <div>
-              <div className="inline-block px-4 py-1.5 rounded-full border border-white/20 text-[10px] tracking-widest uppercase mb-6">
-                My Ecosystem
-              </div>
-              <h2 className="font-serif text-5xl md:text-6xl leading-tight">
-                A personal portfolio of <span className="text-[#cba37c]">work & ideas</span>
-              </h2>
-            </div>
-            <div className="md:max-w-sm">
-              <p className="text-white/70 mb-6 text-sm leading-relaxed">
-                Beyond writing, this space connects the businesses, books, mentorship, and construction work that shape my life.
-              </p>
-              <div className="flex gap-3">
-                <button className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition">
-                  <ArrowLeft size={16} />
-                </button>
-                <button className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center bg-white text-black hover:bg-white/90 transition">
-                  <ArrowRight size={16} />
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Horizontal Scroll Cards */}
-          <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 -mx-5 px-5 md:mx-0 md:px-0 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-            {/* Card 1 */}
-            <Link href="/building#books" className="snap-start shrink-0 w-[300px] md:w-[350px] bg-white rounded-2xl p-6 text-black group relative hover:-translate-y-2 transition-transform duration-300">
-              <div className="inline-block px-3 py-1 rounded-full border border-black/10 text-[10px] tracking-widest uppercase font-bold mb-4">
-                Books
-              </div>
-              <h3 className="font-serif text-2xl mb-5">Writing & Publishing</h3>
-              <div className="aspect-[4/3] rounded-xl mb-6 flex items-center justify-center overflow-hidden relative">
-                 <Image src="/images/card-books.png" alt="Writing & Publishing" fill className="object-cover" />
-              </div>
-              <p className="text-sm opacity-70 leading-relaxed mb-10">
-                Exploring identity, wounds, and becoming through published works and essays.
-              </p>
-              <div className="absolute bottom-6 right-6 w-10 h-10 rounded-full border border-black/10 flex items-center justify-center group-hover:bg-[#cba37c] group-hover:text-white group-hover:border-[#cba37c] transition-colors">
-                <ArrowRight size={16} className="-rotate-45" />
-              </div>
-            </Link>
-
-            {/* Card 2 */}
-            <Link href="/building#mentorship" className="snap-start shrink-0 w-[300px] md:w-[350px] bg-[#1a1f24] rounded-2xl p-6 text-white group relative hover:-translate-y-2 transition-transform duration-300">
-              <div className="inline-block px-3 py-1 rounded-full border border-white/20 text-[10px] tracking-widest uppercase mb-4 text-white/70">
-                Mentorship
-              </div>
-              <h3 className="font-serif text-2xl mb-5">Boys Mentorship</h3>
-              <div className="aspect-[4/3] rounded-xl mb-6 flex items-center justify-center overflow-hidden relative">
-                 <Image src="/images/card-mentorship.png" alt="Boys Mentorship" fill className="object-cover" />
-              </div>
-              <p className="text-sm opacity-70 leading-relaxed mb-10">
-                Teaching responsibility and safe masculinity through faith and practical life guidance.
-              </p>
-              <div className="absolute bottom-6 right-6 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center bg-white/10 group-hover:bg-white group-hover:text-black transition-colors">
-                <ArrowRight size={16} className="-rotate-45" />
-              </div>
-            </Link>
-
-            {/* Card 3 */}
-            <Link href="/building#associates" className="snap-start shrink-0 w-[300px] md:w-[350px] bg-white rounded-2xl p-6 text-black group relative hover:-translate-y-2 transition-transform duration-300">
-              <div className="inline-block px-3 py-1 rounded-full border border-black/10 text-[10px] tracking-widest uppercase font-bold mb-4">
-                Construction
-              </div>
-              <h3 className="font-serif text-2xl mb-5">Condit Associates Ltd</h3>
-              <div className="aspect-[4/3] rounded-xl mb-6 flex items-center justify-center overflow-hidden relative">
-                 <Image src="/images/card-associates.png" alt="Condit Associates Ltd" fill className="object-cover" />
-              </div>
-              <p className="text-sm opacity-70 leading-relaxed mb-10">
-                Building environments, commercial spaces, and projects that stand the test of time.
-              </p>
-              <div className="absolute bottom-6 right-6 w-10 h-10 rounded-full border border-black/10 flex items-center justify-center group-hover:bg-[#cba37c] group-hover:text-white group-hover:border-[#cba37c] transition-colors">
-                <ArrowRight size={16} className="-rotate-45" />
-              </div>
-            </Link>
-
-            {/* Card 4 */}
-            <Link href="/building#homes" className="snap-start shrink-0 w-[300px] md:w-[350px] bg-white rounded-2xl p-6 text-black group relative hover:-translate-y-2 transition-transform duration-300">
-              <div className="inline-block px-3 py-1 rounded-full border border-black/10 text-[10px] tracking-widest uppercase font-bold mb-4">
-                Real Estate
-              </div>
-              <h3 className="font-serif text-2xl mb-5">Condit Homes Ltd</h3>
-              <div className="aspect-[4/3] rounded-xl mb-6 flex items-center justify-center overflow-hidden relative">
-                 <Image src="/images/card-homes.png" alt="Condit Homes Ltd" fill className="object-cover" />
-              </div>
-              <p className="text-sm opacity-70 leading-relaxed mb-10">
-                Helping people find places they can truly call home. Real estate and property thinking.
-              </p>
-              <div className="absolute bottom-6 right-6 w-10 h-10 rounded-full border border-black/10 flex items-center justify-center group-hover:bg-[#cba37c] group-hover:text-white group-hover:border-[#cba37c] transition-colors">
-                <ArrowRight size={16} className="-rotate-45" />
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <EcosystemCarousel />
 
       <section id="subscribe" style={{ background: "var(--rust)", color: "var(--cream)" }}>
         <div className="max-w-6xl mx-auto px-5 py-6">
