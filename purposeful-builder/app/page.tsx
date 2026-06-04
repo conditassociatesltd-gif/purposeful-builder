@@ -29,8 +29,53 @@ export default function HomePage() {
     .filter((essay) => essay.slug !== featuredEssay.slug)
     .slice(0, 3);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://austinokechukwu.com/#person",
+        name: "Austin Okechukwu",
+        url: "https://austinokechukwu.com",
+        description:
+          "Founder of Condit Associates Ltd and Condit Homes Ltd. Writer on identity, faith, masculinity, building, and wealth.",
+        sameAs: [
+          "https://www.instagram.com/arc__austin",
+          "https://www.facebook.com/share/17MLSQKYLg/",
+        ],
+        jobTitle: "Founder & Builder",
+        worksFor: [
+          { "@type": "Organization", name: "Condit Associates Ltd" },
+          { "@type": "Organization", name: "Condit Homes Ltd" },
+        ],
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://austinokechukwu.com/#website",
+        url: "https://austinokechukwu.com",
+        name: "The Purposeful Builder",
+        description:
+          "Writing for boys becoming men, men becoming whole, and builders learning that structure begins in silence.",
+        publisher: { "@id": "https://austinokechukwu.com/#person" },
+        potentialAction: {
+          "@type": "SearchAction",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: "https://austinokechukwu.com/search?q={search_term_string}",
+          },
+          "query-input": "required name=search_term_string",
+        },
+      },
+    ],
+  };
+
   return (
-    <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
       <header className="sticky top-0 z-40 border-b backdrop-blur-md border-black/10 dark:border-white/10" style={{ background: "color-mix(in srgb, var(--parchment) 90%, transparent)" }}>
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4 overflow-hidden">
           <Link href="/" className="flex items-center gap-3">
@@ -148,7 +193,7 @@ export default function HomePage() {
       {/* Background image */}
       <Image
         src="/images/featured-writing-bg.png"
-        alt=""
+        alt="Featured essay background"
         fill
         className="object-cover transition-transform duration-700 group-hover:scale-105"
         priority
@@ -345,5 +390,6 @@ export default function HomePage() {
         </div>
       </footer>
     </main>
+    </>
   );
 }

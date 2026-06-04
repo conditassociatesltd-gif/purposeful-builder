@@ -5,8 +5,33 @@ import { ArrowRight } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata = {
-  title: "Writing — Austin Okechukwu",
-  description: "Essays by Austin Okechukwu on identity, faith, purpose, building, and becoming.",
+  title: "Writing",
+  description:
+    "Essays by Austin Okechukwu on identity, faith, purpose, building, masculinity, and the quiet work of becoming.",
+  openGraph: {
+    title: "Writing — Austin Okechukwu",
+    description:
+      "Essays by Austin Okechukwu on identity, faith, purpose, building, masculinity, and the quiet work of becoming.",
+    url: "https://austinokechukwu.com/writing",
+    images: [
+      {
+        url: "/images/og-default.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Writing — Austin Okechukwu",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Writing — Austin Okechukwu",
+    description:
+      "Essays by Austin Okechukwu on identity, faith, purpose, building, masculinity, and the quiet work of becoming.",
+    images: ["/images/og-default.jpg"],
+  },
+  alternates: {
+    canonical: "https://austinokechukwu.com/writing",
+  },
 };
 
 export default function WritingPage() {

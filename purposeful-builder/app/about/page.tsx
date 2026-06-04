@@ -3,8 +3,33 @@ import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata = {
-  title: "About — Austin Okechukwu",
-  description: "About Austin Okechukwu, The Purposeful Builder.",
+  title: "About",
+  description:
+    "Austin Okechukwu is the founder of Condit Associates Ltd and Condit Homes Ltd. He writes about identity, faith, masculinity, building, and the quiet work of becoming.",
+  openGraph: {
+    title: "About — Austin Okechukwu",
+    description:
+      "Austin Okechukwu is the founder of Condit Associates Ltd and Condit Homes Ltd. He writes about identity, faith, masculinity, building, and the quiet work of becoming.",
+    url: "https://austinokechukwu.com/about",
+    images: [
+      {
+        url: "/images/og-default.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Austin Okechukwu — The Purposeful Builder",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About — Austin Okechukwu",
+    description:
+      "Austin Okechukwu is the founder of Condit Associates Ltd and Condit Homes Ltd. He writes about identity, faith, masculinity, building, and the quiet work of becoming.",
+    images: ["/images/og-default.jpg"],
+  },
+  alternates: {
+    canonical: "https://austinokechukwu.com/about",
+  },
 };
 
 export default function AboutPage() {

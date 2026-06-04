@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllEssays } from "@/lib/essays";
 import { ArrowLeft } from "lucide-react";
@@ -11,6 +12,17 @@ const categoryNames: Record<string, string> = {
   wealth: "Wealth",
 };
 
+const categoryDescriptions: Record<string, string> = {
+  identity: "Essays on formation, healing, boyhood, and masculinity by Austin Okechukwu.",
+  purpose: "Essays on discipline, calling, becoming, and purposeful living by Austin Okechukwu.",
+  "faith-process": "Reflections on God, spiritual growth, and obedience by Austin Okechukwu.",
+  "marriage-life": "Essays on love, home, relationships, and responsibility by Austin Okechukwu.",
+  building: "Lessons from construction and leadership by Austin Okechukwu.",
+  wealth: "Essays on real estate, patience, value, and stewardship by Austin Okechukwu.",
+};
+
+const BASE_URL = "https://austinokechukwu.com";
+
 export function generateStaticParams() {
   return [
     { slug: "identity" },
@@ -20,6 +32,35 @@ export function generateStaticParams() {
     { slug: "building" },
     { slug: "wealth" },
   ];
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const title = categoryNames[slug] || slug;
+  const description = categoryDescriptions[slug] || `Essays on ${title} by Austin Okechukwu.`;
+  const url = `${BASE_URL}/category/${slug}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${title} — Austin Okechukwu`,
+      description,
+      url,
+      images: [{ url: "/images/og-default.jpg", width: 1200, height: 630, alt: `${title} — Austin Okechukwu` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} — Austin Okechukwu`,
+      description,
+      images: ["/images/og-default.jpg"],
+    },
+  };
 }
 
 export default async function CategoryPage({

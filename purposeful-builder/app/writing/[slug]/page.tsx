@@ -20,9 +20,42 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   if (!essay) return { title: "Essay Not Found" };
 
+  const BASE_URL = "https://austinokechukwu.com";
+  const url = `${BASE_URL}/writing/${slug}`;
+  const ogImage = essay.heroImage
+    ? `${BASE_URL}${essay.heroImage}`
+    : `${BASE_URL}/images/og-default.jpg`;
+
   return {
-    title: `${essay.title} — Austin Okechukwu`,
+    title: essay.title,
     description: essay.excerpt,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      type: "article",
+      url,
+      title: essay.title,
+      description: essay.excerpt,
+      publishedTime: essay.date ? new Date(essay.date).toISOString() : undefined,
+      authors: ["Austin Okechukwu"],
+      tags: [essay.category],
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: essay.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: essay.title,
+      description: essay.excerpt,
+      images: [ogImage],
+      creator: "@arc__austin",
+    },
   };
 }
 
@@ -34,8 +67,42 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
 
   const listenText = `${essay.title}. ${essay.excerpt}. ${essay.content}`;
 
+  const BASE_URL = "https://austinokechukwu.com";
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: essay.title,
+    description: essay.excerpt,
+    author: {
+      "@type": "Person",
+      "@id": `${BASE_URL}/#person`,
+      name: "Austin Okechukwu",
+      url: BASE_URL,
+    },
+    publisher: {
+      "@type": "Person",
+      name: "Austin Okechukwu",
+      url: BASE_URL,
+    },
+    url: `${BASE_URL}/writing/${slug}`,
+    datePublished: essay.date ? new Date(essay.date).toISOString() : undefined,
+    dateModified: essay.date ? new Date(essay.date).toISOString() : undefined,
+    image: essay.heroImage
+      ? `${BASE_URL}${essay.heroImage}`
+      : `${BASE_URL}/images/og-default.jpg`,
+    articleSection: essay.category,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${BASE_URL}/writing/${slug}`,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
   <ReadingProgress />
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
       <header className="border-b border-black/10 dark:border-white/10">
