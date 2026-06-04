@@ -14,6 +14,7 @@ export type Essay = {
   heroImage?: string;
   readingTime?: string;
   featured?: boolean;
+  hideDefaultHeader?: boolean;
   content: string;
 };
 function calculateReadingTime(content: string) {
@@ -45,6 +46,7 @@ export function getAllEssays(): Essay[] {
         heroImage: data.heroImage || null,
         readingTime: data.readingTime || calculateReadingTime(content),
         featured: data.featured || false,
+        hideDefaultHeader: data.hideDefaultHeader || false,
         content,
       };
     })

@@ -126,32 +126,36 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
 </header>
 
       <section className="max-w-3xl mx-auto px-5 pt-16 pb-12 border-b border-black/10 dark:border-white/10">
-        <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>
-          {essay.category}
-        </p>
+        {!essay.hideDefaultHeader && (
+          <>
+            <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>
+              {essay.category}
+            </p>
 
-        <h1 className="font-serif text-5xl md:text-6xl leading-[1.05] tracking-tight mb-6">
-          {essay.title}
-        </h1>
+            <h1 className="font-serif text-5xl md:text-6xl leading-[1.05] tracking-tight mb-6">
+              {essay.title}
+            </h1>
 
-        {essay.subtitle && (
-          <h2 className="font-serif text-2xl md:text-3xl leading-relaxed mb-6 opacity-80">
-            {essay.subtitle}
-          </h2>
+            {essay.subtitle && (
+              <h2 className="font-serif text-2xl md:text-3xl leading-relaxed mb-6 opacity-80">
+                {essay.subtitle}
+              </h2>
+            )}
+
+            <p className="font-serif italic text-xl leading-relaxed mb-8 opacity-60">
+              {essay.excerpt}
+            </p>
+
+            <div className="flex flex-wrap items-center gap-4 mb-8">
+              <p className="text-xs tracking-[0.25em] uppercase opacity-50">
+                {essay.date} · {essay.readingTime || "4 min read"}
+              </p>
+
+              <ListenButton text={listenText} />
+              <ReaderControls />
+            </div>
+          </>
         )}
-
-        <p className="font-serif italic text-xl leading-relaxed mb-8 opacity-60">
-          {essay.excerpt}
-        </p>
-
-        <div className="flex flex-wrap items-center gap-4 mb-8">
-          <p className="text-xs tracking-[0.25em] uppercase opacity-50">
-            {essay.date} · {essay.readingTime || "4 min read"}
-          </p>
-
-          <ListenButton text={listenText} />
-          <ReaderControls />
-        </div>
 
         {essay.heroImage && (
           <div className="relative w-full h-[340px] mt-12 overflow-hidden rounded-sm">
