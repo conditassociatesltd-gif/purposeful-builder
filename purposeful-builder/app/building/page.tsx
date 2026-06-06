@@ -5,6 +5,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 import MentorshipForm from "@/components/MentorshipForm";
 import BuildingHero from "@/components/BuildingHero";
 import BooksSection from "@/components/BooksSection";
+import MentorshipGallery from "@/components/MentorshipGallery";
 
 export const metadata = {
   title: "What I'm Building — Austin Okechukwu",
@@ -57,21 +58,7 @@ export default function BuildingPage() {
             </div>
           </div>
 
-          {/* Mentorship Gallery (Placeholders) */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
-            <div className="aspect-square bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 flex items-center justify-center">
-              <span className="text-xs tracking-widest uppercase opacity-40">Program Photo</span>
-            </div>
-            <div className="aspect-[4/5] bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 flex items-center justify-center -mt-8">
-              <span className="text-xs tracking-widest uppercase opacity-40">Event Photo</span>
-            </div>
-            <div className="aspect-square bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 flex items-center justify-center mt-8">
-              <span className="text-xs tracking-widest uppercase opacity-40">Workshop Photo</span>
-            </div>
-            <div className="aspect-square bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 flex items-center justify-center">
-              <span className="text-xs tracking-widest uppercase opacity-40">Testimonials</span>
-            </div>
-          </div>
+          <MentorshipGallery />
 
           {/* Registration Form */}
           <div className="max-w-3xl mx-auto">
