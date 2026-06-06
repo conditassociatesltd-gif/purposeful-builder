@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const images = Array.from({ length: 2 }, (_, i) => `/images/${i + 1}.jpg`);
+const images = Array.from({ length: 11 }, (_, i) => `/images/${i + 1}.jpg`);
 
 export default function MentorshipGallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
