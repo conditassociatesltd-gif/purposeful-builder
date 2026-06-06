@@ -138,6 +138,32 @@ export default function EcosystemCarousel() {
               <ArrowRight size={16} className="-rotate-45" />
             </div>
           </Link>
+
+          {/* Card 5 */}
+          <div className="snap-start shrink-0 w-[300px] md:w-[350px] bg-[#1a1f24] rounded-2xl p-6 text-white group relative hover:-translate-y-2 transition-transform duration-300">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="inline-block px-3 py-1 rounded-full border border-[#cba37c]/40 text-[10px] tracking-widest uppercase text-[#cba37c]">
+                Cleaning Services
+              </div>
+              <div className="inline-block px-3 py-1 rounded-full bg-[#cba37c]/15 text-[10px] tracking-widest uppercase text-[#cba37c] font-bold animate-pulse">
+                Coming Soon
+              </div>
+            </div>
+            <h3 className="font-serif text-2xl mb-5">Condit Cleanique Ltd</h3>
+            <div className="aspect-[4/3] rounded-xl mb-6 flex items-center justify-center overflow-hidden relative">
+               <Image src="/images/card-cleanique.png" alt="Condit Cleanique Ltd" fill className="object-cover opacity-85" />
+               <div className="absolute inset-0 bg-gradient-to-t from-[#1a1f24]/60 via-transparent to-transparent" />
+            </div>
+            <p className="text-sm opacity-70 leading-relaxed mb-2">
+              Coming soon to Abuja.
+            </p>
+            <p className="text-sm opacity-50 leading-relaxed mb-10">
+              Premium cleaning and facility management — built with the same standard of excellence.
+            </p>
+            <div className="absolute bottom-6 right-6 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center bg-[#cba37c]/10 text-[#cba37c]">
+              <ArrowRight size={16} className="-rotate-45" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
