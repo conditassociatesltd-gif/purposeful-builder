@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, ExternalLink, Globe, Mail, MessageCircle } from 
 import ThemeToggle from "@/components/ThemeToggle";
 import MentorshipForm from "@/components/MentorshipForm";
 import BuildingHero from "@/components/BuildingHero";
+import BooksSection from "@/components/BooksSection";
 
 export const metadata = {
   title: "What I'm Building — Austin Okechukwu",
@@ -42,56 +43,7 @@ export default function BuildingPage() {
       <BuildingHero />
 
       {/* 1. BOOKS */}
-      <section id="books" className="border-t border-black/10 dark:border-white/10 py-24" style={{ background: "var(--card)" }}>
-        <div className="max-w-6xl mx-auto px-5">
-          <div className="mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl mb-4">Books</h2>
-            <p className="text-lg opacity-70 max-w-2xl">
-              Showcasing books currently being written and future published works.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-10">
-            {/* Book 1 */}
-            <div className="border p-8 md:p-12" style={{ borderColor: "var(--peach)" }}>
-              <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-6 bg-black/10 dark:bg-white/10">
-                Work In Progress
-              </div>
-              <h3 className="font-serif text-3xl md:text-4xl mb-4">Formed in Silence</h3>
-              <p className="opacity-75 leading-relaxed mb-8 h-20">
-                A reflection on the unseen seasons that shape a man long before the world sees him.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <button className="px-6 py-3 text-xs tracking-[0.2em] uppercase border border-black/20 dark:border-white/20 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors">
-                  Learn More
-                </button>
-                <button className="px-6 py-3 text-xs tracking-[0.2em] uppercase text-white hover:bg-black/80 transition-colors" style={{ background: "var(--rust)" }}>
-                  Notify Me When Released
-                </button>
-              </div>
-            </div>
-
-            {/* Book 2 */}
-            <div className="border p-8 md:p-12" style={{ borderColor: "var(--peach)" }}>
-              <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-6 bg-black/10 dark:bg-white/10">
-                Work In Progress
-              </div>
-              <h3 className="font-serif text-3xl md:text-4xl mb-4">The Boy and Addictions</h3>
-              <p className="opacity-75 leading-relaxed mb-8 h-20">
-                Exploring the wounds, habits, and hidden battles that shape boys before they become men.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <button className="px-6 py-3 text-xs tracking-[0.2em] uppercase border border-black/20 dark:border-white/20 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors">
-                  Learn More
-                </button>
-                <button className="px-6 py-3 text-xs tracking-[0.2em] uppercase text-white hover:bg-black/80 transition-colors" style={{ background: "var(--rust)" }}>
-                  Notify Me When Released
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BooksSection />
 
       {/* 2. BOYS MENTORSHIP */}
       <section id="mentorship" className="border-t border-black/10 dark:border-white/10 py-24">
