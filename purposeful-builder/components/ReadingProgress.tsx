@@ -24,7 +24,7 @@ export default function ReadingProgress() {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full h-[3px] z-[9999] bg-transparent">
+    <div className="fixed top-0 left-0 w-full h-[3px] z-[60] bg-transparent">
       <div
         className="h-full transition-all duration-150"
         style={{

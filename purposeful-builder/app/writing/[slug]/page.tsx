@@ -105,19 +105,20 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
       />
   <ReadingProgress />
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
-      <header className="sticky top-0 z-50 bg-[var(--parchment)] border-b border-black/10 dark:border-white/10">
-  <div className="max-w-6xl mx-auto px-5 py-6 flex items-center justify-between">
+      <header className="sticky top-0 z-50 border-b border-black/10 dark:border-white/10" style={{ background: "var(--parchment)" }}>
+  <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
     <Link href="/" className="flex items-center gap-4">
       <Image src="/logo.png" alt="Austin Okechukwu logo" width={44} height={44} />
       <span className="font-black tracking-tight uppercase">Austin Okechukwu</span>
     </Link>
 
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-3">
+      <ReaderControls />
       <ThemeToggle />
 
       <Link
         href="/writing"
-        className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase opacity-50"
+        className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase opacity-50 ml-2"
       >
         <ArrowLeft size={14} /> All essays
       </Link>
@@ -150,7 +151,6 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
           </p>
 
           <ListenButton text={listenText} />
-          <ReaderControls />
         </div>
 
         {essay.heroImage && (

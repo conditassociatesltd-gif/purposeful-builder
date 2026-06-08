@@ -19,7 +19,7 @@ export default function ReaderControls() {
   }, [contrast]);
 
   return (
-    <div className="inline-flex items-center gap-1 border border-[#c9c1ad] bg-[#fffaf0] text-[#182016] px-2 py-2 shadow-sm">
+    <div className="inline-flex items-center gap-1 border border-black/10 dark:border-white/20 bg-transparent px-2 py-2">
       <button
         type="button"
         onClick={() => setSizeIndex((s) => Math.max(0, s - 1))}
