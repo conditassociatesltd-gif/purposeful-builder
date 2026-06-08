@@ -105,7 +105,7 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
       />
   <ReadingProgress />
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
-      <header className="sticky top-0 z-50 border-b border-black/10 dark:border-white/10" style={{ background: "var(--parchment)" }}>
+      <header className="fixed top-0 left-0 w-full z-50 border-b border-black/10 dark:border-white/10" style={{ background: "var(--parchment)" }}>
   <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
     <Link href="/" className="flex items-center gap-4">
       <Image src="/logo.png" alt="Austin Okechukwu logo" width={44} height={44} />
@@ -125,6 +125,7 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
     </div>
   </div>
 </header>
+<div className="h-[77px]" />
 
       <section className="max-w-3xl mx-auto px-5 pt-16 pb-12 border-b border-black/10 dark:border-white/10">
         <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>
