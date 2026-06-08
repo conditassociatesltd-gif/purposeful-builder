@@ -5,27 +5,32 @@ import { X, ArrowRight, BookOpen, Bell } from "lucide-react";
 
 const formedInSilenceExcerpt = (
   <div className="space-y-4 text-lg leading-relaxed opacity-90 font-serif">
-    <p>Some of the most important things that shape us are the things no one sees.</p>
-    <p>I lost my father when I was very young, at an age when I didn't understand what the impact of his death would mean for the rest of my life. The loss brought confusion and pain that lingered quietly. I had a beautiful relationship with him while he lived, and the moments we shared are still vivid. They are the reason why I sought and was able to cultivate close relationships with male authorities in my life. Even though his life was short-lived, he sowed a seed that needed the right environment to flourish.</p>
-    <p>His presence offered comfort and joy, but his absence created an emptiness and a longing that stayed with me.</p>
-    <p>There were patterns, reactions, emotions, and behaviours I had growing up that I couldn't trace back to their source until I began studying the impact of fatherhood on boys. Realising these were linked to my father's absence was emotionally intense and sometimes overwhelming. That study was the start of my healing process.</p>
-    <p>My discovery centres on how invisible patterns shape boys, especially through fatherhood.</p>
-    <p>A boy is always shaped, intentionally or not. An intentional father becomes the primary voice in his formation. He sows values, identity, and a sense of belonging in the boy. In the absence of this, whether through his death, divorce, emotional withdrawal, migration, or conflict-related issues, other influences fill the void. There is no vacuum on Earth. The problem with this formation is that it's silent and doesn't announce itself until it's too late.</p>
-    <p>From an architectural point of view, every house has a design. If the design is not properly followed and executed, the outcome will differ and sometimes cost more to fix. When fathers are distant, boys absorb whatever is close to them, often unintentionally. Often, these influences come from unfathered men who are poor role models.</p>
-    <p>Beyond immediate influences is social media, which makes it easy for boys to pick up twisted identities for validation. These sources also contribute to their formation. That’s why many of them are at risk of early exposure to sexually related content, substances, or relationships they are not emotionally equipped to handle. This is because the boy is seeking connection, significance, and a sense of belonging. If a boy is not properly loved by his father, he will find it elsewhere.</p>
-    <p>This boy becomes a man without knowing what his environment has planted in him. His reactions, fears, and patterns in life, relationships, business, and leadership management, even though they feel natural, were seeds planted while he slept.</p>
-    <p>I was raised in Nigeria, so my experiences are deeply rooted here, but I’ve observed this pattern to be common across Africa and even in the USA. The USA has more documented studies on both the physical and emotional absence of fathers. But despite the difference in demographics, the effect is still the same, and Nigeria has not done enough studies to describe and address the effects. In Nigeria, the conversation about fatherlessness is more about physical absence than about emotional absence. A significant number of boys grew up in homes where both parents were physically present. So contextually, over 70% of children can’t be fatherless. Regardless, many of these boys grow up deprived of their father's love, meaning a man can be physically present yet emotionally disconnected.</p>
-    <p>Obvious fatherlessness is the empty chair at dinner, missing out on games, PTA meetings, church gatherings, etc., which is often compensated for by the mother. The type that's not easily seen is the one where the father sleeps under the roof, provides financially, protects and disciplines the children, but is never emotionally connected to them. He has never asked his son how he's feeling. He believes the above-mentioned duties are enough to shape his son.</p>
-    <p>Most of the time, these emotionally starved boys can't even grieve the absence of their fathers because they are constantly reminded by their mothers that they are lucky to have a father, citing homes where fathers are absent. It becomes a case of half a loaf being better than none. The boy feels pressured to suppress his pain, so he buries his emotional wounds with gratitude, which leaves them unresolved.</p>
-    <p>A boy needs more than physical provision. He needs a spiritual and emotional connection with his father.</p>
-    <p>The men these boys become are men I have lived among and worked with. I have observed similar patterns among them, such as approval addiction, people-pleasing, and a relentless pursuit of money, power, or fame, which provide temporary relief until they fall back into depression. They recognise a problem within their soul, but since they cannot name it, they seek new distractions.</p>
-    <p>This is not to say that men who grew up with present and involved fathers don't have this struggle, but it's more concentrated and visible among the unfathered sons.</p>
-    <p>Exploring the parable of the sower narrated by Jesus, you'd notice that boys are fertile ground and will mostly grow into the seeds sown in them. So while intentional fathers sowed the right seeds, the unintentional ones, while they slept, left the enemy to sow weeds into their children. At the end of the day, the outcomes become different.</p>
-    <p>But this is not the end because weeds can be uprooted and good seeds planted.</p>
-    <p>Once you've discovered that something was missing in your upbringing, and you realise how deeply it shaped you, that's where healing starts. Naming a wound is not the same as healing, but admitting it lets you confront the pain and confusion you've carried. This will be hard for some people because opening a wound can be uncomfortable and demands vulnerability. Sometimes you might have to sit with emotions you've been avoiding for years, travel back to see the boy who was deprived of love, not to live in the past but to acknowledge and empathise with him. Then, you can begin to build yourself into the man you want.</p>
-    <p>This does not mean the past will disappear; it means you are choosing to embrace and build a wholesome future. I have seen unfathered men become better fathers. I have witnessed men who were hurt embrace healing and choose kindness rather than continue the cycle of hurting others. A healed man can offer what was missing to him and leave a good inheritance for the next generation.</p>
-    <p>This book aims to help men see the silent things that formed them, how they keep influencing how we think, love, and lead our lives, and how to navigate them and seek healing.</p>
-    <p>My hope is that men who are reading this, whether you are recognising yourself in these pages or striving to become better than the patterns you've inherited, will recognise the silent formation and seek healing. This is because your healing is important in shaping the next generation after you. The next generation should inherit something better than you did.</p>
+    <p className="text-2xl font-serif opacity-60 italic">Some of the most important things that shape us are the things no one sees.</p>
+    <p>I lost my father when I was very young, at an age when I didn't understand what his death would mean for the rest of my life. His presence had offered comfort and joy. His absence created an emptiness and a longing that stayed with me, quietly shaping patterns, reactions, and emotions I couldn't trace back to their source for years.</p>
+    <p>The realisation that my father's absence had silently formed who I was becoming—was the start of my healing process. And it became the foundation of this book.</p>
+    <p>A boy is always being shaped, whether intentionally or not. An intentional father becomes the primary voice in his son's formation. He sows values, identity, and a sense of belonging. But when a father is absent, through death, divorce, emotional withdrawal, migration, or conflict, other influences rush in to fill the void. There is no vacuum on Earth. The problem is that this formation is silent. It doesn't announce itself until it's too late.</p>
+    <p>Think of it this way: every house has a design. If the design is not properly followed, the outcome will differ and sometimes cost far more to fix. When fathers are distant, boys absorb whatever is closest to them, often from unfathered men who are themselves poor role models. Social media fills the remaining gaps, offering twisted identities in exchange for validation. The boy is simply seeking connection, significance, and belonging. If he doesn't find it from his father, he will find it elsewhere.</p>
+    <p>This boy grows into a man without knowing what his environment planted in him. His reactions, fears, and patterns in relationships, business, and leadership, even though they feel natural, were seeds sown while he slept.</p>
+    <p>But here is the part that is often missed: fatherlessness is not always an empty chair at dinner. In Nigeria, where I was raised, over 70% of children grow up with both parents physically present. Yet many of these boys are still deprived of their father's love. A man can sleep under the same roof, provide financially, and discipline his children, yet never once ask his son how he is feeling. That is the invisible fatherlessness this book addresses.</p>
+    <p>The men these boys become are men I have lived among and worked with. I have observed the same patterns repeating: approval addiction, people-pleasing, and a relentless pursuit of money, power, or fame that provides temporary relief before the depression returns. They recognise a problem within their soul, but since they cannot name it, they seek new distractions.</p>
+    <p><strong>Formed in Silence</strong> is written for these men. It aims to help you see the silent things that formed you, understand how they continue to influence how you think, love, and lead, and show you how to navigate them and seek healing. Because weeds can be uprooted and good seeds planted in their place.</p>
+    <p>A healed man can offer what was missing to him and leave a good inheritance for the next generation.</p>
+    <p className="text-xl font-serif italic opacity-70">The next generation should inherit something better than you did.</p>
+  </div>
+);
+
+const boyAndAddictionsExcerpt = (
+  <div className="space-y-4 text-lg leading-relaxed opacity-90 font-serif">
+    <p className="text-2xl font-serif opacity-60 italic">Every addiction has a first moment. A spark no one sees.</p>
+    <p>A boy walks home from one of the best schools in southeastern Nigeria. Thirty minutes under the hot sun, every day. His life is built on discipline, education, and pride. But one sunny afternoon, he comes home to find something he wasn't looking for.</p>
+    <p>There was electricity that day, a rare occurence in those days. A CD was lying in the living room. Curiosity did the rest. In the minutes that followed, something shifted inside that boy. Something he couldn't name, undo, or talk about.</p>
+    <p>That boy was me.</p>
+    <p>What started as an accidental encounter with a pornographic disc became a quiet, consuming obsession. I began timing my life around it, calculating when my brothers would be away, living a double life that drained me in ways I didn't yet understand. When the source was taken from me, the hunger didn't stop. It evolved. My eyes began searching for what my mind craved, and the world seemed to show me exactly where to find it.</p>
+    <p>Over time, the addiction spilled beyond pornography. There was smoking. There was alcohol. Each vice opened the door to the next, and none of them announced themselves. They crept in quietly, disguised as curiosity, boredom, or just something to do when no one was watching.</p>
+    <p>Since those years, I have spoken with countless boys and men who share the same story. The details change, sometimes it starts with a friend's phone, a social media link, or a dare behind the school building, but the pattern is always the same. A first contact. A secret. A cycle that feels impossible to break.</p>
+    <p><strong>The Boy and Addictions</strong> is not a lecture or a sermon. It is one boy talking honestly to another about the things we were too ashamed to say out loud. This book walks through the full journey: how addiction begins, how it rewires what you see and desire, how it spills into other areas of your life, and most importantly, how you can break free and stay free.</p>
+    <p>If you are a boy carrying a secret that you've never told anyone, this book is for you. If you are a parent, mentor, or pastor wondering why the boys around you are struggling in silence, this book will open your eyes.</p>
+    <p className="text-xl font-serif italic opacity-70">Because the things that trap us in the dark can only be defeated when we drag them into the light.</p>
   </div>
 );
 
@@ -58,7 +63,7 @@ export default function BooksSection() {
               </div>
               <h3 className="font-serif text-3xl md:text-4xl mb-4 group-hover:text-[#c4572a] transition-colors">Formed in Silence</h3>
               <p className="opacity-75 leading-relaxed mb-8 h-20">
-                A reflection on the unseen seasons that shape a man long before the world sees him.
+                How invisible patterns—rooted in fatherhood, absence, and unspoken wounds—silently shape boys into the men they become.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button 
@@ -88,7 +93,7 @@ export default function BooksSection() {
               </div>
               <h3 className="font-serif text-3xl md:text-4xl mb-4 group-hover:text-[#c4572a] transition-colors">The Boy and Addictions</h3>
               <p className="opacity-75 leading-relaxed mb-8 h-20">
-                Exploring the wounds, habits, and hidden battles that shape boys before they become men.
+                An honest conversation about the silent struggles boys carry—pornography, substances, and the cycle of addiction—and the path to freedom.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button 
@@ -170,13 +175,10 @@ export default function BooksSection() {
                 </div>
               )}
 
-              {/* Addictions Excerpt Placeholder */}
+              {/* The Boy and Addictions — About the Book */}
               {modalState === 'excerpt-addictions' && (
-                <div className="text-center py-16">
-                  <h4 className="font-serif text-3xl mb-4 text-[#c4572a]">Still being written</h4>
-                  <p className="text-lg opacity-70 max-w-md mx-auto leading-relaxed">
-                    I am currently forming the thoughts and structuring the chapters for this book. Excerpts will be shared here soon.
-                  </p>
+                <div className="prose max-w-none">
+                  {boyAndAddictionsExcerpt}
                 </div>
               )}
 
