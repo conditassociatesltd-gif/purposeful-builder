@@ -58,6 +58,13 @@ export default function BooksSection() {
               <BookOpen size={120} />
             </div>
             <div className="relative z-10">
+              <div className="flex justify-center mb-8">
+                <img 
+                  src="/formed-in-silence-cover.png" 
+                  alt="Formed in Silence book cover" 
+                  className="w-48 md:w-56 rounded shadow-xl group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
               <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-6 bg-black/10 dark:bg-white/10">
                 Work In Progress
               </div>
@@ -88,6 +95,13 @@ export default function BooksSection() {
               <BookOpen size={120} />
             </div>
             <div className="relative z-10">
+              <div className="flex justify-center mb-8">
+                <img 
+                  src="/boy-and-addictions-cover.png" 
+                  alt="The Boy and Addictions book cover" 
+                  className="w-48 md:w-56 rounded shadow-xl group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
               <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-6 bg-black/10 dark:bg-white/10">
                 Upcoming
               </div>
