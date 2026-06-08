@@ -7,7 +7,7 @@ const formedInSilenceExcerpt = (
   <div className="space-y-4 text-lg leading-relaxed opacity-90 font-serif">
     <p className="text-2xl font-serif opacity-60 italic">Some of the most important things that shape us are the things no one sees.</p>
     <p>I lost my father when I was very young, at an age when I didn't understand what his death would mean for the rest of my life. His presence had offered comfort and joy. His absence created an emptiness and a longing that stayed with me, quietly shaping patterns, reactions, and emotions I couldn't trace back to their source for years.</p>
-    <p>The realisation that my father's absence had silently formed who I was becoming—was the start of my healing process. And it became the foundation of this book.</p>
+    <p>The realisation that my father's absence had silently formed who I was becoming, was the start of my healing process. And it became the foundation of this book.</p>
     <p>A boy is always being shaped, whether intentionally or not. An intentional father becomes the primary voice in his son's formation. He sows values, identity, and a sense of belonging. But when a father is absent, through death, divorce, emotional withdrawal, migration, or conflict, other influences rush in to fill the void. There is no vacuum on Earth. The problem is that this formation is silent. It doesn't announce itself until it's too late.</p>
     <p>Think of it this way: every house has a design. If the design is not properly followed, the outcome will differ and sometimes cost far more to fix. When fathers are distant, boys absorb whatever is closest to them, often from unfathered men who are themselves poor role models. Social media fills the remaining gaps, offering twisted identities in exchange for validation. The boy is simply seeking connection, significance, and belonging. If he doesn't find it from his father, he will find it elsewhere.</p>
     <p>This boy grows into a man without knowing what his environment planted in him. His reactions, fears, and patterns in relationships, business, and leadership, even though they feel natural, were seeds sown while he slept.</p>
@@ -63,7 +63,7 @@ export default function BooksSection() {
               </div>
               <h3 className="font-serif text-3xl md:text-4xl mb-4 group-hover:text-[#c4572a] transition-colors">Formed in Silence</h3>
               <p className="opacity-75 leading-relaxed mb-8 h-20">
-                How invisible patterns—rooted in fatherhood, absence, and unspoken wounds—silently shape boys into the men they become.
+                How invisible patterns rooted in fatherhood, absence, and unspoken wounds silently shape boys into the men they become.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button 
@@ -93,14 +93,14 @@ export default function BooksSection() {
               </div>
               <h3 className="font-serif text-3xl md:text-4xl mb-4 group-hover:text-[#c4572a] transition-colors">The Boy and Addictions</h3>
               <p className="opacity-75 leading-relaxed mb-8 h-20">
-                An honest conversation about the silent struggles boys carry—pornography, substances, and the cycle of addiction—and the path to freedom.
+                An honest conversation about the silent struggles boys carry: pornography, substances, and the cycle of addiction and the path to freedom.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button 
                   onClick={() => setModalState('excerpt-addictions')}
                   className="px-6 py-3 text-xs tracking-[0.2em] uppercase border border-black/20 dark:border-white/20 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
                 >
-                  Learn More
+                  Read Excerpt
                 </button>
                 <button 
                   onClick={() => setModalState('notify-addictions')}
