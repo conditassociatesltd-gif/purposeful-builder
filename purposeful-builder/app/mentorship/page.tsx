@@ -11,10 +11,10 @@ export default function MentorshipPage() {
       <section className="relative overflow-hidden flex items-center" style={{ minHeight: "560px", background: "#fff" }}>
         
         <Image
-          src="/images/mentorship_hero_banner.png"
+          src="/images/mentorship_hero_final.png"
           alt="Two Nigerian boys — future leaders"
           fill
-          className="object-cover object-top z-0"
+          className="object-cover object-right-top z-0"
           priority
         />
 
