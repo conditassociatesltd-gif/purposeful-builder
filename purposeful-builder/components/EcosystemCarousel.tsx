@@ -72,7 +72,7 @@ export default function EcosystemCarousel() {
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {/* Card 1 */}
-          <Link href="/building#books" className="snap-start shrink-0 w-[300px] md:w-[350px] bg-white rounded-2xl p-6 text-black group relative hover:-translate-y-2 transition-transform duration-300">
+          <Link href="/book" className="snap-start shrink-0 w-[300px] md:w-[350px] bg-white rounded-2xl p-6 text-black group relative hover:-translate-y-2 transition-transform duration-300">
             <div className="inline-block px-3 py-1 rounded-full border border-black/10 text-[10px] tracking-widest uppercase font-bold mb-4">
               Books
             </div>
@@ -89,7 +89,7 @@ export default function EcosystemCarousel() {
           </Link>
 
           {/* Card 2 */}
-          <Link href="/building#mentorship" className="snap-start shrink-0 w-[300px] md:w-[350px] bg-[#1a1f24] rounded-2xl p-6 text-white group relative hover:-translate-y-2 transition-transform duration-300">
+          <Link href="/mentorship" className="snap-start shrink-0 w-[300px] md:w-[350px] bg-[#1a1f24] rounded-2xl p-6 text-white group relative hover:-translate-y-2 transition-transform duration-300">
             <div className="inline-block px-3 py-1 rounded-full border border-white/20 text-[10px] tracking-widest uppercase mb-4 text-white/70">
               Mentorship
             </div>
@@ -106,7 +106,7 @@ export default function EcosystemCarousel() {
           </Link>
 
           {/* Card 3 */}
-          <Link href="/building#associates" className="snap-start shrink-0 w-[300px] md:w-[350px] bg-white rounded-2xl p-6 text-black group relative hover:-translate-y-2 transition-transform duration-300">
+          <Link href="/company" className="snap-start shrink-0 w-[300px] md:w-[350px] bg-white rounded-2xl p-6 text-black group relative hover:-translate-y-2 transition-transform duration-300">
             <div className="inline-block px-3 py-1 rounded-full border border-black/10 text-[10px] tracking-widest uppercase font-bold mb-4">
               Construction
             </div>
@@ -123,7 +123,7 @@ export default function EcosystemCarousel() {
           </Link>
 
           {/* Card 4 */}
-          <Link href="/building#homes" className="snap-start shrink-0 w-[300px] md:w-[350px] bg-white rounded-2xl p-6 text-black group relative hover:-translate-y-2 transition-transform duration-300">
+          <Link href="/company" className="snap-start shrink-0 w-[300px] md:w-[350px] bg-white rounded-2xl p-6 text-black group relative hover:-translate-y-2 transition-transform duration-300">
             <div className="inline-block px-3 py-1 rounded-full border border-black/10 text-[10px] tracking-widest uppercase font-bold mb-4">
               Real Estate
             </div>
