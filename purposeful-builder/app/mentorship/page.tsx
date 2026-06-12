@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BookOpen, Shield, Heart, Users } from "lucide-react";
+import { ArrowRight, ArrowDown, BookOpen, Shield, Heart, Users } from "lucide-react";
 
 export default function MentorshipPage() {
   return (
@@ -42,14 +42,20 @@ export default function MentorshipPage() {
               When a boy constantly hears that he is less valuable because of his state, tribe, family background, or social status, those words settle deeper than we imagine.
               We are building a healthy community where boys can speak honestly and realize they are not alone. They need places where they can ask questions, learn from one another, and be heard.
             </p>
-            <div className="flex items-center gap-4 font-bold uppercase tracking-widest mt-10 cursor-pointer hover:opacity-80 transition-opacity" style={{ color: "#cba37c" }}>
-              <span>View our mentorship plan</span>
-              <ArrowRight size={24} />
+            <div className="flex flex-col gap-4 mt-10">
+              <div className="flex items-center gap-4 font-bold uppercase tracking-widest cursor-pointer hover:opacity-80 transition-opacity" style={{ color: "#cba37c" }}>
+                <span>View our mentorship plan</span>
+                <ArrowRight size={24} />
+              </div>
+              <a href="#events" className="flex items-center gap-4 font-bold uppercase tracking-widest cursor-pointer hover:opacity-80 transition-opacity text-white">
+                <span>View past events</span>
+                <ArrowDown size={24} />
+              </a>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="aspect-square bg-white/10 relative overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
-              <Image src="/images/card-mentorship.png" fill className="object-cover" alt="Mentorship" />
+              <Image src="/images/session-1.jpg" fill className="object-cover" alt="Teaching in Classroom" />
             </div>
             <div className="aspect-square bg-white/5 relative overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
               <Image src="/images/hero-bg.jpg" fill className="object-cover" alt="Boys" />
@@ -74,6 +80,31 @@ export default function MentorshipPage() {
           </div>
         </div>
       </div>
+
+      {/* Events Section */}
+      <section id="events" className="py-24 px-5 border-b border-black/10" style={{ background: "var(--parchment)" }}>
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-sans text-4xl md:text-5xl font-bold uppercase leading-tight mb-12 text-center text-black">
+            Past Events
+          </h2>
+          <div className="grid md:grid-cols-2 gap-10">
+            <div className="group cursor-pointer">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+                <Image src="/images/session-1.jpg" fill className="object-cover group-hover:scale-105 transition-transform duration-700" alt="First Event" />
+              </div>
+              <h3 className="font-bold uppercase tracking-widest mb-3 text-black">First Session</h3>
+              <p className="text-sm opacity-70 leading-relaxed text-black">Mentorship session at People's Comprehensive Academy, Nyanya/Mararaba.</p>
+            </div>
+            <div className="group cursor-pointer">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+                <Image src="/images/session-2.jpg" fill className="object-cover group-hover:scale-105 transition-transform duration-700" alt="Second Event" />
+              </div>
+              <h3 className="font-bold uppercase tracking-widest mb-3 text-black">Second Session</h3>
+              <p className="text-sm opacity-70 leading-relaxed text-black">Continuing the conversation on purpose, identity, and the responsibilities of a man.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Light Section */}
       <section className="bg-white py-24 px-5">
@@ -111,22 +142,22 @@ export default function MentorshipPage() {
         <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-10">
           <div>
             <h3 className="font-bold uppercase tracking-widest mb-6">Character & Integrity</h3>
-            <p className="text-sm opacity-50 leading-relaxed mb-6">Instilling foundational values that outlast temporary success or material wealth.</p>
+            <p className="text-sm opacity-70 leading-relaxed mb-6">A boy cannot lead others if he cannot lead himself. We anchor their character in biblical truth, teaching them that true integrity means living out God's standard even when no one is watching.</p>
             <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-white/80 hover:text-white cursor-pointer transition-colors">READ MORE &gt;</span>
           </div>
           <div>
             <h3 className="font-bold uppercase tracking-widest mb-6">Emotional Intelligence</h3>
-            <p className="text-sm opacity-50 leading-relaxed mb-6">Equipping young men with the tools to process emotions and avoid transferred aggression.</p>
+            <p className="text-sm opacity-70 leading-relaxed mb-6">The world tells men to hide their pain. We teach boys how to process their emotions healthily before God, equipping them to handle life's pressures without breaking.</p>
             <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-white/80 hover:text-white cursor-pointer transition-colors">READ MORE &gt;</span>
           </div>
           <div>
             <h3 className="font-bold uppercase tracking-widest mb-6">Career Guidance</h3>
-            <p className="text-sm opacity-50 leading-relaxed mb-6">Helping boys discover their purpose, refine their skills, and prepare for the marketplace.</p>
+            <p className="text-sm opacity-70 leading-relaxed mb-6">Work is a divine assignment. We help boys discover their God-given gifts, refine their skills, and prepare for the marketplace to build with a vision that outlives them.</p>
             <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-white/80 hover:text-white cursor-pointer transition-colors">READ MORE &gt;</span>
           </div>
           <div>
             <h3 className="font-bold uppercase tracking-widest mb-6">Faith & Purpose</h3>
-            <p className="text-sm opacity-50 leading-relaxed mb-6">Connecting young men to a higher calling, anchoring their identity in something eternal.</p>
+            <p className="text-sm opacity-70 leading-relaxed mb-6">At the core of every boy's identity is the One who created him. We anchor their self-worth not in society's metrics, but in God. When a boy knows whose he is, he knows who he is.</p>
             <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-white/80 hover:text-white cursor-pointer transition-colors">READ MORE &gt;</span>
           </div>
         </div>
