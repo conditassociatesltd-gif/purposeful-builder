@@ -8,23 +8,22 @@ export default function MentorshipPage() {
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 px-5 relative overflow-hidden min-h-[500px]">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center relative z-10">
-          <div>
+      <section className="pb-0 pt-20 px-5 relative overflow-hidden" style={{ minHeight: "560px" }}>
+        <div className="max-w-6xl mx-auto relative z-10" style={{ minHeight: "560px" }}>
+          <div className="max-w-xl pt-8">
             <h1 className="font-serif text-5xl md:text-7xl font-black uppercase leading-[1.1] text-black">
               Teaching boys <span className="text-[#cba37c]">responsibility</span>, identity, and safe masculinity.
             </h1>
           </div>
-          <div className="relative h-[450px] w-full">
-            <Image 
-              src="/images/mentorship_boys.png" 
-              fill 
-              className="object-contain object-right mix-blend-multiply" 
-              alt="Boys mentorship" 
-              priority 
-            />
-          </div>
         </div>
+        <Image
+          src="/images/mentorship_boys.png"
+          width={560}
+          height={680}
+          className="absolute right-0 bottom-0 mix-blend-multiply object-contain z-0 pointer-events-none"
+          alt="Boys mentorship"
+          priority
+        />
       </section>
 
       {/* Banner 1 */}
