@@ -12,7 +12,8 @@ export default function MentorshipPage() {
         <Image
           src="/images/mentorship_hero_banner.png"
           fill
-          className="object-cover object-right"
+          className="object-cover"
+          style={{ objectPosition: "right top" }}
           alt="Two Nigerian boys — future leaders"
           priority
         />
