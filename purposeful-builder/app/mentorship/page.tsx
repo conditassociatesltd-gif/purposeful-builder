@@ -47,10 +47,10 @@ export default function MentorshipPage() {
                 <span>View our mentorship plan</span>
                 <ArrowRight size={24} />
               </div>
-              <a href="#events" className="flex items-center gap-4 font-bold uppercase tracking-widest cursor-pointer hover:opacity-80 transition-opacity text-white">
+              <Link href="/mentorship/events" className="flex items-center gap-4 font-bold uppercase tracking-widest cursor-pointer hover:opacity-80 transition-opacity text-white">
                 <span>View past events</span>
-                <ArrowDown size={24} />
-              </a>
+                <ArrowRight size={24} />
+              </Link>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -80,31 +80,6 @@ export default function MentorshipPage() {
           </div>
         </div>
       </div>
-
-      {/* Events Section */}
-      <section id="events" className="py-24 px-5 border-b border-black/10" style={{ background: "var(--parchment)" }}>
-        <div className="max-w-6xl mx-auto">
-          <h2 className="font-sans text-4xl md:text-5xl font-bold uppercase leading-tight mb-12 text-center text-black">
-            Past Events
-          </h2>
-          <div className="grid md:grid-cols-2 gap-10">
-            <div className="group cursor-pointer">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
-                <Image src="/images/session-1.jpg" fill className="object-cover group-hover:scale-105 transition-transform duration-700" alt="First Event" />
-              </div>
-              <h3 className="font-bold uppercase tracking-widest mb-3 text-black">First Session</h3>
-              <p className="text-sm opacity-70 leading-relaxed text-black">Mentorship session at People's Comprehensive Academy, Nyanya/Mararaba.</p>
-            </div>
-            <div className="group cursor-pointer">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
-                <Image src="/images/session-2.jpg" fill className="object-cover group-hover:scale-105 transition-transform duration-700" alt="Second Event" />
-              </div>
-              <h3 className="font-bold uppercase tracking-widest mb-3 text-black">Second Session</h3>
-              <p className="text-sm opacity-70 leading-relaxed text-black">Continuing the conversation on purpose, identity, and the responsibilities of a man.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Light Section */}
       <section className="bg-white py-24 px-5">
