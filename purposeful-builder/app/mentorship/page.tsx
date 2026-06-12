@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowDown, BookOpen, Shield, Heart, Users } from "lucide-react";
+import MentorshipForm from "@/components/MentorshipForm";
 
 export default function MentorshipPage() {
   return (
@@ -14,8 +15,14 @@ export default function MentorshipPage() {
               Teaching boys <span className="text-[#cba37c]">responsibility</span>, identity, and safe masculinity.
             </h1>
           </div>
-          <div className="relative h-[400px] w-full">
-            <Image src="/images/mentorship_hero.png" fill className="object-contain object-right" alt="Boys mentorship" priority />
+          <div className="relative h-[450px] w-full">
+            <Image 
+              src="/images/mentorship_hero_nobg.png" 
+              fill 
+              className="object-contain object-right mix-blend-multiply" 
+              alt="Boys mentorship" 
+              priority 
+            />
           </div>
         </div>
       </section>
@@ -24,10 +31,10 @@ export default function MentorshipPage() {
       <div className="bg-white py-6 px-5 border-y border-black/10">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between text-xl font-bold uppercase tracking-widest" style={{ color: "var(--rust-deep)" }}>
           <p>Join Our Campaign: Mentoring 500 boys</p>
-          <div className="flex items-center gap-4 mt-4 sm:mt-0 cursor-pointer hover:opacity-70 transition-opacity">
-            <span className="text-[#cba37c]">PARTNER NOW</span>
+          <a href="#join-form" className="flex items-center gap-4 mt-4 sm:mt-0 cursor-pointer hover:opacity-70 transition-opacity">
+            <span className="text-[#cba37c]">JOIN PROGRAM</span>
             <ArrowRight className="text-black" />
-          </div>
+          </a>
         </div>
       </div>
 
@@ -43,10 +50,10 @@ export default function MentorshipPage() {
               We are building a healthy community where boys can speak honestly and realize they are not alone. They need places where they can ask questions, learn from one another, and be heard.
             </p>
             <div className="flex flex-col gap-4 mt-10">
-              <div className="flex items-center gap-4 font-bold uppercase tracking-widest cursor-pointer hover:opacity-80 transition-opacity" style={{ color: "#cba37c" }}>
-                <span>View our mentorship plan</span>
+              <a href="#join-form" className="flex items-center gap-4 font-bold uppercase tracking-widest cursor-pointer hover:opacity-80 transition-opacity" style={{ color: "#cba37c" }}>
+                <span>Join our mentorship program</span>
                 <ArrowRight size={24} />
-              </div>
+              </a>
               <Link href="/mentorship/events" className="flex items-center gap-4 font-bold uppercase tracking-widest cursor-pointer hover:opacity-80 transition-opacity text-white">
                 <span>View past events</span>
                 <ArrowRight size={24} />
@@ -64,7 +71,7 @@ export default function MentorshipPage() {
               <Image src="/images/featured-writing-bg.png" fill className="object-cover" alt="Activity" />
             </div>
             <div className="aspect-square bg-white/5 relative overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
-              <Image src="/images/mentorship_hero.png" fill className="object-cover" alt="Portrait" />
+              <Image src="/images/mentorship_hero.png" fill className="object-cover object-top" alt="Portrait" />
             </div>
           </div>
         </div>
@@ -74,10 +81,10 @@ export default function MentorshipPage() {
       <div className="py-6 px-5 border-y border-white/10" style={{ background: "#1a1f24" }}>
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between text-xl font-bold uppercase tracking-widest text-white">
           <p>We need mentors and partners in Nigeria</p>
-          <div className="flex items-center gap-4 mt-4 sm:mt-0 cursor-pointer hover:opacity-70 transition-opacity">
-            <span>PARTNER NOW</span>
+          <a href="#join-form" className="flex items-center gap-4 mt-4 sm:mt-0 cursor-pointer hover:opacity-70 transition-opacity">
+            <span>JOIN PROGRAM</span>
             <ArrowRight className="text-white" />
-          </div>
+          </a>
         </div>
       </div>
 
@@ -112,8 +119,19 @@ export default function MentorshipPage() {
         </div>
       </section>
 
+      {/* Registration Form */}
+      <section id="join-form" className="py-24 px-5 border-t border-black/10">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10">
+            <h3 className="font-serif text-4xl md:text-5xl mb-4">Join the Mentorship Community</h3>
+            <p className="opacity-70 text-lg max-w-xl mx-auto">Register below to join future programs and gain access to the community.</p>
+          </div>
+          <MentorshipForm />
+        </div>
+      </section>
+
       {/* Footer Dark Section */}
-      <section className="text-white py-20 px-5 border-b border-white/10" style={{ background: "#121310" }}>
+      <section className="text-white py-20 px-5 border-y border-white/10" style={{ background: "#121310" }}>
         <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-10">
           <div>
             <h3 className="font-bold uppercase tracking-widest mb-6">Character & Integrity</h3>
