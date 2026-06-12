@@ -17,7 +17,7 @@ export default function MentorshipPage() {
           </div>
           <div className="relative h-[450px] w-full">
             <Image 
-              src="/images/mentorship_hero_nobg.png" 
+              src="/images/mentorship_boys.png" 
               fill 
               className="object-contain object-right mix-blend-multiply" 
               alt="Boys mentorship" 
@@ -136,22 +136,22 @@ export default function MentorshipPage() {
           <div>
             <h3 className="font-bold uppercase tracking-widest mb-6">Character & Integrity</h3>
             <p className="text-sm opacity-70 leading-relaxed mb-6">A boy cannot lead others if he cannot lead himself. We anchor their character in biblical truth, teaching them that true integrity means living out God's standard even when no one is watching.</p>
-            <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-white/80 hover:text-white cursor-pointer transition-colors">READ MORE &gt;</span>
+            <Link href="/mentorship/character-and-integrity" className="text-[10px] tracking-[0.2em] uppercase font-bold text-white/80 hover:text-white transition-colors">READ MORE &gt;</Link>
           </div>
           <div>
             <h3 className="font-bold uppercase tracking-widest mb-6">Emotional Intelligence</h3>
             <p className="text-sm opacity-70 leading-relaxed mb-6">The world tells men to hide their pain. We teach boys how to process their emotions healthily before God, equipping them to handle life's pressures without breaking.</p>
-            <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-white/80 hover:text-white cursor-pointer transition-colors">READ MORE &gt;</span>
+            <Link href="/mentorship/emotional-intelligence" className="text-[10px] tracking-[0.2em] uppercase font-bold text-white/80 hover:text-white transition-colors">READ MORE &gt;</Link>
           </div>
           <div>
             <h3 className="font-bold uppercase tracking-widest mb-6">Career Guidance</h3>
             <p className="text-sm opacity-70 leading-relaxed mb-6">Work is a divine assignment. We help boys discover their God-given gifts, refine their skills, and prepare for the marketplace to build with a vision that outlives them.</p>
-            <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-white/80 hover:text-white cursor-pointer transition-colors">READ MORE &gt;</span>
+            <Link href="/mentorship/career-guidance" className="text-[10px] tracking-[0.2em] uppercase font-bold text-white/80 hover:text-white transition-colors">READ MORE &gt;</Link>
           </div>
           <div>
             <h3 className="font-bold uppercase tracking-widest mb-6">Faith & Purpose</h3>
             <p className="text-sm opacity-70 leading-relaxed mb-6">At the core of every boy's identity is the One who created him. We anchor their self-worth not in society's metrics, but in God. When a boy knows whose he is, he knows who he is.</p>
-            <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-white/80 hover:text-white cursor-pointer transition-colors">READ MORE &gt;</span>
+            <Link href="/mentorship/faith-and-purpose" className="text-[10px] tracking-[0.2em] uppercase font-bold text-white/80 hover:text-white transition-colors">READ MORE &gt;</Link>
           </div>
         </div>
       </section>
