@@ -19,57 +19,45 @@ export default function CareerGuidancePage() {
 
         <article className="essay-content prose">
           <p>
-            I used to think work was something you endured.
+            I began to work very early in my life, especially after the death of my father.
           </p>
           <p>
-            Growing up, the adults around me talked about jobs the way they talked about rainy seasons — something you prepared for, survived, and waited to get through. The dream was to work hard enough that eventually you wouldn't have to. The goal of labour was the absence of labour. Rest was the reward. Work was the sentence.
+            As early as Primary Two, I found myself doing something unusual for a child my age: I started copying notes for people. And to my surprise, they would pay me for it. But the truth is, I didn't do it just for the money. I actually loved copying notes. It helped me retain information, and as a byproduct, it made my handwriting exceptionally good. 
           </p>
           <p>
-            Nobody told me that work was given to man before the fall. Before sin, before the curse, before any of the groaning that fills the world now — God placed Adam in a garden and gave him something to tend. <em>Work was the first human assignment.</em> Not a punishment. A participation. God was building, and He invited man into the building.
+            Because I loved doing it, it was effortless. It didn't feel like a burden. I was solving a problem for others, doing something I genuinely enjoyed, and being rewarded for it. 
           </p>
           <p>
-            That changed something in me when I finally understood it.
+            That early experience shaped my entire philosophy of work. It taught me that work is at its best when it comes from the inside out. You should seek to do the things you love—the things that align with your natural design—and use them to solve problems for people.
           </p>
           <p>
-            It changed how I looked at my own gifts. I had always been someone who built things — not with his hands at first, but with ideas. With words. With structure. I could look at something broken or absent and see what it could become. For a long time, I treated that like a hobby. Something I did on the side. A nice thing about me that didn't really count.
+            Unfortunately, that is not how most of us are taught to view work. Growing up, the adults around me talked about jobs as something you endured. The goal of labour was the absence of labour. You worked so you could eventually stop working. Rest was the reward. Work was the sentence.
           </p>
           <p>
-            Nobody had told me that gifts are not decorative. They are directional. The thing you do naturally that produces fruit when you apply it — that is not an accident. That is a clue. God does not waste material.
+            Nobody told me that work was given to man <em>before</em> the fall. 
           </p>
-
+          
           <blockquote>
-            Every young man carries gifts he has not yet learned to name. Part of mentorship is helping him see what is already there.
+            Work is not a punishment for sin. God placed Adam in a garden and gave him something to tend before sin ever entered the world. Work was the first human assignment.
           </blockquote>
 
           <p>
-            When we sit with boys and talk about careers, we try not to do what most career counselling does — which is look at the economy and work backwards. "Here are the growing industries. Here are the safe paths. Here is the checklist." That is not useless. But it is incomplete. Because a boy who builds a career on economic trends without knowing his own design will one day be successful at something that slowly empties him.
+            God Himself is still actively working. He is a builder, and He invited man to participate in that building. That changes everything. It means we don't just work to get rest; we work because it is in our nature to create, to order, and to solve problems.
           </p>
           <p>
-            We start from the inside. What do you love to do so much that you lose track of time doing it? What problem in the world makes you angry? What do people keep coming to you for, even when you haven't offered? Those questions are not soft questions. They are some of the most practically useful questions a young man can sit with.
+            This is what every young boy needs to know: a man is designed to work. But that work should not be a lifelong prison sentence doing something you hate. It should come from the inside out. It starts with knowing who you are, recognizing what you love doing, and finding the specific problems you are supposed to solve in the world.
           </p>
           <p>
-            Then we talk about the marketplace — not as a threat, but as a field. You have something to offer. The world has needs. Your career is the point where those two things meet. But you have to know what you are carrying before you can figure out where to carry it.
+            When we sit with boys and talk about their careers, we start from the inside. What do you love doing so much that it feels easy to you? What problem in the world bothers you enough that you want to fix it? What are the things you can do even into your old age—where even if you aren't actively doing the heavy lifting, you'll happily be coaching others how to do it?
           </p>
           <p>
-            I think about the boys we have sat with who have been told, explicitly or implicitly, that their options are limited. That success looks like one thing and that thing is probably not available to someone like them. That their background determines their ceiling. Those messages do not arrive as speeches. They arrive quietly — in the schools that don't invest in them, in the adults who don't ask them about their dreams, in the environments that have given up on the future even while the future is still sitting in the room.
+            A career built on economic trends without an understanding of your own design will eventually empty you. But a career built from the inside out—doing what you love to solve real problems—is sustainable. 
           </p>
           <p>
-            One of the things mentorship does — real mentorship — is interrupt that story. It says: your beginning is not your boundary. It says: the gifts inside you are not cancelled by the difficulty around you. It says: work is not a punishment, and building is not arrogance — it is obedience.
+            The boy who can barely sit still in class but assembles things with his hands, the quiet boy who writes better than he speaks, the boy whose handwriting makes others ask him to copy their notes—they are all carrying something. 
           </p>
           <p>
-            Proverbs 22:29 asks a question that has stayed with me: <em>"Do you see a man skilled in his work? He will serve before kings; he will not serve before officials of low rank."</em> That is not elitism. That is an invitation. The man who develops what God placed in him will not be invisible. Excellence, built on divine calling, creates its own room.
-          </p>
-          <p>
-            We are trying to help boys find their calling before the world convinces them they don't have one.
-          </p>
-          <p>
-            Because they all do. Every single one of them.
-          </p>
-          <p>
-            The boy who can barely sit still in class but assembles things with his hands in a way that makes adults stop and watch. The quiet boy who writes better than he speaks and doesn't know yet that writing is one of the most powerful tools on the planet. The boy who leads his peers without trying, who other boys look to when they don't know what to do next.
-          </p>
-          <p>
-            They are carrying something. We are just trying to help them see it.
+            We are just trying to help them see it, so they can spend the rest of their lives building with it.
           </p>
         </article>
 
