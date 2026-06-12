@@ -8,22 +8,21 @@ export default function MentorshipPage() {
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
       
       {/* Hero Section */}
-      <section className="pb-0 pt-20 px-5 relative overflow-hidden" style={{ minHeight: "560px", background: "#fff" }}>
-        <div className="max-w-6xl mx-auto relative z-10" style={{ minHeight: "560px" }}>
-          <div className="max-w-xl pt-8 md:pt-20">
+      <section className="relative overflow-hidden" style={{ minHeight: "560px", background: "#fff" }}>
+        <Image
+          src="/images/mentorship_hero_banner.png"
+          fill
+          className="object-cover object-right"
+          alt="Two Nigerian boys — future leaders"
+          priority
+        />
+        <div className="max-w-6xl mx-auto px-5 relative z-10 flex items-center" style={{ minHeight: "560px" }}>
+          <div className="max-w-xl py-20">
             <h1 className="font-serif text-5xl md:text-7xl font-black uppercase leading-[1.1] text-black">
               Teaching boys <span className="text-[#cba37c]">responsibility</span>, identity, and safe masculinity.
             </h1>
           </div>
         </div>
-        <Image
-          src="/images/mentorship_hero_bw.png"
-          width={650}
-          height={560}
-          className="absolute right-0 bottom-0 object-contain z-0 pointer-events-none"
-          alt="Two Nigerian boys"
-          priority
-        />
       </section>
 
       {/* Banner 1 */}
