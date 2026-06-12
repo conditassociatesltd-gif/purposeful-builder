@@ -1,12 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ArrowDown, BookOpen, Shield, Heart, Users } from "lucide-react";
+import { ArrowRight, ArrowDown, BookOpen, Shield, Heart, Users, ArrowLeft } from "lucide-react";
 import MentorshipForm from "@/components/MentorshipForm";
 
 export default function MentorshipPage() {
   return (
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
       
+      {/* Navigation Header */}
+      <header className="absolute top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-black/10">
+        <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-4">
+            <div className="w-10 h-10 border-2 border-[#c4572a] flex items-center justify-center overflow-hidden bg-white">
+              <Image
+                src="/logo.png"
+                alt="Austin Okechukwu logo"
+                width={36}
+                height={36}
+                className="object-contain scale-110"
+              />
+            </div>
+            <span className="font-black tracking-tight uppercase text-black hidden sm:inline">Austin Okechukwu</span>
+          </Link>
+
+          <Link href="/" className="flex items-center gap-2 text-[10px] tracking-[0.2em] uppercase font-bold text-black/60 hover:text-black transition-colors">
+            <ArrowLeft size={14} /> Back to Home
+          </Link>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden flex items-center" style={{ minHeight: "560px", background: "#fff" }}>
         
