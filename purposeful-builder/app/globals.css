@@ -23,7 +23,6 @@
 html {
   scroll-behavior: smooth;
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -31,7 +30,6 @@ body {
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 img,
