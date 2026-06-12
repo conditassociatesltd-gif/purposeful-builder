@@ -19,7 +19,7 @@ export default function EmotionalIntelligencePage() {
 
         <article className="essay-content prose">
           <p>
-            The first time I remember crying voluntarily — without being beaten or disciplined — I was watching a movie.
+            The first time I remember crying voluntarily, without being beaten or disciplined, I was watching a movie.
           </p>
           <p>
             It was a deeply emotional film, and I was sitting in a neighbor's house. As the story unfolded on the screen, I wept. Almost every one of us in that room was crying. It felt natural. Over time, as I grew, I continued to express my emotions freely. If I was excited, I showed it. If I was hurt, I cried. It was simply human.
@@ -35,7 +35,7 @@ export default function EmotionalIntelligencePage() {
           </p>
           
           <blockquote>
-            If you do not express your emotions safely, you will be forced to express them through unhealthy ways — through anger, sudden outbursts, and sometimes, through violence.
+            If you do not express your emotions safely, you will be forced to express them through unhealthy ways, through anger, sudden outbursts, and sometimes, through violence.
           </blockquote>
 
           <p>
@@ -45,7 +45,7 @@ export default function EmotionalIntelligencePage() {
             But here is the truth: Men cry. Boys cry. 
           </p>
           <p>
-            If you look at the ultimate standard of manhood — if you look at the life of Jesus — you see a man who was deeply acquainted with his own emotions. The shortest verse in the Bible is also one of the most profound: <em>Jesus wept.</em> When His friend Lazarus died, the Son of God stood before the tomb and cried publicly. He didn't hide his face. He didn't feign strength. He felt the weight of the moment and He expressed it.
+            If you look at the ultimate standard of manhood, if you look at the life of Jesus, you see a man who was deeply acquainted with his own emotions. The shortest verse in the Bible is also one of the most profound: <em>Jesus wept.</em> When His friend Lazarus died, the Son of God stood before the tomb and cried publicly. He didn't hide his face. He didn't feign strength. He felt the weight of the moment and He expressed it.
           </p>
           <p>
             Tears are not a bad thing. They are not a sign of weakness. They are proof of wholeness. 

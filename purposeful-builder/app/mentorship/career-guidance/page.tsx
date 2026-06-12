@@ -28,7 +28,7 @@ export default function CareerGuidancePage() {
             Because I loved doing it, it was effortless. It didn't feel like a burden. I was solving a problem for others, doing something I genuinely enjoyed, and being rewarded for it. 
           </p>
           <p>
-            That early experience shaped my entire philosophy of work. It taught me that work is at its best when it comes from the inside out. You should seek to do the things you love—the things that align with your natural design—and use them to solve problems for people.
+            That early experience shaped my entire philosophy of work. It taught me that work is at its best when it comes from the inside out. You should seek to do the things you love, the things that align with your natural design and use them to solve problems for people.
           </p>
           <p>
             Unfortunately, that is not how most of us are taught to view work. Growing up, the adults around me talked about jobs as something you endured. The goal of labour was the absence of labour. You worked so you could eventually stop working. Rest was the reward. Work was the sentence.
@@ -48,13 +48,13 @@ export default function CareerGuidancePage() {
             This is what every young boy needs to know: a man is designed to work. But that work should not be a lifelong prison sentence doing something you hate. It should come from the inside out. It starts with knowing who you are, recognizing what you love doing, and finding the specific problems you are supposed to solve in the world.
           </p>
           <p>
-            When we sit with boys and talk about their careers, we start from the inside. What do you love doing so much that it feels easy to you? What problem in the world bothers you enough that you want to fix it? What are the things you can do even into your old age—where even if you aren't actively doing the heavy lifting, you'll happily be coaching others how to do it?
+            When we sit with boys and talk about their careers, we start from the inside. What do you love doing so much that it feels easy to you? What problem in the world bothers you enough that you want to fix it? What are the things you can do even into your old age, where even if you aren't actively doing the heavy lifting, you'll happily be coaching others how to do it?
           </p>
           <p>
-            A career built on economic trends without an understanding of your own design will eventually empty you. But a career built from the inside out—doing what you love to solve real problems—is sustainable. 
+            A career built on economic trends without an understanding of your own design will eventually empty you. But a career built from the inside out, doing what you love to solve real problems, is sustainable. 
           </p>
           <p>
-            The boy who can barely sit still in class but assembles things with his hands, the quiet boy who writes better than he speaks, the boy whose handwriting makes others ask him to copy their notes—they are all carrying something. 
+            The boy who can barely sit still in class but assembles things with his hands, the quiet boy who writes better than he speaks, the boy whose handwriting makes others ask him to copy their notes — they are all carrying talents that need expression. 
           </p>
           <p>
             We are just trying to help them see it, so they can spend the rest of their lives building with it.
