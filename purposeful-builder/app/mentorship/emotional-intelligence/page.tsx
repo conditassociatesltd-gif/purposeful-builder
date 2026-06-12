@@ -19,63 +19,42 @@ export default function EmotionalIntelligencePage() {
 
         <article className="essay-content prose">
           <p>
-            I remember the first time I saw my father cry.
+            The first time I remember crying voluntarily — without being beaten or disciplined — I was watching a movie.
           </p>
           <p>
-            I was young — maybe nine or ten. It was at a funeral. And the sight of it disturbed me in a way I could not explain. Not because it was sad. But because it was <em>him</em>. The person who was supposed to have no cracks. The person who was supposed to be unmoved by the things that moved the rest of us.
+            It was a deeply emotional film, and I was sitting in a neighbor's house. As the story unfolded on the screen, I wept. Almost every one of us in that room was crying. It felt natural. Over time, as I grew, I continued to express my emotions freely. If I was excited, I showed it. If I was hurt, I cried. It was simply human.
           </p>
           <p>
-            He was human. He grieved. Of course he did. But I had been watching men my whole life hold their faces together in a way that told me tears were weakness. So the sight of his tears made me feel two things at the same time: tenderness for him, and a kind of quiet panic. Like a rule had been broken that I did not know how to replace.
+            Then, at some point, the messaging began to change. I started hearing the unwritten rule of society: <em>Men don't cry.</em>
           </p>
           <p>
-            That is what many of us were handed. Not a map for our emotions. A lid.
+            It was strange to me because crying was something I did naturally, and something I had seen other men do. But when a boy hears that lie repeated enough times, and if he buys into that idea, something dangerous happens. He begins to withhold his emotions. He learns to build a dam.
           </p>
           <p>
-            Push it down. Control yourself. Be a man. Don't let them see you break.
+            But emotions do not disappear just because you refuse to express them. They just change form.
           </p>
-          <p>
-            And so we became very skilled at the lid. We learned to carry anger without naming it. Hurt without examining it. Loneliness without admitting it. We learned to convert almost every emotion into one of the two that society permitted us — silence or aggression.
-          </p>
-          <p>
-            And then we became men. And we married women. And we raised children. And we brought all of that unprocessed weight into every room we walked into.
-          </p>
-
+          
           <blockquote>
-            The emotions a man refuses to face do not disappear. They transfer. To his wife, his children, his colleagues, his friends. The pain goes somewhere. It always goes somewhere.
+            If you do not express your emotions safely, you will be forced to express them through unhealthy ways — through anger, sudden outbursts, and sometimes, through violence.
           </blockquote>
 
           <p>
-            I have seen this pattern repeat so many times now it almost looks inevitable. The man who never learned to grieve carries that grief into his marriage. The boy who was told to toughen up grows into the father who cannot say "I love you" to his own son without it feeling like something foreign in his mouth. The teenager who had no safe space to ask his questions becomes the adult who pretends he has no questions.
+            This is the root of so much of the pain we see in men today. We took boys who had a natural capacity to feel and taught them to suppress it. We handed them a lid instead of language. A boy who cannot name what he is feeling will express it with his fists. A man who has never been allowed to grieve will convert his unexamined pain into aggression against the people who love him most.
           </p>
           <p>
-            It does not have to go this way.
+            But here is the truth: Men cry. Boys cry. 
           </p>
           <p>
-            When we sit with boys in our mentorship sessions, one of the things we are deliberately creating is a space where they can say what they actually feel without it being used against them. That sounds simple. But for many of these boys, it is something they have never experienced. Their homes are loud but not honest. Their schools are structured but not safe. The streets have rules, but none of them allow for vulnerability.
+            If you look at the ultimate standard of manhood — if you look at the life of Jesus — you see a man who was deeply acquainted with his own emotions. The shortest verse in the Bible is also one of the most profound: <em>Jesus wept.</em> When His friend Lazarus died, the Son of God stood before the tomb and cried publicly. He didn't hide his face. He didn't feign strength. He felt the weight of the moment and He expressed it.
           </p>
           <p>
-            We try to give them language. Because one of the cruelest things we do to boys is give them big emotions and no words for them. A boy who cannot name what he is feeling will express it with his hands. With his silence. With his withdrawal. With his rage. But give a boy the words — teach him the difference between disappointment and despair, between frustration and fury — and you have given him power over his own interior life.
+            Tears are not a bad thing. They are not a sign of weakness. They are proof of wholeness. 
           </p>
           <p>
-            Jesus wept. That is the shortest verse in the Bible, and one of the most important for men to sit with. The Son of God stood at a tomb and allowed himself to grieve publicly. He did not explain it away. He did not say "I am fine." He felt what He felt, and He felt it fully.
+            When we sit with boys in our mentorship sessions, we are deliberate about breaking the false narrative that boys shouldn't cry. We want to raise boys who know what they feel, why they feel it, and what to do with it. Emotional intelligence is not soft; it requires incredible courage to look at what is actually happening inside you without flinching.
           </p>
           <p>
-            That is not weakness. That is wholeness.
-          </p>
-          <p>
-            We are not trying to raise boys who cry at everything. We are trying to raise boys who know what they feel, why they feel it, and what to do with it — boys who can process their pain before God instead of unleashing it on the people around them.
-          </p>
-          <p>
-            Emotional intelligence is not soft. It is one of the hardest disciplines a man can build. It requires honesty. It requires the courage to look at what is actually happening inside you without flinching. It requires the willingness to be known.
-          </p>
-          <p>
-            But the man who builds it — the man who knows himself deeply enough to manage himself wisely — that man is not fragile. That man is free. And freedom is the only foundation from which a man can truly love the people around him.
-          </p>
-          <p>
-            My father's tears at that funeral did not make him less. Looking back now, they made him more. I just needed someone to tell me that earlier.
-          </p>
-          <p>
-            We are trying to tell the boys now.
+            A boy who knows how to cry is a boy who will not have to break the world to prove he is strong. He will grow into a man who is free. And a free man is the only kind of man who can truly love.
           </p>
         </article>
 
