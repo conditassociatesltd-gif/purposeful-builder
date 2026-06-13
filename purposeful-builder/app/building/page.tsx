@@ -75,23 +75,25 @@ export default function BuildingPage() {
       {/* 3. CONDIT ASSOCIATES LTD */}
       <section id="associates" className="border-t border-black/10 dark:border-white/10" style={{ background: "var(--soft-green)" }}>
         {/* Condit Hero */}
-        <div className="relative min-h-[60vh] flex items-center justify-center overflow-hidden border-b border-black/10 dark:border-white/10">
-          <div className="absolute inset-0 bg-[#1a2316]/85 z-10 flex flex-col items-center justify-center text-center p-5">
-            <h2 className="font-serif text-4xl md:text-5xl mb-6 text-[#bfd98c] tracking-wide">Condit Associates Ltd</h2>
+        <a href="https://condit.austinokechukwu.com" target="_blank" rel="noopener noreferrer" className="relative min-h-[60vh] flex items-center justify-center overflow-hidden border-b border-black/10 dark:border-white/10 group cursor-pointer block">
+          <div className="absolute inset-0 bg-[#1a2316]/85 z-10 flex flex-col items-center justify-center text-center p-5 transition-colors group-hover:bg-[#1a2316]/75">
+            <h2 className="font-serif text-4xl md:text-5xl mb-6 text-[#bfd98c] tracking-wide flex items-center gap-4">
+              Condit Associates Ltd <ExternalLink size={24} className="opacity-50" />
+            </h2>
             <p className="font-serif text-3xl md:text-5xl text-white max-w-4xl leading-relaxed drop-shadow-lg opacity-95 italic">
               "Designing with precision, building with purpose."
             </p>
           </div>
-          <div className="absolute inset-0 bg-black">
+          <div className="absolute inset-0 bg-black transition-transform duration-700 group-hover:scale-105">
              <Image src="/condit-associates-bg.jpg" alt="Condit Associates Construction" fill className="object-cover object-center opacity-50" />
           </div>
-        </div>
+        </a>
 
         <div className="max-w-6xl mx-auto px-5 py-24">
           <div className="mb-12 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
             <h3 className="font-serif text-4xl">Featured Projects</h3>
             <div className="flex gap-4">
-              <a href="#" className="flex items-center gap-2 px-4 py-2 border border-black/20 dark:border-white/20 hover:bg-black/5 transition-colors text-xs uppercase tracking-widest">
+              <a href="https://condit.austinokechukwu.com" target="_blank" className="flex items-center gap-2 px-4 py-2 border border-black/20 dark:border-white/20 hover:bg-black/5 transition-colors text-xs uppercase tracking-widest">
                 <Globe size={14} /> Website
               </a>
               <a href="https://www.instagram.com/conditassociatesltd?igsh=MWduM3lzcGd1eGZtag==" target="_blank" className="flex items-center gap-2 px-4 py-2 border border-black/20 dark:border-white/20 hover:bg-black/5 transition-colors text-xs uppercase tracking-widest">

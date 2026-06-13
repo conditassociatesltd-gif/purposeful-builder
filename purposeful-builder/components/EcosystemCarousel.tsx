@@ -106,7 +106,7 @@ export default function EcosystemCarousel() {
           </Link>
 
           {/* Card 3 */}
-          <Link href="/associates" className="snap-start shrink-0 w-[300px] md:w-[350px] bg-white rounded-2xl p-6 text-black group relative hover:-translate-y-2 transition-transform duration-300">
+          <a href="https://condit.austinokechukwu.com" target="_blank" rel="noopener noreferrer" className="snap-start shrink-0 w-[300px] md:w-[350px] bg-white rounded-2xl p-6 text-black group relative hover:-translate-y-2 transition-transform duration-300">
             <div className="inline-block px-3 py-1 rounded-full border border-black/10 text-[10px] tracking-widest uppercase font-bold mb-4">
               Construction
             </div>
@@ -120,7 +120,7 @@ export default function EcosystemCarousel() {
             <div className="absolute bottom-6 right-6 w-10 h-10 rounded-full border border-black/10 flex items-center justify-center group-hover:bg-[#cba37c] group-hover:text-white group-hover:border-[#cba37c] transition-colors">
               <ArrowRight size={16} className="-rotate-45" />
             </div>
-          </Link>
+          </a>
 
           {/* Card 4 */}
           <Link href="/homes" className="snap-start shrink-0 w-[300px] md:w-[350px] bg-white rounded-2xl p-6 text-black group relative hover:-translate-y-2 transition-transform duration-300">
