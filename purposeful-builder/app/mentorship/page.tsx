@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowDown, BookOpen, Shield, Heart, Users, ArrowLeft } from "lucide-react";
 import MentorshipForm from "@/components/MentorshipForm";
+import BookMentorshipForm from "@/components/BookMentorshipForm";
 
 export default function MentorshipPage() {
   return (
@@ -72,22 +73,24 @@ export default function MentorshipPage() {
               When a boy constantly hears that he is less valuable because of his state, tribe, family background, or social status, those words settle deeper than we imagine.
               We are building a healthy community where boys can speak honestly and realize they are not alone. They need places where they can ask questions, learn from one another, and be heard.
             </p>
-            <div className="flex flex-col gap-4 mt-10">
-              <a href="#join-form" className="flex items-center gap-4 font-bold uppercase tracking-widest cursor-pointer hover:opacity-80 transition-opacity" style={{ color: "#cba37c" }}>
-                <span>Join our mentorship program</span>
-                <ArrowRight size={24} />
-              </a>
-              <Link href="/mentorship/events" className="flex items-center gap-4 font-bold uppercase tracking-widest cursor-pointer hover:opacity-80 transition-opacity text-white">
-                <span>View past events</span>
-                <ArrowRight size={24} />
-              </Link>
-              <p className="opacity-70 leading-relaxed mt-6 mb-2">
-                Are you interested in us mentoring the boys in your school, church, or institution?
-              </p>
-              <a href="mailto:hello@austinokechukwu.com?subject=Mentorship Program Inquiry" className="flex items-center gap-4 font-bold uppercase tracking-widest cursor-pointer hover:opacity-80 transition-opacity text-white">
-                <span>Book us for mentorship</span>
-                <ArrowRight size={24} />
-              </a>
+            <div className="flex flex-col mt-10">
+              <div className="flex flex-col gap-4">
+                <a href="#join-form" className="flex items-center gap-4 font-bold uppercase tracking-widest cursor-pointer hover:opacity-80 transition-opacity" style={{ color: "#cba37c" }}>
+                  <span>Join our mentorship program</span>
+                  <ArrowRight size={24} />
+                </a>
+                <Link href="/mentorship/events" className="flex items-center gap-4 font-bold uppercase tracking-widest cursor-pointer hover:opacity-80 transition-opacity text-white">
+                  <span>View past events</span>
+                  <ArrowRight size={24} />
+                </Link>
+              </div>
+
+              <div className="mt-8 border-t border-white/20 pt-8">
+                <p className="opacity-70 leading-relaxed mb-2 font-serif text-xl">
+                  Are you interested in us mentoring the boys in your school, church, or institution?
+                </p>
+                <BookMentorshipForm />
+              </div>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
