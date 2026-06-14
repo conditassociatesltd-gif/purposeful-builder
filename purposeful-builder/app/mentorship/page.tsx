@@ -81,6 +81,13 @@ export default function MentorshipPage() {
                 <span>View past events</span>
                 <ArrowRight size={24} />
               </Link>
+              <p className="opacity-70 leading-relaxed mt-6 mb-2">
+                Are you interested in us mentoring the boys in your school, church, or institution?
+              </p>
+              <a href="mailto:hello@austinokechukwu.com?subject=Mentorship Program Inquiry" className="flex items-center gap-4 font-bold uppercase tracking-widest cursor-pointer hover:opacity-80 transition-opacity text-white">
+                <span>Book us for mentorship</span>
+                <ArrowRight size={24} />
+              </a>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">

@@ -60,44 +60,80 @@ export default function WritingPage() {
         </div>
       </header>
 
-      <section className="max-w-6xl mx-auto px-5 py-20 border-b border-black/10 dark:border-white/10">
-        <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>
-          Writing
-        </p>
+      <section className="max-w-7xl mx-auto px-5 py-20 border-b border-black/10 dark:border-white/10">
+        <div className="grid md:grid-cols-[1fr_320px] lg:grid-cols-[1fr_380px] gap-12 lg:gap-20 items-start">
+          {/* Left Side: Main Header */}
+          <div>
+            <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>
+              Writing
+            </p>
 
-        <h1 className="font-serif text-6xl md:text-8xl leading-[0.95] tracking-tight max-w-4xl">
-          Essays on building, becoming, and the quiet work beneath visible success.
-        </h1>
+            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight">
+              Essays on building, becoming, and the quiet work beneath visible success.
+            </h1>
+          </div>
+
+          {/* Right Side: What I'm Thinking About */}
+          <div className="md:border-l border-black/10 dark:border-white/10 md:pl-12 lg:pl-16">
+            <h3 className="font-bold uppercase tracking-widest mb-8 text-black" style={{ fontSize: '0.85rem' }}>
+              What I'm Thinking About
+            </h3>
+            
+            <p className="text-sm opacity-60 mb-8 italic">
+              A glimpse into thoughts and essays currently taking shape...
+            </p>
+
+            <ul className="space-y-8">
+              <li className="group">
+                <p className="text-[10px] tracking-[0.2em] uppercase mb-2 opacity-40">Anticipate</p>
+                <h4 className="font-serif text-xl leading-snug group-hover:text-[#c4572a] transition-colors cursor-default">
+                  The Stereotyping in Church and How Church Elders Contribute to It
+                </h4>
+              </li>
+              <li className="group">
+                <p className="text-[10px] tracking-[0.2em] uppercase mb-2 opacity-40">Anticipate</p>
+                <h4 className="font-serif text-xl leading-snug group-hover:text-[#c4572a] transition-colors cursor-default">
+                  Charismatic Thoughts Against the Holy Spirit
+                </h4>
+                <p className="mt-2 text-sm opacity-60">Exploring what it is and what it is not.</p>
+              </li>
+              <li className="group">
+                <p className="text-[10px] tracking-[0.2em] uppercase mb-2 opacity-40">Anticipate</p>
+                <h4 className="font-serif text-xl leading-snug group-hover:text-[#c4572a] transition-colors cursor-default">
+                  How Religion Thrives on the Selfishness of Men
+                </h4>
+                <p className="mt-2 text-sm opacity-60">And how that selfishness directly contributes to their exploitation.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-5 py-12">
-        <div className="divide-y divide-black/10 dark:divide-white/10 border-y border-black/10 dark:border-white/10">
+      {/* Grid of Essays Below */}
+      <section className="max-w-7xl mx-auto px-5 py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {essays.map((essay, index) => (
             <Link
               key={essay.slug}
               href={`/writing/${essay.slug}`}
-              className="group grid md:grid-cols-[0.25fr_1fr_0.2fr] gap-6 py-10"
+              className="group flex flex-col justify-between border border-black/10 dark:border-white/10 p-8 hover:border-[#c4572a]/50 transition-colors bg-white/50"
             >
               <div>
-                <p className="text-xs tracking-[0.3em] uppercase" style={{ color: "var(--rust)" }}>
+                <p className="text-[10px] tracking-[0.3em] uppercase mb-4" style={{ color: "var(--rust)" }}>
                   {essay.category}
                 </p>
-                <p className="mt-3 text-xs tracking-[0.2em] uppercase opacity-40">
-                  {essay.date} · {essay.readingTime || "4 min read"}
-                </p>
-              </div>
-
-              <div>
-                <h2 className="font-serif text-4xl md:text-5xl leading-tight group-hover:text-[#9a4c2b] transition-colors">
+                <h2 className="font-serif text-3xl leading-tight group-hover:text-[#9a4c2b] transition-colors mb-4">
                   {essay.title}
                 </h2>
-                <p className="mt-5 text-lg leading-relaxed opacity-60 max-w-3xl">
+                <p className="text-sm leading-relaxed opacity-60 mb-8">
                   {essay.excerpt}
                 </p>
               </div>
-
-              <div className="flex md:justify-end items-start">
-                <ArrowRight className="mt-2 opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+              <div className="flex items-center justify-between border-t border-black/10 dark:border-white/10 pt-4 mt-auto">
+                <p className="text-[10px] tracking-[0.2em] uppercase opacity-40">
+                  {essay.date} · {essay.readingTime || "4 min read"}
+                </p>
+                <ArrowRight size={16} className="opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </div>
             </Link>
           ))}
