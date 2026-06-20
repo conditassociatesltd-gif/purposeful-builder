@@ -7,7 +7,7 @@ const BASE_URL = "https://austinokechukwu.com";
 
 // Helper to convert category string to slug
 function getSlug(category: string) {
-  return category.toLowerCase().replace(/\s+/g, '-');
+  return category.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
 }
 
 export function generateStaticParams() {

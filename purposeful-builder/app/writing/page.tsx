@@ -124,7 +124,7 @@ export default function WritingPage() {
               <h3 className="text-[10px] tracking-[0.25em] font-bold uppercase mb-6 opacity-40">Browse By Topic</h3>
               <div className="flex flex-wrap gap-2">
                 {uniqueCategories.map((topic, i) => (
-                  <Link key={topic} href={`/category/${topic.toLowerCase().replace(/\s+/g, '-')}`} className={`text-[9px] tracking-[0.1em] uppercase border border-black/15 dark:border-white/15 px-3 py-1.5 transition-colors ${i === 0 ? 'bg-[#c4572a] text-white border-[#c4572a]' : 'hover:bg-black/5 dark:hover:bg-white/5'}`}>
+                  <Link key={topic} href={`/category/${topic.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '')}`} className={`text-[9px] tracking-[0.1em] uppercase border border-black/15 dark:border-white/15 px-3 py-1.5 transition-colors ${i === 0 ? 'bg-[#c4572a] text-white border-[#c4572a]' : 'hover:bg-black/5 dark:hover:bg-white/5'}`}>
                     {topic}
                   </Link>
                 ))}
