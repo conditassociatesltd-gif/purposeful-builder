@@ -61,95 +61,99 @@ export default function WritingPage() {
             <span className="font-black tracking-tight uppercase">Austin Okechukwu</span>
           </Link>
 
-          <Link href="/about" className="text-xs tracking-[0.3em] uppercase opacity-50 hover:opacity-100 transition-opacity">
-            About
-          </Link>
+          <div className="flex items-center gap-6">
+            <ThemeToggle />
+            <Link href="/about" className="text-xs tracking-[0.3em] uppercase opacity-50 hover:opacity-100 transition-opacity">
+              About
+            </Link>
+          </div>
         </div>
       </header>
 
       {/* Featured Section */}
-      <section className="max-w-[1400px] mx-auto px-5 py-24 border-b border-black/10 dark:border-white/10">
-        <div className="grid lg:grid-cols-[1fr_380px] gap-16 lg:gap-24 items-start">
-          {/* Left Side: Featured Essay */}
+      <section className="max-w-[1400px] mx-auto px-5 py-16 lg:py-20 border-b border-black/10 dark:border-white/10">
+        
+        {/* Top: Minimal Featured Essay */}
+        <div className="mb-16 lg:mb-20 max-w-4xl">
           {featuredEssay ? (
-            <div className="flex flex-col h-full pt-4">
-              <div className="flex items-center gap-4 mb-10">
+            <div className="flex flex-col">
+              <div className="flex items-center gap-4 mb-6">
                 <span className="text-[10px] tracking-[0.2em] font-bold uppercase" style={{ color: "var(--rust)" }}>{featuredEssay.category}</span>
                 <div className="h-px w-12 bg-[#c4572a] opacity-50"></div>
               </div>
 
-              <h1 className="font-serif text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight mb-8 text-balance">
+              <h1 className="font-serif text-4xl md:text-5xl lg:text-[4.5rem] leading-[1.05] tracking-tight mb-8 text-balance">
                 {featuredEssay.title}
               </h1>
 
-              <p className="text-lg md:text-xl leading-relaxed opacity-80 mb-12 max-w-2xl">
+              <p className="text-lg md:text-xl leading-relaxed opacity-80 mb-10 max-w-2xl line-clamp-3">
                 {featuredEssay.excerpt}
               </p>
 
-              <Link href={`/writing/${featuredEssay.slug}`} className="mt-auto group inline-flex items-center gap-4 text-[10px] tracking-[0.2em] uppercase font-bold text-black dark:text-white pb-2 border-b border-black/20 dark:border-white/20 hover:border-black dark:hover:border-white transition-all w-fit">
+              <Link href={`/writing/${featuredEssay.slug}`} className="group inline-flex items-center gap-4 text-[10px] tracking-[0.2em] uppercase font-bold text-black dark:text-white pb-2 border-b border-black/20 dark:border-white/20 hover:border-black dark:hover:border-white transition-all w-fit">
                 Read Essay
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           ) : (
-            <div className="flex flex-col h-full pt-4 justify-center items-center opacity-50">
+            <div className="flex flex-col py-12 opacity-50">
               <p>No essays published yet.</p>
             </div>
           )}
+        </div>
 
-          {/* Right Side: Sidebar */}
-          <div className="flex flex-col gap-16 lg:border-l border-black/10 dark:border-white/10 lg:pl-16">
-            
-            {/* ON THIS MIND */}
-            <div>
-              <h3 className="text-[10px] tracking-[0.25em] font-bold uppercase mb-6 opacity-40">On This Mind</h3>
-              <p className="text-[13px] leading-relaxed mb-6 opacity-80">
-                I am the founder of Condit Associates Ltd and Condit Homes Ltd. I write about identity, faith, masculinity, building, and the quiet work of becoming.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <a href="https://linkedin.com/in/austinokechukwu" target="_blank" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-1 border-b border-black/20 dark:border-white/20 pb-1">LinkedIn <ArrowRight size={10} className="-rotate-45" /></a>
-                <a href="#" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-1 border-b border-black/20 dark:border-white/20 pb-1">Facebook <ArrowRight size={10} className="-rotate-45" /></a>
-                <a href="#" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-1 border-b border-black/20 dark:border-white/20 pb-1">Instagram <ArrowRight size={10} className="-rotate-45" /></a>
-              </div>
+        {/* Bottom: 3-Column Meta Spread */}
+        <div className="grid md:grid-cols-3 gap-12 lg:gap-16 pt-12 border-t border-black/10 dark:border-white/10">
+          
+          {/* ABOUT THIS MIND */}
+          <div>
+            <h3 className="text-[10px] tracking-[0.25em] font-bold uppercase mb-6 opacity-40">About This Mind</h3>
+            <p className="text-[13px] leading-relaxed mb-6 opacity-80">
+              I am the founder of Condit Associates Ltd and Condit Homes Ltd. I write about identity, faith, masculinity, building, and the quiet work of becoming.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <a href="https://linkedin.com/in/austinokechukwu" target="_blank" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-1 border-b border-black/20 dark:border-white/20 pb-1">LinkedIn <ArrowRight size={10} className="-rotate-45" /></a>
+              <a href="#" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-1 border-b border-black/20 dark:border-white/20 pb-1">Facebook <ArrowRight size={10} className="-rotate-45" /></a>
+              <a href="#" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-1 border-b border-black/20 dark:border-white/20 pb-1">Instagram <ArrowRight size={10} className="-rotate-45" /></a>
             </div>
-
-            {/* BROWSE BY TOPIC */}
-            {uniqueCategories.length > 0 && (
-              <div>
-                <h3 className="text-[10px] tracking-[0.25em] font-bold uppercase mb-6 opacity-40">Browse By Topic</h3>
-                <div className="flex flex-wrap gap-2">
-                  {uniqueCategories.map((topic, i) => (
-                    <Link key={topic} href={`/category/${topic.toLowerCase().replace(/\s+/g, '-')}`} className={`text-[9px] tracking-[0.1em] uppercase border border-black/15 dark:border-white/15 px-3 py-1.5 transition-colors ${i === 0 ? 'bg-[#c4572a] text-white border-[#c4572a]' : 'hover:bg-black/5 dark:hover:bg-white/5'}`}>
-                      {topic}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* CURRENTLY THINKING ABOUT */}
-            <div>
-              <h3 className="text-[10px] tracking-[0.25em] font-bold uppercase mb-6 opacity-40">Currently Thinking About</h3>
-              <ul className="space-y-6">
-                <li>
-                  <p className="font-serif text-[17px] leading-snug italic opacity-80 hover:opacity-100 transition-opacity">
-                    "Blasphemous Thoughts Against the Holy Spirit — Exploring what it is and what it is not."
-                  </p>
-                </li>
-                <li>
-                  <p className="font-serif text-[17px] leading-snug italic opacity-80 hover:opacity-100 transition-opacity">
-                    "The Stereotyping in Church and How Church Elders Contribute to It."
-                  </p>
-                </li>
-                <li>
-                  <p className="font-serif text-[17px] leading-snug italic opacity-80 hover:opacity-100 transition-opacity">
-                    "How Religion Thrives on the Selfishness of Men, and how that selfishness directly contributes to their exploitation."
-                  </p>
-                </li>
-              </ul>
-            </div>
-
           </div>
+
+          {/* BROWSE BY TOPIC */}
+          {uniqueCategories.length > 0 && (
+            <div>
+              <h3 className="text-[10px] tracking-[0.25em] font-bold uppercase mb-6 opacity-40">Browse By Topic</h3>
+              <div className="flex flex-wrap gap-2">
+                {uniqueCategories.map((topic, i) => (
+                  <Link key={topic} href={`/category/${topic.toLowerCase().replace(/\s+/g, '-')}`} className={`text-[9px] tracking-[0.1em] uppercase border border-black/15 dark:border-white/15 px-3 py-1.5 transition-colors ${i === 0 ? 'bg-[#c4572a] text-white border-[#c4572a]' : 'hover:bg-black/5 dark:hover:bg-white/5'}`}>
+                    {topic}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* CURRENTLY THINKING ABOUT */}
+          <div>
+            <h3 className="text-[10px] tracking-[0.25em] font-bold uppercase mb-6 opacity-40">Currently Thinking About</h3>
+            <ul className="space-y-4">
+              <li>
+                <p className="font-serif text-[15px] leading-snug italic opacity-80 hover:opacity-100 transition-opacity">
+                  "Blasphemous Thoughts Against the Holy Spirit — Exploring what it is and what it is not."
+                </p>
+              </li>
+              <li>
+                <p className="font-serif text-[15px] leading-snug italic opacity-80 hover:opacity-100 transition-opacity">
+                  "The Stereotyping in Church and How Church Elders Contribute to It."
+                </p>
+              </li>
+              <li>
+                <p className="font-serif text-[15px] leading-snug italic opacity-80 hover:opacity-100 transition-opacity">
+                  "How Religion Thrives on the Selfishness of Men, and how that selfishness directly contributes to their exploitation."
+                </p>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </section>
 
