@@ -65,6 +65,11 @@ export const metadata: Metadata = {
     images: ["/images/og-default.jpg"],
     creator: "@arc__austin",
   },
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   alternates: {
     canonical: BASE_URL,
   },
