@@ -36,6 +36,13 @@ export const metadata = {
 
 export default function WritingPage() {
   const essays = getAllEssays();
+  
+  // Get the most recent essay for the hero section
+  const featuredEssay = essays.length > 0 ? essays[0] : null;
+  const remainingEssays = essays.length > 0 ? essays.slice(1) : [];
+
+  // Extract unique categories for the "Browse By Topic" section
+  const uniqueCategories = Array.from(new Set(essays.map(essay => essay.category))).filter(Boolean);
 
   return (
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
@@ -54,7 +61,7 @@ export default function WritingPage() {
             <span className="font-black tracking-tight uppercase">Austin Okechukwu</span>
           </Link>
 
-          <Link href="/about" className="text-xs tracking-[0.3em] uppercase opacity-50">
+          <Link href="/about" className="text-xs tracking-[0.3em] uppercase opacity-50 hover:opacity-100 transition-opacity">
             About
           </Link>
         </div>
@@ -64,25 +71,31 @@ export default function WritingPage() {
       <section className="max-w-[1400px] mx-auto px-5 py-24 border-b border-black/10 dark:border-white/10">
         <div className="grid lg:grid-cols-[1fr_380px] gap-16 lg:gap-24 items-start">
           {/* Left Side: Featured Essay */}
-          <div className="flex flex-col h-full pt-4">
-            <div className="flex items-center gap-4 mb-10">
-              <span className="text-[10px] tracking-[0.2em] font-bold uppercase" style={{ color: "var(--rust)" }}>Faith & Theology</span>
-              <div className="h-px w-12 bg-[#c4572a] opacity-50"></div>
+          {featuredEssay ? (
+            <div className="flex flex-col h-full pt-4">
+              <div className="flex items-center gap-4 mb-10">
+                <span className="text-[10px] tracking-[0.2em] font-bold uppercase" style={{ color: "var(--rust)" }}>{featuredEssay.category}</span>
+                <div className="h-px w-12 bg-[#c4572a] opacity-50"></div>
+              </div>
+
+              <h1 className="font-serif text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight mb-8 text-balance">
+                {featuredEssay.title}
+              </h1>
+
+              <p className="text-lg md:text-xl leading-relaxed opacity-80 mb-12 max-w-2xl">
+                {featuredEssay.excerpt}
+              </p>
+
+              <Link href={`/writing/${featuredEssay.slug}`} className="mt-auto group inline-flex items-center gap-4 text-[10px] tracking-[0.2em] uppercase font-bold text-black dark:text-white pb-2 border-b border-black/20 dark:border-white/20 hover:border-black dark:hover:border-white transition-all w-fit">
+                Read Essay
+                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
-
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight mb-8 text-balance">
-              Blasphemous Thoughts Against the Holy Spirit
-            </h1>
-
-            <p className="text-lg md:text-xl leading-relaxed opacity-80 mb-12 max-w-2xl">
-              Exploring what it actually means to commit the unpardonable sin. What it is, what it is not, and the quiet fear that surrounds charismatic theology.
-            </p>
-
-            <Link href="#" className="mt-auto group inline-flex items-center gap-4 text-[10px] tracking-[0.2em] uppercase font-bold text-black dark:text-white pb-2 border-b border-black/20 dark:border-white/20 hover:border-black dark:hover:border-white transition-all w-fit">
-              Read Essay
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </div>
+          ) : (
+            <div className="flex flex-col h-full pt-4 justify-center items-center opacity-50">
+              <p>No essays published yet.</p>
+            </div>
+          )}
 
           {/* Right Side: Sidebar */}
           <div className="flex flex-col gap-16 lg:border-l border-black/10 dark:border-white/10 lg:pl-16">
@@ -91,25 +104,28 @@ export default function WritingPage() {
             <div>
               <h3 className="text-[10px] tracking-[0.25em] font-bold uppercase mb-6 opacity-40">On This Mind</h3>
               <p className="text-[13px] leading-relaxed mb-6 opacity-80">
-                I am a founder, builder, and relentless ponderer. I write about the things that keep me up at night: from Mars colonisation to what marital covenant means.
+                I am the founder of Condit Associates Ltd and Condit Homes Ltd. I write about identity, faith, masculinity, building, and the quiet work of becoming.
               </p>
-              <div className="flex gap-6">
-                <a href="https://linkedin.com/in/austinokechukwu" target="_blank" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-2 border-b border-black/20 dark:border-white/20 pb-1">LinkedIn <ArrowRight size={10} className="-rotate-45" /></a>
-                <a href="https://github.com/austinokechukwu" target="_blank" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-2 border-b border-black/20 dark:border-white/20 pb-1">GitHub <ArrowRight size={10} className="-rotate-45" /></a>
+              <div className="flex flex-wrap gap-4">
+                <a href="https://linkedin.com/in/austinokechukwu" target="_blank" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-1 border-b border-black/20 dark:border-white/20 pb-1">LinkedIn <ArrowRight size={10} className="-rotate-45" /></a>
+                <a href="#" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-1 border-b border-black/20 dark:border-white/20 pb-1">Facebook <ArrowRight size={10} className="-rotate-45" /></a>
+                <a href="#" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-1 border-b border-black/20 dark:border-white/20 pb-1">Instagram <ArrowRight size={10} className="-rotate-45" /></a>
               </div>
             </div>
 
             {/* BROWSE BY TOPIC */}
-            <div>
-              <h3 className="text-[10px] tracking-[0.25em] font-bold uppercase mb-6 opacity-40">Browse By Topic</h3>
-              <div className="flex flex-wrap gap-2">
-                {['AI', 'AI Safety', 'Faith', 'Space', 'Technology', 'Tutorials', 'Long Read'].map((topic, i) => (
-                  <Link key={topic} href={`/category/${topic.toLowerCase().replace(' ', '-')}`} className={`text-[9px] tracking-[0.1em] uppercase border border-black/15 dark:border-white/15 px-3 py-1.5 transition-colors ${i === 0 ? 'bg-[#c4572a] text-white border-[#c4572a]' : 'hover:bg-black/5 dark:hover:bg-white/5'}`}>
-                    {topic}
-                  </Link>
-                ))}
+            {uniqueCategories.length > 0 && (
+              <div>
+                <h3 className="text-[10px] tracking-[0.25em] font-bold uppercase mb-6 opacity-40">Browse By Topic</h3>
+                <div className="flex flex-wrap gap-2">
+                  {uniqueCategories.map((topic, i) => (
+                    <Link key={topic} href={`/category/${topic.toLowerCase().replace(/\s+/g, '-')}`} className={`text-[9px] tracking-[0.1em] uppercase border border-black/15 dark:border-white/15 px-3 py-1.5 transition-colors ${i === 0 ? 'bg-[#c4572a] text-white border-[#c4572a]' : 'hover:bg-black/5 dark:hover:bg-white/5'}`}>
+                      {topic}
+                    </Link>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
             {/* CURRENTLY THINKING ABOUT */}
             <div>
@@ -117,17 +133,17 @@ export default function WritingPage() {
               <ul className="space-y-6">
                 <li>
                   <p className="font-serif text-[17px] leading-snug italic opacity-80 hover:opacity-100 transition-opacity">
-                    "The Stereotyping in Church and How Church Elders Contribute to It"
+                    "Blasphemous Thoughts Against the Holy Spirit — Exploring what it is and what it is not."
+                  </p>
+                </li>
+                <li>
+                  <p className="font-serif text-[17px] leading-snug italic opacity-80 hover:opacity-100 transition-opacity">
+                    "The Stereotyping in Church and How Church Elders Contribute to It."
                   </p>
                 </li>
                 <li>
                   <p className="font-serif text-[17px] leading-snug italic opacity-80 hover:opacity-100 transition-opacity">
                     "How Religion Thrives on the Selfishness of Men, and how that selfishness directly contributes to their exploitation."
-                  </p>
-                </li>
-                <li>
-                  <p className="font-serif text-[17px] leading-snug italic opacity-80 hover:opacity-100 transition-opacity">
-                    "Does the universe's scale make faith smaller, or does it demand a bigger one?"
                   </p>
                 </li>
               </ul>
@@ -140,7 +156,7 @@ export default function WritingPage() {
       {/* Grid of Essays Below */}
       <section className="max-w-[1400px] mx-auto px-5 py-24">
         <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12">
-          {essays.map((essay, index) => (
+          {remainingEssays.map((essay, index) => (
             <Link
               key={essay.slug}
               href={`/writing/${essay.slug}`}
@@ -153,7 +169,7 @@ export default function WritingPage() {
                 <h2 className="font-serif text-2xl leading-[1.1] group-hover:text-[#c4572a] transition-colors mb-4">
                   {essay.title}
                 </h2>
-                <p className="text-xs leading-relaxed opacity-60 mb-6">
+                <p className="text-xs leading-relaxed opacity-60 mb-6 line-clamp-4">
                   {essay.excerpt}
                 </p>
               </div>
