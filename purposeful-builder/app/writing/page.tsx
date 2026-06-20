@@ -40,7 +40,7 @@ export default function WritingPage() {
   return (
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
       <header className="border-b border-black/10 dark:border-white/10">
-        <div className="max-w-6xl mx-auto px-5 py-6 flex items-center justify-between">
+        <div className="max-w-[1400px] mx-auto px-5 py-6 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-4">
             <div className="w-12 h-12 border-2 border-[#c4572a] flex items-center justify-center overflow-hidden">
               <Image
@@ -60,80 +60,108 @@ export default function WritingPage() {
         </div>
       </header>
 
-      <section className="max-w-7xl mx-auto px-5 py-20 border-b border-black/10 dark:border-white/10">
-        <div className="grid md:grid-cols-[1fr_320px] lg:grid-cols-[1fr_380px] gap-12 lg:gap-20 items-start">
-          {/* Left Side: Main Header */}
-          <div>
-            <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>
-              Writing
+      {/* Featured Section */}
+      <section className="max-w-[1400px] mx-auto px-5 py-24 border-b border-black/10 dark:border-white/10">
+        <div className="grid lg:grid-cols-[1fr_380px] gap-16 lg:gap-24 items-start">
+          {/* Left Side: Featured Essay */}
+          <div className="flex flex-col h-full pt-4">
+            <div className="flex items-center gap-4 mb-10">
+              <span className="text-[10px] tracking-[0.2em] font-bold uppercase" style={{ color: "var(--rust)" }}>Faith & Theology</span>
+              <div className="h-px w-12 bg-[#c4572a] opacity-50"></div>
+            </div>
+
+            <h1 className="font-serif text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight mb-8 text-balance">
+              Blasphemous Thoughts Against the Holy Spirit
+            </h1>
+
+            <p className="text-lg md:text-xl leading-relaxed opacity-80 mb-12 max-w-2xl">
+              Exploring what it actually means to commit the unpardonable sin. What it is, what it is not, and the quiet fear that surrounds charismatic theology.
             </p>
 
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight">
-              Essays on building, becoming, and the quiet work beneath visible success.
-            </h1>
+            <Link href="#" className="mt-auto group inline-flex items-center gap-4 text-[10px] tracking-[0.2em] uppercase font-bold text-black dark:text-white pb-2 border-b border-black/20 dark:border-white/20 hover:border-black dark:hover:border-white transition-all w-fit">
+              Read Essay
+              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
 
-          {/* Right Side: What I'm Thinking About */}
-          <div className="md:border-l border-black/10 dark:border-white/10 md:pl-12 lg:pl-16">
-            <h3 className="font-bold uppercase tracking-widest mb-8 text-black" style={{ fontSize: '0.85rem' }}>
-              What I'm Thinking About
-            </h3>
+          {/* Right Side: Sidebar */}
+          <div className="flex flex-col gap-16 lg:border-l border-black/10 dark:border-white/10 lg:pl-16">
             
-            <p className="text-sm opacity-60 mb-8 italic">
-              A glimpse into thoughts and essays currently taking shape...
-            </p>
+            {/* ON THIS MIND */}
+            <div>
+              <h3 className="text-[10px] tracking-[0.25em] font-bold uppercase mb-6 opacity-40">On This Mind</h3>
+              <p className="text-[13px] leading-relaxed mb-6 opacity-80">
+                I am a founder, builder, and relentless ponderer. I write about the things that keep me up at night: from Mars colonisation to what marital covenant means.
+              </p>
+              <div className="flex gap-6">
+                <a href="https://linkedin.com/in/austinokechukwu" target="_blank" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-2 border-b border-black/20 dark:border-white/20 pb-1">LinkedIn <ArrowRight size={10} className="-rotate-45" /></a>
+                <a href="https://github.com/austinokechukwu" target="_blank" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-2 border-b border-black/20 dark:border-white/20 pb-1">GitHub <ArrowRight size={10} className="-rotate-45" /></a>
+              </div>
+            </div>
 
-            <ul className="space-y-8">
-              <li className="group">
-                <p className="text-[10px] tracking-[0.2em] uppercase mb-2 opacity-40">Anticipate</p>
-                <h4 className="font-serif text-xl leading-snug group-hover:text-[#c4572a] transition-colors cursor-default">
-                  The Stereotyping in Church and How Church Elders Contribute to It
-                </h4>
-              </li>
-              <li className="group">
-                <p className="text-[10px] tracking-[0.2em] uppercase mb-2 opacity-40">Anticipate</p>
-                <h4 className="font-serif text-xl leading-snug group-hover:text-[#c4572a] transition-colors cursor-default">
-                  Charismatic Thoughts Against the Holy Spirit
-                </h4>
-                <p className="mt-2 text-sm opacity-60">Exploring what it is and what it is not.</p>
-              </li>
-              <li className="group">
-                <p className="text-[10px] tracking-[0.2em] uppercase mb-2 opacity-40">Anticipate</p>
-                <h4 className="font-serif text-xl leading-snug group-hover:text-[#c4572a] transition-colors cursor-default">
-                  How Religion Thrives on the Selfishness of Men
-                </h4>
-                <p className="mt-2 text-sm opacity-60">And how that selfishness directly contributes to their exploitation.</p>
-              </li>
-            </ul>
+            {/* BROWSE BY TOPIC */}
+            <div>
+              <h3 className="text-[10px] tracking-[0.25em] font-bold uppercase mb-6 opacity-40">Browse By Topic</h3>
+              <div className="flex flex-wrap gap-2">
+                {['AI', 'AI Safety', 'Faith', 'Space', 'Technology', 'Tutorials', 'Long Read'].map((topic, i) => (
+                  <Link key={topic} href={`/category/${topic.toLowerCase().replace(' ', '-')}`} className={`text-[9px] tracking-[0.1em] uppercase border border-black/15 dark:border-white/15 px-3 py-1.5 transition-colors ${i === 0 ? 'bg-[#c4572a] text-white border-[#c4572a]' : 'hover:bg-black/5 dark:hover:bg-white/5'}`}>
+                    {topic}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* CURRENTLY THINKING ABOUT */}
+            <div>
+              <h3 className="text-[10px] tracking-[0.25em] font-bold uppercase mb-6 opacity-40">Currently Thinking About</h3>
+              <ul className="space-y-6">
+                <li>
+                  <p className="font-serif text-[17px] leading-snug italic opacity-80 hover:opacity-100 transition-opacity">
+                    "The Stereotyping in Church and How Church Elders Contribute to It"
+                  </p>
+                </li>
+                <li>
+                  <p className="font-serif text-[17px] leading-snug italic opacity-80 hover:opacity-100 transition-opacity">
+                    "How Religion Thrives on the Selfishness of Men, and how that selfishness directly contributes to their exploitation."
+                  </p>
+                </li>
+                <li>
+                  <p className="font-serif text-[17px] leading-snug italic opacity-80 hover:opacity-100 transition-opacity">
+                    "Does the universe's scale make faith smaller, or does it demand a bigger one?"
+                  </p>
+                </li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </section>
 
       {/* Grid of Essays Below */}
-      <section className="max-w-7xl mx-auto px-5 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
+      <section className="max-w-[1400px] mx-auto px-5 py-24">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12">
           {essays.map((essay, index) => (
             <Link
               key={essay.slug}
               href={`/writing/${essay.slug}`}
-              className="group flex flex-col justify-between border border-black/10 dark:border-white/10 p-8 hover:border-[#c4572a]/50 transition-colors bg-white/50"
+              className="group flex flex-col h-full hover:bg-black/[0.03] dark:hover:bg-white/[0.03] transition-colors p-4 -mx-4 rounded-xl"
             >
               <div>
-                <p className="text-[10px] tracking-[0.3em] uppercase mb-4" style={{ color: "var(--rust)" }}>
+                <p className="text-[9px] font-bold tracking-[0.25em] uppercase mb-4" style={{ color: "var(--rust)" }}>
                   {essay.category}
                 </p>
-                <h2 className="font-serif text-3xl leading-tight group-hover:text-[#9a4c2b] transition-colors mb-4">
+                <h2 className="font-serif text-2xl leading-[1.1] group-hover:text-[#c4572a] transition-colors mb-4">
                   {essay.title}
                 </h2>
-                <p className="text-sm leading-relaxed opacity-60 mb-8">
+                <p className="text-xs leading-relaxed opacity-60 mb-6">
                   {essay.excerpt}
                 </p>
               </div>
-              <div className="flex items-center justify-between border-t border-black/10 dark:border-white/10 pt-4 mt-auto">
-                <p className="text-[10px] tracking-[0.2em] uppercase opacity-40">
-                  {essay.date} · {essay.readingTime || "4 min read"}
+              <div className="flex items-center justify-between pt-6 mt-auto opacity-40 group-hover:opacity-100 transition-opacity">
+                <p className="text-[9px] tracking-[0.1em] uppercase font-bold">
+                  {essay.date}
                 </p>
-                <ArrowRight size={16} className="opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                <ArrowRight size={14} className="-rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
               </div>
             </Link>
           ))}
