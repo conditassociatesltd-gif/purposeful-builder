@@ -5,15 +5,6 @@ import ThemeToggle from "@/components/ThemeToggle";
 import { getAllEssays } from "@/lib/essays";
 import EcosystemCarousel from "@/components/EcosystemCarousel";
 
-const categories = [
-  { title: "Identity", slug: "identity", text: "Formation, healing, boyhood, masculinity.", icon: Users },
-  { title: "Purpose", slug: "purpose", text: "Discipline, becoming, calling, process.", icon: Landmark },
-  { title: "Faith & Process", slug: "faith-process", text: "Reflections on God, growth, and obedience.", icon: BookOpen },
-  { title: "Marriage & Life", slug: "marriage-life", text: "Love, home, relationships, responsibility.", icon: Home },
-  { title: "Building", slug: "building", text: "Lessons from construction and leadership.", icon: Building2 },
-  { title: "Wealth", slug: "wealth", text: "Real estate, patience, value, stewardship.", icon: PenLine },
-];
-
 const portfolio = [
   { title: "Condit Associates Ltd", text: "Design, construction, project management, and purposeful execution." },
   { title: "Condit Homes Ltd", text: "Real estate, housing, land, and long-term property thinking." },
@@ -157,32 +148,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-5 pt-10 pb-8">
-  <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-5">
-    {categories.map((item) => {
-      const Icon = item.icon;
-      return (
-        <Link
-  href={`/category/${item.slug}`}
-  key={item.title}
-  className="shadow-sm border p-4 hover:-translate-y-1 hover:shadow-md transition-all duration-300" style={{ background: "var(--card)", borderColor: "var(--peach)" }}
->
-  <div className="flex items-center gap-3">
-    <Icon size={24} style={{ color: "var(--rust)" }} />
-
-    <h3 className="font-bold uppercase tracking-wide text-sm">
-      {item.title}
-    </h3>
-  </div>
-
-  <p className="mt-3 text-sm leading-relaxed opacity-70">
-    {item.text}
-  </p>
-</Link>
-      );
-    })}
-  </div>
-</section>
 {featuredEssay && (
   <section className="max-w-7xl mx-auto px-5 pt-8 pb-12">
     <Link
