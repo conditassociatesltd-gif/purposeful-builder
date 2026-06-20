@@ -56,6 +56,7 @@ export default function WritingPage() {
                 width={46}
                 height={46}
                 className="object-contain scale-110"
+                priority
               />
             </div>
             <span className="font-black tracking-tight uppercase">Austin Okechukwu</span>
@@ -112,9 +113,9 @@ export default function WritingPage() {
               I am the founder of Condit Associates Ltd and Condit Homes Ltd. I write about identity, faith, masculinity, building, and the quiet work of becoming.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://linkedin.com/in/austinokechukwu" target="_blank" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-1 border-b border-black/20 dark:border-white/20 pb-1">LinkedIn <ArrowRight size={10} className="-rotate-45" /></a>
-              <a href="#" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-1 border-b border-black/20 dark:border-white/20 pb-1">Facebook <ArrowRight size={10} className="-rotate-45" /></a>
-              <a href="#" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-1 border-b border-black/20 dark:border-white/20 pb-1">Instagram <ArrowRight size={10} className="-rotate-45" /></a>
+              <a href="https://linkedin.com/in/austinokechukwu" target="_blank" rel="noopener noreferrer" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-1 border-b border-black/20 dark:border-white/20 pb-1">LinkedIn <ArrowRight size={10} className="-rotate-45" /></a>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-1 border-b border-black/20 dark:border-white/20 pb-1">Facebook <ArrowRight size={10} className="-rotate-45" /></a>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="text-[10px] tracking-[0.2em] uppercase font-bold hover:opacity-50 transition-opacity flex items-center gap-1 border-b border-black/20 dark:border-white/20 pb-1">Instagram <ArrowRight size={10} className="-rotate-45" /></a>
             </div>
           </div>
 

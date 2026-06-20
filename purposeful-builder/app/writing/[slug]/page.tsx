@@ -108,7 +108,7 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
       <header className="fixed top-0 left-0 w-full z-50 border-b border-black/10 dark:border-white/10" style={{ background: "var(--parchment)" }}>
   <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
     <Link href="/" className="flex items-center gap-4">
-      <Image src="/logo.png" alt="Austin Okechukwu logo" width={44} height={44} />
+      <Image src="/logo.png" alt="Austin Okechukwu logo" width={44} height={44} priority />
       <span className="font-black tracking-tight uppercase">Austin Okechukwu</span>
     </Link>
 
@@ -160,6 +160,7 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
               src={essay.heroImage}
               alt={essay.title}
               fill
+              priority
               className="object-cover transition-transform duration-700 hover:scale-[1.02]"
             />
           </div>

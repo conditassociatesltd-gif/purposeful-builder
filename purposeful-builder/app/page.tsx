@@ -336,17 +336,17 @@ export default function HomePage() {
             <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "var(--rust)" }}>Platforms</p>
             <ul className="space-y-3 opacity-65">
               <li>
-  <a href="https://www.instagram.com/arc__austin?igsh=bGp6M3hpdm5sNXgz" target="_blank" className="hover:text-[#c4572a] transition-colors">
+  <a href="https://www.instagram.com/arc__austin?igsh=bGp6M3hpdm5sNXgz" target="_blank" rel="noopener noreferrer" className="hover:text-[#c4572a] transition-colors">
     Instagram
   </a>
 </li>
               <li>
-  <a href="https://www.facebook.com/share/17MLSQKYLg/" target="_blank" className="hover:text-[#c4572a] transition-colors">
+  <a href="https://www.facebook.com/share/17MLSQKYLg/" target="_blank" rel="noopener noreferrer" className="hover:text-[#c4572a] transition-colors">
     Facebook
   </a>
 </li>
               <li>
-  <a href="https://www.instagram.com/conditassociatesltd?igsh=MWduM3lzcGd1eGZtag==" target="_blank" className="hover:text-[#c4572a] transition-colors">
+  <a href="https://www.instagram.com/conditassociatesltd?igsh=MWduM3lzcGd1eGZtag==" target="_blank" rel="noopener noreferrer" className="hover:text-[#c4572a] transition-colors">
     Condit Associates Ltd
   </a>
 </li>
