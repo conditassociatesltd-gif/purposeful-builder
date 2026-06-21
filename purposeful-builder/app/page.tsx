@@ -199,48 +199,55 @@ export default function HomePage() {
       {/* Latest Writings List */}
       {essays.length > 0 && (
         <section className="bg-[var(--parchment)]" style={{ color: "var(--ink)" }}>
-          <div className="max-w-7xl mx-auto px-5 py-12 md:py-16">
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
-              <div>
-                <p className="text-[10px] tracking-[0.35em] uppercase mb-3" style={{ color: "var(--rust)" }}>Essays</p>
-                <h2 className="font-serif text-3xl md:text-4xl leading-tight">Latest writings</h2>
-              </div>
-              <Link href="/writing" className="hidden md:inline-flex items-center gap-2 text-[10px] uppercase tracking-widest hover:text-[var(--rust)] transition-colors border-b border-black/20 pb-1">
-                View All <ArrowRight size={12} />
+          <div className="max-w-7xl mx-auto px-5 py-12 md:py-20">
+            {/* Header matching the image */}
+            <div className="flex items-center gap-6 mb-12">
+              <h2 className="text-xl md:text-2xl font-bold uppercase tracking-tight whitespace-nowrap">Recent Essays</h2>
+              <div className="flex-1 h-[1px] bg-black/10"></div>
+              <Link href="/writing" className="hidden md:block text-[10px] uppercase tracking-widest opacity-40 hover:opacity-100 hover:text-[var(--rust)] transition-colors whitespace-nowrap">
+                Latest Dispatches
               </Link>
             </div>
 
-            <div className="flex flex-col border-t border-black/10">
-              {essays.map((essay) => (
+            {/* 3-column minimal grid with vertical dividers */}
+            <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-black/10 border-b border-black/10">
+              {essays.map((essay, index) => (
                 <Link
                   key={essay.slug}
                   href={`/writing/${essay.slug}`}
-                  className="group flex flex-col md:flex-row md:items-center justify-between gap-4 p-6 md:py-8 border-b border-black/10 hover:bg-black/5 transition-all duration-300"
+                  className="group flex flex-col p-6 md:p-8 hover:bg-black/5 transition-colors"
                 >
-                  <div className="flex-1">
-                    <p className="text-[10px] tracking-[0.2em] uppercase opacity-40 mb-2">{essay.date}</p>
-                    <h3 className="font-serif text-2xl leading-snug mb-2 group-hover:text-[var(--rust)] transition-colors">
-                      {essay.title}
-                    </h3>
-                    <p className="text-sm opacity-60 leading-relaxed line-clamp-2 md:line-clamp-1 max-w-3xl">
-                      {essay.excerpt}
-                    </p>
-                  </div>
-                  <div className="shrink-0 flex items-center justify-between md:justify-end gap-4 mt-4 md:mt-0">
-                    <span className="text-[10px] uppercase tracking-widest text-[var(--rust)] font-bold md:opacity-0 group-hover:opacity-100 transition-opacity">
-                      Read Essay
-                    </span>
-                    <div className="w-10 h-10 rounded-full border border-black/10 flex items-center justify-center group-hover:bg-[var(--rust)] group-hover:text-white group-hover:border-[var(--rust)] transition-colors">
-                      <ArrowRight size={16} className="-rotate-45 md:rotate-0" />
-                    </div>
-                  </div>
+                  {/* Huge faded number */}
+                  <span className="font-serif text-6xl font-bold opacity-[0.08] mb-6 group-hover:opacity-20 transition-opacity">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                  
+                  {/* Category */}
+                  <p className="text-[9px] tracking-[0.3em] uppercase mb-4 font-bold" style={{ color: "var(--rust)" }}>
+                    {essay.category || "Reflection"}
+                  </p>
+
+                  {/* Title */}
+                  <h3 className="font-serif text-xl font-bold leading-snug mb-4 group-hover:text-[var(--rust)] transition-colors">
+                    {essay.title}
+                  </h3>
+
+                  {/* Excerpt */}
+                  <p className="text-sm opacity-60 leading-relaxed line-clamp-3 mb-10 flex-1">
+                    {essay.excerpt}
+                  </p>
+
+                  {/* Date & Read Time */}
+                  <p className="text-[9px] tracking-[0.2em] uppercase opacity-40 font-semibold mt-auto">
+                    {essay.date} · {essay.readingTime || "4 MIN READ"}
+                  </p>
                 </Link>
               ))}
             </div>
 
-            <div className="mt-10 text-center md:hidden">
+            <div className="mt-8 text-center md:hidden">
               <Link href="/writing" className="inline-flex items-center gap-2 text-[10px] uppercase tracking-widest hover:text-[var(--rust)] transition-colors border-b border-black/20 pb-1">
-                View All <ArrowRight size={12} />
+                View All Essays <ArrowRight size={12} />
               </Link>
             </div>
           </div>
