@@ -56,8 +56,8 @@ export default function AboutPage() {
       </header>
 
       {/* HERO SECTION */}
-      <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 border-b border-black/10 dark:border-white/10 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center relative z-10">
+      <section className="relative min-h-[60vh] md:min-h-[70vh] flex items-center pt-32 pb-16 md:pt-40 md:pb-24 border-b border-black/10 dark:border-white/10 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-5 w-full grid md:grid-cols-2 gap-12 items-center relative z-10">
           <div className="max-w-xl">
             <p className="text-[10px] tracking-[0.35em] uppercase mb-6 font-bold" style={{ color: "var(--rust)" }}>
               The Purposeful Builder
