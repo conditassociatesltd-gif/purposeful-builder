@@ -14,6 +14,7 @@ export type Podcast = {
   coverImage?: string;
   featured?: boolean;
   content: string;
+  category?: string;
 };
 
 export function getAllPodcasts(): Podcast[] {
@@ -38,6 +39,7 @@ export function getAllPodcasts(): Podcast[] {
         audioUrl: data.audioUrl || "",
         coverImage: data.coverImage || null,
         featured: data.featured || false,
+        category: data.category || "PODCAST",
         content,
       };
     })
