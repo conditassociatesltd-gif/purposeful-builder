@@ -198,14 +198,14 @@ export default function HomePage() {
 )}
       {/* Latest Writings List */}
       {essays.length > 0 && (
-        <section className="bg-[var(--parchment)]" style={{ color: "var(--ink)" }}>
-          <div className="max-w-7xl mx-auto px-5 py-12 md:py-20">
+        <section className="bg-[var(--parchment)] border-b border-black/5" style={{ color: "var(--ink)" }}>
+          <div className="max-w-[1600px] mx-auto px-5 md:px-10 py-12 md:py-20">
             {/* Header matching the image */}
             <div className="flex items-center gap-6 mb-12">
-              <h2 className="text-xl md:text-2xl font-bold uppercase tracking-tight whitespace-nowrap">Recent Essays</h2>
+              <h2 className="text-xl md:text-2xl font-bold uppercase tracking-tight whitespace-nowrap">Recent Writings</h2>
               <div className="flex-1 h-[1px] bg-black/10"></div>
               <Link href="/writing" className="hidden md:block text-[10px] uppercase tracking-widest opacity-40 hover:opacity-100 hover:text-[var(--rust)] transition-colors whitespace-nowrap">
-                Latest Dispatches
+                View All Writings
               </Link>
             </div>
 
@@ -247,7 +247,7 @@ export default function HomePage() {
 
             <div className="mt-8 text-center md:hidden">
               <Link href="/writing" className="inline-flex items-center gap-2 text-[10px] uppercase tracking-widest hover:text-[var(--rust)] transition-colors border-b border-black/20 pb-1">
-                View All Essays <ArrowRight size={12} />
+                View All Writings <ArrowRight size={12} />
               </Link>
             </div>
           </div>
