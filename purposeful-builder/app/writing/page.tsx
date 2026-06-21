@@ -63,10 +63,11 @@ export default function WritingPage() {
           </Link>
 
           <div className="flex items-center gap-6">
+            <nav className="hidden md:flex items-center gap-6 text-xs tracking-[0.25em] uppercase opacity-50 hover:opacity-100 transition-opacity">
+              <Link href="/podcast" className="hover:text-[var(--rust)] transition-colors">Podcast</Link>
+              <Link href="/about" className="hover:text-[var(--rust)] transition-colors">About</Link>
+            </nav>
             <ThemeToggle />
-            <Link href="/about" className="text-xs tracking-[0.3em] uppercase opacity-50 hover:opacity-100 transition-opacity">
-              About
-            </Link>
           </div>
         </div>
       </header>

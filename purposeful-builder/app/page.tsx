@@ -85,6 +85,7 @@ export default function HomePage() {
           </Link>
 
           <nav className="hidden lg:flex items-center gap-8 text-xs tracking-[0.25em] uppercase">
+            <Link href="/podcast" className="hover:text-[#c4572a]">Podcast</Link>
             <Link href="/writing" className="hover:text-[#c4572a]">Writing</Link>
             <Link href="/about" className="hover:text-[#c4572a]">About</Link>
             <a href="mailto:austinokey@gmail.com" className="hover:text-[#c4572a]">Contact</a>
@@ -97,6 +98,7 @@ export default function HomePage() {
 
           <div className="lg:hidden w-full flex items-center justify-between gap-3 text-[10px] tracking-[0.18em] uppercase">
   <div className="flex items-center gap-4 text-[10px] tracking-[0.2em] uppercase">
+    <Link href="/podcast">Podcast</Link>
     <Link href="/writing">Writing</Link>
     <Link href="/about">About</Link>
     <a href="mailto:austinokey@gmail.com">Contact</a>
@@ -309,6 +311,11 @@ export default function HomePage() {
           <div>
             <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "var(--rust)" }}>Quick access</p>
             <ul className="space-y-3 opacity-65 text-sm">
+              <li>
+  <Link href="/podcast" className="hover:text-[#c4572a] transition-colors">
+    Podcast
+  </Link>
+</li>
               <li>
   <Link href="/writing" className="hover:text-[#c4572a] transition-colors">
     Writing
