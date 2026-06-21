@@ -196,36 +196,56 @@ export default function HomePage() {
     </Link>
   </section>
 )}
-<section className="max-w-7xl mx-auto px-5 pt-8 pb-12">
-        <div className="flex items-center justify-between mb-10">
-          <h3 className="text-2xl font-bold uppercase tracking-wide">Latest writings</h3>
-          <Link href="/writing" className="hidden md:flex items-center gap-3 text-xs tracking-[0.25em] uppercase">
-            View all writings <ArrowRight size={16} />
-          </Link>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-7">
-          {essays.map((essay) => (
-            <Link key={essay.slug} href={`/writing/${essay.slug}`} className="group border p-6 hover:-translate-y-1 hover:shadow-md transition-all duration-300" style={{ background: "var(--card)", borderColor: "var(--peach)" }}>
-
+      {/* Latest Writings List */}
+      {essays.length > 0 && (
+        <section className="bg-[var(--parchment)]" style={{ color: "var(--ink)" }}>
+          <div className="max-w-7xl mx-auto px-5 py-12 md:py-16">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
               <div>
-                <p className="text-[10px] tracking-[0.3em] uppercase mb-4" style={{ color: "var(--rust)" }}>
-                  {essay.category}
-                </p>
-                <h4 className="font-serif text-3xl leading-tight group-hover:text-[#c4572a] transition-colors">
-                  {essay.title}
-                </h4>
-                <p className="mt-4 text-sm leading-relaxed opacity-70">
-                  {essay.excerpt}
-                </p>
-                <p className="mt-6 text-xs tracking-[0.2em] uppercase opacity-50">
-                  {essay.date} · {essay.readingTime || "4 min read"}
-                </p>
+                <p className="text-[10px] tracking-[0.35em] uppercase mb-3" style={{ color: "var(--rust)" }}>Essays</p>
+                <h2 className="font-serif text-3xl md:text-4xl leading-tight">Latest writings</h2>
               </div>
-            </Link>
-          ))}
-        </div>
-      </section>
+              <Link href="/writing" className="hidden md:inline-flex items-center gap-2 text-[10px] uppercase tracking-widest hover:text-[var(--rust)] transition-colors border-b border-black/20 pb-1">
+                View All <ArrowRight size={12} />
+              </Link>
+            </div>
+
+            <div className="flex flex-col border-t border-black/10">
+              {essays.map((essay) => (
+                <Link
+                  key={essay.slug}
+                  href={`/writing/${essay.slug}`}
+                  className="group flex flex-col md:flex-row md:items-center justify-between gap-4 p-6 md:py-8 border-b border-black/10 hover:bg-black/5 transition-all duration-300"
+                >
+                  <div className="flex-1">
+                    <p className="text-[10px] tracking-[0.2em] uppercase opacity-40 mb-2">{essay.date}</p>
+                    <h3 className="font-serif text-2xl leading-snug mb-2 group-hover:text-[var(--rust)] transition-colors">
+                      {essay.title}
+                    </h3>
+                    <p className="text-sm opacity-60 leading-relaxed line-clamp-2 md:line-clamp-1 max-w-3xl">
+                      {essay.excerpt}
+                    </p>
+                  </div>
+                  <div className="shrink-0 flex items-center justify-between md:justify-end gap-4 mt-4 md:mt-0">
+                    <span className="text-[10px] uppercase tracking-widest text-[var(--rust)] font-bold md:opacity-0 group-hover:opacity-100 transition-opacity">
+                      Read Essay
+                    </span>
+                    <div className="w-10 h-10 rounded-full border border-black/10 flex items-center justify-center group-hover:bg-[var(--rust)] group-hover:text-white group-hover:border-[var(--rust)] transition-colors">
+                      <ArrowRight size={16} className="-rotate-45 md:rotate-0" />
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            <div className="mt-10 text-center md:hidden">
+              <Link href="/writing" className="inline-flex items-center gap-2 text-[10px] uppercase tracking-widest hover:text-[var(--rust)] transition-colors border-b border-black/20 pb-1">
+                View All <ArrowRight size={12} />
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* FEATURED PODCAST */}
       {latestPodcast && (
