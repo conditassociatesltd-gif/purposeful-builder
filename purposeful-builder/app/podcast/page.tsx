@@ -63,8 +63,8 @@ export default function PodcastPage() {
         {/* Hero Background Image (Portrait) */}
         <div className="absolute top-0 right-0 w-full md:w-1/2 h-[60vh] md:h-full opacity-20 md:opacity-100 z-0 mask-image-gradient-left">
           <Image 
-            src="/images/austin-podcast-headset.png" 
-            alt="Austin Okechukwu Podcast Headset" 
+            src="/images/austin-portrait.jpg" 
+            alt="Austin Okechukwu Portrait" 
             fill 
             priority
             className="object-cover object-top"
@@ -112,24 +112,32 @@ export default function PodcastPage() {
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-[#1a1a1a] rounded-b-3xl z-20" />
                 
                 {/* Screen Content */}
-                <div className="h-full w-full bg-[#f8f9fa] flex flex-col">
-                  {/* Mock Image of guy with headset */}
-                  <div className="relative w-full aspect-square bg-[#e9ecef]">
-                    <Image src="/images/austin-podcast-headset.png" alt="Podcast listening" fill className="object-cover object-top" />
-                  </div>
-                  <div className="p-6 text-center flex-1 flex flex-col justify-center">
-                    <p className="text-[10px] tracking-widest uppercase text-[var(--rust)] font-bold mb-2">New Season</p>
-                    <h3 className="font-serif text-2xl font-bold mb-6 text-black">Formation Podcast</h3>
+                <div className="relative h-full w-full bg-black flex flex-col justify-end text-white">
+                  {/* Full Screen Image */}
+                  <Image src="/images/austin-podcast-headset.png" alt="Podcast listening" fill className="object-cover object-top z-0 opacity-80" />
+                  
+                  {/* Gradient Overlay for Text Readability */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/70 to-transparent z-10" />
+
+                  {/* Player Content Over Image */}
+                  <div className="relative z-20 p-6 text-center">
+                    <p className="text-[9px] tracking-widest uppercase text-[var(--rust)] font-bold mb-2">Now Playing</p>
+                    <h3 className="font-serif text-xl md:text-2xl font-bold mb-1 leading-snug">The Architecture of Men</h3>
+                    <p className="text-[11px] uppercase tracking-widest opacity-60 mb-6 font-medium">Formation Podcast</p>
                     
                     {/* Mock Audio Player inside Phone */}
-                    <div className="space-y-4">
-                      <div className="h-1 w-full bg-black/10 rounded-full overflow-hidden">
-                        <div className="h-full w-1/3 bg-[var(--rust)] rounded-full" />
+                    <div className="space-y-2">
+                      <div className="h-1 w-full bg-white/20 rounded-full overflow-hidden relative cursor-pointer">
+                        <div className="absolute top-0 left-0 h-full w-[15%] bg-[var(--rust)] rounded-full shadow-[0_0_10px_var(--rust)]" />
                       </div>
-                      <div className="flex justify-between items-center text-black">
-                        <Rewind size={20} className="opacity-50" />
-                        <PauseCircle size={40} className="text-[var(--rust)]" />
-                        <FastForward size={20} className="opacity-50" />
+                      <div className="flex justify-between items-center text-[10px] font-medium opacity-60 pb-2 tracking-wider">
+                        <span>02:14</span>
+                        <span>-42:15</span>
+                      </div>
+                      <div className="flex justify-center gap-6 items-center pt-2">
+                        <Rewind size={22} className="opacity-70 hover:opacity-100 transition-opacity cursor-pointer" />
+                        <PauseCircle size={46} className="text-[var(--rust)] hover:scale-105 transition-transform cursor-pointer shadow-xl rounded-full" />
+                        <FastForward size={22} className="opacity-70 hover:opacity-100 transition-opacity cursor-pointer" />
                       </div>
                     </div>
                   </div>
