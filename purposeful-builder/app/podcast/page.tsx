@@ -63,7 +63,7 @@ export default function PodcastPage() {
         {/* Hero Background Image (Portrait) */}
         <div className="absolute top-0 right-0 w-full md:w-1/2 h-[60vh] md:h-full opacity-20 md:opacity-100 z-0 mask-image-gradient-left">
           <Image 
-            src="/images/austin-portrait.jpg" 
+            src="/images/austin-podcast-headset.png" 
             alt="Austin Okechukwu Portrait" 
             fill 
             priority
