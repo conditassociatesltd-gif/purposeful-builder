@@ -160,8 +160,7 @@ export default function HomePage() {
   <section className="max-w-7xl mx-auto px-5 pt-8 pb-12">
     <Link
       href={`/writing/${featuredEssay.slug}`}
-      className="relative grid md:grid-cols-[1.1fr_0.9fr] gap-8 border border-[#d8d2bd] p-6 md:p-10 overflow-hidden group"
-      style={{ minHeight: "420px" }}
+      className="relative flex flex-col md:flex-row md:items-center justify-between gap-6 border border-[#d8d2bd] p-6 md:p-8 overflow-hidden group"
     >
       {/* Background image */}
       <Image
@@ -172,41 +171,28 @@ export default function HomePage() {
         priority
       />
       {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/60 to-black/40" />
+      <div className="absolute inset-0 bg-black/75" />
 
-      <div className="relative z-10">
-        <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "#e8a87c" }}>
+      <div className="relative z-10 flex-1">
+        <p className="text-[10px] tracking-[0.35em] uppercase mb-3" style={{ color: "#e8a87c" }}>
           Featured writing
         </p>
-
-        <h2 className="font-serif text-4xl md:text-6xl leading-tight text-white/95 group-hover:text-[#e8a87c] transition-colors">
+        <h2 className="font-serif text-3xl md:text-4xl leading-tight text-white/95 group-hover:text-[#e8a87c] transition-colors mb-2">
           {featuredEssay.title}
         </h2>
-
-        <p className="mt-5 text-lg leading-relaxed text-white/75 max-w-4xl">
+        <p className="text-sm text-white/60 line-clamp-2 md:line-clamp-1 max-w-3xl">
           {featuredEssay.excerpt}
         </p>
+      </div>
 
-<div className="mt-8">
-  <span className="inline-flex items-center border border-white/40 text-white px-5 py-2 text-sm tracking-wide hover:bg-white hover:text-black transition-colors">
-    Continue Reading →
-  </span>
-</div>
-        <p className="mt-8 text-xs tracking-[0.25em] uppercase text-white/40">
-          {featuredEssay.date} · {featuredEssay.readingTime || "4 min read"}
+      <div className="relative z-10 shrink-0 md:text-right mt-4 md:mt-0">
+        <span className="inline-flex items-center text-[#e8a87c] text-xs font-bold uppercase tracking-widest group-hover:text-white transition-colors mb-2 border border-[#e8a87c]/30 px-6 py-3 hover:bg-white/10">
+          Continue Reading <ArrowRight size={14} className="ml-3" />
+        </span>
+        <p className="text-[10px] tracking-[0.2em] uppercase text-white/40 mt-3 md:mt-2">
+          {featuredEssay.readingTime || "4 min read"}
         </p>
       </div>
-<div className="relative z-10 hidden md:flex items-end justify-end">
-  <div className="max-w-sm">
-    <p className="text-sm uppercase tracking-[0.3em] text-white/35 mb-4">
-      Reflection
-    </p>
-
-    <p className="font-serif text-2xl leading-relaxed text-white/55 italic">
-      &ldquo;Writing became a form of excavation.&rdquo;
-    </p>
-  </div>
-</div>
     </Link>
   </section>
 )}
