@@ -39,11 +39,15 @@ export default async function PodcastEpisodePage({ params }: { params: Promise<{
             <span className="font-black tracking-tight uppercase">Austin Okechukwu</span>
           </Link>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6">
+            <nav className="hidden md:flex items-center gap-6 text-[10px] tracking-[0.25em] uppercase font-semibold">
+              <Link href="/" className="hover:text-[var(--rust)] transition-colors">Home</Link>
+              <Link href="/podcast" className="hover:text-[var(--rust)] transition-colors">Podcast</Link>
+              <Link href="/writing" className="hover:text-[var(--rust)] transition-colors">Writing</Link>
+              <Link href="/#portfolio" className="hover:text-[var(--rust)] transition-colors">Portfolio</Link>
+              <Link href="/about" className="hover:text-[var(--rust)] transition-colors">About</Link>
+            </nav>
             <ThemeToggle />
-            <Link href="/podcast" className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase opacity-50 ml-2 hover:opacity-100 transition-opacity">
-              <ArrowLeft size={14} /> All Podcasts
-            </Link>
           </div>
         </div>
       </header>

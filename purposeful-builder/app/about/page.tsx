@@ -49,6 +49,7 @@ export default function AboutPage() {
               <Link href="/" className="hover:text-[var(--rust)] transition-colors">Home</Link>
               <Link href="/podcast" className="hover:text-[var(--rust)] transition-colors">Podcast</Link>
               <Link href="/writing" className="hover:text-[var(--rust)] transition-colors">Writing</Link>
+              <Link href="/#portfolio" className="hover:text-[var(--rust)] transition-colors">Portfolio</Link>
             </nav>
             <ThemeToggle />
           </div>

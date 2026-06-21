@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, ArrowLeft, Mail, Search, BookOpen, Building2, Users, Home, Landmark, PenLine } from "lucide-react";
+import { ArrowRight, ArrowLeft, Mail, Search, BookOpen, Building2, Users, Home, Landmark, PenLine, Headphones, PlayCircle } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
 import { getAllEssays } from "@/lib/essays";
+import { getAllPodcasts } from "@/lib/podcasts";
 import EcosystemCarousel from "@/components/EcosystemCarousel";
 
 const portfolio = [
@@ -19,6 +20,9 @@ export default function HomePage() {
   const essays = allEssays
     .filter((essay) => essay.slug !== featuredEssay.slug)
     .slice(0, 3);
+  
+  const allPodcasts = getAllPodcasts();
+  const latestPodcast = allPodcasts[0];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -87,6 +91,7 @@ export default function HomePage() {
           <nav className="hidden lg:flex items-center gap-8 text-xs tracking-[0.25em] uppercase">
             <Link href="/podcast" className="hover:text-[#c4572a]">Podcast</Link>
             <Link href="/writing" className="hover:text-[#c4572a]">Writing</Link>
+            <Link href="/#portfolio" className="hover:text-[#c4572a]">Portfolio</Link>
             <Link href="/about" className="hover:text-[#c4572a]">About</Link>
             <a href="mailto:austinokey@gmail.com" className="hover:text-[#c4572a]">Contact</a>
             <Link href="/search" className="hover:text-[#c4572a]">
@@ -100,6 +105,7 @@ export default function HomePage() {
   <div className="flex items-center gap-4 text-[10px] tracking-[0.2em] uppercase">
     <Link href="/podcast">Podcast</Link>
     <Link href="/writing">Writing</Link>
+    <Link href="/#portfolio">Portfolio</Link>
     <Link href="/about">About</Link>
     <a href="mailto:austinokey@gmail.com">Contact</a>
   </div>
@@ -138,12 +144,12 @@ export default function HomePage() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <Link href="/about" className="inline-flex items-center gap-3 px-8 py-5 text-xs tracking-[0.25em] uppercase text-white font-semibold transition-colors hover:bg-[#5a743e]" style={{ background: "var(--rust)" }}>
-                About me <ArrowRight size={16} />
+              <Link href="/podcast" className="inline-flex items-center gap-3 px-8 py-5 text-xs tracking-[0.25em] uppercase text-white font-semibold transition-colors hover:bg-[#a64a23]" style={{ background: "var(--rust)" }}>
+                Listen to podcast <Headphones size={16} />
               </Link>
 
               <Link href="/writing" className="inline-flex items-center gap-3 px-8 py-5 text-xs tracking-[0.25em] uppercase text-white border border-white/30 backdrop-blur-sm transition-colors hover:bg-white/10 hover:border-white/50">
-                Read writings
+                Read writings <ArrowRight size={16} />
               </Link>
             </div>
           </div>
@@ -235,7 +241,42 @@ export default function HomePage() {
         </div>
       </section>
 
-      <EcosystemCarousel />
+      {/* FEATURED PODCAST */}
+      {latestPodcast && (
+        <section className="bg-[#121310] border-y border-white/5">
+          <div className="max-w-7xl mx-auto px-5 py-20 md:py-32">
+            <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-center">
+              <div className="relative aspect-square w-full max-w-lg mx-auto bg-black rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] group">
+                 <Image src={latestPodcast.coverImage || "/images/austin-podcast-headset.png"} alt={latestPodcast.title} fill className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" />
+                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                 <div className="absolute bottom-8 left-8 right-8">
+                   <p className="text-[10px] tracking-widest uppercase text-[var(--rust)] font-bold mb-2">Formation Podcast</p>
+                   <h3 className="font-serif text-2xl md:text-3xl font-bold text-white mb-6 leading-snug">{latestPodcast.title}</h3>
+                   <div className="h-1.5 w-full bg-white/20 rounded-full overflow-hidden relative">
+                     <div className="absolute top-0 left-0 h-full w-[15%] bg-[var(--rust)] rounded-full shadow-[0_0_10px_var(--rust)]" />
+                   </div>
+                 </div>
+              </div>
+
+              <div>
+                <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>New Episode</p>
+                <h2 className="font-serif text-5xl md:text-6xl text-white leading-[1.05] mb-8">{latestPodcast.title}</h2>
+                <p className="text-lg md:text-xl opacity-60 text-white mb-12 leading-relaxed">{latestPodcast.excerpt}</p>
+                <div className="flex flex-wrap items-center gap-6">
+                  <Link href={`/podcast/${latestPodcast.slug}`} className="inline-flex items-center gap-4 bg-[var(--rust)] hover:bg-[#a64a23] text-white px-8 py-5 transition-all uppercase tracking-widest text-xs font-bold hover:-translate-y-1 hover:shadow-xl hover:shadow-[var(--rust)]/20">
+                    <PlayCircle size={24} /> Listen Now
+                  </Link>
+                  <p className="text-xs uppercase tracking-[0.2em] text-white/40">{latestPodcast.duration}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      <div id="portfolio">
+        <EcosystemCarousel />
+      </div>
 
       <section id="subscribe" style={{ background: "var(--rust)", color: "var(--cream)" }}>
         <div className="max-w-6xl mx-auto px-5 py-6">

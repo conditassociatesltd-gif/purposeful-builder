@@ -25,9 +25,10 @@ export default function PodcastPage() {
           </Link>
 
           <div className="flex items-center gap-6">
-            <nav className="hidden md:flex items-center gap-6 text-xs tracking-[0.25em] uppercase">
+            <nav className="hidden md:flex items-center gap-6 text-[10px] tracking-[0.25em] uppercase font-semibold">
               <Link href="/" className="hover:text-[var(--rust)] transition-colors">Home</Link>
               <Link href="/writing" className="hover:text-[var(--rust)] transition-colors">Writing</Link>
+              <Link href="/#portfolio" className="hover:text-[var(--rust)] transition-colors">Portfolio</Link>
               <Link href="/about" className="hover:text-[var(--rust)] transition-colors">About</Link>
             </nav>
             <ThemeToggle />

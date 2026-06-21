@@ -112,6 +112,14 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
       <span className="font-black tracking-tight uppercase">Austin Okechukwu</span>
     </Link>
 
+            <nav className="hidden md:flex items-center gap-6 text-[10px] tracking-[0.25em] uppercase font-semibold">
+              <Link href="/" className="hover:text-[var(--rust)] transition-colors">Home</Link>
+              <Link href="/podcast" className="hover:text-[var(--rust)] transition-colors">Podcast</Link>
+              <Link href="/writing" className="hover:text-[var(--rust)] transition-colors">Writing</Link>
+              <Link href="/#portfolio" className="hover:text-[var(--rust)] transition-colors">Portfolio</Link>
+              <Link href="/about" className="hover:text-[var(--rust)] transition-colors">About</Link>
+            </nav>
+
     <div className="flex items-center gap-3">
       <ReaderControls />
       <ThemeToggle />
