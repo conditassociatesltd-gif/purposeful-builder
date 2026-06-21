@@ -63,8 +63,8 @@ export default function PodcastPage() {
         {/* Hero Background Image (Portrait) */}
         <div className="absolute top-0 right-0 w-full md:w-1/2 h-[60vh] md:h-full opacity-20 md:opacity-100 z-0 mask-image-gradient-left">
           <Image 
-            src="/images/austin-portrait.jpg" 
-            alt="Austin Okechukwu Portrait" 
+            src="/images/austin-podcast-headset.png" 
+            alt="Austin Okechukwu Podcast Headset" 
             fill 
             priority
             className="object-cover object-top"
@@ -115,7 +115,7 @@ export default function PodcastPage() {
                 <div className="h-full w-full bg-[#f8f9fa] flex flex-col">
                   {/* Mock Image of guy with headset */}
                   <div className="relative w-full aspect-square bg-[#e9ecef]">
-                    <Image src="/images/austin-portrait.jpg" alt="Podcast listening" fill className="object-cover object-top" />
+                    <Image src="/images/austin-podcast-headset.png" alt="Podcast listening" fill className="object-cover object-top" />
                   </div>
                   <div className="p-6 text-center flex-1 flex flex-col justify-center">
                     <p className="text-[10px] tracking-widest uppercase text-[var(--rust)] font-bold mb-2">New Season</p>
