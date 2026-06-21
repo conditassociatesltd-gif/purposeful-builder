@@ -42,8 +42,8 @@ export default function PodcastPage() {
             <p className="font-serif italic text-3xl md:text-4xl text-[var(--rust)] mb-2 tracking-wide opacity-90">
               Austin Okechukwu
             </p>
-            <h1 className="font-serif text-6xl md:text-8xl leading-[0.9] tracking-tight mb-8">
-              Podcast
+            <h1 className="font-serif text-6xl md:text-7xl leading-[0.95] tracking-tight mb-8">
+              Formation Podcast
             </h1>
             <p className="text-lg md:text-xl leading-relaxed opacity-75 mb-10">
               I love exploring the quiet work of becoming—helping men and builders attract their true identity, purpose, and impact.
@@ -82,7 +82,7 @@ export default function PodcastPage() {
             Welcome to my podcast
           </p>
           <h2 className="font-serif text-4xl md:text-6xl leading-[1.1] mb-8">
-            Formed in Silence <br/>
+            Formation Podcast <br/>
             <span className="italic opacity-75">The Architecture of Men.</span>
           </h2>
           <p className="text-lg opacity-60 max-w-2xl mx-auto leading-relaxed mb-16">
@@ -115,11 +115,11 @@ export default function PodcastPage() {
                 <div className="h-full w-full bg-[#f8f9fa] flex flex-col">
                   {/* Mock Image of guy with headset */}
                   <div className="relative w-full aspect-square bg-[#e9ecef]">
-                    <Image src="/images/hero-mentorship.jpg" alt="Podcast listening" fill className="object-cover" />
+                    <Image src="/images/austin-portrait.jpg" alt="Podcast listening" fill className="object-cover object-top" />
                   </div>
                   <div className="p-6 text-center flex-1 flex flex-col justify-center">
                     <p className="text-[10px] tracking-widest uppercase text-[var(--rust)] font-bold mb-2">New Season</p>
-                    <h3 className="font-serif text-2xl font-bold mb-6 text-black">Formed in Silence</h3>
+                    <h3 className="font-serif text-2xl font-bold mb-6 text-black">Formation Podcast</h3>
                     
                     {/* Mock Audio Player inside Phone */}
                     <div className="space-y-4">
