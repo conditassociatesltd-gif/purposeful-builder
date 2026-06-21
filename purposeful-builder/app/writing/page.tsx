@@ -170,6 +170,9 @@ export default function WritingPage() {
               href={`/writing/${essay.slug}`}
               className="group flex flex-col h-full hover:bg-black/[0.03] dark:hover:bg-white/[0.03] transition-colors p-4 -mx-4 rounded-xl"
             >
+              <span className="font-serif text-5xl md:text-6xl font-bold opacity-[0.08] mb-6 group-hover:opacity-20 transition-opacity">
+                {String(index + 1).padStart(2, '0')}
+              </span>
               <div>
                 <p className="text-[9px] font-bold tracking-[0.25em] uppercase mb-4" style={{ color: "var(--rust)" }}>
                   {essay.category}
