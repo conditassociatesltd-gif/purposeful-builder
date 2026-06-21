@@ -244,30 +244,23 @@ export default function HomePage() {
       {/* FEATURED PODCAST */}
       {latestPodcast && (
         <section className="bg-[#121310] border-y border-white/5">
-          <div className="max-w-7xl mx-auto px-5 py-20 md:py-32">
-            <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-center">
-              <div className="relative aspect-square w-full max-w-lg mx-auto bg-black rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] group">
-                 <Image src={latestPodcast.coverImage || "/images/austin-podcast-headset.png"} alt={latestPodcast.title} fill className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-                 <div className="absolute bottom-8 left-8 right-8">
-                   <p className="text-[10px] tracking-widest uppercase text-[var(--rust)] font-bold mb-2">Formation Podcast</p>
-                   <h3 className="font-serif text-2xl md:text-3xl font-bold text-white mb-6 leading-snug">{latestPodcast.title}</h3>
-                   <div className="h-1.5 w-full bg-white/20 rounded-full overflow-hidden relative">
-                     <div className="absolute top-0 left-0 h-full w-[15%] bg-[var(--rust)] rounded-full shadow-[0_0_10px_var(--rust)]" />
-                   </div>
+          <div className="max-w-7xl mx-auto px-5 py-12 md:py-16">
+            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10 bg-black border border-white/5 p-6 md:p-8 rounded-3xl group">
+              <div className="relative shrink-0 w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden shadow-2xl">
+                 <Image src={latestPodcast.coverImage || "/images/austin-podcast-headset.png"} alt={latestPodcast.title} fill className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" />
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                 <div className="absolute bottom-3 left-3 flex items-center justify-center w-8 h-8 rounded-full bg-[var(--rust)] shadow-lg">
+                   <PlayCircle size={16} className="text-white" />
                  </div>
               </div>
 
-              <div>
-                <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>New Episode</p>
-                <h2 className="font-serif text-5xl md:text-6xl text-white leading-[1.05] mb-8">{latestPodcast.title}</h2>
-                <p className="text-lg md:text-xl opacity-60 text-white mb-12 leading-relaxed">{latestPodcast.excerpt}</p>
-                <div className="flex flex-wrap items-center gap-6">
-                  <Link href={`/podcast/${latestPodcast.slug}`} className="inline-flex items-center gap-4 bg-[var(--rust)] hover:bg-[#a64a23] text-white px-8 py-5 transition-all uppercase tracking-widest text-xs font-bold hover:-translate-y-1 hover:shadow-xl hover:shadow-[var(--rust)]/20">
-                    <PlayCircle size={24} /> Listen Now
-                  </Link>
-                  <p className="text-xs uppercase tracking-[0.2em] text-white/40">{latestPodcast.duration}</p>
-                </div>
+              <div className="flex-1 text-center md:text-left">
+                <p className="text-[10px] tracking-[0.35em] uppercase mb-3" style={{ color: "var(--rust)" }}>New Episode · {latestPodcast.duration}</p>
+                <h2 className="font-serif text-2xl md:text-4xl text-white leading-tight mb-4">{latestPodcast.title}</h2>
+                <p className="text-sm md:text-base opacity-60 text-white mb-6 leading-relaxed max-w-2xl">{latestPodcast.excerpt}</p>
+                <Link href={`/podcast/${latestPodcast.slug}`} className="inline-flex items-center gap-3 border border-white/20 hover:border-[var(--rust)] text-white px-6 py-3 rounded-full transition-all uppercase tracking-widest text-[10px] font-bold hover:bg-white/5">
+                  Listen to full episode
+                </Link>
               </div>
             </div>
           </div>
