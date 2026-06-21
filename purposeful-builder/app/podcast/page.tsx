@@ -40,7 +40,7 @@ export default function PodcastPage() {
         <div className="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center relative z-10">
           <div className="max-w-xl">
             <p className="font-serif italic text-3xl md:text-4xl text-[var(--rust)] mb-2 tracking-wide opacity-90">
-              Austin Okechukwu
+              The
             </p>
             <h1 className="font-serif text-6xl md:text-7xl leading-[0.95] tracking-tight mb-8">
               Formation Podcast
