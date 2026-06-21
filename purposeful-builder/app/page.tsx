@@ -284,51 +284,43 @@ export default function HomePage() {
         <EcosystemCarousel />
       </div>
 
-      <section id="subscribe" style={{ background: "var(--rust)", color: "var(--cream)" }}>
-        <div className="max-w-6xl mx-auto px-5 py-6">
-  <div className="grid md:grid-cols-[1fr_380px] gap-10 items-center border border-white/10 p-5 md:p-6">
+      <section id="subscribe" style={{ background: "#121310", color: "#fdfbf7" }}>
+        <div className="max-w-6xl mx-auto px-5 py-12">
+          <div className="grid md:grid-cols-[1fr_380px] gap-12 items-center border border-white/5 bg-black p-8 md:p-12 rounded-3xl shadow-xl">
+            <div>
+              <p className="text-[10px] tracking-[0.35em] uppercase mb-4 font-bold" style={{ color: "var(--rust)" }}>
+                Stay Updated
+              </p>
+              <h2 className="font-serif text-3xl md:text-4xl leading-tight max-w-xl mb-4">
+                Reflections worth returning to.
+              </h2>
+              <p className="text-sm md:text-base opacity-60 max-w-lg leading-relaxed">
+                Occasional essays on identity, faith, discipline, masculinity, building, and the quiet work of becoming.
+              </p>
+            </div>
 
-    <div>
-      <p
-        className="text-[10px] tracking-[0.35em] uppercase mb-4 opacity-70"
-      >
-        Subscribe
-      </p>
-
-      <h2 className="font-serif text-3xl md:text-4xl leading-tight max-w-xl">
-        Reflections worth returning to.
-      </h2>
-
-      <p className="mt-2 text-sm md:text-base opacity-70 max-w-lg leading-relaxed">
-        Occasional essays on identity, faith, discipline, masculinity, building, and the quiet work of becoming.
-      </p>
-    </div>
-
-    <form
-      action="https://buttondown.email/api/emails/embed-subscribe/arc_austin"
-      method="post"
-      className="flex flex-col gap-3"
-    >
-      <input
-        type="email"
-        name="email"
-        placeholder="email address"
-        required
-        className="bg-transparent border px-5 py-4 outline-none placeholder:text-white/40 text-white text-sm"
-        style={{ borderColor: "rgba(255,255,255,0.2)" }}
-      />
-
-      <button
-        type="submit"
-        className="px-5 py-4 text-[10px] tracking-[0.3em] uppercase font-semibold"
-        style={{ background: "var(--peach)", color: "var(--rust-deep)" }}
-      >
-        Subscribe
-      </button>
-    </form>
-
-  </div>
-</div>
+            <form
+              action="https://buttondown.email/api/emails/embed-subscribe/arc_austin"
+              method="post"
+              className="flex flex-col gap-4"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+                className="bg-white/5 border border-white/10 px-6 py-4 outline-none focus:border-[var(--rust)] placeholder:text-white/30 text-white text-sm rounded-xl transition-colors"
+              />
+              <button
+                type="submit"
+                className="px-6 py-4 text-[10px] tracking-[0.3em] uppercase font-bold rounded-xl transition-all hover:scale-[1.02] hover:shadow-lg hover:shadow-[var(--rust)]/20"
+                style={{ background: "var(--rust)", color: "white" }}
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
       </section>
 <div className="border-t border-white/5">
   <div className="max-w-7xl mx-auto px-5 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-[10px] tracking-[0.25em] uppercase opacity-40">
