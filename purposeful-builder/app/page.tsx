@@ -5,6 +5,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 import { getAllEssays } from "@/lib/essays";
 import { getAllPodcasts } from "@/lib/podcasts";
 import EcosystemCarousel from "@/components/EcosystemCarousel";
+import FadeIn from "@/components/FadeIn";
 
 const portfolio = [
   { title: "Condit Associates Ltd", text: "Design, construction, project management, and purposeful execution." },
@@ -131,37 +132,46 @@ export default function HomePage() {
 
         <div className="relative max-w-7xl mx-auto px-5 py-20 w-full z-10">
           <div className="max-w-3xl pt-16">
-            <p className="text-xs md:text-sm tracking-[0.35em] uppercase mb-6" style={{ color: "var(--peach)" }}>
-              The Purposeful Builder
-            </p>
+            <FadeIn delay={0.1}>
+              <p className="text-xs md:text-sm tracking-[0.35em] uppercase mb-6" style={{ color: "var(--peach)" }}>
+                The Purposeful Builder
+              </p>
+            </FadeIn>
 
-            <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1] md:leading-[0.92] tracking-tight text-[#fdfbf7] drop-shadow-lg">
-              Welcome to my digital space
-            </h2>
+            <FadeIn delay={0.3}>
+              <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1] md:leading-[0.92] tracking-tight text-[#fdfbf7] drop-shadow-lg">
+                Welcome to my digital space
+              </h2>
+            </FadeIn>
 
-            <p className="mt-8 text-xl md:text-2xl leading-relaxed max-w-xl text-[#fdfbf7]/80 drop-shadow-md">
-              A builder’s reflections on identity, faith, family, masculinity, discipline, wealth, and the quiet work of becoming.
-            </p>
+            <FadeIn delay={0.5}>
+              <p className="mt-8 text-xl md:text-2xl leading-relaxed max-w-xl text-[#fdfbf7]/80 drop-shadow-md">
+                A builder’s reflections on identity, faith, family, masculinity, discipline, wealth, and the quiet work of becoming.
+              </p>
+            </FadeIn>
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link href="/podcast" className="inline-flex items-center gap-3 px-8 py-5 text-xs tracking-[0.25em] uppercase text-white font-semibold transition-colors hover:bg-[#a64a23]" style={{ background: "var(--rust)" }}>
-                Listen to podcast <Headphones size={16} />
-              </Link>
+            <FadeIn delay={0.7}>
+              <div className="mt-10 flex flex-wrap gap-4">
+                <Link href="/podcast" className="inline-flex items-center gap-3 px-8 py-5 text-xs tracking-[0.25em] uppercase text-white font-semibold transition-colors hover:bg-[#a64a23]" style={{ background: "var(--rust)" }}>
+                  Listen to podcast <Headphones size={16} />
+                </Link>
 
-              <Link href="/writing" className="inline-flex items-center gap-3 px-8 py-5 text-xs tracking-[0.25em] uppercase text-white border border-white/30 backdrop-blur-sm transition-colors hover:bg-white/10 hover:border-white/50">
-                Read writings <ArrowRight size={16} />
-              </Link>
-            </div>
+                <Link href="/writing" className="inline-flex items-center gap-3 px-8 py-5 text-xs tracking-[0.25em] uppercase text-white border border-white/30 backdrop-blur-sm transition-colors hover:bg-white/10 hover:border-white/50">
+                  Read writings <ArrowRight size={16} />
+                </Link>
+              </div>
+            </FadeIn>
           </div>
         </div>
       </section>
 
 {featuredEssay && (
   <section className="max-w-7xl mx-auto px-5 pt-8 pb-12">
-    <Link
-      href={`/writing/${featuredEssay.slug}`}
-      className="relative flex flex-col md:flex-row md:items-center justify-between gap-6 border border-[#d8d2bd] p-6 md:p-8 overflow-hidden group"
-    >
+    <FadeIn delay={0.2}>
+      <Link
+        href={`/writing/${featuredEssay.slug}`}
+        className="relative flex flex-col md:flex-row md:items-center justify-between gap-6 border border-[#d8d2bd] p-6 md:p-8 overflow-hidden group"
+      >
       {/* Background image */}
       <Image
         src="/images/featured-writing-bg.png"
@@ -194,6 +204,7 @@ export default function HomePage() {
         </p>
       </div>
     </Link>
+    </FadeIn>
   </section>
 )}
       {/* Latest Writings List */}
@@ -212,36 +223,37 @@ export default function HomePage() {
             {/* 3-column minimal grid with vertical dividers */}
             <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-black/10 border-b border-black/10">
               {essays.map((essay, index) => (
-                <Link
-                  key={essay.slug}
-                  href={`/writing/${essay.slug}`}
-                  className="group flex flex-col p-6 md:p-8 hover:bg-black/5 transition-colors"
-                >
-                  {/* Huge faded number */}
-                  <span className="font-serif text-6xl font-bold opacity-[0.08] mb-6 group-hover:opacity-20 transition-opacity">
-                    {String(index + 1).padStart(2, '0')}
-                  </span>
-                  
-                  {/* Category */}
-                  <p className="text-[9px] tracking-[0.3em] uppercase mb-4 font-bold" style={{ color: "var(--rust)" }}>
-                    {essay.category || "Reflection"}
-                  </p>
-
-                  {/* Title */}
-                  <h3 className="font-serif text-xl font-bold leading-snug mb-4 group-hover:text-[var(--rust)] transition-colors">
-                    {essay.title}
-                  </h3>
-
-                  {/* Excerpt */}
-                  <p className="text-sm opacity-60 leading-relaxed line-clamp-3 mb-10 flex-1">
-                    {essay.excerpt}
-                  </p>
-
-                  {/* Date & Read Time */}
-                  <p className="text-[9px] tracking-[0.2em] uppercase opacity-40 font-semibold mt-auto">
-                    {essay.date} · {essay.readingTime || "4 MIN READ"}
-                  </p>
-                </Link>
+                <FadeIn key={essay.slug} delay={index * 0.15} fullWidth>
+                  <Link
+                    href={`/writing/${essay.slug}`}
+                    className="group flex flex-col h-full p-6 md:p-8 hover:bg-black/5 transition-colors"
+                  >
+                    {/* Huge faded number */}
+                    <span className="font-serif text-6xl font-bold opacity-[0.08] mb-6 group-hover:opacity-20 transition-opacity">
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                    
+                    {/* Category */}
+                    <p className="text-[9px] tracking-[0.3em] uppercase mb-4 font-bold" style={{ color: "var(--rust)" }}>
+                      {essay.category || "Reflection"}
+                    </p>
+  
+                    {/* Title */}
+                    <h3 className="font-serif text-xl font-bold leading-snug mb-4 group-hover:text-[var(--rust)] transition-colors">
+                      {essay.title}
+                    </h3>
+  
+                    {/* Excerpt */}
+                    <p className="text-sm opacity-60 leading-relaxed line-clamp-3 mb-10 flex-1">
+                      {essay.excerpt}
+                    </p>
+  
+                    {/* Date & Read Time */}
+                    <p className="text-[9px] tracking-[0.2em] uppercase opacity-40 font-semibold mt-auto">
+                      {essay.date} · {essay.readingTime || "4 MIN READ"}
+                    </p>
+                  </Link>
+                </FadeIn>
               ))}
             </div>
 
@@ -257,26 +269,28 @@ export default function HomePage() {
       {/* FEATURED PODCAST */}
       {latestPodcast && (
         <section className="bg-[#121310] border-y border-white/5">
-          <div className="max-w-7xl mx-auto px-5 py-12 md:py-16">
-            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10 bg-black border border-white/5 p-6 md:p-8 rounded-3xl group">
-              <div className="relative shrink-0 w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden shadow-2xl">
-                 <Image src={latestPodcast.coverImage || "/images/austin-podcast-headset.png"} alt={latestPodcast.title} fill className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                 <div className="absolute bottom-3 left-3 flex items-center justify-center w-8 h-8 rounded-full bg-[var(--rust)] shadow-lg">
-                   <PlayCircle size={16} className="text-white" />
-                 </div>
-              </div>
-
-              <div className="flex-1 text-center md:text-left">
-                <p className="text-[10px] tracking-[0.35em] uppercase mb-3" style={{ color: "var(--rust)" }}>New Episode · {latestPodcast.duration}</p>
-                <h2 className="font-serif text-2xl md:text-4xl text-white leading-tight mb-4">{latestPodcast.title}</h2>
-                <p className="text-sm md:text-base opacity-60 text-white mb-6 leading-relaxed max-w-2xl">{latestPodcast.excerpt}</p>
-                <Link href={`/podcast/${latestPodcast.slug}`} className="inline-flex items-center gap-3 border border-white/20 hover:border-[var(--rust)] text-white px-6 py-3 rounded-full transition-all uppercase tracking-widest text-[10px] font-bold hover:bg-white/5">
-                  Listen to full episode
-                </Link>
+          <FadeIn delay={0.2} direction="up">
+            <div className="max-w-7xl mx-auto px-5 py-12 md:py-16">
+              <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10 bg-black border border-white/5 p-6 md:p-8 rounded-3xl group">
+                <div className="relative shrink-0 w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden shadow-2xl">
+                   <Image src={latestPodcast.coverImage || "/images/austin-podcast-headset.png"} alt={latestPodcast.title} fill className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" />
+                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                   <div className="absolute bottom-3 left-3 flex items-center justify-center w-8 h-8 rounded-full bg-[var(--rust)] shadow-lg">
+                     <PlayCircle size={16} className="text-white" />
+                   </div>
+                </div>
+  
+                <div className="flex-1 text-center md:text-left">
+                  <p className="text-[10px] tracking-[0.35em] uppercase mb-3" style={{ color: "var(--rust)" }}>New Episode · {latestPodcast.duration}</p>
+                  <h2 className="font-serif text-2xl md:text-4xl text-white leading-tight mb-4">{latestPodcast.title}</h2>
+                  <p className="text-sm md:text-base opacity-60 text-white mb-6 leading-relaxed max-w-2xl">{latestPodcast.excerpt}</p>
+                  <Link href={`/podcast/${latestPodcast.slug}`} className="inline-flex items-center gap-3 border border-white/20 hover:border-[var(--rust)] text-white px-6 py-3 rounded-full transition-all uppercase tracking-widest text-[10px] font-bold hover:bg-white/5">
+                    Listen to full episode
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
+          </FadeIn>
         </section>
       )}
 
@@ -286,40 +300,42 @@ export default function HomePage() {
 
       <section id="subscribe" style={{ background: "#121310", color: "#fdfbf7" }}>
         <div className="max-w-6xl mx-auto px-5 py-12">
-          <div className="grid md:grid-cols-[1fr_380px] gap-12 items-center border border-white/5 bg-black p-8 md:p-12 rounded-3xl shadow-xl">
-            <div>
-              <p className="text-[10px] tracking-[0.35em] uppercase mb-4 font-bold" style={{ color: "var(--rust)" }}>
-                Stay Updated
-              </p>
-              <h2 className="font-serif text-3xl md:text-4xl leading-tight max-w-xl mb-4">
-                Reflections worth returning to.
-              </h2>
-              <p className="text-sm md:text-base opacity-60 max-w-lg leading-relaxed">
-                Occasional essays on identity, faith, discipline, masculinity, building, and the quiet work of becoming.
-              </p>
-            </div>
-
-            <form
-              action="https://buttondown.email/api/emails/embed-subscribe/arc_austin"
-              method="post"
-              className="flex flex-col gap-4"
-            >
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email address"
-                required
-                className="bg-white/5 border border-white/10 px-6 py-4 outline-none focus:border-[var(--rust)] placeholder:text-white/30 text-white text-sm rounded-xl transition-colors"
-              />
-              <button
-                type="submit"
-                className="px-6 py-4 text-[10px] tracking-[0.3em] uppercase font-bold rounded-xl transition-all hover:scale-[1.02] hover:shadow-lg hover:shadow-[var(--rust)]/20"
-                style={{ background: "var(--rust)", color: "white" }}
+          <FadeIn delay={0.2} direction="up">
+            <div className="grid md:grid-cols-[1fr_380px] gap-12 items-center border border-white/5 bg-black p-8 md:p-12 rounded-3xl shadow-xl">
+              <div>
+                <p className="text-[10px] tracking-[0.35em] uppercase mb-4 font-bold" style={{ color: "var(--rust)" }}>
+                  Stay Updated
+                </p>
+                <h2 className="font-serif text-3xl md:text-4xl leading-tight max-w-xl mb-4">
+                  Reflections worth returning to.
+                </h2>
+                <p className="text-sm md:text-base opacity-60 max-w-lg leading-relaxed">
+                  Occasional essays on identity, faith, discipline, masculinity, building, and the quiet work of becoming.
+                </p>
+              </div>
+  
+              <form
+                action="https://buttondown.email/api/emails/embed-subscribe/arc_austin"
+                method="post"
+                className="flex flex-col gap-4"
               >
-                Subscribe
-              </button>
-            </form>
-          </div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  required
+                  className="bg-white/5 border border-white/10 px-6 py-4 outline-none focus:border-[var(--rust)] placeholder:text-white/30 text-white text-sm rounded-xl transition-colors"
+                />
+                <button
+                  type="submit"
+                  className="px-6 py-4 text-[10px] tracking-[0.3em] uppercase font-bold rounded-xl transition-all hover:scale-[1.02] hover:shadow-lg hover:shadow-[var(--rust)]/20"
+                  style={{ background: "var(--rust)", color: "white" }}
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </FadeIn>
         </div>
       </section>
 <div className="border-t border-white/5">

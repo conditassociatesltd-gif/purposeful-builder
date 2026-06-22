@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import FadeIn from "@/components/FadeIn";
 
 export default function EcosystemCarousel() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -35,15 +36,16 @@ export default function EcosystemCarousel() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-5">
         {/* Header Row */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-10">
-          <div>
-            <div className="inline-block px-3 py-1 rounded-full border border-white/20 text-[9px] tracking-widest uppercase mb-4 text-white/70">
-              My Ecosystem
+        <FadeIn direction="up">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-10">
+            <div>
+              <div className="inline-block px-3 py-1 rounded-full border border-white/20 text-[9px] tracking-widest uppercase mb-4 text-white/70">
+                My Ecosystem
+              </div>
+              <h2 className="font-serif text-3xl md:text-4xl leading-tight">
+                A personal portfolio of <span className="text-[#cba37c]">work & ideas</span>
+              </h2>
             </div>
-            <h2 className="font-serif text-3xl md:text-4xl leading-tight">
-              A personal portfolio of <span className="text-[#cba37c]">work & ideas</span>
-            </h2>
-          </div>
           <div className="md:max-w-sm">
             <p className="text-white/70 mb-6 text-sm leading-relaxed">
               Beyond writing, this space connects the businesses, books, mentorship, and construction work that shape my life.
@@ -64,8 +66,10 @@ export default function EcosystemCarousel() {
             </div>
           </div>
         </div>
+        </FadeIn>
 
         {/* Horizontal Scroll Cards */}
+        <FadeIn delay={0.2} direction="up">
         <div 
           ref={scrollRef}
           className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 -mx-5 px-5 md:mx-0 md:px-0 scrollbar-hide scroll-smooth" 
@@ -165,6 +169,7 @@ export default function EcosystemCarousel() {
             </div>
           </div>
         </div>
+        </FadeIn>
       </div>
     </section>
   );
