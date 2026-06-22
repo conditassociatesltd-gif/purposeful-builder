@@ -229,8 +229,8 @@ export default function HomePage() {
                   >
                     {/* Hollow outlined number matching reference */}
                     <span 
-                      className="font-sans text-6xl font-black tracking-tighter mb-6 text-transparent" 
-                      style={{ WebkitTextStroke: "2px currentColor" }}
+                      className="font-sans text-6xl font-black tracking-tighter mb-6" 
+                      style={{ WebkitTextStroke: "2px var(--ink)", WebkitTextFillColor: "transparent" }}
                     >
                       {String(index + 1).padStart(2, '0')}
                     </span>
