@@ -76,8 +76,8 @@ export default function HomePage() {
       <header className="absolute top-0 left-0 right-0 z-50 bg-transparent text-white pt-2">
         <div className="max-w-[1600px] mx-auto px-5 py-6 flex flex-wrap items-center justify-between gap-4 overflow-hidden">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 flex items-center justify-center overflow-hidden transition-colors rounded-full bg-white text-black">
-              <Image src="/logo.png" alt="Austin Okechukwu logo" width={32} height={32} className="object-contain invert" />
+            <div className="w-12 h-12 border-2 border-[#c4572a] flex items-center justify-center overflow-hidden transition-colors">
+              <Image src="/logo.png" alt="Austin Okechukwu logo" width={46} height={46} className="object-contain scale-110" />
             </div>
 
             <div className="flex flex-col justify-center">
@@ -227,8 +227,11 @@ export default function HomePage() {
                     href={`/writing/${essay.slug}`}
                     className="group flex flex-col h-full p-6 md:p-8 hover:bg-black/5 transition-colors"
                   >
-                    {/* Huge faded number */}
-                    <span className="font-serif text-6xl font-bold opacity-[0.08] mb-6 group-hover:opacity-20 transition-opacity">
+                    {/* Hollow outlined number */}
+                    <span 
+                      className="font-serif text-6xl font-bold mb-6 text-transparent opacity-30 group-hover:opacity-100 transition-opacity" 
+                      style={{ WebkitTextStroke: "2px currentColor" }}
+                    >
                       {String(index + 1).padStart(2, '0')}
                     </span>
                     

@@ -34,12 +34,23 @@ export const metadata = {
   },
 };
 
-export default function WritingPage() {
+export default function WritingPage({
+  searchParams,
+}: {
+  searchParams?: { page?: string };
+}) {
   const essays = getAllEssays();
   
   // Get the most recent essay for the hero section
   const featuredEssay = essays.length > 0 ? essays[0] : null;
   const remainingEssays = essays.length > 0 ? essays.slice(1) : [];
+
+  // Pagination logic
+  const currentPage = Number(searchParams?.page) || 1;
+  const ITEMS_PER_PAGE = 15;
+  const totalPages = Math.ceil(remainingEssays.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const currentEssays = remainingEssays.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
   // Extract unique categories for the "Browse By Topic" section
   const uniqueCategories = Array.from(new Set(essays.map(essay => essay.category))).filter(Boolean);
@@ -170,14 +181,17 @@ export default function WritingPage() {
       {/* Grid of Essays Below */}
       <section className="max-w-[1400px] mx-auto px-5 py-24">
         <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12">
-          {remainingEssays.map((essay, index) => (
+          {currentEssays.map((essay, index) => (
             <Link
               key={essay.slug}
               href={`/writing/${essay.slug}`}
               className="group flex flex-col h-full hover:bg-black/[0.03] dark:hover:bg-white/[0.03] transition-colors p-4 -mx-4 rounded-xl"
             >
-              <span className="font-serif text-5xl md:text-6xl font-bold opacity-[0.08] mb-6 group-hover:opacity-20 transition-opacity">
-                {String(index + 1).padStart(2, '0')}
+              <span 
+                className="font-serif text-5xl md:text-6xl font-bold mb-6 text-transparent opacity-30 group-hover:opacity-100 transition-opacity"
+                style={{ WebkitTextStroke: "2px currentColor" }}
+              >
+                {String(startIndex + index + 1).padStart(2, '0')}
               </span>
               <div>
                 <p className="text-[9px] font-bold tracking-[0.25em] uppercase mb-4" style={{ color: "var(--rust)" }}>
@@ -199,6 +213,35 @@ export default function WritingPage() {
             </Link>
           ))}
         </div>
+
+        {/* Pagination Controls */}
+        {totalPages > 1 && (
+          <div className="mt-20 flex items-center justify-center gap-6">
+            {currentPage > 1 ? (
+              <Link href={`/writing?page=${currentPage - 1}`} className="px-6 py-3 border border-black/20 dark:border-white/20 hover:border-[#c4572a] dark:hover:border-[#c4572a] text-[10px] font-bold uppercase tracking-widest transition-colors rounded-full">
+                Previous
+              </Link>
+            ) : (
+              <span className="px-6 py-3 border border-transparent text-[10px] font-bold uppercase tracking-widest opacity-0 cursor-default">
+                Previous
+              </span>
+            )}
+            
+            <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">
+              Page {currentPage} of {totalPages}
+            </span>
+            
+            {currentPage < totalPages ? (
+              <Link href={`/writing?page=${currentPage + 1}`} className="px-6 py-3 border border-black/20 dark:border-white/20 hover:border-[#c4572a] dark:hover:border-[#c4572a] text-[10px] font-bold uppercase tracking-widest transition-colors rounded-full">
+                Next
+              </Link>
+            ) : (
+              <span className="px-6 py-3 border border-transparent text-[10px] font-bold uppercase tracking-widest opacity-0 cursor-default">
+                Next
+              </span>
+            )}
+          </div>
+        )}
       </section>
     </main>
   );
