@@ -79,13 +79,15 @@ export default function HomePage() {
               <Image src="/logo.png" alt="Austin Okechukwu logo" width={52} height={52} className="object-contain scale-110" />
             </div>
 
-            <div>
-              <p className="text-[20px] tracking-[0.35em] uppercase" style={{ color: "var(--rust)" }}>
-                Austin
-              </p>
-              <h1 className="text-2xl md:text-3xl font-black uppercase leading-none">
-                Okechukwu
-              </h1>
+            <div className="flex items-center justify-between w-full lg:w-auto">
+              <div>
+                <p className="text-[20px] tracking-[0.35em] uppercase" style={{ color: "var(--rust)" }}>
+                  Austin
+                </p>
+                <h1 className="text-2xl md:text-3xl font-black uppercase leading-none">
+                  Okechukwu
+                </h1>
+              </div>
             </div>
           </Link>
 
@@ -102,17 +104,17 @@ export default function HomePage() {
             <ThemeToggle />
           </nav>
 
-          <div className="lg:hidden w-full flex items-center justify-between gap-3 text-[10px] tracking-[0.18em] uppercase">
-  <div className="flex items-center gap-4 text-[10px] tracking-[0.2em] uppercase">
-    <Link href="/podcast">Podcast</Link>
-    <Link href="/writing">Writing</Link>
-    <Link href="/#portfolio">Portfolio</Link>
-    <Link href="/about">About</Link>
-    <a href="mailto:austinokey@gmail.com">Contact</a>
-  </div>
+          <div className="flex lg:hidden items-center gap-3">
+            <ThemeToggle />
+          </div>
 
-  <ThemeToggle />
-</div>
+          <div className="lg:hidden w-full flex items-center gap-6 text-[10px] tracking-[0.18em] uppercase overflow-x-auto whitespace-nowrap scrollbar-hide pt-4 border-t border-black/10 dark:border-white/10 mt-2 pb-1">
+            <Link href="/podcast">Podcast</Link>
+            <Link href="/writing">Writing</Link>
+            <Link href="/#portfolio">Portfolio</Link>
+            <Link href="/about">About</Link>
+            <a href="mailto:austinokey@gmail.com">Contact</a>
+          </div>
         </div>
       </header>
 

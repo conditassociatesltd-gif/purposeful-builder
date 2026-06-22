@@ -62,13 +62,19 @@ export default function WritingPage() {
             <span className="font-black tracking-tight uppercase">Austin Okechukwu</span>
           </Link>
 
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap md:flex-nowrap items-center gap-6 w-full md:w-auto mt-4 md:mt-0 pt-4 md:pt-0 border-t md:border-0 border-black/10 dark:border-white/10 justify-between">
             <nav className="hidden md:flex items-center gap-6 text-xs tracking-[0.25em] uppercase">
               <Link href="/" className="hover:text-[var(--rust)] transition-colors">Home</Link>
               <Link href="/podcast" className="hover:text-[var(--rust)] transition-colors">Podcast</Link>
               <Link href="/#portfolio" className="hover:text-[var(--rust)] transition-colors">Portfolio</Link>
               <Link href="/about" className="hover:text-[var(--rust)] transition-colors">About</Link>
             </nav>
+            <div className="md:hidden flex items-center gap-6 text-[10px] tracking-[0.18em] uppercase overflow-x-auto whitespace-nowrap scrollbar-hide pb-1 flex-1">
+              <Link href="/">Home</Link>
+              <Link href="/podcast">Podcast</Link>
+              <Link href="/#portfolio">Portfolio</Link>
+              <Link href="/about">About</Link>
+            </div>
             <ThemeToggle />
           </div>
         </div>
@@ -86,11 +92,11 @@ export default function WritingPage() {
                 <div className="h-px w-12 bg-[#c4572a] opacity-50"></div>
               </div>
 
-              <h1 className="font-serif text-4xl md:text-5xl lg:text-[4.5rem] leading-[1.05] tracking-tight mb-8 text-balance">
+              <h1 className="font-serif text-4xl md:text-5xl lg:text-[4.5rem] leading-[1.05] tracking-tight mb-8 text-balance text-black dark:text-white">
                 {featuredEssay.title}
               </h1>
 
-              <p className="text-lg md:text-xl leading-relaxed opacity-80 mb-10 max-w-2xl line-clamp-3">
+              <p className="text-lg md:text-xl leading-relaxed opacity-80 mb-10 max-w-2xl line-clamp-3 text-black dark:text-[#eee9df]">
                 {featuredEssay.excerpt}
               </p>
 
