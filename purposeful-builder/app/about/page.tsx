@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ThemeToggle from "@/components/ThemeToggle";
 import { ArrowRight, PenTool, Mic } from "lucide-react";
+import FadeIn from "@/components/FadeIn";
 
 export const metadata = {
   title: "About",
@@ -145,6 +146,117 @@ export default function AboutPage() {
               architecture, business, life, faith, and human development, in the hope that someone else out there is
               wrestling with the same questions too.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* VISION 2043 SECTION */}
+      <section className="py-24 bg-white/40 dark:bg-black/20 border-y border-black/10 dark:border-white/10">
+        <div className="max-w-7xl mx-auto px-5">
+          <FadeIn direction="up">
+            <div className="max-w-3xl mx-auto text-center mb-16">
+              <p className="text-[10px] tracking-[0.35em] uppercase mb-4 font-bold" style={{ color: "var(--rust)" }}>
+                Vision 2043
+              </p>
+              <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] mb-8">
+                My Mission Statement
+              </h2>
+              <div className="text-lg md:text-xl leading-relaxed opacity-80 font-serif italic text-balance space-y-4">
+                <p>
+                  I grew up in a poor home with no blueprint, but I am committed to building a purposeful, wealthy, and healthy home.
+                </p>
+                <p>
+                  Though I lacked mentorship as a young man, I will be the mentor I never had, guiding others with wisdom, love, and truth.
+                  By God’s grace, my life will be a blueprint for others to follow and this is what I want it to look like.
+                </p>
+              </div>
+            </div>
+          </FadeIn>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Card 1 */}
+            <FadeIn delay={0.1} direction="up" fullWidth>
+              <div className="h-full bg-[var(--parchment)] border border-black/10 dark:border-white/10 p-8 rounded-2xl group hover:-translate-y-1 transition-transform duration-300 shadow-sm hover:shadow-md">
+                <span className="font-serif text-5xl font-bold opacity-[0.08] mb-4 block group-hover:opacity-20 group-hover:text-[var(--rust)] transition-all">01</span>
+                <h3 className="font-serif text-2xl font-bold mb-4">Faith & Character</h3>
+                <p className="text-sm opacity-70 leading-relaxed mb-4">
+                  By 2043, I am a man known for deep, unwavering faith, integrity, and wisdom. My life is anchored in God’s Word and guided by prayer. My home, business, and relationships all reflect godly principles. I do not just believe, I live what I believe. Acts 1:1b is my motto: <span className="italic opacity-80">Of all that Jesus began both to do and to teach.</span>
+                </p>
+                <p className="text-sm opacity-70 leading-relaxed">
+                  I am a pillar in my local church and a father figure in the faith for younger men and women seeking direction, especially in matters of identity, calling, relationships, and purpose.
+                </p>
+              </div>
+            </FadeIn>
+
+            {/* Card 2 */}
+            <FadeIn delay={0.2} direction="up" fullWidth>
+              <div className="h-full bg-[var(--parchment)] border border-black/10 dark:border-white/10 p-8 rounded-2xl group hover:-translate-y-1 transition-transform duration-300 shadow-sm hover:shadow-md">
+                <span className="font-serif text-5xl font-bold opacity-[0.08] mb-4 block group-hover:opacity-20 group-hover:text-[var(--rust)] transition-all">02</span>
+                <h3 className="font-serif text-2xl font-bold mb-4">Marriage & Family</h3>
+                <p className="text-sm opacity-70 leading-relaxed mb-4">
+                  I am joyfully married to a woman of purpose, a true partner, friend, and spiritual companion. Together, we have raised children who love God, understand their unique assignments, and are equipped to lead in their own generations.
+                </p>
+                <p className="text-sm opacity-70 leading-relaxed">
+                  Our marriage is a model for others: a blend of love, truth, discipline, and grace. We host regular gatherings in our home where couples and singles come for guidance, restoration, and encouragement.
+                </p>
+              </div>
+            </FadeIn>
+
+            {/* Card 3 */}
+            <FadeIn delay={0.3} direction="up" fullWidth>
+              <div className="h-full bg-[var(--parchment)] border border-black/10 dark:border-white/10 p-8 rounded-2xl group hover:-translate-y-1 transition-transform duration-300 shadow-sm hover:shadow-md">
+                <span className="font-serif text-5xl font-bold opacity-[0.08] mb-4 block group-hover:opacity-20 group-hover:text-[var(--rust)] transition-all">03</span>
+                <h3 className="font-serif text-2xl font-bold mb-4">Purposeful Mentorship & Leadership</h3>
+                <p className="text-sm opacity-70 leading-relaxed mb-4">
+                  I have mentored hundreds of young men across Africa and the diaspora, especially those navigating leadership, manhood, and relationships. I am trusted for my honesty, my ability to listen, and the clarity I bring to complex decisions.
+                </p>
+                <p className="text-sm opacity-70 leading-relaxed">
+                  Through writing, speaking, and personal mentorship, I help people confront the lies that hold them back and embrace the truth that sets them free. Lies that stem majorly from a dysfunctional background.
+                </p>
+              </div>
+            </FadeIn>
+
+            {/* Card 4 */}
+            <FadeIn delay={0.4} direction="up" fullWidth>
+              <div className="h-full bg-[var(--parchment)] border border-black/10 dark:border-white/10 p-8 rounded-2xl group hover:-translate-y-1 transition-transform duration-300 shadow-sm hover:shadow-md">
+                <span className="font-serif text-5xl font-bold opacity-[0.08] mb-4 block group-hover:opacity-20 group-hover:text-[var(--rust)] transition-all">04</span>
+                <h3 className="font-serif text-2xl font-bold mb-4">Writing & Influence</h3>
+                <p className="text-sm opacity-70 leading-relaxed mb-4">
+                  I am a respected author, known for deeply reflective and relatable writing that helps people live better whether in faith, family, or relationships. My blog, books, and talks have impacted thousands.
+                </p>
+                <p className="text-sm opacity-70 leading-relaxed">
+                  I have a signature voice, honest, warm, spiritual, and practical. My words build, correct, heal, inspire, and realign people's minds with the word of God. Rom 12:2 will easily be people's experience when they come in contact with my writing.
+                </p>
+              </div>
+            </FadeIn>
+
+            {/* Card 5 */}
+            <FadeIn delay={0.5} direction="up" fullWidth>
+              <div className="h-full bg-[var(--parchment)] border border-black/10 dark:border-white/10 p-8 rounded-2xl group hover:-translate-y-1 transition-transform duration-300 shadow-sm hover:shadow-md">
+                <span className="font-serif text-5xl font-bold opacity-[0.08] mb-4 block group-hover:opacity-20 group-hover:text-[var(--rust)] transition-all">05</span>
+                <h3 className="font-serif text-2xl font-bold mb-4">Business & Stewardship</h3>
+                <p className="text-sm opacity-70 leading-relaxed mb-4">
+                  My companies, Condit Associates Ltd. and Condit Homes Ltd. have grown into a values-driven construction and real estate firm that prioritizes quality, community development, and integrity. We not only build structures, we build dreams, just one beam at a time.
+                </p>
+                <p className="text-sm opacity-70 leading-relaxed">
+                  My companies build houses that are affordable to the average person. I also invest in and support initiatives that empower the next generation: scholarships, mentorship hubs, and leadership academies across Nigeria and West Africa.
+                </p>
+              </div>
+            </FadeIn>
+
+            {/* Card 6 */}
+            <FadeIn delay={0.6} direction="up" fullWidth>
+              <div className="h-full bg-[var(--parchment)] border border-black/10 dark:border-white/10 p-8 rounded-2xl group hover:-translate-y-1 transition-transform duration-300 shadow-sm hover:shadow-md">
+                <span className="font-serif text-5xl font-bold opacity-[0.08] mb-4 block group-hover:opacity-20 group-hover:text-[var(--rust)] transition-all">06</span>
+                <h3 className="font-serif text-2xl font-bold mb-4">Legacy & Community</h3>
+                <p className="text-sm opacity-70 leading-relaxed mb-4">
+                  I am not just successful, I am significant. My legacy lives in people: families I’ve helped restore, leaders I’ve helped grow, young men I’ve fathered in the spirit.
+                </p>
+                <p className="text-sm opacity-70 leading-relaxed">
+                  In my hometown and beyond, I am known not only for what I’ve built but for who I’ve become.
+                </p>
+              </div>
+            </FadeIn>
           </div>
         </div>
       </section>
