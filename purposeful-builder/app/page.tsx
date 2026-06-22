@@ -71,44 +71,41 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
-      <header className="sticky top-0 z-40 border-b backdrop-blur-md border-black/10 dark:border-white/10" style={{ background: "color-mix(in srgb, var(--parchment) 90%, transparent)" }}>
-        <div className="max-w-7xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4 overflow-hidden">
-          <Link href="/" className="flex items-center gap-3">
-            <div className="w-14 h-14 border-2 border-[#c4572a] flex items-center justify-center overflow-hidden">
-              <Image src="/logo.png" alt="Austin Okechukwu logo" width={52} height={52} className="object-contain scale-110" />
+      <main className="min-h-screen relative" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
+      {/* Absolute Transparent Header overlaid on Hero */}
+      <header className="absolute top-0 left-0 right-0 z-50 bg-transparent text-white pt-2">
+        <div className="max-w-[1600px] mx-auto px-5 py-6 flex flex-wrap items-center justify-between gap-4 overflow-hidden">
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="w-12 h-12 flex items-center justify-center overflow-hidden transition-colors rounded-full bg-white text-black">
+              <Image src="/logo.png" alt="Austin Okechukwu logo" width={32} height={32} className="object-contain invert" />
             </div>
 
-            <div className="flex items-center justify-between w-full lg:w-auto">
-              <div>
-                <p className="text-[20px] tracking-[0.35em] uppercase" style={{ color: "var(--rust)" }}>
-                  Austin
-                </p>
-                <h1 className="text-2xl md:text-3xl font-black uppercase leading-none">
-                  Okechukwu
-                </h1>
-              </div>
+            <div className="flex flex-col justify-center">
+              <h1 className="text-xl md:text-2xl font-black uppercase leading-none tracking-tight">
+                Austin Okechukwu
+              </h1>
             </div>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-8 text-xs tracking-[0.25em] uppercase">
-            <Link href="/podcast" className="hover:text-[#c4572a]">Podcast</Link>
-            <Link href="/writing" className="hover:text-[#c4572a]">Writing</Link>
-            <Link href="/#portfolio" className="hover:text-[#c4572a]">Portfolio</Link>
-            <Link href="/about" className="hover:text-[#c4572a]">About</Link>
-            <a href="mailto:austinokey@gmail.com" className="hover:text-[#c4572a]">Contact</a>
-            <Link href="/search" className="hover:text-[#c4572a]">
-  Search
-</Link>
-            <a href="#subscribe" className="px-4 py-3 border border-black/20 hover:border-[#c4572a]">Subscribe</a>
-            <ThemeToggle />
+          <nav className="hidden lg:flex items-center gap-8 text-xs tracking-widest uppercase font-semibold">
+            <Link href="/podcast" className="hover:text-white/70 transition-colors drop-shadow-md">Podcast</Link>
+            <Link href="/writing" className="hover:text-white/70 transition-colors drop-shadow-md">Writing</Link>
+            <Link href="/#portfolio" className="hover:text-white/70 transition-colors drop-shadow-md">Portfolio</Link>
+            <Link href="/about" className="hover:text-white/70 transition-colors drop-shadow-md">About</Link>
+            <a href="mailto:austinokey@gmail.com" className="hover:text-white/70 transition-colors drop-shadow-md">Contact</a>
+            <Link href="/search" className="hover:text-white/70 transition-colors drop-shadow-md">Search</Link>
           </nav>
+
+          <div className="hidden lg:flex items-center gap-4">
+            <ThemeToggle />
+            <a href="#subscribe" className="px-6 py-3 bg-white text-black text-xs tracking-widest uppercase font-bold hover:bg-white/90 transition-colors rounded-full shadow-lg">Subscribe</a>
+          </div>
 
           <div className="flex lg:hidden items-center gap-3">
             <ThemeToggle />
           </div>
 
-          <div className="lg:hidden w-full flex items-center gap-6 text-[10px] tracking-[0.18em] uppercase overflow-x-auto whitespace-nowrap scrollbar-hide pt-4 border-t border-black/10 dark:border-white/10 mt-2 pb-1">
+          <div className="lg:hidden w-full flex items-center gap-6 text-[10px] tracking-[0.18em] uppercase overflow-x-auto whitespace-nowrap scrollbar-hide pt-4 border-t border-white/20 mt-2 pb-1 text-white">
             <Link href="/podcast">Podcast</Link>
             <Link href="/writing">Writing</Link>
             <Link href="/#portfolio">Portfolio</Link>
@@ -300,121 +297,79 @@ export default function HomePage() {
         <EcosystemCarousel />
       </div>
 
-      <section id="subscribe" style={{ background: "#121310", color: "#fdfbf7" }}>
-        <div className="max-w-6xl mx-auto px-5 py-12">
-          <FadeIn delay={0.2} direction="up">
-            <div className="grid md:grid-cols-[1fr_380px] gap-12 items-center border border-white/5 bg-black p-8 md:p-12 rounded-3xl shadow-xl">
-              <div>
-                <p className="text-[10px] tracking-[0.35em] uppercase mb-4 font-bold" style={{ color: "var(--rust)" }}>
-                  Stay Updated
-                </p>
-                <h2 className="font-serif text-3xl md:text-4xl leading-tight max-w-xl mb-4">
-                  Reflections worth returning to.
-                </h2>
-                <p className="text-sm md:text-base opacity-60 max-w-lg leading-relaxed">
-                  Occasional essays on identity, faith, discipline, masculinity, building, and the quiet work of becoming.
-                </p>
+      <footer id="subscribe" style={{ background: "#0a0a0a", color: "#f4efe3" }}>
+        <div className="max-w-[1600px] mx-auto px-5 md:px-10 py-16 lg:py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+          
+          {/* Col 1: Brand */}
+          <div className="flex flex-col gap-6 lg:pr-8">
+            <Link href="/" className="flex items-center gap-3">
+              <div className="w-12 h-12 flex items-center justify-center overflow-hidden bg-white rounded-full">
+                <Image src="/logo.png" alt="Austin Okechukwu logo" width={32} height={32} className="object-contain invert" />
               </div>
-  
-              <form
-                action="https://buttondown.email/api/emails/embed-subscribe/arc_austin"
-                method="post"
-                className="flex flex-col gap-4"
-              >
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Enter your email address"
-                  required
-                  className="bg-white/5 border border-white/10 px-6 py-4 outline-none focus:border-[var(--rust)] placeholder:text-white/30 text-white text-sm rounded-xl transition-colors"
-                />
-                <button
-                  type="submit"
-                  className="px-6 py-4 text-[10px] tracking-[0.3em] uppercase font-bold rounded-xl transition-all hover:scale-[1.02] hover:shadow-lg hover:shadow-[var(--rust)]/20"
-                  style={{ background: "var(--rust)", color: "white" }}
-                >
-                  Subscribe
-                </button>
-              </form>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
-<div className="border-t border-white/5">
-  <div className="max-w-7xl mx-auto px-5 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-[10px] tracking-[0.25em] uppercase opacity-40">
-    <p>© 2026 Austin Okechukwu</p>
-    <p>The Purposeful Builder</p>
-  </div>
-</div>
-      <footer className="border-t" style={{ background: "#121310", color: "#f4efe3", borderColor: "rgba(255,255,255,0.06)" }}>
-        <div className="max-w-7xl mx-auto px-5 py-16 grid md:grid-cols-4 gap-12">
-          <div className="md:col-span-2">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 border-2 border-[#c4572a] flex items-center justify-center overflow-hidden">
-                <Image src="/logo.png" alt="Austin Okechukwu logo" width={52} height={52} className="object-contain scale-110" />
-              </div>
-              <div>
-                <h5 className="text-3xl font-black uppercase leading-none">Austin</h5>
-                <p className="text-[10px] tracking-[0.35em] uppercase mt-1" style={{ color: "var(--rust)" }}>
-                  Mind in formation
-                </p>
-              </div>
-            </div>
-            <p className="font-serif italic text-lg md:text-xl max-w-xl leading-relaxed opacity-55">
+              <h5 className="text-2xl font-black uppercase leading-none tracking-tight">Austin <br/>Okechukwu</h5>
+            </Link>
+            <p className="text-sm md:text-base leading-relaxed opacity-60">
               Writing for boys becoming men, men becoming whole, couples navigating life and marriage, and builders learning that structure begins in silence.
             </p>
           </div>
 
+          {/* Col 2: Quick Access */}
           <div>
-            <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "var(--rust)" }}>Quick access</p>
-            <ul className="space-y-3 opacity-65 text-sm">
-              <li>
-  <Link href="/podcast" className="hover:text-[#c4572a] transition-colors">
-    Podcast
-  </Link>
-</li>
-              <li>
-  <Link href="/writing" className="hover:text-[#c4572a] transition-colors">
-    Writing
-  </Link>
-</li>
-              <li>
-  <Link href="/about" className="hover:text-[#c4572a] transition-colors">
-    About
-  </Link>
-</li>
-              <li>
-  <a href="mailto:austinokey@gmail.com" className="hover:text-[#c4572a] transition-colors">
-    Contact
-  </a>
-</li>
-              <li>
-  <a href="#subscribe" className="hover:text-[#c4572a] transition-colors">
-    Subscribe
-  </a>
-</li>
+            <p className="text-xs md:text-sm font-bold tracking-widest uppercase mb-6">About</p>
+            <ul className="space-y-4 opacity-60 text-sm">
+              <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
+              <li><Link href="/writing" className="hover:text-white transition-colors">Blog</Link></li>
+              <li><Link href="/#portfolio" className="hover:text-white transition-colors">Portfolio</Link></li>
+              <li><Link href="/podcast" className="hover:text-white transition-colors">Podcast</Link></li>
             </ul>
           </div>
 
+          {/* Col 3: Support */}
           <div>
-            <p className="text-xs tracking-[0.35em] uppercase mb-5" style={{ color: "var(--rust)" }}>Platforms</p>
-            <ul className="space-y-3 opacity-65">
-              <li>
-  <a href="https://www.instagram.com/arc__austin?igsh=bGp6M3hpdm5sNXgz" target="_blank" rel="noopener noreferrer" className="hover:text-[#c4572a] transition-colors">
-    Instagram
-  </a>
-</li>
-              <li>
-  <a href="https://www.facebook.com/share/17MLSQKYLg/" target="_blank" rel="noopener noreferrer" className="hover:text-[#c4572a] transition-colors">
-    Facebook
-  </a>
-</li>
-              <li>
-  <a href="https://www.instagram.com/conditassociatesltd?igsh=MWduM3lzcGd1eGZtag==" target="_blank" rel="noopener noreferrer" className="hover:text-[#c4572a] transition-colors">
-    Condit Associates Ltd
-  </a>
-</li>
+            <p className="text-xs md:text-sm font-bold tracking-widest uppercase mb-6">Support</p>
+            <ul className="space-y-4 opacity-60 text-sm">
+              <li><a href="mailto:austinokey@gmail.com" className="hover:text-white transition-colors">Contact Us</a></li>
+              <li><a href="https://www.instagram.com/arc__austin" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a></li>
+              <li><a href="https://www.facebook.com/share/17MLSQKYLg/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Facebook</a></li>
+              <li><a href="https://www.instagram.com/conditassociatesltd" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Condit Associates Ltd</a></li>
             </ul>
+          </div>
+
+          {/* Col 4: Subscribe */}
+          <div>
+            <p className="text-xs md:text-sm font-bold tracking-widest uppercase mb-6">Get Updates</p>
+            <p className="text-sm opacity-60 mb-6">Occasional essays on identity, faith, discipline, masculinity, and the quiet work of becoming.</p>
+            <form
+              action="https://buttondown.email/api/emails/embed-subscribe/arc_austin"
+              method="post"
+              className="flex gap-2 p-1.5 bg-white/10 rounded-full border border-white/5 focus-within:border-white/30 transition-colors"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+                className="flex-1 bg-transparent px-4 py-2 outline-none placeholder:text-white/40 text-white text-sm"
+              />
+              <button
+                type="submit"
+                className="bg-white text-black px-6 py-2.5 text-[10px] tracking-widest font-bold uppercase rounded-full hover:bg-white/90 transition-colors"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        {/* Copyright Bar */}
+        <div className="border-t border-white/10">
+          <div className="max-w-[1600px] mx-auto px-5 md:px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-semibold opacity-60">
+            <p>© {new Date().getFullYear()} Austin Okechukwu. All rights reserved.</p>
+            <div className="flex items-center gap-6">
+              <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
+            </div>
           </div>
         </div>
       </footer>
