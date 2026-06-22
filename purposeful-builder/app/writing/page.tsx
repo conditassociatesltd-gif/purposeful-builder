@@ -188,7 +188,7 @@ export default function WritingPage({
               className="group flex flex-col h-full hover:bg-black/[0.03] dark:hover:bg-white/[0.03] transition-colors p-4 -mx-4 rounded-xl"
             >
               <span 
-                className="font-serif text-5xl md:text-6xl font-bold mb-6 text-transparent opacity-30 group-hover:opacity-100 transition-opacity"
+                className="font-sans text-5xl md:text-6xl font-black tracking-tighter mb-6 text-transparent"
                 style={{ WebkitTextStroke: "2px currentColor" }}
               >
                 {String(startIndex + index + 1).padStart(2, '0')}

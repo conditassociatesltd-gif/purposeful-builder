@@ -227,9 +227,9 @@ export default function HomePage() {
                     href={`/writing/${essay.slug}`}
                     className="group flex flex-col h-full p-6 md:p-8 hover:bg-black/5 transition-colors"
                   >
-                    {/* Hollow outlined number */}
+                    {/* Hollow outlined number matching reference */}
                     <span 
-                      className="font-serif text-6xl font-bold mb-6 text-transparent opacity-30 group-hover:opacity-100 transition-opacity" 
+                      className="font-sans text-6xl font-black tracking-tighter mb-6 text-transparent" 
                       style={{ WebkitTextStroke: "2px currentColor" }}
                     >
                       {String(index + 1).padStart(2, '0')}
