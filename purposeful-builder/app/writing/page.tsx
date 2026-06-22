@@ -92,15 +92,15 @@ export default function WritingPage() {
                 <div className="h-px w-12 bg-[#c4572a] opacity-50"></div>
               </div>
 
-              <h1 className="font-serif text-4xl md:text-5xl lg:text-[4.5rem] leading-[1.05] tracking-tight mb-8 text-balance text-black dark:text-white">
+              <h1 className="font-serif text-4xl md:text-5xl lg:text-[4.5rem] leading-[1.05] tracking-tight mb-8 text-balance">
                 {featuredEssay.title}
               </h1>
 
-              <p className="text-lg md:text-xl leading-relaxed opacity-80 mb-10 max-w-2xl line-clamp-3 text-black dark:text-[#eee9df]">
+              <p className="text-lg md:text-xl leading-relaxed opacity-80 mb-10 max-w-2xl line-clamp-3">
                 {featuredEssay.excerpt}
               </p>
 
-              <Link href={`/writing/${featuredEssay.slug}`} className="group inline-flex items-center gap-4 text-[10px] tracking-[0.2em] uppercase font-bold text-black dark:text-white pb-2 border-b border-black/20 dark:border-white/20 hover:border-black dark:hover:border-white transition-all w-fit">
+              <Link href={`/writing/${featuredEssay.slug}`} className="group inline-flex items-center gap-4 text-[10px] tracking-[0.2em] uppercase font-bold pb-2 border-b border-black/20 dark:border-white/20 hover:border-black dark:hover:border-white transition-all w-fit">
                 Read Essay
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
               </Link>
