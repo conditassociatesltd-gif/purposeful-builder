@@ -305,11 +305,11 @@ export default function HomePage() {
           
           {/* Col 1: Brand */}
           <div className="flex flex-col gap-6 lg:pr-8">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="w-12 h-12 flex items-center justify-center overflow-hidden bg-white rounded-full">
-                <Image src="/logo.png" alt="Austin Okechukwu logo" width={32} height={32} className="object-contain invert" />
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="w-12 h-12 border-2 border-[#c4572a] flex items-center justify-center overflow-hidden transition-colors">
+                <Image src="/logo.png" alt="Austin Okechukwu logo" width={46} height={46} className="object-contain scale-110" />
               </div>
-              <h5 className="text-2xl font-black uppercase leading-none tracking-tight">Austin <br/>Okechukwu</h5>
+              <h5 className="text-2xl font-black uppercase leading-none tracking-tight group-hover:text-[#c4572a] transition-colors">Austin <br/>Okechukwu</h5>
             </Link>
             <p className="text-sm md:text-base leading-relaxed opacity-60">
               Writing for boys becoming men, men becoming whole, couples navigating life and marriage, and builders learning that structure begins in silence.
