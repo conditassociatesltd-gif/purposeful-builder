@@ -39,7 +39,7 @@ export default function ContactPage() {
 
       {/* MAIN CONTENT */}
       <div className="flex-1 max-w-7xl mx-auto w-full px-5 py-24 md:py-32 flex flex-col justify-center">
-        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight mb-16 uppercase border-b border-black/10 dark:border-white/10 pb-8">
+        <h1 className="font-serif text-3xl md:text-5xl tracking-tight mb-16 uppercase border-b border-black/10 dark:border-white/10 pb-8">
           Contact
         </h1>
 
