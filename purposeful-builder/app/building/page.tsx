@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight, ExternalLink, Globe, Mail, MessageCircle } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
+import MobileMenu from "@/components/MobileMenu";
 import MentorshipForm from "@/components/MentorshipForm";
 import BuildingHero from "@/components/BuildingHero";
 import BooksSection from "@/components/BooksSection";
@@ -32,7 +33,12 @@ export default function BuildingPage() {
           </Link>
 
           <div className="flex items-center gap-6">
-            <ThemeToggle />
+            <div className="flex items-center gap-3">
+              <ThemeToggle />
+              <div className="md:hidden">
+                <MobileMenu />
+              </div>
+            </div>
             <Link href="/" className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase opacity-50">
               <ArrowLeft size={14} /> Home
             </Link>

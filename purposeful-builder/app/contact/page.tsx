@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import ThemeToggle from "@/components/ThemeToggle";
+import MobileMenu from "@/components/MobileMenu";
 
 export const metadata = {
   title: "Contact",
@@ -32,7 +33,12 @@ export default function ContactPage() {
               <Link href="/about" className="hover:text-[var(--rust)] transition-colors">About</Link>
               <Link href="/contact" className="hover:text-[var(--rust)] transition-colors">Contact</Link>
             </nav>
-            <ThemeToggle />
+            <div className="flex items-center gap-3">
+              <ThemeToggle />
+              <div className="md:hidden">
+                <MobileMenu />
+              </div>
+            </div>
           </div>
         </div>
       </header>

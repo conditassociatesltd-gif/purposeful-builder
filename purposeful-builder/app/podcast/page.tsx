@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, PlayCircle, PauseCircle, FastForward, Rewind, Volume2, CloudDrizzle, Headphones } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
+import MobileMenu from "@/components/MobileMenu";
 import { getAllPodcasts } from "@/lib/podcasts";
 
 export const metadata = {
@@ -32,7 +33,12 @@ export default function PodcastPage() {
               <Link href="/about" className="hover:text-[var(--rust)] transition-colors">About</Link>
               <Link href="/contact" className="hover:text-[var(--rust)] transition-colors">Contact</Link>
             </nav>
-            <ThemeToggle />
+            <div className="flex items-center gap-3">
+              <ThemeToggle />
+              <div className="md:hidden">
+                <MobileMenu />
+              </div>
+            </div>
           </div>
         </div>
       </header>

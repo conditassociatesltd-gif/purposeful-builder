@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getAllEssays } from "@/lib/essays";
 import { ArrowRight } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
+import MobileMenu from "@/components/MobileMenu";
 
 export const metadata = {
   title: "Writing",
@@ -88,7 +89,12 @@ export default function WritingPage({
               <Link href="/about">About</Link>
               <Link href="/contact">Contact</Link>
             </div>
-            <ThemeToggle />
+            <div className="flex items-center gap-3">
+              <ThemeToggle />
+              <div className="md:hidden">
+                <MobileMenu />
+              </div>
+            </div>
           </div>
         </div>
       </header>

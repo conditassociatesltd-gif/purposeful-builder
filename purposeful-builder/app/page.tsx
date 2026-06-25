@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, ArrowLeft, Mail, Search, BookOpen, Building2, Users, Home, Landmark, PenLine, Headphones, PlayCircle } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
+import MobileMenu from "@/components/MobileMenu";
 import { getAllEssays } from "@/lib/essays";
 import { getAllPodcasts } from "@/lib/podcasts";
 import EcosystemCarousel from "@/components/EcosystemCarousel";
@@ -103,14 +104,7 @@ export default function HomePage() {
 
           <div className="flex lg:hidden items-center gap-3">
             <ThemeToggle />
-          </div>
-
-          <div className="lg:hidden w-full flex items-center gap-6 text-[10px] tracking-[0.18em] uppercase overflow-x-auto whitespace-nowrap scrollbar-hide pt-4 border-t border-white/20 mt-2 pb-1 text-white">
-            <Link href="/podcast">Podcast</Link>
-            <Link href="/writing">Writing</Link>
-            <Link href="/#portfolio">Portfolio</Link>
-            <Link href="/about">About</Link>
-            <Link href="/contact">Contact</Link>
+            <MobileMenu />
           </div>
         </div>
       </header>
