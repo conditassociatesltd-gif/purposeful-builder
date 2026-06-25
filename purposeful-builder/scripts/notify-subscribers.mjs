@@ -67,7 +67,7 @@ async function run() {
   }
 
   const files = process.argv.slice(2);
-  const essayFiles = files.filter(f => f.startsWith('content/essays/') && f.endsWith('.mdx'));
+  const essayFiles = files.filter(f => f.includes('content/essays/') && f.endsWith('.mdx'));
   
   if (essayFiles.length === 0) {
     console.log("No new essays detected in this push.");

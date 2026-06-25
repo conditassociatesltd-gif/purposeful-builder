@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'content/essays/**.mdx'
+      - 'purposeful-builder/content/essays/**.mdx'
 
 jobs:
   notify:
@@ -20,7 +20,7 @@ jobs:
         id: changed-files
         uses: tj-actions/changed-files@v44
         with:
-          files: content/essays/**.mdx
+          files: purposeful-builder/content/essays/**.mdx
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -28,10 +28,11 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
+        working-directory: ./purposeful-builder
         run: npm ci
 
       - name: Create Buttondown Draft
         if: steps.changed-files.outputs.added_files != ''
         env:
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
-        run: node scripts/notify-subscribers.mjs ${{ steps.changed-files.outputs.added_files }}
+        run: node purposeful-builder/scripts/notify-subscribers.mjs ${{ steps.changed-files.outputs.added_files }}
