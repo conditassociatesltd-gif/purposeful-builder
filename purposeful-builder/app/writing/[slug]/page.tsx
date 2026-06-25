@@ -6,8 +6,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 import ReadingProgress from "@/components/ReadingProgress";
-import ThemeToggle from "@/components/ThemeToggle";
-import ReaderControls from "@/components/ReaderControls";
+import ArticleHeaderControls from "@/components/ArticleHeaderControls";
+import ShareButtons from "@/components/ShareButtons";
 
 export async function generateStaticParams() {
   const essays = getAllEssays();
@@ -105,36 +105,21 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
       />
   <ReadingProgress />
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
-      <header className="fixed top-0 left-0 w-full z-50 border-b border-black/10 dark:border-white/10" style={{ background: "var(--parchment)" }}>
-  <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
-    <Link href="/" className="flex items-center gap-4">
-      <Image src="/logo.png" alt="Austin Okechukwu logo" width={44} height={44} priority />
-      <span className="font-black tracking-tight uppercase">Austin Okechukwu</span>
-    </Link>
-
-            <nav className="hidden md:flex items-center gap-6 text-[10px] tracking-[0.25em] uppercase font-semibold">
-              <Link href="/" className="hover:text-[var(--rust)] transition-colors">Home</Link>
-              <Link href="/podcast" className="hover:text-[var(--rust)] transition-colors">Podcast</Link>
-              <Link href="/writing" className="hover:text-[var(--rust)] transition-colors">Writing</Link>
-              <Link href="/#portfolio" className="hover:text-[var(--rust)] transition-colors">Portfolio</Link>
-              <Link href="/about" className="hover:text-[var(--rust)] transition-colors">About</Link>
-              <Link href="/contact" className="hover:text-[var(--rust)] transition-colors">Contact</Link>
-            </nav>
-
-    <div className="flex items-center gap-3">
-      <ReaderControls />
-      <ThemeToggle />
-
-      <Link
-        href="/writing"
-        className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase opacity-50 ml-2"
-      >
-        <ArrowLeft size={14} /> All essays
-      </Link>
-    </div>
-  </div>
-</header>
-<div className="h-[77px]" />
+      <header className="sticky top-0 left-0 w-full z-50 flex flex-col items-center pt-6 bg-[var(--parchment)] transition-colors duration-300">
+        <Link href="/" className="flex items-center gap-3 mb-5">
+          <div className="w-10 h-10 border-2 border-[#c4572a] flex items-center justify-center overflow-hidden bg-white">
+            <Image
+              src="/logo.png"
+              alt="Austin Okechukwu logo"
+              width={36}
+              height={36}
+              className="object-contain scale-110"
+            />
+          </div>
+          <span className="font-black tracking-tight text-xl uppercase">Austin Okechukwu</span>
+        </Link>
+        <ArticleHeaderControls />
+      </header>
 
       <section className="max-w-3xl mx-auto px-5 pt-16 pb-12 border-b border-black/10 dark:border-white/10">
         <p className="text-xs tracking-[0.35em] uppercase mb-6" style={{ color: "var(--rust)" }}>
@@ -178,6 +163,7 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
 
       <article className="essay-content max-w-3xl mx-auto px-5 py-14 prose prose-lg dark:prose-invert">
         <MdxRenderer content={essay.content} />
+        <ShareButtons />
       </article>
       <section className="mt-16 border-t border-black/10 dark:border-white/10 pt-16">
         <div className="max-w-3xl mx-auto">
