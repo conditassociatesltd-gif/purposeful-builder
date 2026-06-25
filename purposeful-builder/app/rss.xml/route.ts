@@ -1,5 +1,7 @@
 import { getAllEssays } from "@/lib/essays";
 
+export const dynamic = "force-static";
+
 export async function GET() {
   const essays = getAllEssays();
   const siteUrl = "https://austinokechukwu.com";
