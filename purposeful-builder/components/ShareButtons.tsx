@@ -1,26 +1,18 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
 export default function ShareButtons() {
-  const [url, setUrl] = useState("");
-
-  useEffect(() => {
-    setUrl(window.location.href);
-  }, []);
-
   const shareText = "I highly recommend reading this essay by Austin Okechukwu:";
 
   const handleTwitter = () => {
-    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(url)}`, '_blank');
+    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(window.location.href)}`, '_blank');
   };
 
   const handleFacebook = () => {
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}&quote=${encodeURIComponent(shareText)}`, '_blank');
   };
 
   const handleWhatsApp = () => {
-    window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + " " + url)}`, '_blank');
+    window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + " " + window.location.href)}`, '_blank');
   };
 
   return (
