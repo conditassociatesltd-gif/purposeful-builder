@@ -30,6 +30,7 @@ export default function PodcastPage() {
               <Link href="/writing" className="hover:text-[var(--rust)] transition-colors">Writing</Link>
               <Link href="/#portfolio" className="hover:text-[var(--rust)] transition-colors">Portfolio</Link>
               <Link href="/about" className="hover:text-[var(--rust)] transition-colors">About</Link>
+              <Link href="/contact" className="hover:text-[var(--rust)] transition-colors">Contact</Link>
             </nav>
             <ThemeToggle />
           </div>

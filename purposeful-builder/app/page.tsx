@@ -92,7 +92,7 @@ export default function HomePage() {
             <Link href="/writing" className="hover:text-white/70 transition-colors drop-shadow-md">Writing</Link>
             <Link href="/#portfolio" className="hover:text-white/70 transition-colors drop-shadow-md">Portfolio</Link>
             <Link href="/about" className="hover:text-white/70 transition-colors drop-shadow-md">About</Link>
-            <a href="mailto:austinokey@gmail.com" className="hover:text-white/70 transition-colors drop-shadow-md">Contact</a>
+            <Link href="/contact" className="hover:text-white/70 transition-colors drop-shadow-md">Contact</Link>
             <Link href="/search" className="hover:text-white/70 transition-colors drop-shadow-md">Search</Link>
           </nav>
 
@@ -110,7 +110,7 @@ export default function HomePage() {
             <Link href="/writing">Writing</Link>
             <Link href="/#portfolio">Portfolio</Link>
             <Link href="/about">About</Link>
-            <a href="mailto:austinokey@gmail.com">Contact</a>
+            <Link href="/contact">Contact</Link>
           </div>
         </div>
       </header>
@@ -331,7 +331,7 @@ export default function HomePage() {
           <div>
             <p className="text-xs md:text-sm font-bold tracking-widest uppercase mb-6">Support</p>
             <ul className="space-y-4 opacity-60 text-sm">
-              <li><a href="mailto:austinokey@gmail.com" className="hover:text-white transition-colors">Contact Us</a></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
               <li><a href="https://www.instagram.com/arc__austin" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a></li>
               <li><a href="https://www.facebook.com/share/17MLSQKYLg/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Facebook</a></li>
               <li><a href="https://www.instagram.com/conditassociatesltd" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Condit Associates Ltd</a></li>

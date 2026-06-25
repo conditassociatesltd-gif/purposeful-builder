@@ -79,12 +79,14 @@ export default function WritingPage({
               <Link href="/podcast" className="hover:text-[var(--rust)] transition-colors">Podcast</Link>
               <Link href="/#portfolio" className="hover:text-[var(--rust)] transition-colors">Portfolio</Link>
               <Link href="/about" className="hover:text-[var(--rust)] transition-colors">About</Link>
+              <Link href="/contact" className="hover:text-[var(--rust)] transition-colors">Contact</Link>
             </nav>
             <div className="md:hidden flex items-center gap-6 text-[10px] tracking-[0.18em] uppercase overflow-x-auto whitespace-nowrap scrollbar-hide pb-1 flex-1">
               <Link href="/">Home</Link>
               <Link href="/podcast">Podcast</Link>
               <Link href="/#portfolio">Portfolio</Link>
               <Link href="/about">About</Link>
+              <Link href="/contact">Contact</Link>
             </div>
             <ThemeToggle />
           </div>
