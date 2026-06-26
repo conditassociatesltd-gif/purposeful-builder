@@ -297,8 +297,8 @@ export default function HomePage() {
 
       <NewsletterBanner />
 
-      <footer id="subscribe" style={{ background: "#0a0a0a", color: "#f4efe3" }}>
-        <div className="max-w-[1600px] mx-auto px-5 md:px-10 py-16 lg:py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+      <footer id="subscribe" className="relative" style={{ background: "#0a0a0a", color: "#f4efe3" }}>
+        <div className="max-w-[1600px] mx-auto px-5 md:px-10 pt-36 md:pt-16 pb-16 lg:py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           
           {/* Col 1: Brand */}
           <div className="flex flex-col gap-6 lg:pr-8">

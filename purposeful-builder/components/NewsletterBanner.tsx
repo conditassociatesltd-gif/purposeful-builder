@@ -4,16 +4,16 @@ import Link from "next/link";
 
 export default function NewsletterBanner() {
   return (
-    <section className="bg-[#c4572a] relative z-10">
+    <section className="bg-[#c4572a] relative pb-24 md:pb-0 z-10">
       <div className="max-w-[1200px] mx-auto px-5 py-8 md:py-10">
         <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-8 items-center relative">
           
           {/* Left Column: Text & Form */}
           <div className="text-[#1a1a1a] md:max-w-lg w-full z-10 relative">
-            <h2 className="text-lg md:text-xl font-black uppercase tracking-tight mb-3 leading-snug md:pr-0">
+            <h2 className="text-lg md:text-xl font-black uppercase tracking-tight mb-3 leading-snug">
               5 Minutes a day that will change your life
             </h2>
-            <p className="text-xs md:text-sm leading-relaxed opacity-90 mb-6 text-balance md:pr-0">
+            <p className="text-xs md:text-sm leading-relaxed opacity-90 mb-6 text-balance">
               Enter your email address below to sign up for my free newsletter, <em>Your Formation Newsletter</em>. Each week, you'll receive a few letters designed to help you build structure, navigate identity, and become whole. Just a few minutes a day that will change your life.
             </p>
             
@@ -42,50 +42,73 @@ export default function NewsletterBanner() {
             </p>
           </div>
 
-          {/* Right Column: 3D CSS Phone Mockup */}
-          <div className="flex justify-center md:justify-end items-center relative md:py-6 -mb-48 md:mb-0 mt-8 md:mt-0 z-20 scale-[0.85] origin-top md:scale-100 md:origin-center">
-            {/* The Phone */}
-            <div 
-              className="relative w-[200px] h-[400px] bg-[#e6eceb] rounded-[36px] border-[10px] border-[#222222] flex flex-col items-center justify-center p-5 text-center text-[#1a1a1a] select-none rotate-[12deg] transform-gpu transition-transform duration-700 md:hover:rotate-[8deg]"
-              style={{
-                boxShadow: "-15px 20px 30px rgba(0,0,0,0.4), inset -6px -6px 15px rgba(0,0,0,0.1), inset 6px 6px 15px rgba(255,255,255,0.8)"
-              }}
-            >
-              {/* Phone Notch */}
-              <div className="absolute top-0 w-20 h-5 bg-[#222222] rounded-b-xl z-10"></div>
-              
-              {/* Phone Content */}
-              <div className="w-full h-full flex flex-col items-center pt-10">
-                <div className="inline-block border border-[#c4572a] text-[#c4572a] rounded-[50%] px-3 py-1 text-[10px] italic mb-6 font-semibold shadow-sm">
-                  5 Minutes
-                </div>
-                
-                <h3 className="font-serif text-2xl font-black leading-[1.1] italic text-balance tracking-tight">
-                  Each Day<br/>
-                  That Will<br/>
-                  Change Your<br/>
-                  Life
-                </h3>
-                
-                <div className="mt-auto pt-4 border-t border-black/15 w-full">
-                  <p className="text-[7px] font-black uppercase tracking-[0.2em] leading-relaxed opacity-80">
-                    Your<br/>
-                    Formation<br/>
-                    Newsletter
-                  </p>
-                </div>
-              </div>
-              
-              {/* Screen Glare (subtle reflection) */}
-              <div className="absolute top-0 right-0 w-[150%] h-full bg-gradient-to-tr from-transparent via-white/20 to-transparent -rotate-45 pointer-events-none transform -translate-x-1/4"></div>
-            </div>
-            
-            {/* Background Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-white/10 blur-[50px] rounded-full pointer-events-none"></div>
+          {/* Right Column: Phone Mockup - visible on desktop only inside the grid */}
+          <div className="hidden md:flex justify-end items-center relative py-6">
+            <PhoneMockup />
           </div>
           
         </div>
       </div>
+
+      {/* Mobile-only: Small phone straddling the orange/black border */}
+      <div className="md:hidden absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-20">
+        <PhoneMockup small />
+      </div>
     </section>
+  );
+}
+
+function PhoneMockup({ small }: { small?: boolean }) {
+  const phoneW = small ? "w-[130px]" : "w-[200px]";
+  const phoneH = small ? "h-[260px]" : "h-[400px]";
+  const phoneRound = small ? "rounded-[24px]" : "rounded-[36px]";
+  const phoneBorder = small ? "border-[7px]" : "border-[10px]";
+  const phonePad = small ? "p-3" : "p-5";
+  const notchW = small ? "w-14" : "w-20";
+  const notchH = small ? "h-3" : "h-5";
+  const notchRound = small ? "rounded-b-lg" : "rounded-b-xl";
+  const badgeSize = small ? "text-[7px] px-2 py-0.5 mb-3" : "text-[10px] px-3 py-1 mb-6";
+  const headingSize = small ? "text-base" : "text-2xl";
+  const footerText = small ? "text-[5px]" : "text-[7px]";
+  const contentPt = small ? "pt-6" : "pt-10";
+  const footerPt = small ? "pt-2" : "pt-4";
+
+  return (
+    <div
+      className={`relative ${phoneW} ${phoneH} bg-[#e6eceb] ${phoneRound} ${phoneBorder} border-[#222222] flex flex-col items-center justify-center ${phonePad} text-center text-[#1a1a1a] select-none rotate-[12deg] transform-gpu transition-transform duration-700 hover:rotate-[8deg]`}
+      style={{
+        boxShadow: small
+          ? "-10px 14px 20px rgba(0,0,0,0.4), inset -4px -4px 10px rgba(0,0,0,0.1), inset 4px 4px 10px rgba(255,255,255,0.8)"
+          : "-15px 20px 30px rgba(0,0,0,0.4), inset -6px -6px 15px rgba(0,0,0,0.1), inset 6px 6px 15px rgba(255,255,255,0.8)",
+      }}
+    >
+      {/* Phone Notch */}
+      <div className={`absolute top-0 ${notchW} ${notchH} bg-[#222222] ${notchRound} z-10`}></div>
+
+      {/* Phone Content */}
+      <div className={`w-full h-full flex flex-col items-center ${contentPt}`}>
+        <div className={`inline-block border border-[#c4572a] text-[#c4572a] rounded-[50%] ${badgeSize} italic font-semibold shadow-sm`}>
+          5 Minutes
+        </div>
+
+        <h3 className={`font-serif ${headingSize} font-black leading-[1.1] italic text-balance tracking-tight`}>
+          Each Day<br />
+          That Will<br />
+          Change Your<br />
+          Life
+        </h3>
+
+        <div className={`mt-auto ${footerPt} border-t border-black/15 w-full`}>
+          <p className={`${footerText} font-black uppercase tracking-[0.2em] leading-relaxed opacity-80`}>
+            Your<br />
+            Formation<br />
+            Newsletter
+          </p>
+        </div>
+      </div>
+
+      {/* Screen Glare */}
+      <div className="absolute top-0 right-0 w-[150%] h-full bg-gradient-to-tr from-transparent via-white/20 to-transparent -rotate-45 pointer-events-none transform -translate-x-1/4"></div>
+    </div>
   );
 }
