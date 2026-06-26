@@ -6,6 +6,7 @@ import MobileMenu from "@/components/MobileMenu";
 import { getAllEssays } from "@/lib/essays";
 import { getAllPodcasts } from "@/lib/podcasts";
 import EcosystemCarousel from "@/components/EcosystemCarousel";
+import NewsletterBanner from "@/components/NewsletterBanner";
 import FadeIn from "@/components/FadeIn";
 
 const portfolio = [
@@ -293,6 +294,8 @@ export default function HomePage() {
       <div id="portfolio">
         <EcosystemCarousel />
       </div>
+
+      <NewsletterBanner />
 
       <footer id="subscribe" style={{ background: "#0a0a0a", color: "#f4efe3" }}>
         <div className="max-w-[1600px] mx-auto px-5 md:px-10 py-16 lg:py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
