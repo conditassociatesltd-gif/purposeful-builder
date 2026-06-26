@@ -392,70 +392,68 @@ The screen is never just the screen. The bottle is never just the bottle. And th
 # Chapter 6: Spilling into the Light
 ### The Exposure
 
-Growing up in the church, there was a specific scripture that always hung over my head: *"There is nothing hidden that will not be disclosed, and nothing concealed that will not be known or brought out into the open."*
+Growing up in church, there was a specific scripture that always hung over my head: *"There is nothing hidden that will not be disclosed, and nothing concealed that will not be known or brought out into the open."*
 
-When I was a boy, I used to think that verse was only talking about the Day of Judgment. I thought it meant that as long as I kept my secrets buried deep enough, I could get away with them on earth, and God would only expose me on the last day. Because of that, I spent years living in a state of calculation—always looking over my shoulder, always clearing my tracks, always making sure nobody knew what I was doing in the dark.
+When I was a boy, I thought that verse was only talking about the Day of Judgment. I thought it meant that as long as I kept my secrets buried deep enough, I could get away with them on earth, and God would only expose me at the very end. Because of that, I spent years in a state of constant calculation — always looking over my shoulder, always clearing my tracks, always making sure nobody could see what I was doing in the dark.
 
-But I eventually learned a terrifying truth about addiction: exposure does not wait for eternity.
+But I eventually learned a terrifying truth: exposure does not wait for eternity.
 
-You cannot hide a habit forever. It is like placing a single rotten fruit into a bag full of fresh, healthy fruits. You can bury the rotten fruit at the very bottom. You can pile the good fruits on top, zip the bag tight, and carry it around with a smile on your face, pretending everything is perfectly fine.
+You cannot hide a habit forever. It is like placing a single rotten fruit into a bag full of fresh, healthy ones. You can bury it at the very bottom, pile the good fruit on top, zip the bag tight, and walk around with a smile on your face. It might take a week. It might take a month. But eventually the rot spreads. The juices seep into everything around it. The smell begins to leak through the fabric. And one day someone stops you, opens the bag, and there is nothing left to say.
 
-It might take a week. It might take a month. But eventually, the rot is going to spread. The juices of that rotten fruit will begin to seep into the healthy ones. The terrible smell will begin to leak through the fabric of the bag. And one day, someone is going to stop you, look at the bag, and open it. No matter how long it takes, what is rotting in the dark will always spill out into the light.
+No matter how long it takes, what is rotting in the dark will always find its way into the light.
 
 For me, the bag ripped open on Easter Sunday.
 
-I was running an errand for my mother that afternoon. As I was walking down the street, I passed by some of my friends. They had set up a cooler—the kind people usually use to keep soft drinks and ice—but they weren't drinking soft drinks. They were mixing palm wine with Gulder beer. When the Gulder finished, they brought out Star beer and whatever other brands they could find, pouring it all into the mix.
+I was running an errand for my mother that afternoon. On my way back, I passed some friends who had set up a cooler along the road — the kind usually filled with soft drinks and ice. But they weren't drinking soft drinks. They were mixing palm wine with Gulder, and when the Gulder finished they brought out Star and whatever else they could find, pouring everything together into the same cup.
 
-When I finished my errand and was on my way back, I stopped and joined them. We sat there drinking as the evening grew dark and the air grew hot. We were sweating, and one of my friends complained about the heat. He decided we needed a fan. In his drunken state, he went and dragged out a small Tiger generator, but there was no way to connect the fan to it. So, he pulled out a pair of wired earphones, put the cord in his mouth, and began tearing the wire with his teeth, trying to use the exposed copper to connect the generator.
+I stopped and joined them. We sat there as the evening grew dark and the air stayed hot, sweating through our clothes, laughing at nothing in particular. At some point one of my friends complained about the heat and decided we needed a fan. In his drunken state, he dragged out a small Tiger generator but couldn't figure out how to connect it. So he pulled out a pair of wired earphones, put the cord in his mouth, and began tearing the wire with his teeth, trying to use the exposed copper to make the connection.
 
-We all sat there laughing at him. Watching him try to hotwire a generator with a pair of earphones, I knew he was completely drunk.
+We all sat there laughing at him. Watching him attempt to hotwire a generator with a pair of earphones, I knew he was completely gone.
 
-But I didn't realize that I was completely drunk, too.
+What I didn't realize was that I was just as gone.
 
-It wasn't until I finally stood up to walk back to my house that I realized my mind was gone. I managed to stumble my way home. When I walked through the door, my mother was sitting right there. In my drunken state, I walked straight past her without saying a single word of greeting, went directly into the parlor, and collapsed on the floor.
+It wasn't until I finally stood up to walk home that my body told me what my mind had missed. The ground felt uncertain beneath me. I managed to find my way back, but when I walked through the door, my mother was sitting right there in the parlor. In my state, I walked straight past her without a word of greeting, went to the floor, and went down.
 
-What happened next was the greatest physical exposure of my life.
+What happened through the night was the most humiliating physical exposure of my life.
 
-While I was sleeping, my body violently rejected the alcohol, and I vomited all over the parlor. Later that night, I woke up needing to use the restroom. My mind was so far gone that I didn't even make it to the bathroom. I defecated right in front of someone's door in the house. Then, I stumbled back into the parlor and continued sleeping right in the middle of my own mess.
+While I slept, my body violently rejected everything I had put into it. I vomited across the parlor floor. Later, I woke needing the bathroom but my mind was too far gone to get there. I defecated in front of someone's door, then stumbled back to the parlor and continued sleeping in the middle of my own mess. My mother woke in the night, found me there, and had to wake my brother to help clean the floor.
 
-My mother woke up in the middle of the night and found me there. The sight was so horrible that she had to wake my brother up and tell him to mop the floor.
+When I opened my eyes the next morning, I had no memory of any of it. But the damage was done. The secret was out — not in a quiet, controlled way, but in the most humiliating way a secret can leave you.
 
-When I woke up the next morning, I had absolutely no idea what had happened. But the damage was already done. The secret was out in the most humiliating way possible.
+And the alcohol was not the only thing the bag had been carrying.
 
-But the alcohol was not the only secret the bag was carrying.
+I remember the night I handed my phone to my younger brother. He needed to use the browser, so I gave it to him without thinking — completely forgetting what was sitting in my gallery. As he scrolled through the phone, he found the pornography I had downloaded. His reaction was immediate and loud.
 
-I remember one night when I gave my phone to my younger brother. I handed it over, completely forgetting what I had been doing on it. Because he was supposed to use it just for the browser, I didn't think twice. But as he looked through the phone, he stumbled across my gallery and saw the pornography I had downloaded.
+*"Who put pornography on this phone?"*
 
-To his absolute shock, he began to shout, *"Who put pornography on this phone?!"*
+What followed was a moment I have never forgotten. Because I had spent years building a reputation as the good Christian boy in the house, my younger brother could not bring himself to believe it was me. He assumed immediately that one of our older brothers must have taken my phone and used it. He was that certain of my innocence.
 
-Because I had built such a strong "good Christian" persona, my younger brother couldn't even fathom that I was the one who did it. He immediately assumed that one of our older brothers must have taken my phone and put it there.
+And I let him stay certain.
 
-Instead of telling the truth, I played along with his shock. I fell right into line with his assumption and acted outraged. *"Who could possibly put pornography on my phone?"* I said, pretending to be completely innocent.
+I fell right into his assumption. I matched his outrage. I stood there performing shock alongside him, asking the same question he was asking, pointing the finger in the same direction he was pointing. I was successfully lying, but what I felt on the inside had nothing to do with success. I felt the specific shame that comes not just from being caught, but from allowing someone who trusted you completely to carry a blame that belonged to you. My younger brother — someone who looked up to me — had just been exposed to pornography because of my secret. And I was too cowardly to say so.
 
-I was successfully lying, but on the inside, I felt incredibly low. I was so ashamed that I was not only hiding the truth, but actively letting someone else take the blame. Even worse, it was a deeply shameful realization that my younger brother—someone who looked up to me—was exposed to pornography simply because of my secret.
+The third exposure happened during my university years, and it is the one I find hardest to tell.
 
-Another time, while I was in the university, the addiction pushed me out into the open. It was the middle of the night, and I was walking back from a night class. I stopped at a faculty hall simply because the Wi-Fi network was strong there. Sitting outside in the dark was dangerous—I was completely alone and could have easily been attacked or robbed. But the addiction didn't care about the danger; it only cared about the download.
+It was the middle of the night, and I was walking back from a night class. I stopped at a faculty hall because the Wi-Fi signal there was strong. I sat down outside in the dark — alone, completely exposed to whatever or whoever might be passing — and began downloading pornography. The danger of sitting alone in that kind of darkness at that hour did not register. The addiction had long since stopped consulting my sense of self-preservation.
 
-While I was sitting there downloading pornography in the open, a group of guys who were also returning from night class walked right up to me. They saw exactly what was on my screen.
+While I sat there, a group of guys returning from their own night class walked past and saw exactly what was on my screen. They stopped. One of them pointed at me and said, loud enough for all of them to hear: *"Look at what this one is doing in the dark."*
 
-They were actually ashamed on my behalf. One of them pointed and said, *"Look at what this one is doing in the dark."*
+I have no words that adequately describe what that moment felt like. I was completely still. I couldn't speak. My body was there but everything else in me had gone somewhere it could hide.
 
-It is hard to describe the feeling of being caught. I stood there, completely still. I was dumbfounded. I couldn't speak. You would think that in a moment of such intense public shame, I would have immediately closed the phone and run home to hide. But that is not what I did.
+You would think that in a moment of such complete public shame, the first thing I would do is close the phone and disappear. But that is not what happened. The download was still running. And I stood there, swallowed by shame, and waited for it to finish. Only after the file completed did I finally walk away.
 
-The addiction had such a tight grip on me that I stood there, swallowed by shame, and *waited for the download to finish*. Only after the video finished downloading did I finally walk away. The shame was suffocating, but it still wasn't strong enough to stop the craving.
+That is what a grip looks like. The shame was real and it was suffocating — but it still was not louder than the craving.
 
-When your secret is suddenly dragged into the light, you have absolutely nothing to say. In that moment, surrounded by those guys at the faculty hall, or standing in front of my brother, or waking up in the wreckage of the parlor, the only thing you want is for the ground to open up and hide you from the truth.
+When your secret is dragged into the light, there is nothing to say and nowhere to go. In that moment at the faculty hall, and in front of my brother, and waking up on that parlor floor, the only thing you want is for the ground to open. Because the light shows you not just what you did, but what you have become — and the distance between that and who you thought you were is one of the most devastating things a person can be made to see.
 
-Because of my Christian background, I knew what these things meant. I knew God was always there, watching me in the dark. But it isn't until the moment you are caught by *people* that the full weight of what you have done finally hits you.
-
-The rotten fruit cannot stay in the bag forever. And the day the bag finally opens, you are left with nothing but the reality of what you have become.
+The rotten fruit cannot stay in the bag. And the day it finally surfaces, you are left standing in the smell of it, with no one else to blame.
 
 ---
 
 # Chapter 7: The Deafening Aftermath
 ## What Silence Sounds Like
 
-When I woke up on the floor of the parlor the morning after that Easter Sunday, my first reaction was confusion. I had absolutely no idea what had happened in the night. But as the fog in my head began to clear, and as I looked at the physical mess I had created in my own home, the crushing reality set in.
+
 
 The secret was out.
 
