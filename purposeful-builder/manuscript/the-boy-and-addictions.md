@@ -648,9 +648,13 @@ The myth of the snap is especially dangerous in the church context, because we d
 
 *"Surrender it to God and it will be gone."*
 
-I grew up hearing all of these, and I believed them. So when I surrendered it to God on a Sunday and was back in it by Wednesday, the conclusion I drew was not that the strategy was wrong. The conclusion I drew was that I was not good enough. That my faith was defective. That there was something fundamentally broken in me that prayer could not fix.
+I grew up hearing all of these, and I believed them. But there was one particular moment that nearly destroyed me. I remember asking my Sunday school teacher a question during a lesson. I had been committing these sins over and over, and I asked her, *"What is the sin against the Holy Spirit?"*
 
-That conclusion nearly destroyed me.
+She looked at me and said, *"When you commit a sin, ask for forgiveness, and then commit that exact same sin again — that becomes the sin against the Holy Spirit."*
+
+That answer completely messed with my mind. A half-truth is often worse than a lie. With a lie, you know the person is deceiving you. But a half-truth is often cooked with good intent, yet it still poisons you. I ran with that half-truth. Because I wasn't receiving help, and because I kept falling back into the habit no matter how genuinely I prayed, the only conclusion I could draw was that I had committed the unpardonable sin. I believed God was no longer helping me because I was already condemned.
+
+I lost hope. I won't lie to you — I completely lost hope. I continued to masturbate and look at pornography, not from a place of confidence, but because I had convinced myself I was already lost and would never get help anyway. I couldn't bring myself to talk to anybody because the deception was so deep: *if this is something you can just stop, why go and disgrace yourself by telling someone?* 
 
 Because when a boy believes he is beyond fixing, he stops trying to be fixed. Why keep fighting a battle you are convinced you have already lost?
 
