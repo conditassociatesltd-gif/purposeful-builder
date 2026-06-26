@@ -628,15 +628,15 @@ Yanking a jammed zip with brute force only ruins the bag. To fix it, you have to
 
 But the myth of the snap is more than just a misunderstanding of how the brain works. It is also a misunderstanding of how battles are won.
 
-Imagine you are trying to fetch water from a very deep well using a thick rope and a heavy rubber fetcher. You drop the fetcher in, wait for it to fill up, plant your feet, and pull with everything you have. You feel it coming up — just enough to know you can lift it. So you pull harder. Your arms are trembling. Your palms are burning from the rope. The sweat is running into your eyes. For a moment, you are winning.
+Imagine you are trying to carry one of those heavy double-seater wooden desks in the classroom by yourself. You grab it from the bottom, plant your feet, and lift with everything you have. You manage to get it off the floor. Your muscles are trembling, your fingers are hurting, but for a few steps, you are winning. 
 
 And then your arms give out.
 
-The second you let go, the heavy fetcher does not stay suspended halfway up the well. It plunges right back down — faster than you pulled it up — and as the rope flies back into the well, it violently burns your hands. It hits the water at the bottom and sinks all over again.
+The desk doesn't just float in the air. It crashes down violently, often landing right on your toes.
 
-This is what trying alone looks like. It is not a discipline problem. It is a physics problem. One person does not always have the strength to pull up a massive weight indefinitely. No matter how strong you are, no matter how sincere your effort, fatigue will come. And the moment it does, what you were lifting will crash back down harder than before.
+This is what trying alone looks like. It is not a discipline problem. It is a physics problem. That desk was built to be carried by two people. If you try to lift it alone, fatigue will come, and when it drops, you get hurt worse than if you hadn't tried at all.
 
-I tried to pull up that heavy fetcher for years by myself. And every time the rope burned my hands and the bucket crashed back to the bottom, I blamed my own weakness. I thought the answer was to be stronger next time. To pray harder. To try with more determination. What I did not understand was that I was not failing because I was weak. I was failing because I was alone — and some loads require more than one person to pull.
+I tried to lift that weight for years by myself. And every time it crashed back down on my toes, I blamed my own weakness. I thought the answer was to be stronger next time. To pray harder. To try with more determination. What I did not understand was that I was not failing because I was weak. I was failing because I was alone — and some loads require more than one person to carry.
 
 ---
 
@@ -672,5 +672,5 @@ The chapters ahead are about building that shelter.
 
 But before you can build anything, you have to admit that standing in the rain and yelling has not been working. That is not weakness. That is the first intelligent thing you will have done in this fight.
 
-The boy who finally admits he cannot pull the heavy bucket alone is not weaker than the boy who keeps trying. He is smarter. And he is much closer to actually getting the water out of the well.
+The boy who finally admits he cannot carry the double-seater desk alone is not weaker than the boy who keeps trying. He is smarter. And he is much closer to actually moving it across the room.
 
