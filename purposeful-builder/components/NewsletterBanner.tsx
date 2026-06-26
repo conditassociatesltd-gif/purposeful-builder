@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function NewsletterBanner() {
   return (
-    <section className="bg-[#c4572a] overflow-hidden relative">
+    <section className="bg-[#c4572a] relative z-10">
       <div className="max-w-[1200px] mx-auto px-5 py-8 md:py-10">
         <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-8 items-center relative">
           
@@ -43,7 +43,7 @@ export default function NewsletterBanner() {
           </div>
 
           {/* Right Column: 3D CSS Phone Mockup */}
-          <div className="flex justify-center md:justify-end items-center relative py-8 md:py-6 mt-4 md:mt-0">
+          <div className="flex justify-center md:justify-end items-center relative md:py-6 -mb-48 md:mb-0 mt-8 md:mt-0 z-20 scale-[0.85] origin-top md:scale-100 md:origin-center">
             {/* The Phone */}
             <div 
               className="relative w-[200px] h-[400px] bg-[#e6eceb] rounded-[36px] border-[10px] border-[#222222] flex flex-col items-center justify-center p-5 text-center text-[#1a1a1a] select-none rotate-[12deg] transform-gpu transition-transform duration-700 md:hover:rotate-[8deg]"
