@@ -5,72 +5,72 @@ import Link from "next/link";
 export default function NewsletterBanner() {
   return (
     <section className="bg-[#c4572a] overflow-hidden">
-      <div className="max-w-[1200px] mx-auto px-5 py-12 md:py-16">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-8 items-center">
+      <div className="max-w-[1200px] mx-auto px-5 py-8 md:py-10">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-8 items-center">
           
           {/* Left Column: Text & Form */}
           <div className="text-[#1a1a1a] max-w-lg">
-            <h2 className="text-xl md:text-2xl font-black uppercase tracking-tight mb-4 leading-snug">
+            <h2 className="text-lg md:text-xl font-black uppercase tracking-tight mb-3 leading-snug">
               5 Minutes a day that might change your life
             </h2>
-            <p className="text-sm md:text-base leading-relaxed opacity-90 mb-8 text-balance">
-              Enter your email address below to sign up for my free newsletter, <em>Your Next Breakthrough</em>. Each week, you'll receive a few prompts and exercises designed to create your next breakthrough. No fluff, no filler, no BS. Just five minutes a day that might change your life.
+            <p className="text-xs md:text-sm leading-relaxed opacity-90 mb-6 text-balance">
+              Enter your email address below to sign up for my free newsletter, <em>Your Formation Newsletter</em>. Each week, you'll receive a few prompts designed to help you build structure, navigate identity, and become whole. Just a few minutes a day that might change your life.
             </p>
             
             <form
               action="https://buttondown.email/api/emails/embed-subscribe/arc_austin"
               method="post"
-              className="flex flex-col sm:flex-row gap-2 bg-white rounded-full p-1.5 shadow-xl mb-4 relative"
+              className="flex flex-col sm:flex-row gap-2 bg-white rounded-full p-1.5 shadow-xl mb-3 relative"
             >
               <input
                 type="email"
                 name="email"
                 placeholder="Your Email Address"
                 required
-                className="flex-1 bg-transparent px-5 py-3 outline-none placeholder:text-black/40 text-black text-sm"
+                className="flex-1 bg-transparent px-5 py-2.5 outline-none placeholder:text-black/40 text-black text-sm"
               />
               <button
                 type="submit"
-                className="bg-[#1a1a1a] text-white px-8 py-3 text-xs tracking-widest font-bold uppercase rounded-full hover:bg-black transition-colors shrink-0"
+                className="bg-[#1a1a1a] text-white px-6 py-2.5 text-[10px] tracking-widest font-bold uppercase rounded-full hover:bg-black transition-colors shrink-0"
               >
                 Sign Up
               </button>
             </form>
             
-            <p className="text-[11px] opacity-75 italic text-balance">
-              Your information is protected and I never spam, ever. You can view my privacy policy <Link href="/contact" className="underline underline-offset-2">here</Link>.
+            <p className="text-[10px] opacity-75 italic text-balance">
+              Your information is protected and I never spam, ever. You can view my privacy policy <Link href="/privacy" className="underline underline-offset-2">here</Link>.
             </p>
           </div>
 
           {/* Right Column: 3D CSS Phone Mockup */}
-          <div className="flex justify-center md:justify-end items-center relative py-10">
+          <div className="flex justify-center md:justify-end items-center relative py-6">
             {/* The Phone */}
             <div 
-              className="relative w-[260px] h-[520px] bg-[#e6eceb] rounded-[45px] border-[12px] border-[#222222] flex flex-col items-center justify-center p-8 text-center text-[#1a1a1a] select-none rotate-[12deg] transform-gpu transition-transform duration-700 hover:rotate-[8deg]"
+              className="relative w-[200px] h-[400px] bg-[#e6eceb] rounded-[36px] border-[10px] border-[#222222] flex flex-col items-center justify-center p-5 text-center text-[#1a1a1a] select-none rotate-[12deg] transform-gpu transition-transform duration-700 hover:rotate-[8deg]"
               style={{
-                boxShadow: "-20px 25px 40px rgba(0,0,0,0.4), inset -8px -8px 20px rgba(0,0,0,0.1), inset 8px 8px 20px rgba(255,255,255,0.8)"
+                boxShadow: "-15px 20px 30px rgba(0,0,0,0.4), inset -6px -6px 15px rgba(0,0,0,0.1), inset 6px 6px 15px rgba(255,255,255,0.8)"
               }}
             >
               {/* Phone Notch */}
-              <div className="absolute top-0 w-28 h-6 bg-[#222222] rounded-b-2xl z-10"></div>
+              <div className="absolute top-0 w-20 h-5 bg-[#222222] rounded-b-xl z-10"></div>
               
               {/* Phone Content */}
-              <div className="w-full h-full flex flex-col items-center pt-16">
-                <div className="inline-block border border-[#c4572a] text-[#c4572a] rounded-[50%] px-5 py-1.5 text-sm italic mb-8 font-semibold shadow-sm">
+              <div className="w-full h-full flex flex-col items-center pt-10">
+                <div className="inline-block border border-[#c4572a] text-[#c4572a] rounded-[50%] px-3 py-1 text-[10px] italic mb-6 font-semibold shadow-sm">
                   5 Minutes
                 </div>
                 
-                <h3 className="font-serif text-3xl font-black leading-[1.1] italic text-balance tracking-tight">
-                  Each Week<br/>
+                <h3 className="font-serif text-2xl font-black leading-[1.1] italic text-balance tracking-tight">
+                  Each Day<br/>
                   That Might<br/>
                   Change Your<br/>
                   Life
                 </h3>
                 
-                <div className="mt-auto pt-6 border-t border-black/15 w-full">
-                  <p className="text-[9px] font-black uppercase tracking-[0.2em] leading-relaxed opacity-80">
-                    Your Next<br/>
-                    Breakthrough<br/>
+                <div className="mt-auto pt-4 border-t border-black/15 w-full">
+                  <p className="text-[7px] font-black uppercase tracking-[0.2em] leading-relaxed opacity-80">
+                    Your<br/>
+                    Formation<br/>
                     Newsletter
                   </p>
                 </div>
@@ -81,7 +81,7 @@ export default function NewsletterBanner() {
             </div>
             
             {/* Background Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white/10 blur-[60px] rounded-full pointer-events-none"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-white/10 blur-[50px] rounded-full pointer-events-none"></div>
           </div>
           
         </div>
