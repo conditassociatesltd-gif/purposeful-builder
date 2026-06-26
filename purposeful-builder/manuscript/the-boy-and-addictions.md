@@ -582,3 +582,93 @@ Every boy who has ever been trapped in a habit has at least one of these roots u
 The question that changes everything is not "how do I stop?" It is "what am I actually looking for?"
 
 Because until you address the hunger, the habit will always return.
+
+---
+
+# Part 4: The Climb Out (How we get free)
+
+# Chapter 9: The Myth of the "Snap"
+## Why Trying Harder Fails
+
+I want to tell you about all the times I tried to stop.
+
+Not the time I finally did. The times before it. The times nobody talks about because they did not end in victory. The times I was absolutely, completely, utterly convinced that this time would be different — and it wasn't.
+
+I lost count of the number of promises I made. After a particularly shameful episode with pornography, I would sit in the silence afterward and feel such a deep revulsion at myself that the decision felt automatic. *I am done. That is the last time. I am never doing that again.* I would go to bed feeling clean. Sometimes I would even pray — a real prayer, not a ritual one, the kind that comes from a place of genuine desperation. I would close my eyes and mean every word.
+
+And then, within days, sometimes within hours, I would be right back where I started.
+
+I remember making a specific vow during a church service. The preacher was speaking about purity, and every word was landing directly on the part of me I had been hiding. I remember sitting in that pew, genuinely broken, genuinely asking God to take it from me. I remember walking home that evening feeling lighter than I had in years.
+
+I remember the following week, downloading the very thing I had just wept over.
+
+I am not telling you this to discourage you. I am telling you this because if this is your story too — if you have made promises that dissolved like sugar in the rain, if you have wondered why you keep breaking every vow you sincerely meant to keep — then I need you to understand one critical thing before we go any further:
+
+The problem was never the sincerity of the promise. The problem was the strategy.
+
+---
+
+There is a belief that most boys carry into their battle with addiction, and it sounds reasonable until you test it against reality. The belief is this: *if I just try hard enough, I will eventually break free.* It sounds like discipline. It sounds like strength. It sounds like exactly what a man is supposed to say.
+
+But it is a myth. And believing it is costing you years of your life.
+
+Think about a thick rope — the kind used to tie down a loaded truck at the motor park. Now imagine that rope has been tied into a tight knot, soaked in water overnight, and then pulled taut from both ends with the full weight of the load. What happens when you try to untie it?
+
+If you grab the knot and yank, the rope does not loosen. It gets tighter. Every frustrated pull presses the fibers deeper into each other, compressing them further. The harder you yank, the more impossible the knot becomes. You can pull until your palms are raw and your arms are burning, and that knot will not move.
+
+This is exactly what willpower does to an addiction that has already been wired into your brain.
+
+By the time you recognize that something has become a habit you cannot shake, the behavior is no longer just a choice you are making. It has become a groove. Your brain has physically restructured itself around the reward — it has built new pathways, new cravings, new reflexes that fire before your conscious mind even has a chance to respond. The moment the trigger appears, the signal is already on its way. Willpower is standing at the door trying to stop a message that has already been delivered.
+
+Yanking on a wet knot does not untie it. You have to patiently, methodically, work the individual fibers loose from the inside — and that requires a completely different kind of effort than pulling.
+
+---
+
+But the myth of the snap is more than just a misunderstanding of how the brain works. It is also a misunderstanding of how battles are won.
+
+Imagine you are pushing a car that has broken down on a hill. You put your shoulder to the boot, plant your feet in the ground, and push with everything you have. You feel it move — just slightly, just enough to know it is possible. So you push harder. Your legs are trembling. Your back is screaming. The sweat is running into your eyes. For a moment, you are winning.
+
+And then your body gives out.
+
+The second you stop, the car does not stay where you pushed it. It rolls back — faster than you pushed it up — and it does not stop at where you started. It rolls past you, picks up speed, and you have to jump out of the way to avoid being crushed.
+
+This is what trying alone looks like. It is not a discipline problem. It is a physics problem. One person does not have the force to hold a car on a hill indefinitely. No matter how strong you are, no matter how sincere your effort, fatigue will come. And the moment it does, what you were holding will come back down faster and harder than it went up.
+
+I tried to push that car for years by myself. And every time it rolled back over me, I blamed my own weakness. I thought the answer was to be stronger next time. To pray harder. To try with more determination. What I did not understand was that I was not failing because I was weak. I was failing because I was alone — and some loads require more than one person to carry.
+
+---
+
+The myth of the snap is especially dangerous in the church context, because we dress it in spiritual language and it becomes nearly impossible to question.
+
+*"If you were truly saved, you would have stopped by now."*
+
+*"You just need to have more faith."*
+
+*"Surrender it to God and it will be gone."*
+
+I grew up hearing all of these, and I believed them. So when I surrendered it to God on a Sunday and was back in it by Wednesday, the conclusion I drew was not that the strategy was wrong. The conclusion I drew was that I was not good enough. That my faith was defective. That there was something fundamentally broken in me that prayer could not fix.
+
+That conclusion nearly destroyed me.
+
+Because when a boy believes he is beyond fixing, he stops trying to be fixed. Why keep fighting a battle you are convinced you have already lost?
+
+Let me say something clearly: God is real, prayer is real, and surrender is absolutely part of the solution. But surrender is not a snap. It is a process. Even the Apostle Paul — the man who wrote most of the New Testament — described an ongoing, painful war between what he wanted to do and what he kept doing. He called it a wretched experience. He was not writing as a backslider. He was writing as a man who understood that freedom is not a single moment of decision. It is a daily, disciplined, supported, grace-fuelled journey.
+
+The snap does not exist. And every time someone told you it should have worked by now, they handed you a lie dressed in Sunday clothes.
+
+---
+
+There is one more image I want to give you before we move on.
+
+You cannot command the rain to stop. You can stand in the middle of a thunderstorm, fists clenched, jaw set, and yell at the clouds with every ounce of willpower you possess — and the rain will not stop falling. Not because you are weak. But because that is not how you deal with rain.
+
+You do not yell. You seek shelter.
+
+Freedom from addiction is not about generating enough personal force to overpower the craving. It is about building the right structures around you — accountability, community, truth, and grace — so that when the storm comes, you are not standing in the open field alone, trying to command what you were never designed to control.
+
+The chapters ahead are about building that shelter.
+
+But before you can build anything, you have to admit that standing in the rain and yelling has not been working. That is not weakness. That is the first intelligent thing you will have done in this fight.
+
+The boy who finally admits he cannot push the car alone is not weaker than the boy who keeps trying. He is smarter. And he is much closer to actually getting the car to the top of the hill.
+
