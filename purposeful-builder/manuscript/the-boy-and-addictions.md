@@ -1,4 +1,4 @@
-# The Boy and Addictions (Master Manuscript)
+﻿# The Boy and Addictions (Master Manuscript)
 
 > [!NOTE]
 > **Manuscript Progress Tracker**
@@ -107,7 +107,7 @@ That was when the cycle truly began. What started as a curious boy plugging in a
 
 Years later, I would notice the same pattern in other addictions. The first cigarette passed around behind the house with my friends after watching a movie. The first drink, which went down smoother than I thought it would, during a hangout. The first bet that paid out just enough to make me want to try again.
 
-The details always change, but the pattern stays the same. There is always a first exposure, a first door swinging open. Nobody thinks much of it while it is happening, and nobody imagines where it leads. At the time, it felt small, almost harmless—but each had their "afternoon" story.
+The details always change, but the pattern stays the same. There is always a first exposure, a first door swinging open. Nobody thinks much of it while it is happening, and nobody imagines where it leads. At the time, it felt small, almost harmlessâ€”but each had their "afternoon" story.
 
 It is like the first time a suya malam cuts you a small piece to taste before you buy. The moment that spice hits your tongue, something in you wakes up and wants more. That small taste was never just a taste. It was an invitation, and you did not fully understand what you were accepting until you were already reaching into your pocket.
 
@@ -122,7 +122,7 @@ Nobody tells you that the hardest part of addiction is not always the addiction 
 
 The CD was gone, but the desire it awakened was still there. What started as a curious boy stumbling across something he was never supposed to see gradually became something I planned for. I no longer waited for opportunities to appear. I started creating them.
 
-Before long, I knew the movements of everyone in the house almost by heart. I knew when my mother was likely to be at her shop and how long it usually took her to get home. My brothers had their routines too—football, tennis, video game centres—and I knew them well. Even the compound had its own rhythm. I knew when it would be busy and when it would finally become quiet.
+Before long, I knew the movements of everyone in the house almost by heart. I knew when my mother was likely to be at her shop and how long it usually took her to get home. My brothers had their routines tooâ€”football, tennis, video game centresâ€”and I knew them well. Even the compound had its own rhythm. I knew when it would be busy and when it would finally become quiet.
 
 As a boy, I loved mathematics. Now I was using the same thinking for something entirely different. If my brother left at 4 p.m. and usually returned around 6 p.m., that gave me a window. But there were always things to consider. What if it rained and the match ended early? What if he forgot something and came back for it? What if my mother returned earlier than expected? I was constantly calculating, constantly adjusting.
 
@@ -235,7 +235,7 @@ The pleasure of the addiction began to rewire my brain to love immediate gratifi
 
 But the rewiring doesn't stop at changing your priorities. It also demands your resources.
 
-Once your brain is wired to derive pleasure from a specific habit, you will begin to channel everything you have toward it. Addictions are not free. They require resources—your time, your energy, your safety, and your money. You have to be able to afford them.
+Once your brain is wired to derive pleasure from a specific habit, you will begin to channel everything you have toward it. Addictions are not free. They require resourcesâ€”your time, your energy, your safety, and your money. You have to be able to afford them.
 
 I remember a time when I was addicted to video games. My friends and I would play on our way back from school. We played at a friend's house, but when there was no electricity, we would go to the game centers and pay to play. It cost about 25 Naira for one set. The rule was that if you won the match, you could keep playing without paying again. So, we started saving up our lunch money just to sponsor the habit.
 
@@ -257,7 +257,7 @@ Those wooden tables selling pornographic CDs had always been at that roundabout.
 
 That is the true danger of wiring the brain in the dark. Once the brain decides it needs the reward, it doesn't just wait for the temptation to find you. It actively teaches your eyes how to hunt for it.
 
-And once it finds it, it will stop at nothing to get it—no matter what it costs you.
+And once it finds it, it will stop at nothing to get itâ€”no matter what it costs you.
 
 I once watched a video of a young man sharing his experience with a severe drug addiction. Over time, his brain had become so used to the drugs that it craved the pleasure above his own survival. He was injecting his body with needles, and the drugs were literally eating up his skin. You could see his skin sloughing off, leaving nothing but bone. He had even reached a point where he was injecting his private parts because his veins were collapsing.
 
@@ -267,7 +267,7 @@ Think about that. He was looking at his own skin rotting away. He was watching h
 
 Why? Because by that time, his brain had been entirely rewired to seek the reward *in spite of* the consequence.
 
-I know you are growing up in a generation that has access to almost anything through a screen. You are surrounded by things that promise you an immediate high. And maybe you are already caught in one. Maybe you are already seeing the consequences—your grades are dropping, you are lying to your parents, you feel ashamed, and you feel isolated.
+I know you are growing up in a generation that has access to almost anything through a screen. You are surrounded by things that promise you an immediate high. And maybe you are already caught in one. Maybe you are already seeing the consequencesâ€”your grades are dropping, you are lying to your parents, you feel ashamed, and you feel isolated.
 
 And you keep wondering: *Why do I keep going back to this when I already know the consequences? Why do I keep breaking my own promises?*
 
@@ -312,13 +312,13 @@ But the addiction didn't care about my job, my mother, or my boss. It only cared
 
 For my struggle with pornography, the turning point in that escalation happened the moment my access changed.
 
-By the time I finished secondary school, I got a mobile phone. Suddenly, the physical boundaries that had kept my addiction in check—the living room, the television, the reliance on the power company—were completely gone.
+By the time I finished secondary school, I got a mobile phone. Suddenly, the physical boundaries that had kept my addiction in checkâ€”the living room, the television, the reliance on the power companyâ€”were completely gone.
 
 I no longer had to go to the roundabout at Ochanja Market for a physical CD. There was a place in Onitsha called Emeka Offor Plaza where you could go and get whatever you wanted downloaded directly onto your phone. I could get videos from my friends. I could even get my fix from pirated action and vampire movies that were loaded with explicit scenes.
 
 With that phone in my hand, there was no limit to what I could do. The stranger was no longer confined to the living room; the stranger was now in my pocket, following me everywhere I went.
 
-Because I could access it anywhere, what started as once or twice a week exploded to match my growing tolerance. I watched the exact same silent escalation happen to my friends who got hooked on smoking. It started innocently enough—just one cigarette behind the house once a week. Then it was twice a week. Then three times. Before long, they were smoking morning, afternoon, and night.
+Because I could access it anywhere, what started as once or twice a week exploded to match my growing tolerance. I watched the exact same silent escalation happen to my friends who got hooked on smoking. It started innocently enoughâ€”just one cigarette behind the house once a week. Then it was twice a week. Then three times. Before long, they were smoking morning, afternoon, and night.
 
 The scariest part of this escalation is that you don't notice it happening. It doesn't send you a warning that you are crossing a line from a bad habit into full-blown captivity.
 
@@ -345,17 +345,17 @@ For a little while, the bucket works. It catches the drops. The floor stays dry,
 
 The screen was my bucket. And it was only a matter of time before it overflowed.
 
-Because the brain builds tolerance to pleasure, the visual high of simply watching eventually stopped being enough. My body began looking for a physical release for the stimulation I was feeding it. That was how the spillover began — I moved from watching pornography to masturbation.
+Because the brain builds tolerance to pleasure, the visual high of simply watching eventually stopped being enough. My body began looking for a physical release for the stimulation I was feeding it. That was how the spillover began â€” I moved from watching pornography to masturbation.
 
-When I first started, I didn't even have a name for what I was doing. I was just a boy trying to find a physical outlet for what the screen had awakened in me. It became a routine — almost every morning, automatic, like something my body had decided for itself. I didn't even know the word "masturbation" until years later when I heard a preacher use it in church. That is what a spillover looks like. The addiction didn't leave me on the screen. It wanted more territory, and it took it quietly, without announcement.
+When I first started, I didn't even have a name for what I was doing. I was just a boy trying to find a physical outlet for what the screen had awakened in me. It became a routine â€” almost every morning, automatic, like something my body had decided for itself. I didn't even know the word "masturbation" until years later when I heard a preacher use it in church. That is what a spillover looks like. The addiction didn't leave me on the screen. It wanted more territory, and it took it quietly, without announcement.
 
 You see the same pattern in every form of addiction. Nobody wakes up one morning and decides to destroy their life with hard drugs. It starts with a cigarette. But eventually the cigarette stops delivering the high they need. The bucket overflows. So they move from cigarettes to Indian hemp. When the hemp is no longer enough, they move to ice, then cocaine, then harder and deadlier substances. Each stage felt like a decision. None of them really were.
 
-I experienced a terrifying physical spillover with alcohol. My friends and I had been drinking together for a while, and one Easter Sunday we decided to push further than we ever had. We mixed everything available — palm wine, Gulder, Star, whatever we could find — all into one cup, passing it around as the evening heat pressed down on us.
+I experienced a terrifying physical spillover with alcohol. My friends and I had been drinking together for a while, and one Easter Sunday we decided to push further than we ever had. We mixed everything available â€” palm wine, Gulder, Star, whatever we could find â€” all into one cup, passing it around as the evening heat pressed down on us.
 
 That was the first time I suffered an overdose.
 
-I stumbled home and collapsed in the parlor. Through the night, my body violently rejected what I had put into it. I vomited everywhere, slept in my own mess, and at some point defecated on myself without even waking. For days afterward, I couldn't hold down solid food. Every time I tried to eat, my body threw it back. I was completely undone — not by an enemy, but by my own choices.
+I stumbled home and collapsed in the parlor. Through the night, my body violently rejected what I had put into it. I vomited everywhere, slept in my own mess, and at some point defecated on myself without even waking. For days afterward, I couldn't hold down solid food. Every time I tried to eat, my body threw it back. I was completely undone â€” not by an enemy, but by my own choices.
 
 That is what happens when the bucket overflows. The consequences don't stay inside the glass.
 
@@ -365,13 +365,13 @@ Because pornography is inherently about sex, it naturally creates a hunger to fi
 
 I didn't even have to be at the lesson centers for the thoughts to take over. Every morning, I would trek thirty minutes to school, looking for all the world like a normal, disciplined student. But inside, my mind was somewhere else entirely. Because I had spent so many hours in front of that screen, my brain had learned to project what it had seen onto the girls I passed on the road heading to their own schools. I would look at a girl in her school uniform and my mind would strip her naked before I had even finished the thought. Those images would vibrate through my mind all day, and by the time I got to the lesson centers in the evening, the cycle would continue.
 
-I was fortunate that I didn't have the opportunity to act on those desires. But the hunger was always there, and hunger that is not addressed will eventually find a way to feed itself. Some boys pay prostitutes, risking their lives and their health for something the screen trained them to crave. Some, driven by the same hunger and without the money to pay, force themselves on girls who never agreed to anything — and two lives are destroyed in that single moment. Some stumble across content that reshapes their understanding of their own sexuality, and before they have the language to process what is happening, they are acting it out. Some boys, the very first time they decide to cross from screen to reality, leave a girl pregnant — and what began as a private secret becomes a permanent consequence that neither of them is ready for.
+I was fortunate that I didn't have the opportunity to act on those desires. But the hunger was always there, and hunger that is not addressed will eventually find a way to feed itself. Some boys pay prostitutes, risking their lives and their health for something the screen trained them to crave. Some, driven by the same hunger and without the money to pay, force themselves on girls who never agreed to anything â€” and two lives are destroyed in that single moment. Some stumble across content that reshapes their understanding of their own sexuality, and before they have the language to process what is happening, they are acting it out. Some boys, the very first time they decide to cross from screen to reality, leave a girl pregnant â€” and what began as a private secret becomes a permanent consequence that neither of them is ready for.
 
 I want to be honest with you about this, because people often talk about addiction as though it only damages the person inside it. It doesn't. When the bucket overflows, it floods the people standing nearest to you.
 
-My own father was addicted to smoking. He smoked heavily for years. Even though he had good intentions for us, provided for us, protected us, and made us feel safe when he was alive, all of that was cut short. I still have fond memories of him as a good father—going to his office, seeing his workers designing clothes, and looking up to his strong sense of style. But all the plans and hopes he had for us couldn't materialize because the addiction destroyed his kidneys and killed him. The man who should have grown old watching his children build their lives was gone because of something that started as a habit. 
+My own father was addicted to smoking. He smoked heavily for years. Even though he had good intentions for us, provided for us, protected us, and made us feel safe when he was alive, all of that was cut short. I still have fond memories of him as a good fatherâ€”going to his office, seeing his workers designing clothes, and looking up to his strong sense of style. But all the plans and hopes he had for us couldn't materialize because the addiction destroyed his kidneys and killed him. The man who should have grown old watching his children build their lives was gone because of something that started as a habit. 
 
-And when he was gone, it was the family that carried what remained — the bills, the grief, his absence, and the questions that never got answered. Some of us had to find ways to support my mother by selling things or doing menial jobs. We were exposed to people who could oppress us, simply because our father was no longer in the picture to protect us.
+And when he was gone, it was the family that carried what remained â€” the bills, the grief, his absence, and the questions that never got answered. Some of us had to find ways to support my mother by selling things or doing menial jobs. We were exposed to people who could oppress us, simply because our father was no longer in the picture to protect us.
 
 Sometimes the spillover is even more violent than sickness or absence.
 
@@ -383,7 +383,7 @@ He walked to the security guard, asked for a machete on some pretext, and went b
 
 That boy did not wake up that morning intending to become a murderer. But the addiction had long since stopped caring about what he intended. By that point it only cared about what it needed. And it used him to get it.
 
-This is what I want you to understand. Addiction never stops at one thing. It doesn't matter whether it is gaming, pornography, alcohol, or drugs. It is an overflowing bucket, and it will keep pouring until it has reached every corner of your life — and the lives of everyone close to you.
+This is what I want you to understand. Addiction never stops at one thing. It doesn't matter whether it is gaming, pornography, alcohol, or drugs. It is an overflowing bucket, and it will keep pouring until it has reached every corner of your life â€” and the lives of everyone close to you.
 
 The screen is never just the screen. The bottle is never just the bottle. And the moment you decide it is contained is usually the moment it has already begun to spill.
 
@@ -394,7 +394,7 @@ The screen is never just the screen. The bottle is never just the bottle. And th
 
 Growing up in church, there was a specific scripture that always hung over my head: *"There is nothing hidden that will not be disclosed, and nothing concealed that will not be known or brought out into the open."*
 
-When I was a boy, I thought that verse was only talking about the Day of Judgment. I thought it meant that as long as I kept my secrets buried deep enough, I could get away with them on earth, and God would only expose me at the very end. Because of that, I spent years in a state of constant calculation — always looking over my shoulder, always clearing my tracks, always making sure nobody could see what I was doing in the dark.
+When I was a boy, I thought that verse was only talking about the Day of Judgment. I thought it meant that as long as I kept my secrets buried deep enough, I could get away with them on earth, and God would only expose me at the very end. Because of that, I spent years in a state of constant calculation â€” always looking over my shoulder, always clearing my tracks, always making sure nobody could see what I was doing in the dark.
 
 But I eventually learned a terrifying truth: exposure does not wait for eternity.
 
@@ -404,7 +404,7 @@ No matter how long it takes, what is rotting in the dark will always find its wa
 
 For me, the bag ripped open on Easter Sunday.
 
-I was running an errand for my mother that afternoon. On my way back, I passed some friends who had set up a cooler along the road — the kind usually filled with soft drinks and ice. But they weren't drinking soft drinks. They were mixing palm wine with Gulder, and when the Gulder finished they brought out Star and whatever else they could find, pouring everything together into the same cup.
+I was running an errand for my mother that afternoon. On my way back, I passed some friends who had set up a cooler along the road â€” the kind usually filled with soft drinks and ice. But they weren't drinking soft drinks. They were mixing palm wine with Gulder, and when the Gulder finished they brought out Star and whatever else they could find, pouring everything together into the same cup.
 
 I stopped and joined them. We sat there as the evening grew dark and the air stayed hot, sweating through our clothes, laughing at nothing in particular. At some point one of my friends complained about the heat and decided we needed a fan. In his drunken state, he dragged out a small Tiger generator but couldn't figure out how to connect it. So he pulled out a pair of wired earphones, put the cord in his mouth, and began tearing the wire with his teeth, trying to use the exposed copper to make the connection.
 
@@ -418,11 +418,11 @@ What happened through the night was the most humiliating physical exposure of my
 
 While I slept, my body violently rejected everything I had put into it. I vomited across the parlor floor. Later, I woke needing the bathroom but my mind was too far gone to get there. I defecated in front of someone's door, then stumbled back to the parlor and continued sleeping in the middle of my own mess. My mother woke in the night, found me there, and had to wake my brother to help clean the floor.
 
-When I opened my eyes the next morning, I had no memory of any of it. But the damage was done. The secret was out — not in a quiet, controlled way, but in the most humiliating way a secret can leave you.
+When I opened my eyes the next morning, I had no memory of any of it. But the damage was done. The secret was out â€” not in a quiet, controlled way, but in the most humiliating way a secret can leave you.
 
 And the alcohol was not the only thing the bag had been carrying.
 
-I remember the night I handed my phone to my younger brother. He needed to use the browser, so I gave it to him without thinking — completely forgetting what was sitting in my gallery. As he scrolled through the phone, he found the pornography I had downloaded. His reaction was immediate and loud.
+I remember the night I handed my phone to my younger brother. He needed to use the browser, so I gave it to him without thinking â€” completely forgetting what was sitting in my gallery. As he scrolled through the phone, he found the pornography I had downloaded. His reaction was immediate and loud.
 
 *"Who put pornography on this phone?"*
 
@@ -430,11 +430,11 @@ What followed was a moment I have never forgotten. Because I had spent years bui
 
 And I let him stay certain.
 
-I fell right into his assumption. I matched his outrage. I stood there performing shock alongside him, asking the same question he was asking, pointing the finger in the same direction he was pointing. I was successfully lying, but what I felt on the inside had nothing to do with success. I felt the specific shame that comes not just from being caught, but from allowing someone who trusted you completely to carry a blame that belonged to you. My younger brother — someone who looked up to me — had just been exposed to pornography because of my secret. And I was too cowardly to say so.
+I fell right into his assumption. I matched his outrage. I stood there performing shock alongside him, asking the same question he was asking, pointing the finger in the same direction he was pointing. I was successfully lying, but what I felt on the inside had nothing to do with success. I felt the specific shame that comes not just from being caught, but from allowing someone who trusted you completely to carry a blame that belonged to you. My younger brother â€” someone who looked up to me â€” had just been exposed to pornography because of my secret. And I was too cowardly to say so.
 
 The third exposure happened during my university years, and it is the one I find hardest to tell.
 
-It was the middle of the night, and I was walking back from a night class. I stopped at a faculty hall because the Wi-Fi signal there was strong. I sat down outside in the dark — alone, completely exposed to whatever or whoever might be passing — and began downloading pornography. The danger of sitting alone in that kind of darkness at that hour did not register. The addiction had long since stopped consulting my sense of self-preservation.
+It was the middle of the night, and I was walking back from a night class. I stopped at a faculty hall because the Wi-Fi signal there was strong. I sat down outside in the dark â€” alone, completely exposed to whatever or whoever might be passing â€” and began downloading pornography. The danger of sitting alone in that kind of darkness at that hour did not register. The addiction had long since stopped consulting my sense of self-preservation.
 
 While I sat there, a group of guys returning from their own night class walked past and saw exactly what was on my screen. They stopped. One of them pointed at me and said, loud enough for all of them to hear: *"Look at what this one is doing in the dark."*
 
@@ -442,9 +442,9 @@ I have no words that adequately describe what that moment felt like. I was compl
 
 You would think that in a moment of such complete public shame, the first thing I would do is close the phone and disappear. But that is not what happened. The download was still running. And I stood there, swallowed by shame, and waited for it to finish. Only after the file completed did I finally walk away.
 
-That is what a grip looks like. The shame was real and it was suffocating — but it still was not louder than the craving.
+That is what a grip looks like. The shame was real and it was suffocating â€” but it still was not louder than the craving.
 
-When your secret is dragged into the light, there is nothing to say and nowhere to go. In that moment at the faculty hall, and in front of my brother, and waking up on that parlor floor, the only thing you want is for the ground to open. Because the light shows you not just what you did, but what you have become — and the distance between that and who you thought you were is one of the most devastating things a person can be made to see.
+When your secret is dragged into the light, there is nothing to say and nowhere to go. In that moment at the faculty hall, and in front of my brother, and waking up on that parlor floor, the only thing you want is for the ground to open. Because the light shows you not just what you did, but what you have become â€” and the distance between that and who you thought you were is one of the most devastating things a person can be made to see.
 
 The rotten fruit cannot stay in the bag. And the day it finally surfaces, you are left standing in the smell of it, with no one else to blame.
 
@@ -467,10 +467,10 @@ But the physical sickness was nothing compared to the silence in the house.
 
 My mother, the woman who had woken my brother up in the middle of the night to mop up my mess, couldn't even bring herself to talk to me. She didn't scream. She didn't rage. She was simply silent. She was so shocked and embarrassed by what she had seen that, being a compassionate mother, she decided to just wait for me to recover physically before she even tried to address it.
 
-I have heard boys say they were afraid of what their parents would do when they found out. The shouting. The beating. The long lecture. What they do not tell you is that the silence is worse than all of those things combined. When a parent shouts, they are still engaging with you. They still believe you are worth the energy of their anger. But when a parent goes quiet — when they look at you and simply turn away — it means something different. It means they are trying to process something they do not yet have words for. Every time my mother passed my door and did not stop, I felt the weight of what I had done press down a little harder.
+I have heard boys say they were afraid of what their parents would do when they found out. The shouting. The beating. The long lecture. What they do not tell you is that the silence is worse than all of those things combined. When a parent shouts, they are still engaging with you. They still believe you are worth the energy of their anger. But when a parent goes quiet â€” when they look at you and simply turn away â€” it means something different. It means they are trying to process something they do not yet have words for. Every time my mother passed my door and did not stop, I felt the weight of what I had done press down a little harder.
 
 
-That silence is the heaviest punishment of all. When an addiction is exposed, it doesn't just shame you — it brings deep, agonizing shame to the people who love you. Lying there in my bed, sick and surrounded by that awful silence, I felt a disgust for myself that I had never known before.
+That silence is the heaviest punishment of all. When an addiction is exposed, it doesn't just shame you â€” it brings deep, agonizing shame to the people who love you. Lying there in my bed, sick and surrounded by that awful silence, I felt a disgust for myself that I had never known before.
 
 It was in that silence, driven by pure shame, that I made a vow to myself. I swore, *"I will never taste alcohol again in my life."*
 
@@ -478,7 +478,7 @@ I meant it. In that moment, I hated the alcohol. I hated what it made me do. I h
 
 But addiction does not care about the promises you make when you are hurting. It doesn't respect your tears, your pain, or your vows.
 
-It wasn't long after my body fully recovered that the craving returned. I do not remember the exact occasion — only that my friends were together, that the atmosphere was relaxed, and that someone put a drink in front of me. And I remember the negotiation that happened inside my own head — the quiet, rapid argument where one part of me said *remember what happened* and another part said *that was then, this is different, just this once, you are in control now.* The second voice won. It almost always did.
+It wasn't long after my body fully recovered that the craving returned. I do not remember the exact occasion â€” only that my friends were together, that the atmosphere was relaxed, and that someone put a drink in front of me. And I remember the negotiation that happened inside my own head â€” the quiet, rapid argument where one part of me said *remember what happened* and another part said *that was then, this is different, just this once, you are in control now.* The second voice won. It almost always did.
 
 I drank.
 
@@ -486,7 +486,7 @@ And standing there in that moment, doing the exact thing I had sworn in my sickb
 
 This is the terrifying reality of the hijacked will. People who have never struggled with addiction think that knowing the consequence is enough to stop the action. But knowing what to do and having the will to do it are two completely different things. When you are addicted, your willpower has been taken over. The pleasure you get from the habit becomes louder than your respect for your parents, louder than your own health, and louder than the public humiliation.
 
-It is like an alcoholic who falls into a gutter. He wakes up covered in mud, covered in shame, and vows to himself that he will never touch a bottle again. And maybe he stays away for a few days — but only because he doesn't have the money to buy more. The very moment money enters his hand, he walks right back to the bottle, and eventually, right back into the gutter.
+It is like an alcoholic who falls into a gutter. He wakes up covered in mud, covered in shame, and vows to himself that he will never touch a bottle again. And maybe he stays away for a few days â€” but only because he doesn't have the money to buy more. The very moment money enters his hand, he walks right back to the bottle, and eventually, right back into the gutter.
 
 When your will is hijacked, the aftermath is not just a momentary crisis you recover from. The aftermath becomes the place where you live.
 
@@ -519,13 +519,13 @@ When you go to a hospital with severe pain, a good doctor does not just prescrib
 
 Treating an addiction without understanding why it started is like trying to kill a weed by cutting off its leaves. It might look clean for a few days, but because the root is still buried deep in the soil, the weed will inevitably grow back. If you want to kill it, you have to dig your hands into the dirt and pull it out from the root.
 
-For many years of my life, I was only fighting the leaves. I knew *what* I was doing — I knew I was hooked on the screen, and I knew I was drinking — but I did not know *why*. I didn't understand the hunger behind the habit. And because I didn't understand the "why", my willpower was entirely useless.
+For many years of my life, I was only fighting the leaves. I knew *what* I was doing â€” I knew I was hooked on the screen, and I knew I was drinking â€” but I did not know *why*. I didn't understand the hunger behind the habit. And because I didn't understand the "why", my willpower was entirely useless.
 
 When I finally dug down to the root of my own addictions, I discovered something that shocked me. The root was not lust. It was not a desire to be rebellious.
 
 The root was rejection. Specifically, the void left by the absence of a father.
 
-A father is designed to be the anchor of a boy's identity. He is the one who confers worth, validation, and a sense of belonging. When a father is absent — whether he is physically gone, emotionally distant, or physically present but spiritually unavailable — he leaves a massive, gaping hole in a boy's soul. That absence does deep damage. It strips away a boy's self-esteem and leaves him feeling incomplete, unvalidated, and hungry for something he cannot name.
+A father is designed to be the anchor of a boy's identity. He is the one who confers worth, validation, and a sense of belonging. When a father is absent â€” whether he is physically gone, emotionally distant, or physically present but spiritually unavailable â€” he leaves a massive, gaping hole in a boy's soul. That absence does deep damage. It strips away a boy's self-esteem and leaves him feeling incomplete, unvalidated, and hungry for something he cannot name.
 
 Nature does not allow a vacuum. When there is a void in your heart, you will inevitably look for something to fill it.
 
@@ -535,9 +535,9 @@ I mentioned earlier that the first time I tried smoking, I hated it. It burned m
 
 It wasn't because I loved the substance. It was because I loved the feeling of belonging. I wanted to be accepted by the "happening guys." I wanted to feel like I was part of a brotherhood, because that brotherhood offered me a substitute for the identity I felt I was missing at home.
 
-That same void drove me toward women — but not out of genuine connection.
+That same void drove me toward women â€” but not out of genuine connection.
 
-In the environment where I grew up, a boy's worth was entirely measured by how many girlfriends he had. If you didn't have a girlfriend, you were mocked. They called you a "Jew boy" — meaning naive, inexperienced, someone who didn't know how the world worked. Because I did not have a father speaking value into my life, I tried to find my value in the eyes of my peers. I began to pursue women not as people deserving of respect, but as mirrors I could hold up to confirm that I was worth something. Every conquest was not really about the woman. It was about the hole inside me that I was trying to fill.
+In the environment where I grew up, a boy's worth was entirely measured by how many girlfriends he had. If you didn't have a girlfriend, you were mocked. They called you a "Jew boy" â€” meaning naive, inexperienced, someone who didn't know how the world worked. Because I did not have a father speaking value into my life, I tried to find my value in the eyes of my peers. I began to pursue women not as people deserving of respect, but as mirrors I could hold up to confirm that I was worth something. Every conquest was not really about the woman. It was about the hole inside me that I was trying to fill.
 
 The addiction to pornography fed the same hunger. What looked like lust on the surface was, at its root, a starving boy reaching for the one thing that made him feel powerful in a world where he felt invisible.
 
@@ -559,25 +559,25 @@ But fatherlessness and rejection are not the only roots. There are others that a
 
 **Boredom.**
 
-An idle boy is a vulnerable boy. When a young man has no purpose, no structure, and no meaningful outlet for his energy, his mind will go looking for stimulation on its own — and it will not always choose wisely. Boredom is not a minor inconvenience. It is one of addiction's most reliable entry points. The CD I found on that sunny afternoon did not find me in the middle of something purposeful. It found me in an empty house, with empty hands, and empty time. The emptiness was the invitation.
+An idle boy is a vulnerable boy. When a young man has no purpose, no structure, and no meaningful outlet for his energy, his mind will go looking for stimulation on its own â€” and it will not always choose wisely. Boredom is not a minor inconvenience. It is one of addiction's most reliable entry points. The CD I found on that sunny afternoon did not find me in the middle of something purposeful. It found me in an empty house, with empty hands, and empty time. The emptiness was the invitation.
 
 When I was young, there were many times my parents were away from the house, leaving me with completely unstructured free time. But the truth is, I was terrified of being alone with my own thoughts. I could not just sit with myself. Whenever the quietness of boredom set in, I felt an urgent need to fill it. Instead of using that freedom to think, dream, or build a purpose, I surrendered it to the screen. I filled the empty hours with movies, video games, and eventually pornography. The boredom was the trapdoor, and because I didn't know how to handle the emptiness, I willingly handed my free time over to a master that enslaved me.
 
 **Curiosity.**
 
-God designed boys to be curious. That curiosity is not a flaw — it is the engine behind every great discovery, every skill mastered, every question worth asking. But curiosity without boundaries or guidance is a match looking for fuel. A boy who has never been taught what to do with his curiosity will direct it wherever the world points him. The first time I plugged in that CD, I was not driven by lust. I was driven by curiosity. I had never seen anything like it. I simply wanted to know. Curiosity opened the door. The reward kept me inside.
+God designed boys to be curious. That curiosity is not a flaw â€” it is the engine behind every great discovery, every skill mastered, every question worth asking. But curiosity without boundaries or guidance is a match looking for fuel. A boy who has never been taught what to do with his curiosity will direct it wherever the world points him. The first time I plugged in that CD, I was not driven by lust. I was driven by curiosity. I had never seen anything like it. I simply wanted to know. Curiosity opened the door. The reward kept me inside.
 
-When I first saw naked people on a screen, my immediate reaction wasn't lust; it was a profound, naive curiosity. I didn't understand what sex was, and I thought the screen could teach me. I began to search it out purely to satisfy that curiosity. I wanted to see how it worked. I searched for different categories—black people, white people—just trying to understand the mechanics of what I was looking at. But the screen is a terrible teacher. As I kept exploring different sections to satisfy my curiosity, the hook sank deeper. What began as an innocent, unsupervised quest for knowledge turned into a heavy chain that I couldn't break.
+When I first saw naked people on a screen, my immediate reaction wasn't lust; it was a profound, naive curiosity. I didn't understand what sex was, and I thought the screen could teach me. I began to search it out purely to satisfy that curiosity. I wanted to see how it worked. I searched for different categoriesâ€”black people, white peopleâ€”just trying to understand the mechanics of what I was looking at. But the screen is a terrible teacher. As I kept exploring different sections to satisfy my curiosity, the hook sank deeper. What began as an innocent, unsupervised quest for knowledge turned into a heavy chain that I couldn't break.
 
 **Trauma.**
 
-Some boys do not stumble into addiction. They run into it — because they are running from something else. Pain that has never been processed does not disappear. It goes underground, and it looks for release wherever it can find it. A boy who has been abused, humiliated, or deeply wounded will often reach for a substance or a habit not because he wants the pleasure, but because he wants the numbness. The addiction is not the problem in those cases. It is the anaesthetic. The problem is the wound underneath that nobody has been willing to look at.
+Some boys do not stumble into addiction. They run into it â€” because they are running from something else. Pain that has never been processed does not disappear. It goes underground, and it looks for release wherever it can find it. A boy who has been abused, humiliated, or deeply wounded will often reach for a substance or a habit not because he wants the pleasure, but because he wants the numbness. The addiction is not the problem in those cases. It is the anaesthetic. The problem is the wound underneath that nobody has been willing to look at.
 
 Trauma can also be the consequence of a void that is exploited. Because my mind was already exposed and my self-esteem was non-existent, I lacked the boundaries to protect myself. During that season of my life, I was sexually molested by an older lady. I caved in to her whims not because I was in control, but because I was weak, broken, and desperate for any form of validation. That single incident of molestation became a deep trauma that haunted me, opening the door to many more years of sexual exploitation. The addiction became a way to numb the pain of what had been taken from me.
 
 ---
 
-Every boy who has ever been trapped in a habit has at least one of these roots underneath it. Some have several. The roots are different, but the mechanism is the same: an unmet need, a vacant space, and a habit that offered to fill it — cheaply, quickly, and temporarily.
+Every boy who has ever been trapped in a habit has at least one of these roots underneath it. Some have several. The roots are different, but the mechanism is the same: an unmet need, a vacant space, and a habit that offered to fill it â€” cheaply, quickly, and temporarily.
 
 The question that changes everything is not "how do I stop?" It is "what am I actually looking for?"
 
@@ -598,13 +598,15 @@ I lost count of the number of promises I made. After a particularly shameful epi
 
 And then, within days, sometimes within hours, I would be right back where I started.
 
-I remember making vows a lot in church. One of the ones that pained me the most happened during a special December church program. Throughout the program, there were so many powerful teachings. Every time the words pierced my heart, I would try to push them away. But eventually, the weight of it broke me. I made a solemn vow before God. I said, *"I will never do this again. I am so sorry. If You give me another chance, I will not return to my vomit."*
+I remember making vows in church. One of the ones that stayed with me the longest happened during a special December program. The teachings were powerful — the kind that get past your defenses before you realize you have lowered them. Every time the words pierced me I tried to push them away, but eventually the weight of it broke me open. I made a solemn vow before God. I said: *"I will never do this again. I am so sorry. If You give me another chance, I will not return to my vomit."*
 
-The sad and terrifying thing about that vow was how quickly it broke. While I was still at the program, I began to feel aroused. The program was scheduled to last for four days, ending with a final evening session. But the urge was so strong that I actually left a day early. I abandoned the program, went home, and downloaded the very thing I had just wept over — simply so that I could watch pornography and masturbate before the rest of my family returned. 
+The sad and terrifying thing about that vow was how quickly it broke.
 
-It was a messy, deeply shameful memory.
+While I was still at the program, I began to feel the pull. The program was scheduled to last four days, ending with a final evening session. But the urge became so loud that I left a day early. I abandoned the program, went home, and downloaded the very thing I had just wept over — so that I could watch pornography and masturbate before the rest of my family returned.
 
-I am not telling you this to discourage you. I am telling you this because if this is your story too — if you have made promises that dissolved like sugar in the rain, if you have wondered why you keep breaking every vow you sincerely meant to keep — then I need you to understand one critical thing before we go any further:
+It is a messy, deeply shameful memory. I am not telling you this to discourage you. I am telling you this because if this is your story too — if you have made promises that dissolved like sugar in the rain, if you have wept genuinely in a church service and still fallen within days — then I need you to understand something important before we go any further.
+
+A genuine encounter with God does not automatically rewire a brain that addiction has already restructured. The encounter was real. The tears were real. The desire to be free was real. But the brain does not reorganize itself in a moment of emotion, however sincere that emotion is. The spiritual work and the internal reconstruction have to happen together, and neither of them happens overnight. If you fell after a real moment with God, it does not mean the moment was fake. It means the work was not yet finished. It means you needed more than a single night could give you.
 
 The problem was never the sincerity of the promise. The problem was the strategy.
 
@@ -614,67 +616,52 @@ There is a belief that most boys carry into their battle with addiction, and it 
 
 But it is a myth. And believing it is costing you years of your life.
 
-Think about a jammed school bag zipper. You know the exact feeling — you are trying to close your bag in a hurry, and the teeth of the zip catch the fabric. What happens when you try to force it? 
+Think about a jammed school bag zipper — the kind that catches the fabric inside the teeth right when you are in a hurry. What happens when you grab it and yank with everything you have? It doesn't open. It gets tighter. Every frustrated pull buries the fabric deeper. Keep applying force and eventually the zip breaks or the bag tears. You have destroyed the very thing you were trying to close.
 
-If you grab the zip and yank it with all your strength, it doesn't open. It gets tighter. Every frustrated pull buries the fabric deeper into the metal teeth. The harder you yank, the worse the jam becomes. If you keep applying brute force, eventually the zip will break or the bag will tear. 
+This is exactly what willpower alone does to an addiction that has already been wired into your brain.
 
-This is exactly what willpower does to an addiction that has already been wired into your brain.
+By the time you recognize that something has become a habit you cannot shake, the behaviour is no longer simply a choice you are making. It has become a groove. Your brain has physically restructured itself around the reward — built new pathways, new cravings, new reflexes that fire before your conscious mind has a chance to respond. The moment a trigger appears, the signal is already on its way. Willpower is standing at the door trying to stop a message that has already been delivered.
 
-By the time you recognize that something has become a habit you cannot shake, the behavior is no longer just a choice you are making. It has become a groove. Your brain has physically restructured itself around the reward — it has built new pathways, new cravings, new reflexes that fire before your conscious mind even has a chance to respond. The moment the trigger appears, the signal is already on its way. Willpower is standing at the door trying to stop a message that has already been delivered.
+To fix a jammed zip, you cannot keep yanking. You have to stop, breathe, and patiently work the fabric free from the teeth — one small movement at a time. That requires a completely different kind of effort than force. And it requires patience that feels unbearable when you are in a hurry.
 
-Yanking a jammed zip with brute force only ruins the bag. To fix it, you have to stop pulling. You have to patiently, methodically untangle the fabric from the teeth — and that requires a completely different kind of effort than simply applying force.
+Freedom from addiction works the same way.
 
----
+You cannot command the rain to stop. You can stand in the middle of a thunderstorm, fists clenched, jaw set, and yell at the clouds with every ounce of determination you possess — and the rain will not stop. Not because you are weak. But because that is not how you deal with rain.
 
-But the myth of the snap is more than just a misunderstanding of how the brain works. It is also a misunderstanding of how battles are won.
+You do not command it. You seek shelter.
 
-Imagine you are trying to carry one of those heavy double-seater wooden desks in the classroom by yourself. You grab it from the bottom, plant your feet, and lift with everything you have. You manage to get it off the floor. Your muscles are trembling, your fingers are hurting, but for a few steps, you are winning. 
-
-And then your arms give out.
-
-The desk doesn't just float in the air. It crashes down violently, often landing right on your toes.
-
-This is what trying alone looks like. It is not a discipline problem. It is a physics problem. That desk was built to be carried by two people. If you try to lift it alone, fatigue will come, and when it drops, you get hurt worse than if you hadn't tried at all.
-
-I tried to lift that weight for years by myself. And every time it crashed back down on my toes, I blamed my own weakness. I thought the answer was to be stronger next time. To pray harder. To try with more determination. What I did not understand was that I was not failing because I was weak. I was failing because I was alone — and some loads require more than one person to carry.
+Freedom is not about generating enough personal force to overpower the craving. It is about building the right structures around you — accountability, community, truth, and grace — so that when the storm comes, you are not standing alone in an open field, trying to control what you were never designed to control by yourself. The chapters ahead are about building that shelter. But before you can build anything, you have to accept that standing in the rain and yelling has not been working.
 
 ---
 
-The myth of the snap is especially dangerous in the church context, because we dress it in spiritual language and it becomes nearly impossible to question.
+The myth of the snap is especially dangerous in the church, because we dress it in spiritual language and it becomes nearly impossible to question.
 
 *"If you were truly saved, you would have stopped by now."*
-
-*"You just need to have more faith."*
-
+*"You just need more faith."*
 *"Surrender it to God and it will be gone."*
 
-I grew up hearing all of these, and I believed them. But there was one particular moment that nearly destroyed me. I remember asking my Sunday school teacher a question during a lesson. I had been committing these sins over and over, and I asked her, *"What is the sin against the Holy Spirit?"*
+I grew up hearing all of these. I believed them. And then one day, a single conversation nearly finished me entirely.
 
-She looked at me and said, *"When you commit a sin, ask for forgiveness, and then commit that exact same sin again — that becomes the sin against the Holy Spirit."*
+I remember asking my Sunday school teacher a question during a lesson. I had been committing these sins repeatedly, falling and getting up and falling again, and I asked her: *"What is the sin against the Holy Spirit?"*
 
-That answer completely messed with my mind. A half-truth is often worse than a lie. With a lie, you know the person is deceiving you. But a half-truth is often cooked with good intent, yet it still poisons you. I ran with that half-truth. Because I wasn't receiving help, and because I kept falling back into the habit no matter how genuinely I prayed, the only conclusion I could draw was that I had committed the unpardonable sin. I believed God was no longer helping me because I was already condemned.
+She looked at me and said: *"When you commit a sin, ask for forgiveness, and then commit that exact same sin again — that becomes the sin against the Holy Spirit."*
 
-I lost hope. I won't lie to you — I completely lost hope. I continued to masturbate and look at pornography, not from a place of confidence, but because I had convinced myself I was already lost and would never get help anyway. I couldn't bring myself to talk to anybody because the deception was so deep: *if this is something you can just stop, why go and disgrace yourself by telling someone?* 
+That answer entered me like a poison and stayed there for years.
 
-Because when a boy believes he is beyond fixing, he stops trying to be fixed. Why keep fighting a battle you are convinced you have already lost?
+A half-truth is often more dangerous than an outright lie. With a lie, something in you senses the deception. But a half-truth is delivered with good intention, wrapped in familiar language, and by the time you realize it has damaged you, it has already done its work. I took what she said and ran with it. Because I kept falling back into the habit no matter how genuinely I prayed, the only conclusion I could reach was that I had already committed the unpardonable sin. That God was no longer helping me because I was already condemned. That the door had closed.
 
-Let me say something clearly: God is real, prayer is real, and surrender is absolutely part of the solution. But surrender is not a snap. It is a process. Even the Apostle Paul — the man who wrote most of the New Testament — described an ongoing, painful war between what he wanted to do and what he kept doing. He called it a wretched experience. He was not writing as a backslider. He was writing as a man who understood that freedom is not a single moment of decision. It is a daily, disciplined, supported, grace-fuelled journey.
+I want to stop here and speak directly to this, because if you have been carrying that same belief, it needs to be dismantled before it does any more damage to you.
+
+The sin against the Holy Spirit — what Jesus called the unpardonable sin — is not repeated failure. It is not falling into the same habit after asking for forgiveness. The theological understanding across centuries of scripture is that this sin refers to the deliberate, final, hardened rejection of God himself — attributing the work of the Holy Spirit to evil, and closing oneself permanently to repentance. It is not the sin of a boy who keeps falling and keeps returning to God in shame and desperation. A boy who is afraid he has committed the unpardonable sin almost certainly has not — because the very fear is itself evidence that the Spirit is still at work in him, still drawing him, still refusing to let him go.
+
+You have not been abandoned. The door has not closed. The fact that you are still fighting, still ashamed, still wanting to be free — that is not the evidence of a condemned man. That is the evidence of a man the Spirit has not finished with.
+
+I lost hope when I believed that lie. I will not pretend otherwise. For a season I continued in the addiction not from confidence but from despair — convinced I was already lost, that there was no point in telling anyone, that the disgrace of admitting the struggle would only confirm what I already believed about myself. When a boy believes he is beyond fixing, he stops trying to be fixed. Why keep fighting a battle you are certain you have already lost?
+
+But I was wrong. And if that is where you are, you are wrong too.
+
+Let me also say this clearly: God is real, prayer is real, and surrender is absolutely part of the journey. But surrender is not a snap. It is not a single moment that resolves everything. Even the Apostle Paul — the man who wrote most of the New Testament, who had encountered the risen Christ on the road to Damascus, who had been taken up to the third heaven — described an ongoing, painful war inside himself. The thing I want to do, I do not do. The thing I hate, that is what I keep doing. He called it a wretched experience. He was not writing as a backslider or a failure. He was writing as a man who understood that freedom is not one decisive moment. It is a daily, disciplined, supported, grace-fuelled journey — and it requires more than willpower and more than a single prayer.
 
 The snap does not exist. And every time someone told you it should have worked by now, they handed you a lie dressed in Sunday clothes.
 
----
-
-There is one more image I want to give you before we move on.
-
-You cannot command the rain to stop. You can stand in the middle of a thunderstorm, fists clenched, jaw set, and yell at the clouds with every ounce of willpower you possess — and the rain will not stop falling. Not because you are weak. But because that is not how you deal with rain.
-
-You do not yell. You seek shelter.
-
-Freedom from addiction is not about generating enough personal force to overpower the craving. It is about building the right structures around you — accountability, community, truth, and grace — so that when the storm comes, you are not standing in the open field alone, trying to command what you were never designed to control.
-
-The chapters ahead are about building that shelter.
-
-But before you can build anything, you have to admit that standing in the rain and yelling has not been working. That is not weakness. That is the first intelligent thing you will have done in this fight.
-
-The boy who finally admits he cannot carry the double-seater desk alone is not weaker than the boy who keeps trying. He is smarter. And he is much closer to actually moving it across the room.
-
+The boy who finally admits he cannot do this alone is not weaker than the boy who keeps trying by himself. He is smarter. And he is much closer to actually getting free.
