@@ -598,9 +598,11 @@ I lost count of the number of promises I made. After a particularly shameful epi
 
 And then, within days, sometimes within hours, I would be right back where I started.
 
-I remember making a specific vow during a church service. The preacher was speaking about purity, and every word was landing directly on the part of me I had been hiding. I remember sitting in that pew, genuinely broken, genuinely asking God to take it from me. I remember walking home that evening feeling lighter than I had in years.
+I remember making vows a lot in church. One of the ones that pained me the most happened during a special December church program. Throughout the program, there were so many powerful teachings. Every time the words pierced my heart, I would try to push them away. But eventually, the weight of it broke me. I made a solemn vow before God. I said, *"I will never do this again. I am so sorry. If You give me another chance, I will not return to my vomit."*
 
-I remember the following week, downloading the very thing I had just wept over.
+The sad and terrifying thing about that vow was how quickly it broke. While I was still at the program, I began to feel aroused. The program was scheduled to last for four days, ending with a final evening session. But the urge was so strong that I actually left a day early. I abandoned the program, went home, and downloaded the very thing I had just wept over — simply so that I could watch pornography and masturbate before the rest of my family returned. 
+
+It was a messy, deeply shameful memory.
 
 I am not telling you this to discourage you. I am telling you this because if this is your story too — if you have made promises that dissolved like sugar in the rain, if you have wondered why you keep breaking every vow you sincerely meant to keep — then I need you to understand one critical thing before we go any further:
 
