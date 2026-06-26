@@ -337,59 +337,53 @@ You think you are just enjoying the warm water. You think you can jump out whene
 
 There is a hard truth about addiction that you only learn when it is too late: it always wants more.
 
-It is never satisfied with the boundaries you give it. You might think you have it contained. You might think that because your secret only happens in the privacy of your bedroom, or the back of a yard, or on a small screen in your pocket, that it won't affect the rest of your life.
+It is never satisfied with the boundaries you give it. You might think you have it contained. You might think that because your secret only happens in the privacy of your bedroom, or the back of a yard, or on a small screen in your pocket, it won't affect the rest of your life.
 
 But thinking you can contain an addiction is like putting a bucket under a leaking roof.
 
-For a little while, the bucket works. It catches the drops. The floor stays dry, and you convince yourself that the problem is managed. But the rain doesn't stop, and a bucket only has so much space. Eventually, the water reaches the brim. And when it does, it doesn't just politely stop falling. It overflows. It spills onto the floor, soaks into the carpet, ruins the furniture, and damages the foundation of the entire house.
+For a little while, the bucket works. It catches the drops. The floor stays dry, and you convince yourself the problem is managed. But the rain doesn't stop, and a bucket only has so much space. Eventually the water reaches the brim. And when it does, it doesn't politely stop falling. It overflows. It spills onto the floor, soaks into the carpet, ruins the furniture, and damages the foundation of the entire house.
 
 The screen was my bucket. And it was only a matter of time before it overflowed.
 
-Because the brain builds a tolerance to pleasure, the visual high of simply watching a video eventually stopped being enough. My body began looking for a physical release for the stimulation I was feeding it. That was how the spillover began. I moved from just watching pornography to masturbation.
+Because the brain builds tolerance to pleasure, the visual high of simply watching eventually stopped being enough. My body began looking for a physical release for the stimulation I was feeding it. That was how the spillover began — I moved from watching pornography to masturbation.
 
-When I first started doing it, I didn't even know what it meant. I didn't have a name for it. I was just a boy trying to find a physical release for the overwhelming pleasure my brain was craving. It became a routine. I was doing it almost every morning. In fact, I didn't even know there was a word for what I was doing until years later when I heard a preacher talk about "masturbation" in church.
+When I first started, I didn't even have a name for what I was doing. I was just a boy trying to find a physical outlet for what the screen had awakened in me. It became a routine — almost every morning, automatic, like something my body had decided for itself. I didn't even know the word "masturbation" until years later when I heard a preacher use it in church. That is what a spillover looks like. The addiction didn't leave me on the screen. It wanted more territory, and it took it quietly, without announcement.
 
-That is what a spillover looks like. The addiction did not just leave me on the screen. It wanted to take me to other places. It wanted more territory.
+You see the same pattern in every form of addiction. Nobody wakes up one morning and decides to destroy their life with hard drugs. It starts with a cigarette. But eventually the cigarette stops delivering the high they need. The bucket overflows. So they move from cigarettes to Indian hemp. When the hemp is no longer enough, they move to ice, then cocaine, then harder and deadlier substances. Each stage felt like a decision. None of them really were.
 
-You see this exact same pattern in every form of addiction. A person doesn't usually wake up one day and decide to destroy their life with hard drugs. It starts with a cigarette. But eventually, the cigarette isn't enough to give them the high they want. The bucket overflows. So they graduate from cigarettes to smoking Indian hemp. And when the hemp is no longer enough, they graduate to ice, then to cocaine, and then to harder, deadlier substances. The substance they started with is no longer enough. They need a higher, more intense version of it just to feel normal.
-
-I experienced a terrifying physical spillover with alcohol. My friends and I had become addicted to drinking. One Easter Sunday, we decided to push the limits. We mixed different kinds of alcohol together—a whole lot of things in one cup.
+I experienced a terrifying physical spillover with alcohol. My friends and I had been drinking together for a while, and one Easter Sunday we decided to push further than we ever had. We mixed everything available — palm wine, Gulder, Star, whatever we could find — all into one cup, passing it around as the evening heat pressed down on us.
 
 That was the first time I suffered an overdose.
 
-I ended up sleeping on the floor of my living room. I vomited the alcohol everywhere, slept right in my own vomit, and even defecated on myself. My body was so violently poisoned that for days afterward, I couldn't eat solid food. Any food I tried to swallow, I would immediately throw up.
+I stumbled home and collapsed in the parlor. Through the night, my body violently rejected what I had put into it. I vomited everywhere, slept in my own mess, and at some point defecated on myself without even waking. For days afterward, I couldn't hold down solid food. Every time I tried to eat, my body threw it back. I was completely undone — not by an enemy, but by my own choices.
 
-That is what happens when the bucket overflows. The consequences don't just stay in the glass; they wreck your physical body.
+That is what happens when the bucket overflows. The consequences don't stay inside the glass.
 
-But for my struggle with pornography, the most dangerous part of the spillover wasn't physical sickness. The most dangerous part was how the addiction bled out of my bedroom and into my reality.
+But for my struggle with pornography, the most dangerous part of the spillover wasn't physical sickness. It was how the addiction bled out of my bedroom and into the way I saw people.
 
-Because pornography is inherently about sex, the addiction naturally creates a yearning to explore physical sex in the real world. I attended a mixed secondary school, and the spillover completely corrupted the way I looked at the girls in my class.
+Because pornography is inherently about sex, it naturally creates a hunger to find in the real world what the screen has been promising. I attended a mixed secondary school, and the spillover completely corrupted the way I saw the girls around me. Before the CDs, a girl was a classmate. A friend. A seatmate to argue with over a mathematics problem. But once the bucket overflowed, that changed. The screen had trained my brain to see women not as people, but as objects placed there for my satisfaction.
 
-Before the CDs, a girl was just a classmate. She was a friend, a seatmate, someone to argue with over a math problem. But once the bucket overflowed, I began to look at them with a certain eye. The screen had trained my brain to view women not as people, but as objects meant for my pleasure.
+I would stand on the assembly ground every morning, surrounded by hundreds of students, singing the national anthem, reciting the pledge, looking for all the world like a normal, disciplined student. But inside, my mind was somewhere else entirely. Because I had spent so many hours in front of that screen, my brain had learned to project what it had seen onto the girls standing right in front of me. I would look at a girl in her school uniform and my mind would strip her naked before I had even finished the thought.
 
-I would stand on the assembly ground in the morning, surrounded by hundreds of students, singing the national anthem and reciting the pledge. On the outside, I looked like a normal, disciplined student. But on the inside, my mind was running wild. Because I had spent so many hours looking at naked women on a screen, my brain began to project those images onto the girls standing right in front of me. I would look at a girl in her school uniform, and my mind would use my eyes to mentally strip her naked.
+I was fortunate that I didn't have the opportunity to act on those desires. But the hunger was always there, and hunger that is not addressed will eventually find a way to feed itself. Some boys pay prostitutes, risking their lives and their health for something the screen trained them to crave. Some, driven by the same hunger and without the money to pay, force themselves on girls who never agreed to anything — and two lives are destroyed in that single moment. Some stumble across content that reshapes their understanding of their own sexuality, and before they have the language to process what is happening, they are acting it out. Some boys, the very first time they decide to cross from screen to reality, leave a girl pregnant — and what began as a private secret becomes a permanent consequence that neither of them is ready for.
 
-I was lucky enough that I didn't have a girl to act out these desires with, but the yearning was always there. I remember how boys and girls in my neighborhood, even if they weren't having actual sex, would constantly be touching and experimenting with each other. They were trying to act out in the physical world the things they had seen on a screen.
+I want to be honest with you about this, because people often talk about addiction as though it only damages the person inside it. It doesn't. When the bucket overflows, it floods the people standing nearest to you.
 
-That is the ultimate danger of the spillover. It demands a real-life experience.
+My own father was addicted to smoking. He smoked heavily for years. Eventually the addiction destroyed his kidneys, and it killed him. The man who should have grown old watching his children build their lives was gone because of something that started as a habit. And when he was gone, it was the family that carried what remained — the bills, the grief, the absence, the questions that never got answered.
 
-When that desire to experiment takes over, the consequences become devastating. Some boys, driven by the hunger the screen created, will go and pay prostitutes, risking their lives and contracting HIV. Some boys who do not have the money to pay will allow the hunger to push them into raping innocent girls. Some boys will stumble across gay porn videos, begin to desire what they are watching, and eventually find the opportunity to act it out, completely altering their identity. And I have seen so many boys who, the very first time they decided to experiment with what they were watching, ended up impregnating a girl. Instantly, the girl becomes a liability, and both of their futures are permanently cut down.
+Sometimes the spillover is even more violent than sickness or absence.
 
-When the spillover happens, the destruction never just affects the addict. It drains and destroys the people around them.
+I heard a true story about a young man who was deeply addicted to hard drugs. He had exhausted every resource he had and gone to his father asking for money to buy more. His father, who had watched the destruction for years, refused. "Over my dead body," the father said.
 
-My own father was addicted to smoking. He smoked many packets of cigarettes every single day. Eventually, the addiction destroyed his kidneys, and it killed him. When an addict breaks down, it is the family that bears the burden. They are the ones left paying the hospital bills, wiping up the vomit, and burying the bodies.
+The boy took him at his word.
 
-But sometimes, the spillover is far more violent than sickness.
+He walked to the security guard, asked for a machete on some pretext, and went back inside. He cut his father. When his mother ran in to stop it, he cut her too. He kept going until his father was dead.
 
-I heard a true story about a young man who was deeply addicted to hard drugs. He had run out of resources to sponsor his habit, so he went to his father and asked him for money to buy drugs. The father, tired of the destruction his son was causing, refused. The father told him, "Over my dead body."
+That boy did not wake up that morning intending to become a murderer. But the addiction had long since stopped caring about what he intended. By that point it only cared about what it needed. And it used him to get it.
 
-The boy simply said, "Okay."
+This is what I want you to understand. Addiction never stops at one thing. It doesn't matter whether it is gaming, pornography, alcohol, or drugs. It is an overflowing bucket, and it will keep pouring until it has reached every corner of your life — and the lives of everyone close to you.
 
-He walked out, went straight to the security guard, and asked for his machete. The security guard, not knowing what the boy intended to do, handed it over. The boy walked back inside to his father and began to cut him. When his mother rushed in to intervene, he cut her too. He kept cutting until his father was dead.
-
-The adverse effect of that boy's addiction didn't just stop at his own drug use. The bucket overflowed, and it drowned his entire family.
-
-This is what I want you to understand. Addiction never stops at one thing. It never just leaves you alone with the screen. It doesn't matter if it's gaming, pornography, alcohol, or drugs. It is an overflowing bucket, and it will keep pouring until it has flooded every single part of your life.
+The screen is never just the screen. The bottle is never just the bottle. And the moment you decide it is contained is usually the moment it has already begun to spill.
 
 ---
 
