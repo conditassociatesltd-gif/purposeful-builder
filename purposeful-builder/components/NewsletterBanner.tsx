@@ -43,7 +43,7 @@ export default function NewsletterBanner() {
           </div>
 
           {/* Right Column: 3D CSS Phone Mockup */}
-          <div className="absolute right-[-40px] top-[-20px] md:relative md:right-0 md:top-0 flex justify-center md:justify-end items-center opacity-20 md:opacity-100 pointer-events-none md:pointer-events-auto scale-[0.6] origin-top-right md:scale-100 md:origin-center py-6">
+          <div className="flex justify-center md:justify-end items-center relative py-8 md:py-6 mt-4 md:mt-0">
             {/* The Phone */}
             <div 
               className="relative w-[200px] h-[400px] bg-[#e6eceb] rounded-[36px] border-[10px] border-[#222222] flex flex-col items-center justify-center p-5 text-center text-[#1a1a1a] select-none rotate-[12deg] transform-gpu transition-transform duration-700 md:hover:rotate-[8deg]"
