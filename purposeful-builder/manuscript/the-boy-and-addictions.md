@@ -628,15 +628,15 @@ Yanking a jammed zip with brute force only ruins the bag. To fix it, you have to
 
 But the myth of the snap is more than just a misunderstanding of how the brain works. It is also a misunderstanding of how battles are won.
 
-Imagine you are pushing a car that has broken down on a hill. You put your shoulder to the boot, plant your feet in the ground, and push with everything you have. You feel it move — just slightly, just enough to know it is possible. So you push harder. Your legs are trembling. Your back is screaming. The sweat is running into your eyes. For a moment, you are winning.
+Imagine you are trying to fetch water from a very deep well using a thick rope and a heavy rubber fetcher. You drop the fetcher in, wait for it to fill up, plant your feet, and pull with everything you have. You feel it coming up — just enough to know you can lift it. So you pull harder. Your arms are trembling. Your palms are burning from the rope. The sweat is running into your eyes. For a moment, you are winning.
 
-And then your body gives out.
+And then your arms give out.
 
-The second you stop, the car does not stay where you pushed it. It rolls back — faster than you pushed it up — and it does not stop at where you started. It rolls past you, picks up speed, and you have to jump out of the way to avoid being crushed.
+The second you let go, the heavy fetcher does not stay suspended halfway up the well. It plunges right back down — faster than you pulled it up — and as the rope flies back into the well, it violently burns your hands. It hits the water at the bottom and sinks all over again.
 
-This is what trying alone looks like. It is not a discipline problem. It is a physics problem. One person does not have the force to hold a car on a hill indefinitely. No matter how strong you are, no matter how sincere your effort, fatigue will come. And the moment it does, what you were holding will come back down faster and harder than it went up.
+This is what trying alone looks like. It is not a discipline problem. It is a physics problem. One person does not always have the strength to pull up a massive weight indefinitely. No matter how strong you are, no matter how sincere your effort, fatigue will come. And the moment it does, what you were lifting will crash back down harder than before.
 
-I tried to push that car for years by myself. And every time it rolled back over me, I blamed my own weakness. I thought the answer was to be stronger next time. To pray harder. To try with more determination. What I did not understand was that I was not failing because I was weak. I was failing because I was alone — and some loads require more than one person to carry.
+I tried to pull up that heavy fetcher for years by myself. And every time the rope burned my hands and the bucket crashed back to the bottom, I blamed my own weakness. I thought the answer was to be stronger next time. To pray harder. To try with more determination. What I did not understand was that I was not failing because I was weak. I was failing because I was alone — and some loads require more than one person to pull.
 
 ---
 
@@ -672,5 +672,5 @@ The chapters ahead are about building that shelter.
 
 But before you can build anything, you have to admit that standing in the rain and yelling has not been working. That is not weakness. That is the first intelligent thing you will have done in this fight.
 
-The boy who finally admits he cannot push the car alone is not weaker than the boy who keeps trying. He is smarter. And he is much closer to actually getting the car to the top of the hill.
+The boy who finally admits he cannot pull the heavy bucket alone is not weaker than the boy who keeps trying. He is smarter. And he is much closer to actually getting the water out of the well.
 
