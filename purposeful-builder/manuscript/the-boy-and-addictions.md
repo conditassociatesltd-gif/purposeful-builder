@@ -614,15 +614,15 @@ There is a belief that most boys carry into their battle with addiction, and it 
 
 But it is a myth. And believing it is costing you years of your life.
 
-Think about a thick rope — the kind used to tie down a loaded truck at the motor park. Now imagine that rope has been tied into a tight knot, soaked in water overnight, and then pulled taut from both ends with the full weight of the load. What happens when you try to untie it?
+Think about a jammed school bag zipper. You know the exact feeling — you are trying to close your bag in a hurry, and the teeth of the zip catch the fabric. What happens when you try to force it? 
 
-If you grab the knot and yank, the rope does not loosen. It gets tighter. Every frustrated pull presses the fibers deeper into each other, compressing them further. The harder you yank, the more impossible the knot becomes. You can pull until your palms are raw and your arms are burning, and that knot will not move.
+If you grab the zip and yank it with all your strength, it doesn't open. It gets tighter. Every frustrated pull buries the fabric deeper into the metal teeth. The harder you yank, the worse the jam becomes. If you keep applying brute force, eventually the zip will break or the bag will tear. 
 
 This is exactly what willpower does to an addiction that has already been wired into your brain.
 
 By the time you recognize that something has become a habit you cannot shake, the behavior is no longer just a choice you are making. It has become a groove. Your brain has physically restructured itself around the reward — it has built new pathways, new cravings, new reflexes that fire before your conscious mind even has a chance to respond. The moment the trigger appears, the signal is already on its way. Willpower is standing at the door trying to stop a message that has already been delivered.
 
-Yanking on a wet knot does not untie it. You have to patiently, methodically, work the individual fibers loose from the inside — and that requires a completely different kind of effort than pulling.
+Yanking a jammed zip with brute force only ruins the bag. To fix it, you have to stop pulling. You have to patiently, methodically untangle the fabric from the teeth — and that requires a completely different kind of effort than simply applying force.
 
 ---
 
