@@ -1,4 +1,4 @@
-﻿# The Boy and Addictions (Master Manuscript)
+# The Boy and Addictions (Master Manuscript)
 
 > [!NOTE]
 > **Manuscript Progress Tracker**
@@ -712,7 +712,15 @@ In that moment, a chain snapped. I didn't get instantly cured that day, but for 
 
 Now, a word of caution. You cannot—and should not—confess your struggles to just anyone. 
 
-Not everyone has the emotional or spiritual maturity to handle your mess. If you confess to the wrong person, they might judge you, gossip about you, or worse, use it as a weapon against you later. A bad reaction can drive you so deep into hiding that you might never try to come out again.
+For some of you reading this, the fear of exposure isn't just an irrational lie in your head; it is based on a painful past experience. You tried to open up once, and it blew up in your face. 
+
+I have a friend who was deeply addicted to pornography. He finally gathered the courage to confess to a visiting preacher in Anambra State, hoping for help and prayer. Instead, the preacher condemned him. He spoke harshly to him, telling him how wicked he was and that he had no business doing such things. My friend left that encounter crushed. He sank into a deeper depression and bitterly regretted ever opening his mouth.
+
+I know what that regret feels like. At a point in my life, I was struggling intensely with blasphemous thoughts against the Holy Spirit. It terrified me, and I finally told a friend about it. He just looked at me with disgust and said, "Are you okay?" in an insulting manner. Immediately, I knew I had opened up to the wrong person.
+
+When you have experiences like that, the lie that 'everyone will judge you' feels like the absolute truth. You learn to protect your struggle because the first person you trusted weaponized it against you. 
+
+But listen to me: the fact that you met the wrong person does not change the fact that the secret is killing you. You don't need to protect whatever you are struggling with. It just means you have to be wiser about who you bring into the light with you. Not everyone has the emotional or spiritual maturity to handle your mess.
 
 You also shouldn't confess to someone who will downplay it. If you say, "I am struggling," and they reply, "Ah, every guy does that, don't worry about it," they are not helping you. They are validating your chains.
 
