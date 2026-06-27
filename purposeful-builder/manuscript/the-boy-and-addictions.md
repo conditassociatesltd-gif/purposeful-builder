@@ -700,13 +700,23 @@ There is a profound psychological and spiritual shift that happens when you look
 
 When you speak it out loud to another person, you drag the monster out from the dark basement and into the living room. You strip it of its greatest weapon: isolation. You hear your own voice admit it, and suddenly, the secret loses its power. The balloon of shame is punctured.
 
-I remember the first time I truly confessed my struggle to someone. My heart was pounding so hard I thought it would break my ribs. My palms were sweating. I was absolutely convinced that the moment the words left my mouth, the person looking at me would recoil in disgust. 
+I remember the first time I truly confessed my struggle to someone. It was to my friend, Dr. Uchenna. It wasn't an easy conversation to have. We were trained together in Scripture Union. We had promising futures. We were growing in the Christian faith together, attending camps every holiday. I knew it would be a shock to come back after all those years and tell the very same person I attended Christian camps with that I was battling pornography.
 
-I forced the words out. I waited for the judgment. 
+But he was my friend, and I hoped he would understand. I opened up to him. 
 
-Instead, he looked at me, nodded slowly, and said, "Thank you for telling me. I've been there too."
+He didn't react with shock or disgust. In fact, he treated it quite casually, like it wasn't a massive, world-ending deal. He advised me on what to do—told me to read the Word and read certain books. 
 
-In that moment, a chain snapped. I didn't get instantly cured that day, but for the first time in years, I could breathe. I wasn't carrying the corpse alone anymore.
+That first conversation didn't instantly cure me, but for the first time, I felt the tight constriction around my heart lift. I felt a bit of freedom in my heart just from saying it out loud. I wasn't carrying the corpse alone anymore.
+
+I started doing what he suggested, but eventually, I stopped. And when I stopped, I fell back into the addiction. This time, it became worse. I felt so much shame that I couldn't bring myself to go back to Uchenna and tell him I had failed to do the very things he asked me to do. 
+
+Some time later, I was in an Anglican church. After the preaching, I felt a desperate need to speak to someone, and I went to meet the priest, Reverend Onyeka. Because I had already broken the ice by opening up to Uchenna, it was somehow easier this time. Opening up to a friend is incredibly hard, but opening up to an elder felt different. I told him everything. How it started, where I was, and how desperately I needed help.
+
+That second confession gave me the courage to go back to Uchenna. I went to him and said, "See, I snapped. I fell. I stopped doing the things you told me to do. But I am here again, and I want you to hold me accountable." This time, I was more open, and we started again.
+
+I understand that opening up is not easy. If you grew up in a Christian environment, you fear people will see you as a bad Christian, or someone who didn't obey their parents' instructions. The thoughts flood your head: *How will they see me? How will they look at me?*
+
+But you have to speak up. You just have to. Healing starts from exposing the lie to somebody else. That is where it starts.
 
 ### Choosing Your Community Wisely
 
