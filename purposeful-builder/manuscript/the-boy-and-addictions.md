@@ -758,12 +758,28 @@ When you understand this, grace ceases to be a theological concept and becomes a
 
 ### A New Kind of Fight
 
-Bringing your addiction to the light does not mean the temptation disappears. Your brain still has those deeply carved pathways. The triggers will still come. The urges will still flare up.
+Bringing your addiction to the light does not mean the temptation disappears. I want to be very clear about this: stopping the act does not automatically mean the urges will stop coming. 
 
-But everything else changes.
+I remember a specific day when I was completely focused on work. I was designing a building and listening to a message by Apostle Joshua Selman. My mind was entirely engaged in productive, spiritual things. There was absolutely no reason for my mind to drift toward anything impure. But suddenly, out of nowhere, an intense urge to watch pornography and masturbate hit me. 
 
-You are no longer a boy fighting a shadow in the dark. You are a man, standing in the light, with allies by your side, fighting a visible enemy. 
+I sat there wondering, *Why is this coming back? I wasn't even thinking about it.*
+
+Here is what I realized that day: the urges will still come, and often, they will not come because of anything you did wrong in that moment. Sometimes boys feel an intense guilt when this happens. They think, *I was just on my own, minding my business, and these thoughts came. Does this mean I am doing something wrong? Am I faking my repentance?*
+
+No. You are not doing anything wrong. I have been in your shoes. Your brain has simply been wired to expect a certain chemical release, and it is trying to get a taste of what you fed it for years. 
+
+Sometimes, you will be in church, lifting your hands in worship, doing something that pleases God, and the urge will just come out of nowhere. I have had moments where I woke up to pray, and my mind was suddenly flooded with flashes of naked women. I felt so dirty. I felt like God must be so angry with me. *How can I come to pray and see these things in my mind?*
+
+Even in my dreams, I would have visual representations and intense desires, as if a voice was telling me to give in. 
+
+When these things happen, you have to understand the mechanics of what is going on. Do you know what happens when you slaughter a chicken? It doesn't just stop moving immediately. Even after its neck is cut, it flails wildly. It thrashes around, fighting desperately for its life. 
+
+That is exactly what your addiction is doing. That sudden spike in urges, those random flashes during prayer, that intense temptation while you are just trying to work—it is the addiction fighting for its life. It is the last fight. And it will keep coming back until you have consistently proven that it has no place in your life anymore. 
+
+During that day when I was designing and the urge hit me, I knew I had to actively redirect my mind. I switched off the message, put on a worship song, prayed, and eventually slept off. By the time I woke up, the urge had lifted. 
+
+This is where the community we talked about becomes your greatest weapon. When the "last fight" begins, and the chicken is thrashing wildly, you are no longer fighting in the shadows. You are standing in the light. You have allies by your side. You are fighting a visible enemy. 
 
 When you fall—and you might—you don't stay down in the dirt, wallowing in shame. You reach out your hand, your brother pulls you up, Christ brushes you off, and you keep walking. 
 
-The secret is dead. The real fight for freedom has finally begun.
+You are not alone anymore. I see you. The secret is dead, and the real fight for freedom has finally begun.
