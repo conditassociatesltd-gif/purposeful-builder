@@ -12,7 +12,9 @@
 
 # Acknowledgments
 
-After God, to whom I dedicate these pages, there are several people I must deeply thank for making this book a reality.
+This book exists because of the grace of God, who is the ultimate Builder and the restorer of all broken things. I dedicate these pages to Him.
+
+There are also several people I must deeply thank for making this book a reality.
 
 To my good friend, Dr. Winner Anibogu. My journey out of pornography started when I finally opened up to you. You provided guidance, walked me through the darkest parts of the process, and over time, I have learned so much from your wealth of knowledge. Thank you.
 
