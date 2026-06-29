@@ -145,7 +145,7 @@ export default function BookPage() {
 
           <div className="lg:col-span-7">
             <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-6 bg-black/5">
-              Upcoming
+              Work In Progress
             </div>
             <h2 className="font-serif text-4xl md:text-5xl mb-6">The Boy and Addictions</h2>
             <div className="prose max-w-none space-y-6 text-lg leading-relaxed opacity-90 font-serif">
