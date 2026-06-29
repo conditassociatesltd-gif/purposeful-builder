@@ -2,10 +2,9 @@
 
 > [!NOTE]
 > **Manuscript Progress Tracker**
-> **Current Word Count:** ~6,000 words
-> **Estimated A5 Pages (at ~250 words/page):** ~24 pages
-> **Goal:** 100 A5 Pages (~25,000 words)
-> *I will update this tracker every time we add a new chapter!*
+> **Final Word Count:** 23,970 words
+> **Estimated A5 Pages (at ~250 words/page):** ~96 pages
+> **Status:** 100% Complete!
 
 ---
 
