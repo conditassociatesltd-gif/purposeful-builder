@@ -16,11 +16,11 @@ This book exists because of the grace of God, who is the ultimate Builder and th
 
 There are also several people I must deeply thank for making this book a reality.
 
+To my beautiful wife, Promise. Thank you for providing a peaceful environment for me to write this book. Writing this was not easy—it required a lot of time to process my thoughts, do the research, and write in a way that the boy child would truly understand. You provided that time, made sure our home was peaceful, and kept me on track. You have been amazing on this journey. Thank you.
+
 To my good friend, Dr. Winner Anibogu. My journey out of pornography started when I finally opened up to you. You provided guidance, walked me through the darkest parts of the process, and over time, I have learned so much from your wealth of knowledge. Thank you.
 
 To my spiritual father, Reverend David Ogbueli. Your deep work on dealing with rejection is what helped me get to the root of my own addiction. Because I stumbled upon your book, I was able to find healing from the root and navigate the rest of my healing journey. Coming into contact with Dominion City helped me build myself into the man I am today. Thank you for yielding to God so He could use you to do such a good work.
-
-To my beautiful wife, Promise. Thank you for providing a peaceful environment for me to write this book. Writing this was not easy—it required a lot of time to process my thoughts, do the research, and write in a way that the boy child would truly understand. You provided that time, made sure our home was peaceful, and kept me on track. You have been amazing on this journey. Thank you.
 
 To my Pastor. When I told you I was going to write this book, you encouraged me and gave me invaluable tips on how to go about it. It is rare to see people so genuinely interested in your growth, and you are one of them. Thank you, sir, for creating an environment that pushes us to explore and do the assignments God has given us. Even when we started the boys' mentorship, you were rooting for us. Thank you.
 
