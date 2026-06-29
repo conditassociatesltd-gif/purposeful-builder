@@ -15,7 +15,7 @@ export function getAllContent(): string {
       const stat = fs.statSync(fullPath);
       if (stat.isDirectory()) {
         readFiles(fullPath);
-      } else if (file.endsWith('.md')) {
+      } else if (file.endsWith('.md') || file.endsWith('.mdx')) {
         const text = fs.readFileSync(fullPath, 'utf-8');
         allText += `\n\n--- Document: ${file} ---\n\n` + text;
       }
