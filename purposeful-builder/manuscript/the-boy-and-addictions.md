@@ -892,3 +892,75 @@ Freedom is the increasing distance between who you are and what you used to serv
 That distance grows slowly, by grace, one faithful day at a time. God has not given up on the work He began in you. The process is not finished. And the fact that you are still in the fight — still reading, still trying, still refusing to call the floor your home — is itself evidence that something real is happening.
 
 Keep going.
+
+---
+---
+
+# Part 5: The Charge
+
+# Chapter 12: To the Boy Reading This (A Letter of Hope)
+
+Dear Builder,
+
+I am calling you a builder because that is exactly what God created you to be. When God created the world, He made you a co-creator. He designed you to partner with Him to build marriages, families, societies, communities, nations, businesses, companies, schools, hospitals, and a whole lot of other things that He wants you to bring into existence. 
+
+I know you might not feel like it right now, but I am reminding you that this is who you are. And I am rooting for you to acknowledge that identity and start building.
+
+I know that you have been distracted. Whether it is pornography, drugs, smoking, or any of the other addictions we have or haven’t named in this book—all of them follow the exact same pattern. Their primary goal is distraction. They are designed to keep you from building what God has called you to build. 
+
+But I am calling you back to who you are. You are a builder. And builders do not spend their time being distracted by the very things trying to stop them.
+
+I am writing to you because I know that whatever addiction you are battling, if you follow the instructions in this book, you *will* come out of it. No matter how hard it might seem right now, you can break free. And when you do, you will see the incredible potential embedded inside of you that the addiction was trying to bury.
+
+I understand how you feel. I understand that sometimes you were just trying to fill a void in your heart. I understand that it might not have even been your fault at the beginning—that someone else introduced you to these things when you were young. I understand that society has criticized you. Perhaps the very person you finally found the courage to talk to criticized you, making you feel like you are not worth anything anymore.
+
+But I am telling you that you are worth everything. You are worth everything there is.
+
+And just as I am rooting for you, God is rooting for you too. So stay focused. Stay hopeful. There is a whole lot waiting for you once you break out of this cycle. You will explore your strength in the fullness of it. 
+
+I am also writing this to ask something of you. When you *do* come out of it, I need you to help me pull other boys out of it too. Recommend these books to them. Be with them. Be their accountability partner. Help them come out of their addictions, and help me remind them that they are builders too. Remind them that whatever they are battling with, they can overcome it, and that there is a vast potential within them waiting to be unleashed.
+
+When you fall, get up. Keep getting up until you finally become free. Keep getting up until you finally become the builder that God has created you to be. 
+
+The gates of the prison are open, Builder. It is time to walk out.
+
+When you finish this page, close this book. Pick up your phone, call a trusted friend, and step into the light. 
+
+I am rooting for you. Now, go build.
+
+---
+---
+
+# Epilogue: A Word to the Men Raising Us
+
+To the older builders—our fathers, mentors, teachers, pastors, and every man raising a boy.
+
+I want to start by acknowledging the immense weight of the responsibility you carry. It is a difficult task to manage ourselves; it is profoundly harder to manage and mold younger versions of ourselves. Thank you for the work you have been doing. Thank you for building our families, our societies, and our companies, and for working so hard to transfer your knowledge to the young boys looking up to you.
+
+But I am writing this to ask that you transfer that knowledge in a healthy way. 
+
+Many of the boys reading this book are battling silent addictions—pornography, masturbation, drugs, alcohol. And beneath almost every one of these struggles, they are desperately seeking one thing: *presence*.
+
+It is one thing to build a life or a society for people, but it is another thing entirely to show them that you care. One of the primary ways human beings interpret care is through emotional connection. I have worked with many boys, and when you harmonize everything they are saying, it comes down to this: they want an emotional connection. They want the presence of a father. 
+
+There is a common saying that the building is not the church; the people are the church. The building exists merely to accommodate them. In the same way, the people you are building are your children. They need *you* far more than they need the things you provide for them. We often make the mistake of providing for everything—house rent, feeding, school fees—but we fail to give them our time. 
+
+Sometimes, they just want to be expressive, but we shut them down. We tell them not to cry. We tell them to "man up." But when you constantly shut a boy down from expressing his emotions, what happens when he is molested or exposed to something dark? It becomes impossibly difficult for him to come to you to open up. 
+
+My first plea to you is this: create an environment where these boys can be expressive. Connect with them emotionally. Give them a safe platform to tell you what is bothering them. 
+
+My second plea is harder to say, but just as necessary. Many of these boys are going through trans-generational dysfunctions because the older generation did not deal with their own addictions. Some of these boys saw you drinking and thought it was what made a man. Some saw your browser history and thought it was normal. Some of them are simply relieving your life because you failed to work on yourself.
+
+I want to encourage you to seek help for yourself, too. The knowledge in this book will help you get free just as much as it will help them. A man who is not battling an addiction will raise a boy who is not battling it. Please, deal with your own hidden struggles so that your boys do not find themselves emulating a compromised example. 
+
+I am asking you to stay on these boys. Finish reading this book with them. Study it with them. Ask them questions—not from a place of judgment, but from the posture of a father who desperately wants to understand. Encourage them to speak up. There is a lot happening in our society right now. Boys are being molested and exposed to things that are breaking them. They want to talk. I cannot be there for every boy who reads this book, but *you* are there. 
+
+To the pastors and church leaders: there is more we can do in the church. We need to talk to these boys not from a place of condemnation, but understanding. Not all sin is simply a result of knowing good and evil and willfully choosing evil; many of these boys are suffering from deep wounds that have hijacked their ability to properly choose. 
+
+I struggled for years to open up to the pastors in my life because they did not create a room for it. We must create spaces in our churches where boys—and men—can open up about their emotional and psychological needs without fear of being crushed by judgment. When we address those emotional needs, these boys will do better. They will lead good lives and contribute positively to the church, to their marriages, and to society. I know that many church leaders are battling these things silently as well. Create the room for healing.
+
+There is a whole lot going wrong with our society because builders have been distracted for far too long. But boys who are exposed to healing and guided out of the dark will become phenomenal leaders. 
+
+Thank you once again for your labor. I am calling on you to partner with me. Help us raise these boys right. Mentor them, guide them, and start by leading a good, free life yourself. 
+
+Thank you.
