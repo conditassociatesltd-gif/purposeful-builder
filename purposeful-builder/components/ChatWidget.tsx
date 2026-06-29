@@ -9,7 +9,7 @@ type Message = { role: 'user' | 'bot'; text: string };
 export default function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'bot', text: 'Hi! I am Austin\\'s AI assistant. Ask me anything about his writings!' }
+    { role: 'bot', text: "Hi! I am Austin's AI assistant. Ask me anything about his writings!" }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -37,7 +37,7 @@ export default function ChatWidget() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
           message: userMessage, 
-          history: messages.filter(m => m.role !== 'bot' || m.text !== 'Hi! I am Austin\\'s AI assistant. Ask me anything about his writings!') 
+          history: messages.filter(m => m.role !== 'bot' || m.text !== "Hi! I am Austin's AI assistant. Ask me anything about his writings!") 
         }),
       });
 
