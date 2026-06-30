@@ -19,7 +19,7 @@ export default function FadeIn({ children, delay = 0, direction = "up", fullWidt
       initial={{ opacity: 0, y: yOffset, x: xOffset }}
       whileInView={{ opacity: 1, y: 0, x: 0 }}
       viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.7, delay, ease: "easeOut" }}
+      transition={{ duration: 1.2, delay, ease: [0.16, 1, 0.3, 1] }}
       className={fullWidth ? "w-full h-full" : "h-full"}
     >
       {children}

@@ -164,14 +164,14 @@ export default function HomePage() {
     <FadeIn delay={0.2}>
       <Link
         href={`/writing/${featuredEssay.slug}`}
-        className="relative flex flex-col md:flex-row md:items-center justify-between gap-6 border border-[#d8d2bd] p-6 md:p-8 overflow-hidden group"
+        className="relative flex flex-col md:flex-row md:items-center justify-between gap-6 border border-[#d8d2bd] p-6 md:p-8 overflow-hidden group hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] hover:border-black/30 hover:-translate-y-1 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
       >
       {/* Background image */}
       <Image
         src="/images/featured-writing-bg.png"
         alt="Featured essay background"
         fill
-        className="object-cover transition-transform duration-700 group-hover:scale-105"
+        className="object-cover transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110"
         priority
       />
       {/* Dark overlay for readability */}
@@ -220,11 +220,11 @@ export default function HomePage() {
                 <FadeIn key={essay.slug} delay={index * 0.15} fullWidth>
                   <Link
                     href={`/writing/${essay.slug}`}
-                    className="group flex flex-col h-full p-6 md:p-8 hover:bg-black/5 transition-colors"
+                    className="group flex flex-col h-full p-6 md:p-8 hover:bg-black/5 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
                   >
                     {/* Hollow outlined number matching reference */}
                     <span 
-                      className="font-sans text-6xl font-black tracking-tighter mb-6" 
+                      className="font-sans text-6xl font-black tracking-tighter mb-6 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-hover:translate-x-1" 
                       style={{ WebkitTextStroke: "2px var(--ink)", WebkitTextFillColor: "transparent" }}
                     >
                       {String(index + 1).padStart(2, '0')}
@@ -268,9 +268,9 @@ export default function HomePage() {
         <section className="bg-[#121310] border-y border-white/5">
           <FadeIn delay={0.2} direction="up">
             <div className="max-w-7xl mx-auto px-5 py-12 md:py-16">
-              <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10 bg-black border border-white/5 p-6 md:p-8 rounded-3xl group">
+              <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10 bg-black border border-white/5 p-6 md:p-8 rounded-3xl group hover:border-white/10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
                 <div className="relative shrink-0 w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden shadow-2xl">
-                   <Image src={latestPodcast.coverImage || "/images/austin-podcast-headset.png"} alt={latestPodcast.title} fill className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" />
+                   <Image src={latestPodcast.coverImage || "/images/austin-podcast-headset.png"} alt={latestPodcast.title} fill className="object-cover opacity-90 group-hover:scale-110 transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]" />
                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                    <div className="absolute bottom-3 left-3 flex items-center justify-center w-8 h-8 rounded-full bg-[var(--rust)] shadow-lg">
                      <PlayCircle size={16} className="text-white" />
