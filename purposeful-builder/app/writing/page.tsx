@@ -35,11 +35,12 @@ export const metadata = {
   },
 };
 
-export default function WritingPage({
+export default async function WritingPage({
   searchParams,
 }: {
-  searchParams?: { page?: string };
+  searchParams?: Promise<{ page?: string }>;
 }) {
+  const params = await searchParams;
   const essays = getAllEssays();
   
   // Get the most recent essay for the hero section
@@ -47,7 +48,7 @@ export default function WritingPage({
   const remainingEssays = essays.length > 0 ? essays.slice(1) : [];
 
   // Pagination logic
-  const currentPage = Number(searchParams?.page) || 1;
+  const currentPage = Number(params?.page) || 1;
   const ITEMS_PER_PAGE = 15;
   const totalPages = Math.ceil(remainingEssays.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
