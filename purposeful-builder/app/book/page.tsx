@@ -122,30 +122,30 @@ export default function BookPage() {
               </div>
               
               <div className="bg-white p-8 border border-black/10 rounded shadow-sm text-center">
-                <Bell className="mx-auto mb-4 opacity-50 text-[#c4572a]" size={32} />
-                <h4 className="font-serif text-2xl mb-2">Join the Waitlist</h4>
-                <p className="text-sm mb-6 opacity-80">Be notified when The Boy and Addictions is ready.</p>
-                <form action="https://buttondown.email/api/emails/embed-subscribe/arc_austin" method="POST" target="_blank" className="flex flex-col gap-3">
-                  <input type="hidden" name="metadata__waitlist" value="The Boy and Addictions" />
-                  <input type="hidden" name="tag" value="waitlist-boy-and-addictions" />
-                  <input 
-                    type="email" 
-                    name="email" 
-                    required 
-                    placeholder="Your email address"
-                    className="w-full px-5 py-3 border border-black/20 text-sm outline-none focus:border-[#c4572a] transition-colors"
-                  />
-                  <button type="submit" className="w-full py-3 text-xs tracking-[0.2em] uppercase text-white font-bold hover:bg-black/90 transition-colors" style={{ background: "var(--rust)" }}>
-                    Notify Me
-                  </button>
-                </form>
+                <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-4 rounded-sm text-white" style={{ background: "var(--rust)" }}>
+                  Prelaunch Active
+                </div>
+                <h4 className="font-serif text-2xl mb-1">Order Your Copy</h4>
+                <p className="text-xs mb-4 opacity-75">Official Launch: 29 November 2026</p>
+                <div className="mb-6 py-2 border-y border-black/10">
+                  <span className="font-serif text-3xl font-bold text-[#c4572a]">₦3,500</span>
+                  <span className="text-[11px] uppercase tracking-wider block opacity-60 mt-1">Prelaunch price (increases to ₦4,500)</span>
+                </div>
+                <Link 
+                  href="/book/order" 
+                  className="block w-full py-4 text-xs tracking-[0.2em] uppercase text-white font-bold hover:opacity-90 transition-opacity rounded-sm shadow-md" 
+                  style={{ background: "var(--rust)" }}
+                >
+                  Order the Book
+                </Link>
+                <p className="text-[11px] opacity-60 mt-3">Personal copies & School Outreach Program</p>
               </div>
             </div>
           </div>
 
           <div className="lg:col-span-7">
-            <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-6 bg-black/5">
-              Work In Progress
+            <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-6 text-white" style={{ background: "var(--rust)" }}>
+              Launch: 29 November 2026
             </div>
             <h2 className="font-serif text-4xl md:text-5xl mb-6">The Boy and Addictions</h2>
             <div className="prose max-w-none space-y-6 text-lg leading-relaxed opacity-90 font-serif">
@@ -159,6 +159,16 @@ export default function BookPage() {
               <p><strong>The Boy and Addictions</strong> is not a lecture or a sermon. It is one boy talking honestly to another about the things we were too ashamed to say out loud. This book walks through the full journey: how addiction begins, how it rewires what you see and desire, how it spills into other areas of your life, and most importantly, how you can break free and stay free.</p>
               <p>If you are a boy carrying a secret that you've never told anyone, this book is for you. If you are a parent, mentor, or pastor wondering why the boys around you are struggling in silence, this book will open your eyes.</p>
               <p className="text-2xl font-serif italic opacity-70 mt-8 text-[#c4572a]">Because the things that trap us in the dark can only be defeated when we drag them into the light.</p>
+              
+              <div className="pt-6">
+                <Link
+                  href="/book/order"
+                  className="inline-block px-8 py-4 text-xs tracking-[0.2em] uppercase text-white font-bold hover:opacity-90 transition-opacity rounded-sm shadow-md"
+                  style={{ background: "var(--rust)" }}
+                >
+                  Order the Book Directly
+                </Link>
+              </div>
             </div>
           </div>
         </div>

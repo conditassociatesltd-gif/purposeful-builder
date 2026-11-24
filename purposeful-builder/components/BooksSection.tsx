@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { X, ArrowRight, BookOpen, Bell } from "lucide-react";
 
 const formedInSilenceExcerpt = (
@@ -103,7 +104,7 @@ export default function BooksSection() {
                 />
               </div>
               <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-6 text-white" style={{ background: "var(--rust)" }}>
-                Releasing September 2026
+                Launch: 29 November 2026
               </div>
               <h3 className="font-serif text-3xl md:text-4xl mb-4 group-hover:text-[#c4572a] transition-colors">The Boy and Addictions</h3>
               <p className="opacity-75 leading-relaxed mb-8 h-20">
@@ -116,12 +117,13 @@ export default function BooksSection() {
                 >
                   Read Excerpt
                 </button>
-                <button 
-                  onClick={() => setModalState('notify-addictions')}
-                  className="px-6 py-3 text-xs tracking-[0.2em] uppercase text-white hover:bg-black/80 transition-colors" style={{ background: "var(--rust)" }}
+                <Link 
+                  href="/book/order"
+                  className="px-6 py-3 text-xs tracking-[0.2em] uppercase text-white font-bold hover:bg-black/80 transition-colors inline-flex items-center gap-1.5" 
+                  style={{ background: "var(--rust)" }}
                 >
-                  Notify Me When Released
-                </button>
+                  Order the Book
+                </Link>
               </div>
             </div>
           </div>
