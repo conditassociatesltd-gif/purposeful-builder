@@ -103,7 +103,9 @@ export async function saveOrder(order: BookOrder): Promise<BookOrder> {
         )
         RETURNING *;
       `;
-      return rows[0] as BookOrder;
+      if (rows && rows.length > 0) {
+        return rows[0] as BookOrder;
+      }
     } catch (err) {
       console.error("Neon DB insert error, saving to memory fallback:", err);
     }

@@ -3,13 +3,13 @@ import { calculateOrderTotal } from "@/lib/book-config";
 import { saveOrder, BookOrder } from "@/lib/db";
 import { sendOrderEmails } from "@/lib/email";
 
-// Simple in-memory rate limiting map (IP -> timestamps)
+// In-memory rate limiting map (IP -> timestamps)
 const rateLimitMap = new Map<string, number[]>();
 
 function isRateLimited(ip: string): boolean {
   const now = Date.now();
-  const windowMs = 60 * 1000; // 1 minute
-  const maxRequests = 10;
+  const windowMs = 5 * 60 * 1000; // 5 minutes window
+  const maxRequests = 100; // Generous limit for real buyers & testers
 
   const timestamps = rateLimitMap.get(ip) || [];
   const validTimestamps = timestamps.filter((t) => now - t < windowMs);
@@ -31,9 +31,10 @@ function sanitize(str: unknown): string {
 
 export async function POST(req: NextRequest) {
   try {
-    // 1. Rate limiting check
-    const ip = req.headers.get("x-forwarded-for") || "unknown-ip";
-    if (isRateLimited(ip)) {
+    // 1. Rate limiting check (lenient to prevent blocking mobile testers)
+    const rawIp = req.headers.get("x-forwarded-for") || req.headers.get("x-real-ip") || "unknown-ip";
+    const clientIp = rawIp.split(",")[0].trim();
+    if (isRateLimited(clientIp)) {
       return NextResponse.json(
         { error: "Too many requests. Please wait a moment and try again." },
         { status: 429 }
@@ -126,8 +127,8 @@ export async function POST(req: NextRequest) {
       status: "pending_payment",
     };
 
-    // 8. Save to Database
-    const savedOrder = await saveOrder(orderPayload);
+    // 8. Save to Database (guaranteed non-null fallback)
+    const savedOrder = (await saveOrder(orderPayload)) || orderPayload;
 
     // 9. Dispatch Emails (author notification + buyer confirmation)
     // Run asynchronously so user receives instant response

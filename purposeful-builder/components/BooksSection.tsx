@@ -52,79 +52,79 @@ export default function BooksSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
           {/* Book 1 */}
-          <div className="border p-8 md:p-12 relative overflow-hidden group" style={{ borderColor: "var(--peach)" }}>
+          <div className="border p-5 sm:p-8 md:p-12 relative overflow-hidden group flex flex-col justify-between" style={{ borderColor: "var(--peach)" }}>
             <div className="absolute top-0 right-0 p-8 opacity-5">
               <BookOpen size={120} />
             </div>
             <div className="relative z-10">
-              <div className="flex justify-center mb-8">
+              <div className="flex justify-center mb-6 sm:mb-8">
                 <img 
                   src="/formed-in-silence-cover.png" 
                   alt="Formed in Silence book cover" 
-                  className="w-48 md:w-56 rounded shadow-xl group-hover:scale-105 transition-transform duration-300"
+                  className="w-40 sm:w-48 md:w-56 rounded shadow-xl group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-6 bg-black/10 dark:bg-white/10">
+              <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-4 sm:mb-6 bg-black/10 dark:bg-white/10">
                 Work In Progress
               </div>
-              <h3 className="font-serif text-3xl md:text-4xl mb-4 group-hover:text-[#c4572a] transition-colors">Formed in Silence</h3>
-              <p className="opacity-75 leading-relaxed mb-8 h-20">
+              <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4 group-hover:text-[#c4572a] transition-colors">Formed in Silence</h3>
+              <p className="opacity-75 leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base">
                 How invisible patterns rooted in fatherhood, absence, and unspoken wounds silently shape boys into the men they become.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <button 
-                  onClick={() => setModalState('excerpt-silence')}
-                  className="px-6 py-3 text-xs tracking-[0.2em] uppercase border border-black/20 dark:border-white/20 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
-                >
-                  Read Excerpt
-                </button>
-                <button 
-                  onClick={() => setModalState('notify-silence')}
-                  className="px-6 py-3 text-xs tracking-[0.2em] uppercase text-white hover:bg-black/80 transition-colors" style={{ background: "var(--rust)" }}
-                >
-                  Notify Me When Released
-                </button>
-              </div>
+            </div>
+            <div className="relative z-10 flex flex-col sm:flex-row gap-3 w-full">
+              <button 
+                onClick={() => setModalState('excerpt-silence')}
+                className="w-full sm:w-auto text-center px-5 py-3 text-xs tracking-[0.2em] uppercase border border-black/20 dark:border-white/20 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
+              >
+                Read Excerpt
+              </button>
+              <button 
+                onClick={() => setModalState('notify-silence')}
+                className="w-full sm:w-auto text-center px-5 py-3 text-xs tracking-[0.2em] uppercase text-white hover:bg-black/80 transition-colors" style={{ background: "var(--rust)" }}
+              >
+                Notify Me When Released
+              </button>
             </div>
           </div>
 
           {/* Book 2 */}
-          <div className="border p-8 md:p-12 relative overflow-hidden group" style={{ borderColor: "var(--peach)" }}>
+          <div className="border p-5 sm:p-8 md:p-12 relative overflow-hidden group flex flex-col justify-between" style={{ borderColor: "var(--peach)" }}>
             <div className="absolute top-0 right-0 p-8 opacity-5">
               <BookOpen size={120} />
             </div>
             <div className="relative z-10">
-              <div className="flex justify-center mb-8">
+              <div className="flex justify-center mb-6 sm:mb-8">
                 <img 
                   src="/boy-and-addictions-cover.png" 
                   alt="The Boy and Addictions book cover" 
-                  className="w-48 md:w-56 rounded shadow-xl group-hover:scale-105 transition-transform duration-300"
+                  className="w-40 sm:w-48 md:w-56 rounded shadow-xl group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-6 text-white" style={{ background: "var(--rust)" }}>
+              <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-4 sm:mb-6 text-white" style={{ background: "var(--rust)" }}>
                 Launch: 29 November 2026
               </div>
-              <h3 className="font-serif text-3xl md:text-4xl mb-4 group-hover:text-[#c4572a] transition-colors">The Boy and Addictions</h3>
-              <p className="opacity-75 leading-relaxed mb-8 h-20">
+              <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4 group-hover:text-[#c4572a] transition-colors">The Boy and Addictions</h3>
+              <p className="opacity-75 leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base">
                 An honest conversation about the silent struggles boys carry: pornography, substances, and the cycle of addiction and the path to freedom.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <button 
-                  onClick={() => setModalState('excerpt-addictions')}
-                  className="px-6 py-3 text-xs tracking-[0.2em] uppercase border border-black/20 dark:border-white/20 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
-                >
-                  Read Excerpt
-                </button>
-                <Link 
-                  href="/book/order"
-                  className="px-6 py-3 text-xs tracking-[0.2em] uppercase text-white font-bold hover:bg-black/80 transition-colors inline-flex items-center gap-1.5" 
-                  style={{ background: "var(--rust)" }}
-                >
-                  Order the Book
-                </Link>
-              </div>
+            </div>
+            <div className="relative z-10 flex flex-col sm:flex-row gap-3 w-full">
+              <button 
+                onClick={() => setModalState('excerpt-addictions')}
+                className="w-full sm:w-auto text-center px-5 py-3 text-xs tracking-[0.2em] uppercase border border-black/20 dark:border-white/20 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
+              >
+                Read Excerpt
+              </button>
+              <Link 
+                href="/book/order"
+                className="w-full sm:w-auto text-center px-5 py-3 text-xs tracking-[0.2em] uppercase text-white font-bold hover:bg-black/80 transition-colors inline-flex items-center justify-center gap-1.5 shadow-sm" 
+                style={{ background: "var(--rust)" }}
+              >
+                Order the Book
+              </Link>
             </div>
           </div>
         </div>

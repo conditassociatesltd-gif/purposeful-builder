@@ -105,23 +105,23 @@ export default function BookPage() {
       </section>
 
       {/* The Boy and Addictions Section */}
-      <section className="py-24 px-5">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-16 items-start">
+      <section className="py-12 sm:py-24 px-4 sm:px-6 border-t border-black/10">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           
-          <div className="lg:col-span-5 sticky top-32 lg:order-last">
+          <div className="lg:col-span-5 lg:sticky lg:top-32 lg:order-last">
             <div className="relative group">
               <div className="absolute top-0 left-0 p-8 opacity-5">
                 <BookOpen size={120} />
               </div>
-              <div className="flex justify-center mb-10">
+              <div className="flex justify-center mb-6 sm:mb-10">
                 <img 
                   src="/boy-and-addictions-cover.png" 
                   alt="The Boy and Addictions book cover" 
-                  className="w-full max-w-md rounded-md shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 border border-black/10"
+                  className="w-48 sm:w-64 md:w-full max-w-md rounded-md shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 border border-black/10"
                 />
               </div>
               
-              <div className="bg-white p-8 border border-black/10 rounded shadow-sm text-center">
+              <div className="bg-white p-6 sm:p-8 border border-black/10 rounded shadow-sm text-center">
                 <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-4 rounded-sm text-white" style={{ background: "var(--rust)" }}>
                   Prelaunch Active
                 </div>
@@ -147,9 +147,9 @@ export default function BookPage() {
             <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-6 text-white" style={{ background: "var(--rust)" }}>
               Launch: 29 November 2026
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl mb-6">The Boy and Addictions</h2>
-            <div className="prose max-w-none space-y-6 text-lg leading-relaxed opacity-90 font-serif">
-              <p className="text-3xl font-serif opacity-60 italic mb-8">"Every addiction has a first moment. A spark no one sees."</p>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-6">The Boy and Addictions</h2>
+            <div className="prose max-w-none space-y-6 text-base sm:text-lg leading-relaxed opacity-90 font-serif">
+              <p className="text-2xl sm:text-3xl font-serif opacity-60 italic mb-8">"Every addiction has a first moment. A spark no one sees."</p>
               <p>A boy walks home from one of the best schools in southeastern Nigeria. Thirty minutes under the hot sun, every day. His life is built on discipline, education, and pride. But one sunny afternoon, he comes home to find something he wasn't looking for.</p>
               <p>There was electricity that day, a rare occurence in those days. A CD was lying in the living room. Curiosity did the rest. In the minutes that followed, something shifted inside that boy. Something he couldn't name, undo, or talk about.</p>
               <p>That boy was me.</p>
