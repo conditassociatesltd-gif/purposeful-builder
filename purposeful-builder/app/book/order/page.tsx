@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, CheckCircle2, ShieldCheck, Heart, User, Send, Copy, Check, Loader2 } from "lucide-react";
+import { ArrowLeft, Clock, AlertCircle, ShieldCheck, Heart, User, Send, Copy, Check, Loader2 } from "lucide-react";
 import { BOOK_CONFIG, NIGERIAN_STATES, getCurrentPriceInfo } from "@/lib/book-config";
 
 export default function OrderBookPage() {
@@ -142,35 +142,45 @@ export default function OrderBookPage() {
   };
 
   // -------------------------------------------------------------
-  // Thank-You / Payment Details View
+  // Pending Payment / Order Validation View
   // -------------------------------------------------------------
   if (orderSuccess) {
     const isPersonal = orderSuccess.order_type === "personal";
-    const waText = `Hello Austin, I have made payment for my book order: ${orderSuccess.order_reference} (₦${orderSuccess.total_amount?.toLocaleString()}). Here is my proof of payment:`;
+    const waText = `Hello Austin, I have made the bank transfer of ₦${orderSuccess.total_amount?.toLocaleString()} for my book order (${orderSuccess.order_reference}). Here is my proof of payment to validate and confirm my order:`;
     const whatsappUrl = `https://wa.me/${BOOK_CONFIG.payment.whatsappNumber}?text=${encodeURIComponent(waText)}`;
 
     return (
       <main className="min-h-screen py-10 sm:py-16 px-4 sm:px-6 max-w-3xl mx-auto">
         <div className="border p-6 sm:p-10 md:p-12 bg-white dark:bg-[#161616] rounded-xl shadow-lg border-black/10 dark:border-white/10">
-          <div className="flex items-center gap-3 text-emerald-600 dark:text-emerald-400 mb-4">
-            <CheckCircle2 size={32} className="shrink-0" />
-            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl text-black dark:text-white">Order Received</h1>
-          </div>
           
-          <p className="text-base sm:text-lg opacity-80 mb-6">
-            Thank you, <strong className="text-black dark:text-white">{orderSuccess.full_name}</strong>! Your order has been placed.
+          {/* Status Badge */}
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-700 dark:text-amber-400 text-xs font-bold uppercase tracking-wider mb-4">
+            <Clock size={15} className="shrink-0 animate-pulse" /> Pending Payment Validation
+          </div>
+
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl text-black dark:text-white mb-2">
+            Pay to Validate & Confirm Order
+          </h1>
+          
+          <p className="text-sm sm:text-base opacity-80 mb-6">
+            Hello <strong className="text-black dark:text-white">{orderSuccess.full_name}</strong>, your order request has been received. Your order is <strong className="text-amber-600 dark:text-amber-400">not yet confirmed</strong>—payment is required to validate and officially confirm your order.
           </p>
 
-          {/* Reference & Summary Box */}
+          {/* Validation Alert Banner */}
+          <div className="p-4 rounded-lg bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800 text-amber-900 dark:text-amber-200 text-xs sm:text-sm mb-6 leading-relaxed">
+            ⚠️ <strong>Payment Validates Your Order:</strong> Please make the bank transfer of <strong>₦{orderSuccess.total_amount?.toLocaleString()}</strong> below and submit your payment receipt. Once verified by the author, your order is officially confirmed.
+          </div>
+
+          {/* Reference & Order Summary Box */}
           <div className="bg-black/5 dark:bg-white/5 p-5 sm:p-6 rounded-lg mb-6 border border-black/5 dark:border-white/5">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-black/10 dark:border-white/10">
               <div>
-                <span className="text-xs uppercase tracking-widest opacity-60">Order Reference</span>
+                <span className="text-xs uppercase tracking-widest opacity-60">Reserved Order Reference</span>
                 <p className="font-mono text-xl sm:text-2xl font-bold text-[#c4572a]">{orderSuccess.order_reference}</p>
               </div>
               <div className="sm:text-right">
-                <span className="text-xs uppercase tracking-widest opacity-60">Total Amount Due</span>
-                <p className="font-serif text-2xl sm:text-3xl font-bold">₦{orderSuccess.total_amount?.toLocaleString()}</p>
+                <span className="text-xs uppercase tracking-widest opacity-60">Amount Required</span>
+                <p className="font-serif text-2xl sm:text-3xl font-bold text-black dark:text-white">₦{orderSuccess.total_amount?.toLocaleString()}</p>
               </div>
             </div>
 
@@ -189,24 +199,24 @@ export default function OrderBookPage() {
             </div>
           </div>
 
-          {/* Status Message */}
-          <div className="mb-6 p-4 rounded-lg bg-[#faf5f0] dark:bg-[#201c18] border border-[#e5d5c5] dark:border-[#3d3228] text-sm">
+          {/* Delivery or Outreach Note */}
+          <div className="mb-6 p-4 rounded-lg bg-[#faf5f0] dark:bg-[#201c18] border border-[#e5d5c5] dark:border-[#3d3228] text-xs sm:text-sm">
             {isPersonal ? (
               <p className="text-stone-800 dark:text-stone-200">
-                📦 <strong>Delivery Note:</strong> The delivery fee will be confirmed by me shortly.
+                📦 <strong>Delivery Note:</strong> Delivery fee will be confirmed by Austin after payment validation.
               </p>
             ) : (
               <p className="text-emerald-800 dark:text-emerald-200">
-                🎓 <strong>Outreach Note:</strong> Thank you for supporting our School Outreach Program. Your copies will reach students starting in January 2027.
+                🎓 <strong>Outreach Note:</strong> Thank you for supporting our School Outreach Program. Your sponsored copies will reach students starting in January 2027.
               </p>
             )}
           </div>
 
           {/* Bank Payment Instructions */}
-          <div className="border border-black/10 dark:border-white/10 p-5 sm:p-8 rounded-lg mb-8 bg-black/[0.02] dark:bg-white/[0.02]">
-            <h3 className="font-serif text-xl sm:text-2xl mb-2">Step 2: Make Bank Transfer</h3>
-            <p className="text-sm opacity-75 mb-6">
-              Please transfer <strong className="text-black dark:text-white">₦{orderSuccess.total_amount?.toLocaleString()}</strong> into the author's bank account:
+          <div className="border border-black/10 dark:border-white/10 p-5 sm:p-8 rounded-lg mb-6 bg-black/[0.02] dark:bg-white/[0.02]">
+            <h3 className="font-serif text-xl sm:text-2xl mb-1">Make Bank Transfer</h3>
+            <p className="text-xs sm:text-sm opacity-75 mb-5">
+              Transfer exactly <strong className="text-black dark:text-white">₦{orderSuccess.total_amount?.toLocaleString()}</strong> to the author's bank account:
             </p>
 
             <div className="space-y-3 sm:space-y-4 text-sm bg-white dark:bg-[#121212] p-4 sm:p-5 rounded-md border border-black/10 dark:border-white/10">
@@ -233,9 +243,9 @@ export default function OrderBookPage() {
               </div>
             </div>
 
-            <div className="mt-5 text-xs sm:text-sm opacity-80 leading-relaxed">
+            <div className="mt-5 text-xs sm:text-sm opacity-85 leading-relaxed bg-amber-500/5 p-4 rounded border border-amber-500/20">
               <p>
-                After transferring, send your proof of payment along with your order reference (<strong>{orderSuccess.order_reference}</strong>) to WhatsApp: <strong>{BOOK_CONFIG.payment.whatsappDisplay}</strong> or email <strong>{BOOK_CONFIG.payment.notificationEmail}</strong>.
+                <strong>Final Step to Validate:</strong> After transferring, click below to submit your payment receipt with your order reference (<strong>{orderSuccess.order_reference}</strong>) on WhatsApp or reply to your email invoice.
               </p>
             </div>
 
@@ -244,13 +254,13 @@ export default function OrderBookPage() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 rounded-md font-bold text-sm text-white bg-[#25D366] hover:bg-[#20ba59] transition-colors shadow-md"
+                className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 rounded-md font-bold text-xs sm:text-sm text-white bg-[#25D366] hover:bg-[#20ba59] transition-colors shadow-md"
               >
-                <Send size={18} /> Send Proof on WhatsApp
+                <Send size={18} /> Send Proof of Payment to Validate Order
               </a>
               <Link
                 href="/book"
-                className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 rounded-md font-bold text-sm border border-black/20 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 rounded-md font-bold text-xs sm:text-sm border border-black/20 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
               >
                 Back to Book
               </Link>

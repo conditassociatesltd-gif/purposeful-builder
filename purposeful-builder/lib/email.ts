@@ -35,18 +35,18 @@ export async function sendOrderEmails(order: BookOrder): Promise<{ success: bool
   const orderTypeLabel = isPersonal ? "Personal Copy Order" : "School Outreach Support";
 
   // 1. Author Notification Email HTML
-  const authorSubject = `${subjectPrefix} New Book Order: ${order.order_reference} (${order.copies} ${order.copies === 1 ? "copy" : "copies"})`;
+  const authorSubject = `${subjectPrefix} [Payment Pending] New Order: ${order.order_reference} (${order.copies} ${order.copies === 1 ? "copy" : "copies"})`;
   
   const authorHtml = `
     <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto; color: #1a1a1a; line-height: 1.6; border: 1px solid #e5e5e5; border-radius: 8px; overflow: hidden;">
       <div style="background-color: #111; color: #fff; padding: 24px; text-align: center;">
         <h1 style="margin: 0; font-size: 20px; font-weight: 600; letter-spacing: 1px;">THE PURPOSEFUL BUILDER</h1>
-        <p style="margin: 6px 0 0 0; font-size: 14px; opacity: 0.8;">New Order Received</p>
+        <p style="margin: 6px 0 0 0; font-size: 14px; opacity: 0.8;">New Order Pending Payment Validation</p>
       </div>
 
       <div style="padding: 28px;">
-        <div style="display: inline-block; padding: 4px 12px; background: ${isPersonal ? "#f3f4f6" : "#fef3c7"}; color: ${isPersonal ? "#374151" : "#92400e"}; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 20px;">
-          ${orderTypeLabel}
+        <div style="display: inline-block; padding: 4px 12px; background: #fef3c7; color: #92400e; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 20px;">
+          Pending Payment Validation (${orderTypeLabel})
         </div>
 
         <h2 style="font-size: 18px; margin: 0 0 16px 0;">Order Reference: <strong>${order.order_reference}</strong></h2>
@@ -97,29 +97,30 @@ export async function sendOrderEmails(order: BookOrder): Promise<{ success: bool
           </tr>
         </table>
 
-        <div style="background-color: #f9f9f9; padding: 16px; border-radius: 6px; font-size: 13px; color: #555;">
-          ${isPersonal 
-            ? "<strong>Next Step:</strong> Confirm payment receipt and coordinate delivery fee with buyer." 
-            : "<strong>Next Step:</strong> Confirm payment receipt for the School Outreach Program."
-          }
+        <div style="background-color: #fef3c7; border: 1px solid #fde68a; padding: 16px; border-radius: 6px; font-size: 13px; color: #92400e;">
+          <strong>Action Required:</strong> Awaiting buyer's bank transfer proof. Validate payment to officially confirm this order.
         </div>
       </div>
     </div>
   `;
 
   // 2. Buyer Confirmation Email HTML
-  const buyerSubject = `Your Order Confirmation: The Boy and Addictions (${order.order_reference})`;
+  const buyerSubject = `[Action Required] Pay ₦${order.total_amount.toLocaleString()} to Validate Your Order (${order.order_reference})`;
   
   const buyerHtml = `
     <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto; color: #1a1a1a; line-height: 1.6; border: 1px solid #e5e5e5; border-radius: 8px; overflow: hidden;">
       <div style="background-color: #111; color: #fff; padding: 24px; text-align: center;">
         <h1 style="margin: 0; font-size: 20px; font-weight: 600; letter-spacing: 1px;">THE PURPOSEFUL BUILDER</h1>
-        <p style="margin: 6px 0 0 0; font-size: 14px; opacity: 0.8;">The Boy and Addictions — Order Confirmation</p>
+        <p style="margin: 6px 0 0 0; font-size: 14px; opacity: 0.8;">Order Pending Payment Validation</p>
       </div>
 
       <div style="padding: 28px;">
         <p style="font-size: 16px;">Dear <strong>${order.full_name}</strong>,</p>
-        <p>Thank you for your order of <em>The Boy and Addictions</em>! Here are the details of your order:</p>
+        <p>Thank you for placing an order for <em>The Boy and Addictions</em>.</p>
+        
+        <div style="background-color: #fffbeb; border: 1px solid #fef3c7; padding: 14px; border-radius: 6px; font-size: 14px; color: #92400e; margin: 16px 0;">
+          ⚠️ <strong>Please Note:</strong> Your order is currently <strong>PENDING</strong> and is not yet confirmed. Payment validates your order.
+        </div>
 
         <div style="background-color: #f9f9f9; border-left: 4px solid #c4572a; padding: 16px; margin: 20px 0; font-size: 14px;">
           <p style="margin: 0 0 8px 0;"><strong>Order Reference:</strong> ${order.order_reference}</p>

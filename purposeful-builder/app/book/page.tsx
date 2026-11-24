@@ -44,26 +44,26 @@ export default function BookPage() {
       </section>
 
       {/* Formed in Silence Section */}
-      <section className="py-24 px-5 border-b border-black/10 bg-white/30">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-16 items-start">
+      <section className="py-12 sm:py-24 px-4 sm:px-6 border-b border-black/10 bg-white/30">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           
-          <div className="lg:col-span-5 sticky top-32">
+          <div className="lg:col-span-5 lg:sticky lg:top-32">
             <div className="relative group">
               <div className="absolute top-0 right-0 p-8 opacity-5">
                 <BookOpen size={120} />
               </div>
-              <div className="flex justify-center mb-10">
+              <div className="flex justify-center mb-6 sm:mb-10">
                 <img 
                   src="/formed-in-silence-cover.png" 
                   alt="Formed in Silence book cover" 
-                  className="w-full max-w-md rounded-md shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 border border-black/10"
+                  className="w-48 sm:w-64 md:w-full max-w-md rounded-md shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 border border-black/10"
                 />
               </div>
               
-              <div className="bg-white p-8 border border-black/10 rounded shadow-sm text-center">
-                <Bell className="mx-auto mb-4 opacity-50 text-[#c4572a]" size={32} />
-                <h4 className="font-serif text-2xl mb-2">Join the Waitlist</h4>
-                <p className="text-sm mb-6 opacity-80">Be the first to know when Formed in Silence is published.</p>
+              <div className="bg-white p-6 sm:p-8 border border-black/10 rounded shadow-sm text-center">
+                <Bell className="mx-auto mb-3 sm:mb-4 opacity-50 text-[#c4572a]" size={28} />
+                <h4 className="font-serif text-xl sm:text-2xl mb-2">Join the Waitlist</h4>
+                <p className="text-xs sm:text-sm mb-5 sm:mb-6 opacity-80">Be the first to know when Formed in Silence is published.</p>
                 <form action="https://buttondown.email/api/emails/embed-subscribe/arc_austin" method="POST" target="_blank" className="flex flex-col gap-3">
                   <input type="hidden" name="metadata__waitlist" value="Formed in Silence" />
                   <input type="hidden" name="tag" value="waitlist-formed-in-silence" />
@@ -72,9 +72,9 @@ export default function BookPage() {
                     name="email" 
                     required 
                     placeholder="Your email address"
-                    className="w-full px-5 py-3 border border-black/20 text-sm outline-none focus:border-[#c4572a] transition-colors"
+                    className="w-full px-4 py-3 border border-black/20 text-sm outline-none focus:border-[#c4572a] transition-colors"
                   />
-                  <button type="submit" className="w-full py-3 text-xs tracking-[0.2em] uppercase text-white font-bold hover:bg-black/90 transition-colors" style={{ background: "var(--rust)" }}>
+                  <button type="submit" className="w-full py-3.5 text-xs tracking-[0.2em] uppercase text-white font-bold hover:bg-black/90 transition-colors" style={{ background: "var(--rust)" }}>
                     Notify Me
                   </button>
                 </form>
@@ -83,12 +83,12 @@ export default function BookPage() {
           </div>
 
           <div className="lg:col-span-7">
-            <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-6 bg-black/5">
+            <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-4 sm:mb-6 bg-black/5">
               Work In Progress
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl mb-6">Formed in Silence</h2>
-            <div className="prose max-w-none space-y-6 text-lg leading-relaxed opacity-90 font-serif">
-              <p className="text-3xl font-serif opacity-60 italic mb-8">"Some of the most important things that shape us are the things no one sees."</p>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-4 sm:mb-6">Formed in Silence</h2>
+            <div className="prose max-w-none space-y-5 sm:space-y-6 text-base sm:text-lg leading-relaxed opacity-90 font-serif">
+              <p className="text-2xl sm:text-3xl font-serif opacity-60 italic mb-6 sm:mb-8">"Some of the most important things that shape us are the things no one sees."</p>
               <p>I lost my father when I was very young, at an age when I didn't understand what his death would mean for the rest of my life. His presence had offered comfort and joy. His absence created an emptiness and a longing that stayed with me, quietly shaping patterns, reactions, and emotions I couldn't trace back to their source for years.</p>
               <p>The realisation that my father's absence had silently formed who I was becoming, was the start of my healing process. And it became the foundation of this book.</p>
               <p>A boy is always being shaped, whether intentionally or not. An intentional father becomes the primary voice in his son's formation. He sows values, identity, and a sense of belonging. But when a father is absent, through death, divorce, emotional withdrawal, migration, or conflict, other influences rush in to fill the void. There is no vacuum on Earth. The problem is that this formation is silent. It doesn't announce itself until it's too late.</p>
