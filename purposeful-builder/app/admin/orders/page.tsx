@@ -10,7 +10,41 @@ export default function AdminOrdersPage() {
   const [loading, setLoading] = useState(false);
   const [orders, setOrders] = useState<BookOrder[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [confirmingRef, setConfirmingRef] = useState<string | null>(null);
   const [filter, setFilter] = useState<"all" | "personal" | "outreach">("all");
+
+  const handleConfirmPayment = async (orderRef: string) => {
+    if (!confirm(`Are you sure you want to mark order ${orderRef} as PAID and CONFIRMED?`)) {
+      return;
+    }
+
+    setConfirmingRef(orderRef);
+
+    try {
+      const res = await fetch("/api/admin/orders/confirm", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          order_reference: orderRef,
+          password,
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || "Failed to confirm order payment.");
+      }
+
+      // Update state locally
+      setOrders((prev) =>
+        prev.map((o) => (o.order_reference === orderRef ? { ...o, status: "paid_and_confirmed" } : o))
+      );
+    } catch (err: any) {
+      alert(err.message || "Error confirming payment");
+    } finally {
+      setConfirmingRef(null);
+    }
+  };
 
   const fetchOrders = async (pwdToUse?: string) => {
     const pwd = pwdToUse || password;
@@ -263,6 +297,7 @@ export default function AdminOrdersPage() {
                   <th className="p-4">Copies</th>
                   <th className="p-4">Total</th>
                   <th className="p-4">Location</th>
+                  <th className="p-4">Status & Action</th>
                   <th className="p-4">Date</th>
                 </tr>
               </thead>
@@ -298,6 +333,26 @@ export default function AdminOrdersPage() {
                         <span>{o.city || "—"}, {o.state || "—"}</span>
                       ) : (
                         <span className="italic text-rose-500">School Outreach (Jan 2027)</span>
+                      )}
+                    </td>
+                    <td className="p-4">
+                      {o.status === "paid_and_confirmed" ? (
+                        <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-[10px] font-bold uppercase tracking-wider bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300">
+                          ✓ Confirmed
+                        </span>
+                      ) : (
+                        <div className="flex items-center gap-2">
+                          <span className="inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300">
+                            Pending
+                          </span>
+                          <button
+                            onClick={() => handleConfirmPayment(o.order_reference)}
+                            disabled={confirmingRef === o.order_reference}
+                            className="px-2.5 py-1 rounded text-[11px] font-bold text-white bg-emerald-600 hover:bg-emerald-700 transition-colors disabled:opacity-50"
+                          >
+                            {confirmingRef === o.order_reference ? "Confirming..." : "Confirm"}
+                          </button>
+                        </div>
                       )}
                     </td>
                     <td className="p-4 text-xs opacity-60 whitespace-nowrap">

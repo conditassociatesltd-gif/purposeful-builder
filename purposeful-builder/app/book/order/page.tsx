@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, Clock, AlertCircle, ShieldCheck, Heart, User, Send, Copy, Check, Loader2 } from "lucide-react";
+import { ArrowLeft, Clock, AlertCircle, ShieldCheck, Heart, User, Send, Copy, Check, Loader2, CreditCard } from "lucide-react";
 import { BOOK_CONFIG, NIGERIAN_STATES, getCurrentPriceInfo } from "@/lib/book-config";
 
 export default function OrderBookPage() {
@@ -27,6 +27,43 @@ export default function OrderBookPage() {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [orderSuccess, setOrderSuccess] = useState<any | null>(null);
   const [copiedAccount, setCopiedAccount] = useState(false);
+  const [paystackLoading, setPaystackLoading] = useState(false);
+  const [paystackNotice, setPaystackNotice] = useState<string | null>(null);
+
+  const handlePaystackPay = async () => {
+    if (!orderSuccess) return;
+    setPaystackLoading(true);
+    setPaystackNotice(null);
+
+    try {
+      const res = await fetch("/api/paystack/initialize", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          order_reference: orderSuccess.order_reference,
+          email: orderSuccess.email || email,
+          amount: orderSuccess.total_amount,
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || "Failed to initialize online payment");
+      }
+
+      if (data.configured && data.authorization_url) {
+        window.location.href = data.authorization_url;
+      } else {
+        setPaystackNotice(
+          "Paystack is awaiting your PAYSTACK_SECRET_KEY in Vercel settings. You can complete your order using the direct bank transfer details below!"
+        );
+      }
+    } catch (err: any) {
+      setPaystackNotice(err.message || "Could not connect to Paystack. Please use bank transfer below.");
+    } finally {
+      setPaystackLoading(false);
+    }
+  };
 
   // Dynamic pricing calculation
   const priceInfo = getCurrentPriceInfo();
@@ -212,9 +249,45 @@ export default function OrderBookPage() {
             )}
           </div>
 
-          {/* Bank Payment Instructions */}
+          {/* Option 1: Pay Online via Paystack */}
+          <div className="border-2 border-[#c4572a] p-5 sm:p-6 rounded-lg mb-6 bg-[#faf5f0] dark:bg-[#1f1712]">
+            <div className="flex items-center gap-2 mb-2 font-bold text-base">
+              <CreditCard className="text-[#c4572a]" size={20} />
+              <span>Option 1: Pay Online via Paystack (Instant Confirmation)</span>
+            </div>
+            <p className="text-xs sm:text-sm opacity-80 mb-4 leading-relaxed">
+              Pay securely using your Debit Card, Bank Transfer, USSD, or Apple Pay. Your order is automatically verified and confirmed immediately.
+            </p>
+            {paystackNotice && (
+              <div className="mb-4 p-3 rounded bg-amber-100 dark:bg-amber-950/60 text-amber-900 dark:text-amber-200 text-xs leading-relaxed">
+                ℹ️ {paystackNotice}
+              </div>
+            )}
+            <button
+              type="button"
+              onClick={handlePaystackPay}
+              disabled={paystackLoading}
+              className="w-full py-4 px-6 rounded-md font-bold uppercase tracking-wider text-xs sm:text-sm text-white flex items-center justify-center gap-2 shadow-md hover:opacity-90 disabled:opacity-50"
+              style={{ background: "var(--rust)" }}
+            >
+              {paystackLoading ? (
+                <>
+                  <Loader2 size={18} className="animate-spin" /> Connecting to Paystack...
+                </>
+              ) : (
+                `Pay ₦${orderSuccess.total_amount?.toLocaleString()} with Paystack →`
+              )}
+            </button>
+          </div>
+
+          <div className="relative text-center my-6">
+            <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-black/10 dark:border-white/10" /></div>
+            <span className="relative bg-white dark:bg-[#161616] px-4 text-xs font-bold uppercase tracking-widest opacity-60">OR</span>
+          </div>
+
+          {/* Option 2: Bank Payment Instructions */}
           <div className="border border-black/10 dark:border-white/10 p-5 sm:p-8 rounded-lg mb-6 bg-black/[0.02] dark:bg-white/[0.02]">
-            <h3 className="font-serif text-xl sm:text-2xl mb-1">Make Bank Transfer</h3>
+            <h3 className="font-serif text-xl sm:text-2xl mb-1">Option 2: Direct Bank Transfer</h3>
             <p className="text-xs sm:text-sm opacity-75 mb-5">
               Transfer exactly <strong className="text-black dark:text-white">₦{orderSuccess.total_amount?.toLocaleString()}</strong> to the author's bank account:
             </p>

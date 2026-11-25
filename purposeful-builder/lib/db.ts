@@ -122,6 +122,61 @@ export async function saveOrder(order: BookOrder): Promise<BookOrder> {
 }
 
 /**
+ * Retrieve a single order by reference
+ */
+export async function getOrderByReference(order_reference: string): Promise<BookOrder | null> {
+  const sql = getDbClient();
+
+  if (sql) {
+    try {
+      await ensureTableExists();
+      const rows = await sql`
+        SELECT * FROM book_orders WHERE order_reference = ${order_reference} LIMIT 1;
+      `;
+      if (rows && rows.length > 0) {
+        return rows[0] as BookOrder;
+      }
+    } catch (err) {
+      console.error("Neon DB fetch by ref error:", err);
+    }
+  }
+
+  const found = fallbackOrders.find((o) => o.order_reference === order_reference);
+  return found || null;
+}
+
+/**
+ * Update order status (e.g. 'paid_and_confirmed')
+ */
+export async function updateOrderStatus(order_reference: string, newStatus: string): Promise<BookOrder | null> {
+  const sql = getDbClient();
+
+  if (sql) {
+    try {
+      await ensureTableExists();
+      const rows = await sql`
+        UPDATE book_orders
+        SET status = ${newStatus}
+        WHERE order_reference = ${order_reference}
+        RETURNING *;
+      `;
+      if (rows && rows.length > 0) {
+        return rows[0] as BookOrder;
+      }
+    } catch (err) {
+      console.error("Neon DB update status error:", err);
+    }
+  }
+
+  const order = fallbackOrders.find((o) => o.order_reference === order_reference);
+  if (order) {
+    order.status = newStatus;
+    return order;
+  }
+  return null;
+}
+
+/**
  * Retrieve all orders for the admin dashboard
  */
 export async function getAllOrders(): Promise<BookOrder[]> {
