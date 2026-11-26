@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, BookOpen, Bell, ChevronDown, ChevronUp } from "lucide-react";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function BookPage() {
   const [isExpandedAddictions, setIsExpandedAddictions] = useState(false);
@@ -13,10 +14,10 @@ export default function BookPage() {
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
 
       {/* Header */}
-      <header className="absolute top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-black/10">
+      <header className="absolute top-0 left-0 right-0 z-50 bg-white/80 dark:bg-[#11170f]/90 backdrop-blur-sm border-b border-black/10 dark:border-white/10">
         <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-4">
-            <div className="w-10 h-10 border-2 border-[#c4572a] flex items-center justify-center overflow-hidden bg-white">
+            <div className="w-10 h-10 border-2 border-[#c4572a] flex items-center justify-center overflow-hidden bg-white dark:bg-[#182016]">
               <Image
                 src="/logo.png"
                 alt="Austin Okechukwu logo"
@@ -25,17 +26,18 @@ export default function BookPage() {
                 className="object-contain scale-110"
               />
             </div>
-            <span className="font-black tracking-tight uppercase text-black hidden sm:inline">Austin Okechukwu</span>
+            <span className="font-black tracking-tight uppercase text-black dark:text-white hidden sm:inline">Austin Okechukwu</span>
           </Link>
 
-          <div className="flex items-center gap-4 sm:gap-6">
+          <div className="flex items-center gap-3 sm:gap-6">
             <a
               href="https://austinokechukwu.com/about"
-              className="text-xs sm:text-[11px] tracking-[0.15em] sm:tracking-[0.2em] uppercase font-bold text-black/80 hover:text-[#c4572a] transition-colors"
+              className="text-xs sm:text-[11px] tracking-[0.15em] sm:tracking-[0.2em] uppercase font-bold text-black/80 dark:text-white/80 hover:text-[#c4572a] dark:hover:text-[#c4572a] transition-colors"
             >
               About the Author
             </a>
-            <Link href="/" className="flex items-center gap-1.5 text-xs sm:text-[10px] tracking-[0.15em] sm:tracking-[0.2em] uppercase font-bold text-black/60 hover:text-black transition-colors">
+            <ThemeToggle />
+            <Link href="/" className="flex items-center gap-1.5 text-xs sm:text-[10px] tracking-[0.15em] sm:tracking-[0.2em] uppercase font-bold text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors">
               <ArrowLeft size={14} /> <span className="hidden sm:inline">Back to </span>Home
             </Link>
           </div>
@@ -43,9 +45,9 @@ export default function BookPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-40 pb-20 px-5 border-b border-black/10">
+      <section className="pt-40 pb-20 px-5 border-b border-black/10 dark:border-white/10">
         <div className="max-w-6xl mx-auto">
-          <div className="inline-block px-4 py-1.5 rounded-full border border-black/10 text-[10px] tracking-widest uppercase font-bold mb-6">
+          <div className="inline-block px-4 py-1.5 rounded-full border border-black/10 dark:border-white/10 text-[10px] tracking-widest uppercase font-bold mb-6">
             Writing & Publishing
           </div>
           <h1 className="font-serif text-5xl md:text-7xl mb-8 leading-tight max-w-4xl">
@@ -58,7 +60,7 @@ export default function BookPage() {
       </section>
 
       {/* The Boy and Addictions Section (First Book) */}
-      <section className="py-12 sm:py-24 px-4 sm:px-6 border-b border-black/10">
+      <section className="py-12 sm:py-24 px-4 sm:px-6 border-b border-black/10 dark:border-white/10">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
 
           <div className="lg:col-span-5 lg:sticky lg:top-32 lg:order-last">
@@ -70,19 +72,19 @@ export default function BookPage() {
                 <img
                   src="/boy-and-addictions-cover.png"
                   alt="The Boy and Addictions book cover"
-                  className="w-48 sm:w-64 md:w-full max-w-md rounded-md shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 border border-black/10"
+                  className="w-48 sm:w-64 md:w-full max-w-md rounded-md shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 border border-black/10 dark:border-white/10"
                 />
               </div>
 
-              <div className="bg-white p-6 sm:p-8 border border-black/10 rounded shadow-sm text-center">
+              <div className="bg-white dark:bg-[#182016] p-6 sm:p-8 border border-black/10 dark:border-white/10 rounded shadow-sm text-center text-stone-900 dark:text-stone-100">
                 <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-4 rounded-sm text-white" style={{ background: "var(--rust)" }}>
                   Prelaunch Active
                 </div>
-                <h4 className="font-serif text-2xl mb-1">Order Your Copy</h4>
-                <p className="text-xs mb-4 opacity-75">Official Launch: 29 November 2026</p>
-                <div className="mb-6 py-2 border-y border-black/10">
+                <h4 className="font-serif text-2xl mb-1 text-stone-900 dark:text-white">Order Your Copy</h4>
+                <p className="text-xs mb-4 opacity-75 text-stone-700 dark:text-stone-300">Official Launch: 29 November 2026</p>
+                <div className="mb-6 py-2 border-y border-black/10 dark:border-white/10">
                   <span className="font-serif text-3xl font-bold text-[#c4572a]">₦3,500</span>
-                  <span className="text-[11px] uppercase tracking-wider block opacity-60 mt-1">Prelaunch price (increases to ₦4,500)</span>
+                  <span className="text-[11px] uppercase tracking-wider block opacity-60 mt-1 text-stone-600 dark:text-stone-400">Prelaunch price (increases to ₦4,500)</span>
                 </div>
                 <Link
                   href="/book/order"
@@ -91,7 +93,7 @@ export default function BookPage() {
                 >
                   ORDER YOUR COPY
                 </Link>
-                <p className="text-[11px] opacity-60 mt-3">Personal copies & School Outreach Program</p>
+                <p className="text-[11px] opacity-60 mt-3 text-stone-600 dark:text-stone-400">Personal copies & School Outreach Program</p>
               </div>
             </div>
           </div>
@@ -186,7 +188,7 @@ export default function BookPage() {
       </section>
 
       {/* Formed in Silence Section (Second Book) */}
-      <section className="py-12 sm:py-24 px-4 sm:px-6 bg-white/30">
+      <section className="py-12 sm:py-24 px-4 sm:px-6 bg-black/[0.02] dark:bg-white/[0.02] border-b border-black/10 dark:border-white/10">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
 
           <div className="lg:col-span-5 lg:sticky lg:top-32">
@@ -198,14 +200,14 @@ export default function BookPage() {
                 <img
                   src="/formed-in-silence-cover.png"
                   alt="Formed in Silence book cover"
-                  className="w-48 sm:w-64 md:w-full max-w-md rounded-md shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 border border-black/10"
+                  className="w-48 sm:w-64 md:w-full max-w-md rounded-md shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 border border-black/10 dark:border-white/10"
                 />
               </div>
 
-              <div className="bg-white p-6 sm:p-8 border border-black/10 rounded shadow-sm text-center">
+              <div className="bg-white dark:bg-[#182016] p-6 sm:p-8 border border-black/10 dark:border-white/10 rounded shadow-sm text-center text-stone-900 dark:text-stone-100">
                 <Bell className="mx-auto mb-3 sm:mb-4 opacity-50 text-[#c4572a]" size={28} />
-                <h4 className="font-serif text-xl sm:text-2xl mb-2">Join the Waitlist</h4>
-                <p className="text-xs sm:text-sm mb-5 sm:mb-6 opacity-80">Be the first to know when Formed in Silence is published.</p>
+                <h4 className="font-serif text-xl sm:text-2xl mb-2 text-stone-900 dark:text-white">Join the Waitlist</h4>
+                <p className="text-xs sm:text-sm mb-5 sm:mb-6 opacity-80 text-stone-700 dark:text-stone-300">Be the first to know when Formed in Silence is published.</p>
                 <form action="https://buttondown.email/api/emails/embed-subscribe/arc_austin" method="POST" target="_blank" className="flex flex-col gap-3">
                   <input type="hidden" name="metadata__waitlist" value="Formed in Silence" />
                   <input type="hidden" name="tag" value="waitlist-formed-in-silence" />
@@ -214,7 +216,7 @@ export default function BookPage() {
                     name="email"
                     required
                     placeholder="Your email address"
-                    className="w-full px-4 py-3 border border-black/20 text-sm outline-none focus:border-[#c4572a] transition-colors"
+                    className="w-full px-4 py-3 border border-black/20 dark:border-white/20 bg-transparent dark:bg-[#121212] text-sm text-stone-900 dark:text-white placeholder:text-stone-400 dark:placeholder:text-stone-500 outline-none focus:border-[#c4572a] transition-colors"
                   />
                   <button type="submit" className="w-full py-3.5 text-xs tracking-[0.2em] uppercase !text-white font-bold hover:bg-black/90 transition-colors" style={{ background: "var(--rust)", color: "#ffffff" }}>
                     Notify Me
@@ -225,7 +227,7 @@ export default function BookPage() {
           </div>
 
           <div className="lg:col-span-7">
-            <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-4 sm:mb-6 bg-black/5">
+            <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-4 sm:mb-6 bg-black/5 dark:bg-white/10 text-stone-800 dark:text-stone-200">
               Work In Progress
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-4 sm:mb-6">Formed in Silence</h2>

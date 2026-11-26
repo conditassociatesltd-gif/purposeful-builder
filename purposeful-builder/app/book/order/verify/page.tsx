@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { CheckCircle2, AlertCircle, ArrowLeft, Loader2, Send } from "lucide-react";
 import { BOOK_CONFIG } from "@/lib/book-config";
+import ThemeToggle from "@/components/ThemeToggle";
 
 function VerifyContent() {
   const searchParams = useSearchParams();
@@ -58,16 +59,16 @@ function VerifyContent() {
     const isPersonal = order.order_type === "personal";
 
     return (
-      <div className="border p-6 sm:p-10 md:p-12 bg-white dark:bg-[#161616] rounded-xl shadow-lg border-black/10 dark:border-white/10 text-left">
+      <div className="border p-6 sm:p-10 md:p-12 bg-white dark:bg-[#161616] rounded-xl shadow-lg border-black/10 dark:border-white/10 text-left text-stone-900 dark:text-stone-100">
         <div className="flex items-center gap-3 text-emerald-600 dark:text-emerald-400 mb-4">
           <CheckCircle2 size={36} className="shrink-0" />
-          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl text-black dark:text-white">
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl text-stone-900 dark:text-white">
             Payment Validated & Order Confirmed!
           </h1>
         </div>
 
-        <p className="text-base sm:text-lg opacity-85 mb-6">
-          Thank you, <strong className="text-black dark:text-white">{order.full_name}</strong>! Your payment has been received and verified.
+        <p className="text-base sm:text-lg opacity-85 mb-6 text-stone-700 dark:text-stone-300">
+          Thank you, <strong className="text-stone-900 dark:text-white">{order.full_name}</strong>! Your payment has been received and verified.
         </p>
 
         {/* Confirmed Summary Box */}
@@ -83,7 +84,7 @@ function VerifyContent() {
             </div>
           </div>
 
-          <div className="pt-4 text-xs sm:text-sm space-y-1.5 opacity-90">
+          <div className="pt-4 text-xs sm:text-sm space-y-1.5 opacity-90 text-stone-800 dark:text-stone-200">
             <p><strong>Order Type:</strong> {isPersonal ? "Personal Copy" : "School Outreach Program Support"}</p>
             <p><strong>Copies Ordered:</strong> {order.copies} copies (Total: ₦{order.total_amount?.toLocaleString()})</p>
             {isPersonal && order.state && (
@@ -120,7 +121,7 @@ function VerifyContent() {
           </Link>
           <Link
             href="/"
-            className="inline-flex items-center justify-center px-6 py-4 rounded-md font-bold text-sm border border-black/20 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-center"
+            className="inline-flex items-center justify-center px-6 py-4 rounded-md font-bold text-sm border border-black/20 dark:border-white/20 text-stone-900 dark:text-white hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-center"
           >
             Visit Homepage
           </Link>
@@ -131,18 +132,18 @@ function VerifyContent() {
 
   // Not confirmed / pending
   return (
-    <div className="border p-6 sm:p-10 bg-white dark:bg-[#161616] rounded-xl shadow-lg border-black/10 dark:border-white/10 text-left">
+    <div className="border p-6 sm:p-10 bg-white dark:bg-[#161616] rounded-xl shadow-lg border-black/10 dark:border-white/10 text-left text-stone-900 dark:text-stone-100">
       <div className="flex items-center gap-3 text-amber-600 dark:text-amber-400 mb-4">
         <AlertCircle size={32} className="shrink-0" />
-        <h1 className="font-serif text-2xl sm:text-3xl text-black dark:text-white">Awaiting Payment Confirmation</h1>
+        <h1 className="font-serif text-2xl sm:text-3xl text-stone-900 dark:text-white">Awaiting Payment Confirmation</h1>
       </div>
 
-      <p className="text-sm sm:text-base opacity-80 mb-6">
+      <p className="text-sm sm:text-base opacity-80 mb-6 text-stone-700 dark:text-stone-300">
         {message || "We could not immediately verify your online payment. If you made a transfer, please send your receipt below."}
       </p>
 
       {reference && (
-        <div className="bg-black/5 dark:bg-white/5 p-4 rounded mb-6 font-mono text-sm">
+        <div className="bg-black/5 dark:bg-white/5 p-4 rounded mb-6 font-mono text-sm text-stone-900 dark:text-stone-100 border border-black/5 dark:border-white/10">
           Reference: <strong>{reference}</strong>
         </div>
       )}
@@ -162,7 +163,24 @@ function VerifyContent() {
 
 export default function OrderVerifyPage() {
   return (
-    <main className="min-h-screen py-16 px-4 sm:px-6 max-w-2xl mx-auto">
+    <main className="min-h-screen py-16 px-4 sm:px-6 max-w-2xl mx-auto text-stone-900 dark:text-stone-100">
+      <div className="mb-6 flex items-center justify-between gap-3">
+        <Link 
+          href="/book" 
+          className="inline-flex items-center gap-2 text-xs sm:text-sm text-stone-600 dark:text-stone-300 hover:text-[#c4572a] transition-all"
+        >
+          <ArrowLeft size={16} /> The Boy and Addictions
+        </Link>
+        <div className="flex items-center gap-3 sm:gap-5">
+          <a
+            href="https://austinokechukwu.com/about"
+            className="text-xs sm:text-[11px] tracking-[0.15em] uppercase font-bold text-stone-700 dark:text-stone-300 hover:text-[#c4572a] transition-colors"
+          >
+            About the Author
+          </a>
+          <ThemeToggle />
+        </div>
+      </div>
       <Suspense fallback={<div className="text-center py-20">Loading order verification...</div>}>
         <VerifyContent />
       </Suspense>

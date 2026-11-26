@@ -3,15 +3,14 @@
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
-export default function ThemeToggle() {
+export default function ThemeToggle({ className = "" }: { className?: string }) {
   const [dark, setDark] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const saved = localStorage.getItem("theme");
-    if (saved === "dark") {
-      document.documentElement.classList.add("dark");
-      setDark(true);
-    }
+    setMounted(true);
+    const isDark = document.documentElement.classList.contains("dark");
+    setDark(isDark);
   }, []);
 
   function toggleTheme() {
@@ -30,10 +29,15 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="w-11 h-11 flex items-center justify-center border border-black/10 dark:border-white/20"
-      aria-label="Toggle dark mode"
+      className={`w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-md border border-black/15 dark:border-white/20 text-stone-800 dark:text-stone-200 hover:text-[#c4572a] dark:hover:text-[#c4572a] hover:border-[#c4572a] dark:hover:border-[#c4572a] bg-black/[0.04] dark:bg-white/[0.06] transition-all cursor-pointer ${className}`}
+      aria-label="Toggle dark / light mode"
+      title={dark ? "Switch to light mode" : "Switch to dark mode"}
     >
-      {dark ? <Sun size={18} /> : <Moon size={18} />}
+      {mounted ? (
+        dark ? <Sun size={17} className="text-amber-400" /> : <Moon size={17} className="text-stone-700 dark:text-stone-300" />
+      ) : (
+        <span className="w-4 h-4" />
+      )}
     </button>
   );
 }

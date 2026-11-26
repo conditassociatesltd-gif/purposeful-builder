@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
@@ -49,6 +50,59 @@ video {
 /* ========================
    DARK MODE
 ========================= */
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --parchment: #11170f;
+    --ink: #f4efe3;
+    --night: #070a06;
+    --cream: #f8f2e7;
+
+    --rust: #9dbb6f;
+    --rust-dark: #bfd98c;
+    --rust-deep: #dbe7c9;
+
+    --peach: #2a3524;
+    --soft-green: #26391f;
+    --deep-green: #dbe7c9;
+    --card: #182016;
+  }
+
+  :root:not(.light) article,
+  :root:not(.light) article p,
+  :root:not(.light) article li,
+  :root:not(.light) article blockquote,
+  :root:not(.light) article h1,
+  :root:not(.light) article h2,
+  :root:not(.light) article h3,
+  :root:not(.light) article h4,
+  :root:not(.light) article strong {
+    color: #eee9df !important;
+  }
+
+  :root:not(.light) .prose { color: #eee9df !important; }
+  :root:not(.light) .prose p { color: rgba(238, 233, 223, 0.78) !important; }
+  :root:not(.light) .prose h1,
+  :root:not(.light) .prose h2,
+  :root:not(.light) .prose h3,
+  :root:not(.light) .prose h4 { color: #eee9df !important; }
+
+  :root:not(.light) .essay-content,
+  :root:not(.light) .essay-content p,
+  :root:not(.light) .essay-content li,
+  :root:not(.light) .essay-content blockquote,
+  :root:not(.light) .essay-content span {
+    color: rgba(238, 233, 223, 0.82) !important;
+  }
+
+  :root:not(.light) .essay-content h1,
+  :root:not(.light) .essay-content h2,
+  :root:not(.light) .essay-content h3,
+  :root:not(.light) .essay-content h4,
+  :root:not(.light) .essay-content strong {
+    color: #eee9df !important;
+  }
+}
 
 .dark {
   --parchment: #11170f;

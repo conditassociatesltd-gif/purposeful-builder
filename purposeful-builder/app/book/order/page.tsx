@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, Clock, AlertCircle, ShieldCheck, Heart, User, Send, Copy, Check, Loader2, CreditCard } from "lucide-react";
 import { BOOK_CONFIG, NIGERIAN_STATES, getCurrentPriceInfo } from "@/lib/book-config";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function OrderBookPage() {
   const [orderType, setOrderType] = useState<"personal" | "outreach">("personal");
@@ -185,7 +186,24 @@ export default function OrderBookPage() {
     const whatsappUrl = `https://wa.me/${BOOK_CONFIG.payment.whatsappNumber}?text=${encodeURIComponent(waText)}`;
 
     return (
-      <main className="min-h-screen py-10 sm:py-16 px-4 sm:px-6 max-w-3xl mx-auto">
+      <main className="min-h-screen py-10 sm:py-16 px-4 sm:px-6 max-w-3xl mx-auto text-stone-900 dark:text-stone-100">
+        <div className="mb-6 sm:mb-8 flex items-center justify-between gap-3">
+          <Link 
+            href="/book" 
+            className="inline-flex items-center gap-2 text-xs sm:text-sm text-stone-600 dark:text-stone-300 hover:text-[#c4572a] dark:hover:text-[#c4572a] transition-all"
+          >
+            <ArrowLeft size={16} /> Back to Book
+          </Link>
+          <div className="flex items-center gap-3 sm:gap-5">
+            <a
+              href="https://austinokechukwu.com/about"
+              className="text-xs sm:text-[11px] tracking-[0.15em] sm:tracking-[0.2em] uppercase font-bold text-stone-700 dark:text-stone-300 hover:text-[#c4572a] dark:hover:text-[#c4572a] transition-colors"
+            >
+              About the Author
+            </a>
+            <ThemeToggle />
+          </div>
+        </div>
         <div className="border p-6 sm:p-10 md:p-12 bg-white dark:bg-[#161616] rounded-xl shadow-lg border-black/10 dark:border-white/10">
           
           {/* Status Badge */}
@@ -193,12 +211,12 @@ export default function OrderBookPage() {
             <Clock size={15} className="shrink-0 animate-pulse" /> Pending Payment Validation
           </div>
 
-          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl text-black dark:text-white mb-2">
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl text-stone-900 dark:text-white mb-2">
             Pay to Validate & Confirm Order
           </h1>
           
-          <p className="text-sm sm:text-base opacity-80 mb-6">
-            Hello <strong className="text-black dark:text-white">{orderSuccess.full_name}</strong>, your order request has been received. Your order is <strong className="text-amber-600 dark:text-amber-400">not yet confirmed</strong>—payment is required to validate and officially confirm your order.
+          <p className="text-sm sm:text-base opacity-80 mb-6 text-stone-700 dark:text-stone-300">
+            Hello <strong className="text-stone-900 dark:text-white">{orderSuccess.full_name}</strong>, your order request has been received. Your order is <strong className="text-amber-600 dark:text-amber-400">not yet confirmed</strong>—payment is required to validate and officially confirm your order.
           </p>
 
           {/* Validation Alert Banner */}
@@ -207,19 +225,19 @@ export default function OrderBookPage() {
           </div>
 
           {/* Reference & Order Summary Box */}
-          <div className="bg-black/5 dark:bg-white/5 p-5 sm:p-6 rounded-lg mb-6 border border-black/5 dark:border-white/5">
+          <div className="bg-black/5 dark:bg-white/5 p-5 sm:p-6 rounded-lg mb-6 border border-black/5 dark:border-white/10 text-stone-900 dark:text-stone-100">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-black/10 dark:border-white/10">
               <div>
-                <span className="text-xs uppercase tracking-widest opacity-60">Reserved Order Reference</span>
+                <span className="text-xs uppercase tracking-widest opacity-60 text-stone-600 dark:text-stone-400">Reserved Order Reference</span>
                 <p className="font-mono text-xl sm:text-2xl font-bold text-[#c4572a]">{orderSuccess.order_reference}</p>
               </div>
               <div className="sm:text-right">
-                <span className="text-xs uppercase tracking-widest opacity-60">Amount Required</span>
-                <p className="font-serif text-2xl sm:text-3xl font-bold text-black dark:text-white">₦{orderSuccess.total_amount?.toLocaleString()}</p>
+                <span className="text-xs uppercase tracking-widest opacity-60 text-stone-600 dark:text-stone-400">Amount Required</span>
+                <p className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 dark:text-white">₦{orderSuccess.total_amount?.toLocaleString()}</p>
               </div>
             </div>
 
-            <div className="pt-4 text-xs sm:text-sm space-y-1.5 opacity-80">
+            <div className="pt-4 text-xs sm:text-sm space-y-1.5 opacity-80 text-stone-700 dark:text-stone-300">
               <p>
                 <strong>Order Type:</strong> {isPersonal ? "Personal Copy" : "School Outreach Program Support"}
               </p>
@@ -248,12 +266,12 @@ export default function OrderBookPage() {
           </div>
 
           {/* Option 1: Pay Online via Paystack */}
-          <div className="border-2 border-[#c4572a] p-5 sm:p-6 rounded-lg mb-6 bg-[#faf5f0] dark:bg-[#1f1712]">
+          <div className="border-2 border-[#c4572a] p-5 sm:p-6 rounded-lg mb-6 bg-[#faf5f0] dark:bg-[#1f1712] text-stone-900 dark:text-white">
             <div className="flex items-center gap-2 mb-2 font-bold text-base">
               <CreditCard className="text-[#c4572a]" size={20} />
               <span>Option 1: Pay Online via Paystack (Instant Confirmation)</span>
             </div>
-            <p className="text-xs sm:text-sm opacity-80 mb-4 leading-relaxed">
+            <p className="text-xs sm:text-sm opacity-80 mb-4 leading-relaxed text-stone-700 dark:text-stone-300">
               Pay securely using your Debit Card, Bank Transfer, USSD, or Apple Pay. Your order is automatically verified and confirmed immediately.
             </p>
             {paystackNotice && (
@@ -280,41 +298,41 @@ export default function OrderBookPage() {
 
           <div className="relative text-center my-6">
             <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-black/10 dark:border-white/10" /></div>
-            <span className="relative bg-white dark:bg-[#161616] px-4 text-xs font-bold uppercase tracking-widest opacity-60">OR</span>
+            <span className="relative bg-white dark:bg-[#161616] px-4 text-xs font-bold uppercase tracking-widest opacity-60 text-stone-600 dark:text-stone-400">OR</span>
           </div>
 
           {/* Option 2: Bank Payment Instructions */}
-          <div className="border border-black/10 dark:border-white/10 p-5 sm:p-8 rounded-lg mb-6 bg-black/[0.02] dark:bg-white/[0.02]">
-            <h3 className="font-serif text-xl sm:text-2xl mb-1">Option 2: Direct Bank Transfer</h3>
-            <p className="text-xs sm:text-sm opacity-75 mb-5">
-              Transfer exactly <strong className="text-black dark:text-white">₦{orderSuccess.total_amount?.toLocaleString()}</strong> to the author's bank account:
+          <div className="border border-black/10 dark:border-white/10 p-5 sm:p-8 rounded-lg mb-6 bg-black/[0.02] dark:bg-white/[0.02] text-stone-900 dark:text-white">
+            <h3 className="font-serif text-xl sm:text-2xl mb-1 text-stone-900 dark:text-white">Option 2: Direct Bank Transfer</h3>
+            <p className="text-xs sm:text-sm opacity-75 mb-5 text-stone-700 dark:text-stone-300">
+              Transfer exactly <strong className="text-stone-900 dark:text-white">₦{orderSuccess.total_amount?.toLocaleString()}</strong> to the author's bank account:
             </p>
 
-            <div className="space-y-3 sm:space-y-4 text-sm bg-white dark:bg-[#121212] p-4 sm:p-5 rounded-md border border-black/10 dark:border-white/10">
+            <div className="space-y-3 sm:space-y-4 text-sm bg-white dark:bg-[#121212] p-4 sm:p-5 rounded-md border border-black/10 dark:border-white/10 text-stone-900 dark:text-white">
               <div className="flex justify-between items-center py-2 border-b border-black/5 dark:border-white/5">
-                <span className="opacity-60 text-xs sm:text-sm">Bank:</span>
-                <span className="font-bold text-sm sm:text-base">{BOOK_CONFIG.payment.bankName}</span>
+                <span className="opacity-60 text-xs sm:text-sm text-stone-600 dark:text-stone-400">Bank:</span>
+                <span className="font-bold text-sm sm:text-base text-stone-900 dark:text-white">{BOOK_CONFIG.payment.bankName}</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-black/5 dark:border-white/5">
-                <span className="opacity-60 text-xs sm:text-sm">Account Name:</span>
-                <span className="font-bold text-sm sm:text-base text-right">{BOOK_CONFIG.payment.accountName}</span>
+                <span className="opacity-60 text-xs sm:text-sm text-stone-600 dark:text-stone-400">Account Name:</span>
+                <span className="font-bold text-sm sm:text-base text-right text-stone-900 dark:text-white">{BOOK_CONFIG.payment.accountName}</span>
               </div>
               <div className="flex justify-between items-center py-2">
-                <span className="opacity-60 text-xs sm:text-sm">Account Number:</span>
+                <span className="opacity-60 text-xs sm:text-sm text-stone-600 dark:text-stone-400">Account Number:</span>
                 <div className="flex items-center gap-2 sm:gap-3">
                   <span className="font-mono font-bold text-base sm:text-lg text-[#c4572a]">{BOOK_CONFIG.payment.accountNumber}</span>
                   <button 
                     onClick={handleCopyAccount}
-                    className="p-1.5 rounded hover:bg-black/10 dark:hover:bg-white/10 text-xs flex items-center gap-1 opacity-80"
+                    className="p-1.5 rounded hover:bg-black/10 dark:hover:bg-white/10 text-xs flex items-center gap-1 opacity-80 text-stone-700 dark:text-stone-300"
                     title="Copy Account Number"
                   >
-                    {copiedAccount ? <Check size={16} className="text-green-600" /> : <Copy size={16} />}
+                    {copiedAccount ? <Check size={16} className="text-green-600 dark:text-green-400" /> : <Copy size={16} />}
                   </button>
                 </div>
               </div>
             </div>
 
-            <div className="mt-5 text-xs sm:text-sm opacity-85 leading-relaxed bg-amber-500/5 p-4 rounded border border-amber-500/20">
+            <div className="mt-5 text-xs sm:text-sm opacity-85 leading-relaxed bg-amber-500/5 p-4 rounded border border-amber-500/20 text-stone-800 dark:text-stone-200">
               <p>
                 <strong>Final Step to Validate:</strong> After transferring, click below to submit your payment receipt with your order reference (<strong>{orderSuccess.order_reference}</strong>) on WhatsApp or reply to your email invoice.
               </p>
@@ -331,7 +349,7 @@ export default function OrderBookPage() {
               </a>
               <Link
                 href="/book"
-                className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 rounded-md font-bold text-xs sm:text-sm border border-black/20 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 rounded-md font-bold text-xs sm:text-sm border border-black/20 dark:border-white/20 text-stone-900 dark:text-white hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
               >
                 Back to Book
               </Link>
@@ -346,15 +364,24 @@ export default function OrderBookPage() {
   // Order Form View
   // -------------------------------------------------------------
   return (
-    <main className="min-h-screen py-10 sm:py-16 px-4 sm:px-6 max-w-3xl mx-auto">
-      {/* Back button */}
-      <div className="mb-6 sm:mb-8">
+    <main className="min-h-screen py-10 sm:py-16 px-4 sm:px-6 max-w-3xl mx-auto text-stone-900 dark:text-stone-100">
+      {/* Top navigation bar */}
+      <div className="mb-6 sm:mb-8 flex items-center justify-between gap-3">
         <Link 
           href="/book" 
-          className="inline-flex items-center gap-2 text-xs sm:text-sm opacity-70 hover:opacity-100 hover:text-[#c4572a] transition-all"
+          className="inline-flex items-center gap-2 text-xs sm:text-sm text-stone-600 dark:text-stone-300 hover:opacity-100 hover:text-[#c4572a] dark:hover:text-[#c4572a] transition-all"
         >
           <ArrowLeft size={16} /> Back to The Boy and Addictions
         </Link>
+        <div className="flex items-center gap-3 sm:gap-5">
+          <a
+            href="https://austinokechukwu.com/about"
+            className="text-xs sm:text-[11px] tracking-[0.15em] sm:tracking-[0.2em] uppercase font-bold text-stone-700 dark:text-stone-300 hover:text-[#c4572a] dark:hover:text-[#c4572a] transition-colors"
+          >
+            About the Author
+          </a>
+          <ThemeToggle />
+        </div>
       </div>
 
       {/* Header */}
@@ -362,8 +389,8 @@ export default function OrderBookPage() {
         <div className="inline-block px-3 py-1 text-[10px] sm:text-[11px] tracking-[0.2em] uppercase font-bold mb-3 rounded-sm text-white" style={{ background: "var(--rust)" }}>
           Official Order Form
         </div>
-        <h1 className="font-serif text-3xl sm:text-5xl mb-2">Order "The Boy and Addictions"</h1>
-        <p className="text-sm sm:text-base opacity-75 leading-relaxed font-serif">
+        <h1 className="font-serif text-3xl sm:text-5xl mb-2 text-stone-900 dark:text-white">Order "The Boy and Addictions"</h1>
+        <p className="text-sm sm:text-base opacity-75 leading-relaxed font-serif text-stone-700 dark:text-stone-300">
           By <strong>Awoke Okechukwu Austin</strong>. Secure your copies directly from the author.
         </p>
       </div>
@@ -375,7 +402,7 @@ export default function OrderBookPage() {
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="space-y-8 sm:space-y-10 bg-white dark:bg-[#161616] p-5 sm:p-8 md:p-10 rounded-xl border border-black/10 dark:border-white/10 shadow-sm">
+      <form onSubmit={handleSubmit} className="space-y-8 sm:space-y-10 bg-white dark:bg-[#161616] p-5 sm:p-8 md:p-10 rounded-xl border border-black/10 dark:border-white/10 shadow-sm text-stone-900 dark:text-stone-100">
         
         {/* Honeypot field (hidden from real users) */}
         <div className="hidden" aria-hidden="true">
@@ -384,7 +411,7 @@ export default function OrderBookPage() {
 
         {/* Step 1: Buyer Type (Two large radio buttons) */}
         <div>
-          <label className="block text-xs uppercase tracking-widest font-bold mb-3 opacity-70">
+          <label className="block text-xs uppercase tracking-widest font-bold mb-3 opacity-70 text-stone-700 dark:text-stone-300">
             1. Select How You Are Ordering <span className="text-red-500">*</span>
           </label>
 
@@ -394,7 +421,7 @@ export default function OrderBookPage() {
               className={`flex items-start gap-3 sm:gap-4 p-4 sm:p-5 rounded-lg border-2 cursor-pointer transition-all ${
                 orderType === "personal"
                   ? "border-[#c4572a] bg-[#faf5f0] dark:bg-[#231b15]"
-                  : "border-black/10 dark:border-white/10 hover:border-black/30 dark:hover:border-white/30"
+                  : "border-black/10 dark:border-white/10 hover:border-black/30 dark:hover:border-white/30 bg-transparent"
               }`}
             >
               <input
@@ -403,14 +430,14 @@ export default function OrderBookPage() {
                 value="personal"
                 checked={orderType === "personal"}
                 onChange={() => setOrderType("personal")}
-                className="mt-1 h-5 w-5 text-[#c4572a] focus:ring-[#c4572a]"
+                className="mt-1 h-5 w-5 text-[#c4572a] focus:ring-[#c4572a] accent-[#c4572a]"
               />
               <div>
-                <div className="flex items-center gap-2 font-bold text-sm sm:text-base mb-1">
+                <div className="flex items-center gap-2 font-bold text-sm sm:text-base mb-1 text-stone-900 dark:text-white">
                   <User size={18} className="text-[#c4572a] shrink-0" />
                   <span>I'm buying for myself</span>
                 </div>
-                <p className="text-xs opacity-75 leading-relaxed">
+                <p className="text-xs opacity-75 leading-relaxed text-stone-600 dark:text-stone-300">
                   Have copies delivered directly to your doorstep in Nigeria.
                 </p>
               </div>
@@ -421,7 +448,7 @@ export default function OrderBookPage() {
               className={`flex items-start gap-3 sm:gap-4 p-4 sm:p-5 rounded-lg border-2 cursor-pointer transition-all ${
                 orderType === "outreach"
                   ? "border-[#c4572a] bg-[#faf5f0] dark:bg-[#231b15]"
-                  : "border-black/10 dark:border-white/10 hover:border-black/30 dark:hover:border-white/30"
+                  : "border-black/10 dark:border-white/10 hover:border-black/30 dark:hover:border-white/30 bg-transparent"
               }`}
             >
               <input
@@ -430,14 +457,14 @@ export default function OrderBookPage() {
                 value="outreach"
                 checked={orderType === "outreach"}
                 onChange={() => setOrderType("outreach")}
-                className="mt-1 h-5 w-5 text-[#c4572a] focus:ring-[#c4572a]"
+                className="mt-1 h-5 w-5 text-[#c4572a] focus:ring-[#c4572a] accent-[#c4572a]"
               />
               <div>
-                <div className="flex items-center gap-2 font-bold text-sm sm:text-base mb-1">
+                <div className="flex items-center gap-2 font-bold text-sm sm:text-base mb-1 text-stone-900 dark:text-white">
                   <Heart size={18} className="text-rose-500 shrink-0" />
                   <span>I'm supporting the School Outreach Program</span>
                 </div>
-                <p className="text-xs opacity-75 leading-relaxed">
+                <p className="text-xs opacity-75 leading-relaxed text-stone-600 dark:text-stone-300">
                   Sponsor copies for students in our upcoming school outreach.
                 </p>
               </div>
@@ -445,20 +472,20 @@ export default function OrderBookPage() {
           </div>
 
           {/* Outreach explanation note */}
-          <div className="mt-3.5 p-3.5 sm:p-4 rounded-md bg-black/5 dark:bg-white/5 text-xs leading-relaxed opacity-85 border border-black/5 dark:border-white/5">
+          <div className="mt-3.5 p-3.5 sm:p-4 rounded-md bg-black/5 dark:bg-white/5 text-xs leading-relaxed opacity-85 border border-black/5 dark:border-white/10 text-stone-800 dark:text-stone-200">
             💡 <em>"The price is kept low so students can afford this book. Our School Outreach Program starts in January 2027."</em>
           </div>
         </div>
 
         {/* Step 2: Contact Details for Everyone */}
         <div className="space-y-4 pt-4 border-t border-black/10 dark:border-white/10">
-          <h2 className="text-xs uppercase tracking-widest font-bold opacity-70">
+          <h2 className="text-xs uppercase tracking-widest font-bold opacity-70 text-stone-700 dark:text-stone-300">
             2. Your Information
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-xs font-semibold mb-1 opacity-80">
+              <label className="block text-xs font-semibold mb-1 opacity-80 text-stone-700 dark:text-stone-200">
                 Full Name <span className="text-red-500">*</span>
               </label>
               <input
@@ -467,12 +494,12 @@ export default function OrderBookPage() {
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
                 placeholder="e.g. Austin Okechukwu"
-                className="w-full px-4 py-3 rounded-md border border-black/20 dark:border-white/20 bg-transparent text-base focus:border-[#c4572a] outline-none transition-colors"
+                className="w-full px-4 py-3 rounded-md border border-black/20 dark:border-white/20 bg-transparent dark:bg-[#121212] text-base text-stone-900 dark:text-white placeholder:text-stone-400 dark:placeholder:text-stone-500 focus:border-[#c4572a] outline-none transition-colors"
               />
             </div>
 
             <div>
-              <label className="block text-xs font-semibold mb-1 opacity-80">
+              <label className="block text-xs font-semibold mb-1 opacity-80 text-stone-700 dark:text-stone-200">
                 Phone Number (WhatsApp preferred) <span className="text-red-500">*</span>
               </label>
               <input
@@ -481,13 +508,13 @@ export default function OrderBookPage() {
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 placeholder="e.g. 08137862124"
-                className="w-full px-4 py-3 rounded-md border border-black/20 dark:border-white/20 bg-transparent text-base focus:border-[#c4572a] outline-none transition-colors"
+                className="w-full px-4 py-3 rounded-md border border-black/20 dark:border-white/20 bg-transparent dark:bg-[#121212] text-base text-stone-900 dark:text-white placeholder:text-stone-400 dark:placeholder:text-stone-500 focus:border-[#c4572a] outline-none transition-colors"
               />
             </div>
           </div>
 
           <div>
-            <label className="block text-xs font-semibold mb-1 opacity-80">
+            <label className="block text-xs font-semibold mb-1 opacity-80 text-stone-700 dark:text-stone-200">
               Email Address <span className="text-red-500">*</span>
             </label>
             <input
@@ -496,14 +523,14 @@ export default function OrderBookPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="e.g. name@example.com"
-              className="w-full px-4 py-3 rounded-md border border-black/20 dark:border-white/20 bg-transparent text-base focus:border-[#c4572a] outline-none transition-colors"
+              className="w-full px-4 py-3 rounded-md border border-black/20 dark:border-white/20 bg-transparent dark:bg-[#121212] text-base text-stone-900 dark:text-white placeholder:text-stone-400 dark:placeholder:text-stone-500 focus:border-[#c4572a] outline-none transition-colors"
             />
-            <p className="text-[11px] opacity-60 mt-1">We will send your order confirmation and invoice to this email.</p>
+            <p className="text-[11px] opacity-60 mt-1 text-stone-600 dark:text-stone-400">We will send your order confirmation and invoice to this email.</p>
           </div>
 
           {/* Number of Copies with Touch Stepper */}
           <div>
-            <label className="block text-xs font-semibold mb-1 opacity-80">
+            <label className="block text-xs font-semibold mb-1 opacity-80 text-stone-700 dark:text-stone-200">
               Number of Copies <span className="text-red-500">*</span>
             </label>
             <div className="flex items-center gap-2">
@@ -511,7 +538,7 @@ export default function OrderBookPage() {
                 type="button"
                 onClick={handleDecrement}
                 aria-label="Decrease quantity"
-                className="w-12 h-12 flex items-center justify-center rounded-md border border-black/20 dark:border-white/20 bg-black/5 dark:bg-white/5 text-xl font-bold hover:bg-black/10 dark:hover:bg-white/10 active:scale-95 transition-all select-none"
+                className="w-12 h-12 flex items-center justify-center rounded-md border border-black/20 dark:border-white/20 bg-black/5 dark:bg-white/10 text-xl font-bold text-stone-900 dark:text-white hover:bg-black/10 dark:hover:bg-white/15 active:scale-95 transition-all select-none"
               >
                 −
               </button>
@@ -524,23 +551,23 @@ export default function OrderBookPage() {
                 value={copiesInput}
                 onChange={handleCopiesChange}
                 onBlur={handleCopiesBlur}
-                className="w-24 text-center py-2.5 rounded-md border border-black/20 dark:border-white/20 bg-transparent text-lg font-bold focus:border-[#c4572a] outline-none transition-colors"
+                className="w-24 text-center py-2.5 rounded-md border border-black/20 dark:border-white/20 bg-transparent dark:bg-[#121212] text-lg font-bold text-stone-900 dark:text-white focus:border-[#c4572a] outline-none transition-colors"
               />
 
               <button
                 type="button"
                 onClick={handleIncrement}
                 aria-label="Increase quantity"
-                className="w-12 h-12 flex items-center justify-center rounded-md border border-black/20 dark:border-white/20 bg-black/5 dark:bg-white/5 text-xl font-bold hover:bg-black/10 dark:hover:bg-white/10 active:scale-95 transition-all select-none"
+                className="w-12 h-12 flex items-center justify-center rounded-md border border-black/20 dark:border-white/20 bg-black/5 dark:bg-white/10 text-xl font-bold text-stone-900 dark:text-white hover:bg-black/10 dark:hover:bg-white/15 active:scale-95 transition-all select-none"
               >
                 +
               </button>
 
-              <span className="text-xs sm:text-sm opacity-70 ml-2 font-medium">
+              <span className="text-xs sm:text-sm opacity-70 ml-2 font-medium text-stone-700 dark:text-stone-300">
                 {validCopies > 1 ? "copies" : "copy"}
               </span>
             </div>
-            <p className="text-[11px] opacity-60 mt-1">Tap + / − or type any quantity.</p>
+            <p className="text-[11px] opacity-60 mt-1 text-stone-600 dark:text-stone-400">Tap + / − or type any quantity.</p>
           </div>
         </div>
 
@@ -548,14 +575,14 @@ export default function OrderBookPage() {
         {orderType === "personal" ? (
           <div className="space-y-4 pt-4 border-t border-black/10 dark:border-white/10">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-              <h2 className="text-xs uppercase tracking-widest font-bold opacity-70">
+              <h2 className="text-xs uppercase tracking-widest font-bold opacity-70 text-stone-700 dark:text-stone-300">
                 3. Delivery Address (Nigeria Only)
               </h2>
-              <span className="text-[11px] opacity-60 italic">Delivery outside Nigeria coming soon.</span>
+              <span className="text-[11px] opacity-60 italic text-stone-600 dark:text-stone-400">Delivery outside Nigeria coming soon.</span>
             </div>
 
             <div>
-              <label className="block text-xs font-semibold mb-1 opacity-80">
+              <label className="block text-xs font-semibold mb-1 opacity-80 text-stone-700 dark:text-stone-200">
                 Street Address <span className="text-red-500">*</span>
               </label>
               <input
@@ -564,13 +591,13 @@ export default function OrderBookPage() {
                 value={street}
                 onChange={(e) => setStreet(e.target.value)}
                 placeholder="House/Office number, Street, Area"
-                className="w-full px-4 py-3 rounded-md border border-black/20 dark:border-white/20 bg-transparent text-base focus:border-[#c4572a] outline-none transition-colors"
+                className="w-full px-4 py-3 rounded-md border border-black/20 dark:border-white/20 bg-transparent dark:bg-[#121212] text-base text-stone-900 dark:text-white placeholder:text-stone-400 dark:placeholder:text-stone-500 focus:border-[#c4572a] outline-none transition-colors"
               />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-semibold mb-1 opacity-80">
+                <label className="block text-xs font-semibold mb-1 opacity-80 text-stone-700 dark:text-stone-200">
                   City / Town <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -579,23 +606,23 @@ export default function OrderBookPage() {
                   value={city}
                   onChange={(e) => setCity(e.target.value)}
                   placeholder="e.g. Ikeja, Lekki, Enugu"
-                  className="w-full px-4 py-3 rounded-md border border-black/20 dark:border-white/20 bg-transparent text-base focus:border-[#c4572a] outline-none transition-colors"
+                  className="w-full px-4 py-3 rounded-md border border-black/20 dark:border-white/20 bg-transparent dark:bg-[#121212] text-base text-stone-900 dark:text-white placeholder:text-stone-400 dark:placeholder:text-stone-500 focus:border-[#c4572a] outline-none transition-colors"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-semibold mb-1 opacity-80">
+                <label className="block text-xs font-semibold mb-1 opacity-80 text-stone-700 dark:text-stone-200">
                   State <span className="text-red-500">*</span>
                 </label>
                 <select
                   required={orderType === "personal"}
                   value={state}
                   onChange={(e) => setState(e.target.value)}
-                  className="w-full px-4 py-3 rounded-md border border-black/20 dark:border-white/20 bg-white dark:bg-[#161616] text-base focus:border-[#c4572a] outline-none transition-colors"
+                  className="w-full px-4 py-3 rounded-md border border-black/20 dark:border-white/20 bg-white dark:bg-[#121212] text-base text-stone-900 dark:text-white focus:border-[#c4572a] outline-none transition-colors"
                 >
-                  <option value="">Select your State</option>
+                  <option value="" className="bg-white dark:bg-[#121212] text-stone-900 dark:text-white">Select your State</option>
                   {NIGERIAN_STATES.map((st) => (
-                    <option key={st} value={st}>
+                    <option key={st} value={st} className="bg-white dark:bg-[#121212] text-stone-900 dark:text-white">
                       {st}
                     </option>
                   ))}
@@ -606,7 +633,7 @@ export default function OrderBookPage() {
             {/* Hidden country field */}
             <input type="hidden" name="country" value="Nigeria" />
 
-            <div className="p-3 bg-black/5 dark:bg-white/5 rounded text-xs opacity-75">
+            <div className="p-3 bg-black/5 dark:bg-white/5 rounded text-xs opacity-75 text-stone-700 dark:text-stone-300 border border-black/5 dark:border-white/10">
               📌 <strong>Delivery fee: confirmed after your order.</strong> Because courier rates vary across states, the delivery fee is confirmed separately and is not added to the total now.
             </div>
           </div>
@@ -620,26 +647,26 @@ export default function OrderBookPage() {
         )}
 
         {/* Live Summary */}
-        <div className="p-5 sm:p-6 rounded-lg bg-[#faf5f0] dark:bg-[#1e1712] border border-[#e5d5c5] dark:border-[#3d2e22]">
+        <div className="p-5 sm:p-6 rounded-lg bg-[#faf5f0] dark:bg-[#1e1712] border border-[#e5d5c5] dark:border-[#3d2e22] text-stone-900 dark:text-stone-100">
           <div className="flex justify-between items-center mb-2">
-            <span className="text-xs sm:text-sm font-semibold opacity-75">Price per copy:</span>
+            <span className="text-xs sm:text-sm font-semibold opacity-75 text-stone-700 dark:text-stone-300">Price per copy:</span>
             <div className="flex items-center gap-2">
               {priceInfo.isPrelaunch && (
                 <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-[#c4572a] text-white">
                   Prelaunch price
                 </span>
               )}
-              <span className="font-bold text-sm sm:text-base">{priceInfo.formattedPrice}</span>
+              <span className="font-bold text-sm sm:text-base text-stone-900 dark:text-white">{priceInfo.formattedPrice}</span>
             </div>
           </div>
 
           <div className="flex justify-between items-center mb-3">
-            <span className="text-xs sm:text-sm font-semibold opacity-75">Number of copies:</span>
-            <span className="font-bold text-sm sm:text-base">{validCopies}</span>
+            <span className="text-xs sm:text-sm font-semibold opacity-75 text-stone-700 dark:text-stone-300">Number of copies:</span>
+            <span className="font-bold text-sm sm:text-base text-stone-900 dark:text-white">{validCopies}</span>
           </div>
 
           <div className="pt-3 border-t border-[#e5d5c5] dark:border-[#3d2e22] flex justify-between items-center">
-            <span className="text-sm sm:text-base font-serif font-bold">Total Amount:</span>
+            <span className="text-sm sm:text-base font-serif font-bold text-stone-900 dark:text-white">Total Amount:</span>
             <span className="font-serif text-2xl sm:text-3xl font-bold text-[#c4572a]">
               ₦{totalAmount.toLocaleString()}
             </span>
@@ -671,7 +698,7 @@ export default function OrderBookPage() {
           </button>
 
           {/* Privacy Note */}
-          <div className="mt-4 flex items-center justify-center gap-2 text-xs opacity-60 text-center">
+          <div className="mt-4 flex items-center justify-center gap-2 text-xs opacity-60 text-center text-stone-600 dark:text-stone-400">
             <ShieldCheck size={14} className="shrink-0" />
             <span>Your details are kept private and used only to process your order.</span>
           </div>
