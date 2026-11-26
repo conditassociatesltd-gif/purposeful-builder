@@ -6,7 +6,8 @@ import Image from "next/image";
 import { ArrowLeft, BookOpen, Bell, ChevronDown, ChevronUp } from "lucide-react";
 
 export default function BookPage() {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpandedAddictions, setIsExpandedAddictions] = useState(false);
+  const [isExpandedSilence, setIsExpandedSilence] = useState(false);
 
   return (
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
@@ -134,10 +135,10 @@ export default function BookPage() {
               <p>Back then, I thought the things that would shape my life would happen in the classroom. I thought my future would be decided only by the lessons I learned, the books I read, and the exams I passed.</p>
               <p className="font-bold text-lg">I was wrong.</p>
 
-              {/* Second half: smoothly revealed when isExpanded is true */}
+              {/* Second half: smoothly revealed when isExpandedAddictions is true */}
               <div
                 className={`space-y-5 transition-all duration-500 ease-in-out overflow-hidden ${
-                  isExpanded ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
+                  isExpandedAddictions ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
                 <p>One sunny afternoon, I got back from school and saw something I was never meant to see. When no one else was looking, something in my own living room that had nothing to do with textbooks, teachers, or the bright future everyone around me expected me to have entered my life.</p>
@@ -151,10 +152,10 @@ export default function BookPage() {
               <div className="pt-2">
                 <button
                   type="button"
-                  onClick={() => setIsExpanded(!isExpanded)}
+                  onClick={() => setIsExpandedAddictions(!isExpandedAddictions)}
                   className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#c4572a] hover:opacity-80 py-2 transition-colors cursor-pointer"
                 >
-                  {isExpanded ? (
+                  {isExpandedAddictions ? (
                     <>
                       <span>Read Less</span>
                       <ChevronUp size={16} />
@@ -228,7 +229,9 @@ export default function BookPage() {
               Work In Progress
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-4 sm:mb-6">Formed in Silence</h2>
-            <div className="prose max-w-none space-y-5 sm:space-y-6 text-base sm:text-lg leading-relaxed opacity-90 font-serif">
+
+            {/* Desktop View: Full Extract */}
+            <div className="hidden md:block prose max-w-none space-y-5 sm:space-y-6 text-base sm:text-lg leading-relaxed opacity-90 font-serif">
               <p className="text-2xl sm:text-3xl font-serif opacity-60 italic mb-6 sm:mb-8">"Some of the most important things that shape us are the things no one sees."</p>
               <p>I lost my father when I was very young, at an age when I didn't understand what his death would mean for the rest of my life. His presence had offered comfort and joy. His absence created an emptiness and a longing that stayed with me, quietly shaping patterns, reactions, and emotions I couldn't trace back to their source for years.</p>
               <p>The realisation that my father's absence had silently formed who I was becoming, was the start of my healing process. And it became the foundation of this book.</p>
@@ -240,6 +243,50 @@ export default function BookPage() {
               <p><strong>Formed in Silence</strong> is written for these men. It aims to help you see the silent things that formed you, understand how they continue to influence how you think, love, and lead, and show you how to navigate them and seek healing. Because weeds can be uprooted and good seeds planted in their place.</p>
               <p>A healed man can offer what was missing to him and leave a good inheritance for the next generation.</p>
               <p className="text-2xl font-serif italic opacity-70 mt-8 text-[#c4572a]">The next generation should inherit something better than you did.</p>
+            </div>
+
+            {/* Mobile View: Collapsible Extract with Read More / Read Less */}
+            <div className="md:hidden prose max-w-none space-y-5 text-base leading-relaxed opacity-90 font-serif">
+              <p className="text-2xl font-serif opacity-60 italic mb-6">"Some of the most important things that shape us are the things no one sees."</p>
+              <p>I lost my father when I was very young, at an age when I didn't understand what his death would mean for the rest of my life. His presence had offered comfort and joy. His absence created an emptiness and a longing that stayed with me, quietly shaping patterns, reactions, and emotions I couldn't trace back to their source for years.</p>
+              <p>The realisation that my father's absence had silently formed who I was becoming, was the start of my healing process. And it became the foundation of this book.</p>
+              <p>A boy is always being shaped, whether intentionally or not. An intentional father becomes the primary voice in his son's formation. He sows values, identity, and a sense of belonging. But when a father is absent, through death, divorce, emotional withdrawal, migration, or conflict, other influences rush in to fill the void. There is no vacuum on Earth. The problem is that this formation is silent. It doesn't announce itself until it's too late.</p>
+
+              {/* Second half: revealed on toggle */}
+              <div
+                className={`space-y-5 transition-all duration-500 ease-in-out overflow-hidden ${
+                  isExpandedSilence ? "max-h-[2500px] opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <p>Think of it this way: every house has a design. If the design is not properly followed, the outcome will differ and sometimes cost far more to fix. When fathers are distant, boys absorb whatever is closest to them, often from unfathered men who are themselves poor role models. Social media fills the remaining gaps, offering twisted identities in exchange for validation. The boy is simply seeking connection, significance, and belonging. If he doesn't find it from his father, he will find it elsewhere.</p>
+                <p>This boy grows into a man without knowing what his environment planted in him. His reactions, fears, and patterns in relationships, business, and leadership, even though they feel natural, were seeds sown while he slept.</p>
+                <p>But here is the part that is often missed: fatherlessness is not always an empty chair at dinner. In Nigeria, where I was raised, over 70% of children grow up with both parents physically present. Yet many of these boys are still deprived of their father's love. A man can sleep under the same roof, provide financially, and discipline his children, yet never once ask his son how he is feeling. That is the invisible fatherlessness this book addresses.</p>
+                <p>The men these boys become are men I have lived among and worked with. I have observed the same patterns repeating: approval addiction, people-pleasing, and a relentless pursuit of money, power, or fame that provides temporary relief before the depression returns. They recognise a problem within their soul, but since they cannot name it, they seek new distractions.</p>
+                <p><strong>Formed in Silence</strong> is written for these men. It aims to help you see the silent things that formed you, understand how they continue to influence how you think, love, and lead, and show you how to navigate them and seek healing. Because weeds can be uprooted and good seeds planted in their place.</p>
+                <p>A healed man can offer what was missing to him and leave a good inheritance for the next generation.</p>
+                <p className="text-xl font-serif italic opacity-70 mt-6 text-[#c4572a]">The next generation should inherit something better than you did.</p>
+              </div>
+
+              {/* Read More / Read Less Toggle Button */}
+              <div className="pt-2">
+                <button
+                  type="button"
+                  onClick={() => setIsExpandedSilence(!isExpandedSilence)}
+                  className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#c4572a] hover:opacity-80 py-2 transition-colors cursor-pointer"
+                >
+                  {isExpandedSilence ? (
+                    <>
+                      <span>Read Less</span>
+                      <ChevronUp size={16} />
+                    </>
+                  ) : (
+                    <>
+                      <span>Read More</span>
+                      <ChevronDown size={16} />
+                    </>
+                  )}
+                </button>
+              </div>
             </div>
           </div>
         </div>
