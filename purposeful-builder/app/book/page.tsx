@@ -5,7 +5,7 @@ import { ArrowLeft, BookOpen, Bell } from "lucide-react";
 export default function BookPage() {
   return (
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
-      
+
       {/* Header */}
       <header className="absolute top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-black/10">
         <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
@@ -46,20 +46,20 @@ export default function BookPage() {
       {/* The Boy and Addictions Section (First Book) */}
       <section className="py-12 sm:py-24 px-4 sm:px-6 border-b border-black/10">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          
+
           <div className="lg:col-span-5 lg:sticky lg:top-32 lg:order-last">
             <div className="relative group">
               <div className="absolute top-0 left-0 p-8 opacity-5">
                 <BookOpen size={120} />
               </div>
               <div className="flex justify-center mb-6 sm:mb-10">
-                <img 
-                  src="/boy-and-addictions-cover.png" 
-                  alt="The Boy and Addictions book cover" 
+                <img
+                  src="/boy-and-addictions-cover.png"
+                  alt="The Boy and Addictions book cover"
                   className="w-48 sm:w-64 md:w-full max-w-md rounded-md shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 border border-black/10"
                 />
               </div>
-              
+
               <div className="bg-white p-6 sm:p-8 border border-black/10 rounded shadow-sm text-center">
                 <div className="inline-block px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-bold mb-4 rounded-sm text-white" style={{ background: "var(--rust)" }}>
                   Prelaunch Active
@@ -70,9 +70,9 @@ export default function BookPage() {
                   <span className="font-serif text-3xl font-bold text-[#c4572a]">₦3,500</span>
                   <span className="text-[11px] uppercase tracking-wider block opacity-60 mt-1">Prelaunch price (increases to ₦4,500)</span>
                 </div>
-                <Link 
-                  href="/book/order" 
-                  className="block w-full py-4 text-xs tracking-[0.2em] uppercase text-white font-bold hover:opacity-90 transition-opacity rounded-sm shadow-md" 
+                <Link
+                  href="/book/order"
+                  className="block w-full py-4 text-xs tracking-[0.2em] uppercase text-white font-bold hover:opacity-90 transition-opacity rounded-sm shadow-md"
                   style={{ background: "var(--rust)" }}
                 >
                   Order the Book
@@ -88,24 +88,24 @@ export default function BookPage() {
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-6">The Boy and Addictions</h2>
             <div className="prose max-w-none space-y-6 text-base sm:text-lg leading-relaxed opacity-90 font-serif">
-              <p className="text-2xl sm:text-3xl font-serif opacity-60 italic mb-8">"Every addiction has a first moment. A spark no one sees."</p>
-              <p>A boy walks home from one of the best schools in southeastern Nigeria. Thirty minutes under the hot sun, every day. His life is built on discipline, education, and pride. But one sunny afternoon, he comes home to find something he wasn't looking for.</p>
-              <p>There was electricity that day, a rare occurence in those days. A CD was lying in the living room. Curiosity did the rest. In the minutes that followed, something shifted inside that boy. Something he couldn't name, undo, or talk about.</p>
-              <p>That boy was me.</p>
-              <p>What started as an accidental encounter with a pornographic disc became a quiet, consuming obsession. I began timing my life around it, calculating when my brothers would be away, living a double life that drained me in ways I didn't yet understand. When the source was taken from me, the hunger didn't stop. It evolved. My eyes began searching for what my mind craved, and the world seemed to show me exactly where to find it.</p>
-              <p>Over time, the addiction spilled beyond pornography. There was smoking. There was alcohol. Each vice opened the door to the next, and none of them announced themselves. They crept in quietly, disguised as curiosity, boredom, or just something to do when no one was watching.</p>
-              <p>Since those years, I have spoken with countless boys and men who share the same story. The details change, sometimes it starts with a friend's phone, a social media link, or a dare behind the school building, but the pattern is always the same. A first contact. A secret. A cycle that feels impossible to break.</p>
-              <p><strong>The Boy and Addictions</strong> is not a lecture or a sermon. It is one boy talking honestly to another about the things we were too ashamed to say out loud. This book walks through the full journey: how addiction begins, how it rewires what you see and desire, how it spills into other areas of your life, and most importantly, how you can break free and stay free.</p>
-              <p>If you are a boy carrying a secret that you've never told anyone, this book is for you. If you are a parent, mentor, or pastor wondering why the boys around you are struggling in silence, this book will open your eyes.</p>
-              <p className="text-2xl font-serif italic opacity-70 mt-8 text-[#c4572a]">Because the things that trap us in the dark can only be defeated when we drag them into the light.</p>
-              
+              <p>I attended one of the best secondary schools in southeastern Nigeria — Dennis Memorial Grammar School, Onitsha. We used to brag about it, we still do and we had reason to. The school has a reputation for excellence. It has produced brilliant thinkers, successful businessmen, respected professionals, and influential politicians.</p>
+              <p>We wore our white uniforms with pride, but the badge made it even more special. There was a certain pride that came with wearing it, knowing how difficult it is to earn a place in DMGS. To us, it was not just a school; it was proof that we were headed to a glorious future.</p>
+              <p>Every school day, I trekked thirty minutes to get there and another thirty minutes back home. Under the sun and in the rain, with dedication and pride, that was the routine — an hour of walking every day.</p>
+              <p>Back then, I thought the things that would shape my life would happen in the classroom. I thought my future would be decided only by the lessons I learned, the books I read, and the exams I passed.</p>
+              <p className="font-bold text-xl">I was wrong.</p>
+              <p>One sunny afternoon, I got back from school and saw something I was never meant to see. When no one else was looking, something in my own living room that had nothing to do with textbooks, teachers, or the bright future everyone around me expected me to have entered my life.</p>
+              <p>That single encounter pulled me into years of struggle with addiction before I even knew what addiction meant.</p>
+              <p>I wrote this book because I have never forgotten what it felt like to be that boy. Years later, I have spoken with young men, married men, pastors, professionals, business owners, and students enough to know my story is not unique.</p>
+              <p>The details change: the generation, the device, the substance. Nevertheless, the pattern is the same — one moment of exposure that grows into a life of secrecy.</p>
+              <p>What surprised me was not how many people struggled but how many struggled alone. Most addictions thrive in secrecy, and I have come to realize that struggling alone fundamentally prolonged my struggle and theirs.</p>
+
               <div className="pt-6">
                 <Link
                   href="/book/order"
-                  className="inline-block px-8 py-4 text-xs tracking-[0.2em] uppercase text-white font-bold hover:opacity-90 transition-opacity rounded-sm shadow-md"
+                  className="inline-flex items-center gap-3 px-8 py-4 text-xs tracking-[0.2em] uppercase text-white font-bold hover:opacity-90 transition-opacity rounded-sm shadow-md"
                   style={{ background: "var(--rust)" }}
                 >
-                  Order the Book Directly
+                  Continue Reading — Order the Book →
                 </Link>
               </div>
             </div>
@@ -116,20 +116,20 @@ export default function BookPage() {
       {/* Formed in Silence Section (Second Book) */}
       <section className="py-12 sm:py-24 px-4 sm:px-6 bg-white/30">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          
+
           <div className="lg:col-span-5 lg:sticky lg:top-32">
             <div className="relative group">
               <div className="absolute top-0 right-0 p-8 opacity-5">
                 <BookOpen size={120} />
               </div>
               <div className="flex justify-center mb-6 sm:mb-10">
-                <img 
-                  src="/formed-in-silence-cover.png" 
-                  alt="Formed in Silence book cover" 
+                <img
+                  src="/formed-in-silence-cover.png"
+                  alt="Formed in Silence book cover"
                   className="w-48 sm:w-64 md:w-full max-w-md rounded-md shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 border border-black/10"
                 />
               </div>
-              
+
               <div className="bg-white p-6 sm:p-8 border border-black/10 rounded shadow-sm text-center">
                 <Bell className="mx-auto mb-3 sm:mb-4 opacity-50 text-[#c4572a]" size={28} />
                 <h4 className="font-serif text-xl sm:text-2xl mb-2">Join the Waitlist</h4>
@@ -137,10 +137,10 @@ export default function BookPage() {
                 <form action="https://buttondown.email/api/emails/embed-subscribe/arc_austin" method="POST" target="_blank" className="flex flex-col gap-3">
                   <input type="hidden" name="metadata__waitlist" value="Formed in Silence" />
                   <input type="hidden" name="tag" value="waitlist-formed-in-silence" />
-                  <input 
-                    type="email" 
-                    name="email" 
-                    required 
+                  <input
+                    type="email"
+                    name="email"
+                    required
                     placeholder="Your email address"
                     className="w-full px-4 py-3 border border-black/20 text-sm outline-none focus:border-[#c4572a] transition-colors"
                   />
