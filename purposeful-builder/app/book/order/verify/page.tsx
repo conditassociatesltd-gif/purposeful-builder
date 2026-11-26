@@ -93,11 +93,16 @@ function VerifyContent() {
         </div>
 
         {/* Message */}
-        <div className="mb-8 p-4 rounded-lg bg-[#faf5f0] dark:bg-[#201c18] border border-[#e5d5c5] dark:border-[#3d3228] text-sm">
+        <div className="mb-8 p-5 rounded-lg bg-[#faf5f0] dark:bg-[#201c18] border border-[#e5d5c5] dark:border-[#3d3228] text-sm">
           {isPersonal ? (
-            <p className="text-stone-800 dark:text-stone-200">
-              📦 <strong>What Happens Next:</strong> Austin will reach out to your phone / WhatsApp (<strong>{order.phone}</strong>) shortly to coordinate dispatch and confirm delivery fees.
-            </p>
+            <div className="space-y-2">
+              <p className="text-base font-serif font-bold text-[#c4572a]">
+                ❤️ Thank you for purchasing this book. It will surely change your life.
+              </p>
+              <p className="text-stone-800 dark:text-stone-200">
+                📦 <strong>What Happens Next:</strong> Austin will reach out to your phone / WhatsApp (<strong>{order.phone}</strong>) shortly to coordinate dispatch and confirm delivery fees.
+              </p>
+            </div>
           ) : (
             <p className="text-emerald-800 dark:text-emerald-200">
               🎓 <strong>School Outreach Program:</strong> Thank you for sowing into the next generation. Your sponsored copies will reach students starting in January 2027!

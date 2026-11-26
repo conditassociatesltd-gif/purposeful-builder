@@ -103,8 +103,13 @@ export async function sendConfirmedOrderEmails(
         ${
           isPersonal
             ? `
-        <div style="background-color: #faf5f0; border: 1px solid #e5d5c5; border-radius: 6px; padding: 16px; margin: 20px 0; font-size: 14px;">
-          <p style="margin: 0;"><strong>📦 Next Step:</strong> Austin will confirm your delivery fee and schedule shipment. You will receive a follow-up message on WhatsApp or email shortly.</p>
+        <div style="background-color: #faf5f0; border: 1px solid #e5d5c5; border-radius: 6px; padding: 18px; margin: 20px 0; font-size: 14px;">
+          <p style="margin: 0 0 10px 0; font-size: 15px; color: #c4572a; font-weight: 600;">
+            ❤️ Thank you for purchasing this book. It will surely change your life.
+          </p>
+          <p style="margin: 0; color: #444;">
+            <strong>📦 Next Step:</strong> Austin will reach out to confirm your delivery fee and coordinate dispatch. You will receive a follow-up message on WhatsApp or email shortly.
+          </p>
         </div>`
             : `
         <div style="background-color: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 16px; margin: 20px 0; font-size: 14px; color: #065f46;">
