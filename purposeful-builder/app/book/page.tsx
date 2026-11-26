@@ -35,7 +35,7 @@ export default function BookPage() {
             Writing & Publishing
           </div>
           <h1 className="font-serif text-5xl md:text-7xl mb-8 leading-tight max-w-4xl">
-            Books to shape <span className="text-[#cba37c]">men</span> and build <span className="text-[#cba37c]">structure</span>.
+            Books that shape <span className="text-[#cba37c]">minds</span>, build <span className="text-[#cba37c]">character</span>, inspire <span className="text-[#cba37c]">purpose</span> and transform generations.
           </h1>
           <p className="text-xl opacity-80 leading-relaxed max-w-2xl border-l-2 border-[#c4572a] pl-6">
             Showcasing current manuscripts and future published works. Join the waitlist for updates on releases.
