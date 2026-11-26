@@ -14,6 +14,22 @@ export interface PaystackInitParams {
   metadata?: Record<string, any>;
 }
 
+/**
+ * Each time a customer clicks "Pay", we give Paystack a NEW unique reference
+ * (the order reference + a short suffix). This lets a customer who abandoned a payment
+ * try again without Paystack rejecting a duplicate reference.
+ * Our order references always look like ORD-BA-XXXXXXXXXX (three parts).
+ */
+export function newAttemptReference(orderReference: string): string {
+  const suffix = Date.now().toString(36) + Math.floor(Math.random() * 1296).toString(36);
+  return `${orderReference}-${suffix}`;
+}
+
+/** Get our order reference back from a Paystack reference (works for old and new style) */
+export function baseOrderReference(paystackReference: string): string {
+  return paystackReference.trim().split("-").slice(0, 3).join("-");
+}
+
 export function isPaystackConfigured(): boolean {
   return !!process.env.PAYSTACK_SECRET_KEY;
 }
@@ -84,6 +100,8 @@ export async function verifyPaystackPayment(reference: string) {
     success: isSuccess,
     status: data.data.status,
     amount: data.data.amount / 100, // back to NGN
+    currency: data.data.currency as string | undefined,
+    metadata: (data.data.metadata || {}) as Record<string, any>,
     reference: data.data.reference,
     paid_at: data.data.paid_at,
     customer_email: data.data.customer?.email,

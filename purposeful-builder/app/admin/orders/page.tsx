@@ -11,23 +11,31 @@ export default function AdminOrdersPage() {
   const [orders, setOrders] = useState<BookOrder[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [confirmingRef, setConfirmingRef] = useState<string | null>(null);
-  const [filter, setFilter] = useState<"all" | "personal" | "outreach">("all");
+  const [filter, setFilter] = useState<"all" | "pending" | "personal" | "outreach">("all");
+  const [persistent, setPersistent] = useState<boolean>(true);
+  const [actionMessage, setActionMessage] = useState<string | null>(null);
 
-  const handleConfirmPayment = async (orderRef: string) => {
-    if (!confirm(`Are you sure you want to mark order ${orderRef} as PAID and CONFIRMED?`)) {
+  // An order counts as paid when Paystack confirmed it, or you confirmed the bank transfer
+  const isPaid = (o: BookOrder) => o.status === "paid_and_confirmed" || o.status === "confirmed";
+
+  // You confirm a BANK TRANSFER by hand. Paystack payments confirm themselves automatically.
+  const handleConfirmPayment = async (orderRef: string, resend = false) => {
+    const message = resend
+      ? `Send the thank-you email again for order ${orderRef}?`
+      : `Have you seen this payment in your bank app?\n\nMark order ${orderRef} as PAID. The customer will immediately get their thank-you email.`;
+    if (!confirm(message)) {
       return;
     }
 
     setConfirmingRef(orderRef);
+    setActionMessage(null);
+    setError(null);
 
     try {
       const res = await fetch("/api/admin/orders/confirm", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          order_reference: orderRef,
-          password,
-        }),
+        headers: { "Content-Type": "application/json", "x-admin-password": password },
+        body: JSON.stringify({ order_reference: orderRef, resend }),
       });
 
       const data = await res.json();
@@ -37,10 +45,24 @@ export default function AdminOrdersPage() {
 
       // Update state locally
       setOrders((prev) =>
-        prev.map((o) => (o.order_reference === orderRef ? { ...o, status: "paid_and_confirmed" } : o))
+        prev.map((o) =>
+          o.order_reference === orderRef
+            ? { ...o, status: "paid_and_confirmed", payment_method: o.payment_method || "bank_transfer" }
+            : o
+        )
       );
+
+      if (data.email_sent) {
+        setActionMessage(`Order ${orderRef} is marked paid. The thank-you email was sent.`);
+      } else if (data.already_confirmed) {
+        setActionMessage(`Order ${orderRef} was already paid.`);
+      } else {
+        setActionMessage(
+          `Order ${orderRef} is marked paid, but the email could not be sent (${data.email_error || "unknown reason"}). Please message the customer on WhatsApp instead.`
+        );
+      }
     } catch (err: any) {
-      alert(err.message || "Error confirming payment");
+      setError(err.message || "Error confirming payment");
     } finally {
       setConfirmingRef(null);
     }
@@ -54,7 +76,10 @@ export default function AdminOrdersPage() {
     setError(null);
 
     try {
-      const res = await fetch(`/api/admin/orders?password=${encodeURIComponent(pwd)}`);
+      const res = await fetch("/api/admin/orders", {
+        headers: { "x-admin-password": pwd },
+        cache: "no-store",
+      });
       const data = await res.json();
 
       if (!res.ok) {
@@ -62,6 +87,7 @@ export default function AdminOrdersPage() {
       }
 
       setOrders(data.orders || []);
+      setPersistent(data.persistent !== false);
       setAuthenticated(true);
     } catch (err: any) {
       setError(err.message || "Failed to load orders");
@@ -87,12 +113,22 @@ export default function AdminOrdersPage() {
   const totalCopies = personalCopies + outreachCopies;
 
   const totalRevenue = orders.reduce((sum, o) => sum + (o.total_amount || 0), 0);
+  const paidRevenue = orders.filter(isPaid).reduce((sum, o) => sum + (o.total_amount || 0), 0);
+  const pendingRevenue = totalRevenue - paidRevenue;
+  const pendingCount = orders.filter((o) => !isPaid(o)).length;
 
   // Filtered orders
   const displayedOrders = orders.filter((o) => {
     if (filter === "all") return true;
+    if (filter === "pending") return !isPaid(o);
     return o.order_type === filter;
   });
+
+  // Spreadsheet safety: a typed value starting with = + - @ could run as a formula when the CSV is opened
+  const csvSafe = (v?: string | null) => {
+    const t = v || "";
+    return /^[=@\t\r]/.test(t) || /^[+-][^0-9\s]/.test(t) ? "'" + t : t;
+  };
 
   // Export CSV
   const downloadCSV = () => {
@@ -112,23 +148,27 @@ export default function AdminOrdersPage() {
       "State",
       "Country",
       "Status",
+      "Payment Method",
+      "Paid At (UTC)",
       "Date (UTC)",
     ];
 
     const rows = orders.map((o) => [
       `"${o.order_reference}"`,
       `"${o.order_type}"`,
-      `"${(o.full_name || "").replace(/"/g, '""')}"`,
-      `"${(o.phone || "").replace(/"/g, '""')}"`,
-      `"${(o.email || "").replace(/"/g, '""')}"`,
+      `"${csvSafe(o.full_name).replace(/"/g, '""')}"`,
+      `"${csvSafe(o.phone).replace(/"/g, '""')}"`,
+      `"${csvSafe(o.email).replace(/"/g, '""')}"`,
       o.copies,
       o.unit_price,
       o.total_amount,
-      `"${(o.street || "").replace(/"/g, '""')}"`,
-      `"${(o.city || "").replace(/"/g, '""')}"`,
-      `"${(o.state || "").replace(/"/g, '""')}"`,
+      `"${csvSafe(o.street).replace(/"/g, '""')}"`,
+      `"${csvSafe(o.city).replace(/"/g, '""')}"`,
+      `"${csvSafe(o.state).replace(/"/g, '""')}"`,
       `"${(o.country || "Nigeria").replace(/"/g, '""')}"`,
       `"${(o.status || "").replace(/"/g, '""')}"`,
+      `"${o.payment_method || ""}"`,
+      `"${o.paid_at || ""}"`,
       `"${o.created_at || ""}"`,
     ]);
 
@@ -218,6 +258,23 @@ export default function AdminOrdersPage() {
         </div>
       </div>
 
+      {actionMessage && (
+        <div className="mb-6 p-4 rounded-lg bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-300 dark:border-emerald-800 text-emerald-900 dark:text-emerald-200 text-sm">
+          {actionMessage}
+        </div>
+      )}
+      {error && (
+        <div className="mb-6 p-4 rounded-lg bg-red-50 dark:bg-red-950/40 border border-red-300 dark:border-red-800 text-red-800 dark:text-red-200 text-sm">
+          {error}
+        </div>
+      )}
+      {!persistent && (
+        <div className="mb-8 p-4 rounded-lg bg-red-50 dark:bg-red-950/40 border border-red-300 dark:border-red-800 text-red-800 dark:text-red-200 text-sm">
+          <strong>Warning: customer details are NOT being saved permanently.</strong> The database is not connected
+          (DATABASE_URL is missing in Vercel). Please connect it before launch.
+        </div>
+      )}
+
       {/* Summary Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
         {/* Personal Copies */}
@@ -253,19 +310,19 @@ export default function AdminOrdersPage() {
         {/* Total Value */}
         <div className="p-6 bg-white dark:bg-[#161616] rounded-xl border border-black/10 dark:border-white/10 shadow-sm">
           <div className="flex items-center justify-between mb-2">
-            <span className="text-xs uppercase tracking-wider opacity-60 font-semibold">Total Revenue</span>
+            <span className="text-xs uppercase tracking-wider opacity-60 font-semibold">Paid So Far</span>
             <DollarSign size={20} className="text-emerald-500" />
           </div>
           <div className="font-serif text-3xl font-bold text-emerald-600 dark:text-emerald-400">
-            ₦{totalRevenue.toLocaleString()}
+            ₦{paidRevenue.toLocaleString()}
           </div>
-          <p className="text-xs opacity-60 mt-1">Total order value</p>
+          <p className="text-xs opacity-60 mt-1">₦{pendingRevenue.toLocaleString()} still awaiting payment</p>
         </div>
       </div>
 
       {/* Filter Tabs */}
       <div className="flex gap-2 mb-6 border-b border-black/10 dark:border-white/10 pb-3">
-        {(["all", "personal", "outreach"] as const).map((tab) => (
+        {(["all", "pending", "personal", "outreach"] as const).map((tab) => (
           <button
             key={tab}
             onClick={() => setFilter(tab)}
@@ -275,7 +332,7 @@ export default function AdminOrdersPage() {
                 : "opacity-60 hover:opacity-100 hover:bg-black/5 dark:hover:bg-white/5"
             }`}
           >
-            {tab === "all" ? `All (${orders.length})` : tab === "personal" ? `Personal (${orders.filter(o => o.order_type === "personal").length})` : `Outreach (${orders.filter(o => o.order_type === "outreach").length})`}
+            {tab === "all" ? `All (${orders.length})` : tab === "pending" ? `Awaiting payment (${pendingCount})` : tab === "personal" ? `Personal (${orders.filter(o => o.order_type === "personal").length})` : `Outreach (${orders.filter(o => o.order_type === "outreach").length})`}
           </button>
         ))}
       </div>
@@ -336,10 +393,19 @@ export default function AdminOrdersPage() {
                       )}
                     </td>
                     <td className="p-4">
-                      {o.status === "paid_and_confirmed" ? (
+                      {isPaid(o) ? (
+                        <div className="flex flex-col gap-1">
                         <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-[10px] font-bold uppercase tracking-wider bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300">
-                          ✓ Confirmed
+                          ✓ Paid{o.payment_method === "paystack" ? " (Paystack)" : o.payment_method === "bank_transfer" ? " (Transfer)" : ""}
                         </span>
+                          <button
+                            onClick={() => handleConfirmPayment(o.order_reference, true)}
+                            disabled={confirmingRef === o.order_reference}
+                            className="text-[11px] underline opacity-60 hover:opacity-100 disabled:opacity-40 text-left"
+                          >
+                            {confirmingRef === o.order_reference ? "Sending..." : "Resend thank-you email"}
+                          </button>
+                        </div>
                       ) : (
                         <div className="flex items-center gap-2">
                           <span className="inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300">

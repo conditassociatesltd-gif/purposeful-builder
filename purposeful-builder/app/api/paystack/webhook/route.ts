@@ -1,106 +1,97 @@
 import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
-import { getOrderByReference, updateOrderStatus } from "@/lib/db";
+import { getOrderByReference, markOrderPaid, PAID_STATUSES } from "@/lib/db";
+import { baseOrderReference } from "@/lib/paystack";
 import { sendConfirmedOrderEmails } from "@/lib/email";
 
+export const dynamic = "force-dynamic";
+
 /**
- * Paystack Webhook Handler
- * - Validates the Paystack signature (HMAC SHA512)
- * - Processes charge.success events only
- * - Updates order status to paid_and_confirmed
- * - Sends confirmation emails ONLY after server-side verification
- * - Idempotent: does nothing if order already confirmed (prevents duplicates)
+ * Paystack Webhook: Paystack calls this itself when a payment succeeds, even if the customer
+ * closed their browser before coming back to the site. This is what makes sure no paid order is missed.
+ *
+ * Paystack signs every webhook with YOUR SECRET KEY (PAYSTACK_SECRET_KEY). There is no separate webhook secret.
+ * In the Paystack dashboard set the webhook URL to:  https://www.austinokechukwu.com/api/paystack/webhook
  */
 export async function POST(req: NextRequest) {
   try {
-    const webhookSecret = process.env.PAYSTACK_WEBHOOK_SECRET;
-
-    if (!webhookSecret) {
-      console.error("[Webhook] PAYSTACK_WEBHOOK_SECRET is not set.");
-      // Return 200 so Paystack does not keep retrying; log the issue
-      return NextResponse.json({ received: true }, { status: 200 });
+    const secret = process.env.PAYSTACK_SECRET_KEY;
+    if (!secret) {
+      console.error("[Webhook] PAYSTACK_SECRET_KEY is not set, cannot check the signature.");
+      return NextResponse.json({ error: "Not configured" }, { status: 503 });
     }
 
-    // 1. Read raw body for signature verification
+    // 1. Raw body is needed to check the signature
     const rawBody = await req.text();
-    const paystackSignature = req.headers.get("x-paystack-signature");
+    const signature = req.headers.get("x-paystack-signature") || "";
 
-    if (!paystackSignature) {
-      return NextResponse.json({ error: "Missing signature header" }, { status: 400 });
-    }
-
-    // 2. Validate HMAC SHA512 signature
-    const expectedSignature = crypto
-      .createHmac("sha512", webhookSecret)
-      .update(rawBody)
-      .digest("hex");
-
-    if (paystackSignature !== expectedSignature) {
+    const expected = crypto.createHmac("sha512", secret).update(rawBody).digest("hex");
+    const a = Buffer.from(signature);
+    const b = Buffer.from(expected);
+    if (a.length !== b.length || !crypto.timingSafeEqual(a, b)) {
       console.warn("[Webhook] Invalid signature. Possible spoofed request.");
       return NextResponse.json({ error: "Invalid signature" }, { status: 401 });
     }
 
-    // 3. Parse the event
+    // 2. Only successful charges matter
     const event = JSON.parse(rawBody);
-
-    // Only process successful charge events
     if (event.event !== "charge.success") {
       return NextResponse.json({ received: true }, { status: 200 });
     }
 
     const data = event.data;
-    const paystackReference = data?.reference as string | undefined;
+    const paystackReference = (data?.reference as string | undefined) || "";
     const paidAmountKobo = data?.amount as number | undefined;
-    const customerEmail = data?.customer?.email as string | undefined;
+    const currency = data?.currency as string | undefined;
 
     if (!paystackReference) {
       return NextResponse.json({ error: "Missing transaction reference" }, { status: 400 });
     }
 
-    // 4. Look up order in DB by reference
-    const order = await getOrderByReference(paystackReference);
+    // 3. Find our order (the metadata we sent, or the reference prefix)
+    const orderReference =
+      (typeof data?.metadata?.order_reference === "string" && data.metadata.order_reference) ||
+      baseOrderReference(paystackReference);
 
+    const order = await getOrderByReference(orderReference);
     if (!order) {
-      console.warn(`[Webhook] No order found for reference: ${paystackReference}`);
-      // Still return 200 — Paystack should not retry for unknown refs
-      return NextResponse.json({ received: true }, { status: 200 });
+      console.warn(`[Webhook] No order found for reference: ${orderReference}`);
+      return NextResponse.json({ received: true }, { status: 200 }); // do not make Paystack retry forever
     }
 
-    // 5. Idempotency check — prevent duplicate processing
-    if (order.status === "paid_and_confirmed") {
-      console.log(`[Webhook] Order ${paystackReference} already confirmed. Skipping.`);
+    // 4. Already paid: nothing to do (prevents duplicate emails)
+    if (order.status && PAID_STATUSES.includes(order.status)) {
       return NextResponse.json({ received: true, skipped: true }, { status: 200 });
     }
 
-    // 6. Verify amount matches what we expect (anti-fraud check)
-    const expectedAmountKobo = order.total_amount * 100;
-    if (paidAmountKobo !== undefined && paidAmountKobo < expectedAmountKobo) {
-      console.error(
-        `[Webhook] Amount mismatch for ${paystackReference}. ` +
-          `Expected: ${expectedAmountKobo} kobo, Got: ${paidAmountKobo} kobo`
-      );
-      // Log and skip — do not confirm underpaid orders
+    // 5. Anti-fraud: the amount must cover the order
+    const expectedKobo = Math.round(order.total_amount * 100);
+    if ((currency && currency !== "NGN") || paidAmountKobo === undefined || paidAmountKobo < expectedKobo) {
+      console.error(`[Webhook] Amount mismatch for ${orderReference}. Expected ${expectedKobo} kobo NGN, got ${paidAmountKobo} ${currency}`);
       return NextResponse.json({ received: true, error: "Amount mismatch" }, { status: 200 });
     }
 
-    // 7. Mark order as paid and confirmed in DB
-    const confirmedOrder = await updateOrderStatus(paystackReference, "paid_and_confirmed");
-
-    if (!confirmedOrder) {
-      console.error(`[Webhook] Failed to update status for order: ${paystackReference}`);
-      return NextResponse.json({ error: "DB update failed" }, { status: 500 });
+    // 6. Mark paid (only one caller can win this, so emails go out once)
+    const { order: paidOrder, changed } = await markOrderPaid(orderReference, "paystack");
+    if (!paidOrder) {
+      console.error(`[Webhook] Failed to update status for order: ${orderReference}`);
+      return NextResponse.json({ error: "DB update failed" }, { status: 500 }); // Paystack will retry
     }
 
-    // 8. Send confirmation emails (customer + author) AFTER verification
-    sendConfirmedOrderEmails(confirmedOrder, paystackReference).catch((err) => {
-      console.error("[Webhook] Email send error:", err);
-    });
+    // 7. Thank-you email to the customer + notification to you. We wait for it on Vercel.
+    if (changed) {
+      try {
+        const result = await sendConfirmedOrderEmails(paidOrder, paystackReference);
+        if (!result.success) console.error("[Webhook] Email problem:", result.error);
+      } catch (err) {
+        console.error("[Webhook] Email send error:", err);
+      }
+    }
 
-    console.log(`[Webhook] Order ${paystackReference} confirmed successfully.`);
+    console.log(`[Webhook] Order ${orderReference} confirmed.`);
     return NextResponse.json({ received: true, confirmed: true }, { status: 200 });
   } catch (error: any) {
     console.error("[Webhook] Unexpected error:", error);
-    // Return 500 so Paystack retries
-    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 }); // Paystack retries
   }
 }

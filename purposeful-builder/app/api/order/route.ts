@@ -1,15 +1,27 @@
 import { NextRequest, NextResponse } from "next/server";
 import { calculateOrderTotal } from "@/lib/book-config";
 import { saveOrder, BookOrder } from "@/lib/db";
-import { sendOrderEmails } from "@/lib/email";
+import { randomBytes } from "crypto";
+
+// Largest number of copies allowed in a single order (stops typos and abuse)
+const MAX_COPIES_PER_ORDER = 1000;
+
+// Hard-to-guess order reference, e.g. ORD-BA-K7M2QX9TPA (the reference also acts as the customer's private link)
+function newOrderReference(): string {
+  const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"; // no look-alike characters
+  const bytes = randomBytes(10);
+  let code = "";
+  for (let i = 0; i < 10; i++) code += alphabet[bytes[i] % alphabet.length];
+  return `ORD-BA-${code}`;
+}
 
 // In-memory rate limiting map (IP -> timestamps)
 const rateLimitMap = new Map<string, number[]>();
 
 function isRateLimited(ip: string): boolean {
   const now = Date.now();
-  const windowMs = 5 * 60 * 1000; // 5 minutes window
-  const maxRequests = 100; // Generous limit for real buyers & testers
+  const windowMs = 10 * 60 * 1000; // 10 minutes window
+  const maxRequests = 20; // Enough for real buyers, blocks floods from one IP
 
   const timestamps = rateLimitMap.get(ip) || [];
   const validTimestamps = timestamps.filter((t) => now - t < windowMs);
@@ -80,6 +92,12 @@ export async function POST(req: NextRequest) {
     if (isNaN(rawCopies) || rawCopies < 1) {
       return NextResponse.json({ error: "Minimum order is 1 copy." }, { status: 400 });
     }
+    if (rawCopies > MAX_COPIES_PER_ORDER) {
+      return NextResponse.json(
+        { error: `For orders above ${MAX_COPIES_PER_ORDER} copies, please contact us on WhatsApp.` },
+        { status: 400 }
+      );
+    }
 
     // 5. Conditional Validation for Personal Orders
     let street: string | null = null;
@@ -107,9 +125,7 @@ export async function POST(req: NextRequest) {
     const pricing = calculateOrderTotal(rawCopies);
 
     // 7. Generate Unique Order Reference
-    const randomSuffix = Math.floor(1000 + Math.random() * 9000);
-    const timestampPart = Date.now().toString().slice(-4);
-    const orderReference = `ORD-BA-${timestampPart}${randomSuffix}`;
+    const orderReference = newOrderReference();
 
     const orderPayload: BookOrder = {
       order_reference: orderReference,
@@ -130,11 +146,9 @@ export async function POST(req: NextRequest) {
     // 8. Save to Database (guaranteed non-null fallback)
     const savedOrder = (await saveOrder(orderPayload)) || orderPayload;
 
-    // 9. Dispatch Emails (author notification + buyer confirmation)
-    // Run asynchronously so user receives instant response
-    sendOrderEmails(savedOrder).catch((err) => {
-      console.error("Background email dispatch failed:", err);
-    });
+    // 9. No email here on purpose. The customer's details are now SAVED (status "pending_payment"),
+    // and you can see them on your admin page. The "thank you / payment confirmed" email is sent
+    // only AFTER the payment succeeds (Paystack verify/webhook, or when you confirm a bank transfer).
 
     return NextResponse.json({
       success: true,

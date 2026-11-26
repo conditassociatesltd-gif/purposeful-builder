@@ -20,10 +20,31 @@ function getResend(): Resend | null {
  *    1. Customer confirmation email
  *    2. Admin notification email
  * ============================================================ */
+/** Escape text so anything a buyer typed can never break or inject into the email HTML */
+function esc(value: unknown): string {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 export async function sendConfirmedOrderEmails(
-  order: BookOrder,
+  rawOrder: BookOrder,
   paystackReference?: string
 ): Promise<{ success: boolean; error?: string }> {
+  // `order` is a safe-to-print copy. Use `rawOrder.email` for the real "to" address.
+  const order: BookOrder = {
+    ...rawOrder,
+    full_name: esc(rawOrder.full_name),
+    phone: esc(rawOrder.phone),
+    email: esc(rawOrder.email),
+    street: rawOrder.street ? esc(rawOrder.street) : rawOrder.street,
+    city: rawOrder.city ? esc(rawOrder.city) : rawOrder.city,
+    state: rawOrder.state ? esc(rawOrder.state) : rawOrder.state,
+  };
+  const paidByPaystack = Boolean(paystackReference);
   const resend = getResend();
 
   if (!resend) {
@@ -114,7 +135,7 @@ export async function sendConfirmedOrderEmails(
 
       <div style="padding: 28px;">
         <div style="display: inline-block; padding: 6px 14px; background: #d1fae5; color: #065f46; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 20px; border: 1px solid #a7f3d0;">
-          ✅ Payment Verified via Paystack
+          ${paidByPaystack ? "✅ Payment Verified via Paystack" : "✅ Bank Transfer Confirmed by You"}
         </div>
 
         <h2 style="font-size: 18px; margin: 0 0 16px 0;">Order Reference: <strong>${order.order_reference}</strong></h2>
@@ -174,41 +195,48 @@ export async function sendConfirmedOrderEmails(
         </table>
 
         <div style="background-color: #d1fae5; border: 1px solid #a7f3d0; padding: 16px; border-radius: 6px; font-size: 13px; color: #065f46;">
-          <strong>✅ No action required for payment.</strong> Paystack has confirmed the payment automatically.
+          <strong>✅ No action required for payment.</strong> ${paidByPaystack ? "Paystack has confirmed the payment automatically." : "You confirmed this bank transfer yourself."}
           ${isPersonal ? " Please arrange delivery and confirm delivery fee with the customer." : " Copies for the School Outreach Program."}
         </div>
       </div>
     </div>
   `;
 
+  // Send the two emails one after the other, so one failing never blocks the other.
+  // Resend does NOT throw on most problems: it returns an `error` object, so we check it.
+  const problems: string[] = [];
+
   try {
-    const [customerResult, adminResult] = await Promise.allSettled([
-      resend.emails.send({
-        from: FROM_EMAIL,
-        to: order.email,
-        subject: customerSubject,
-        html: customerHtml,
-      }),
-      resend.emails.send({
-        from: FROM_EMAIL,
-        to: ADMIN_EMAIL,
-        subject: adminSubject,
-        html: adminHtml,
-      }),
-    ]);
-
-    if (customerResult.status === "rejected") {
-      console.error("[Email] Customer email failed:", customerResult.reason);
-    }
-    if (adminResult.status === "rejected") {
-      console.error("[Email] Admin email failed:", adminResult.reason);
-    }
-
-    return { success: true };
+    const customerResult = await resend.emails.send({
+      from: FROM_EMAIL,
+      to: rawOrder.email,
+      replyTo: ADMIN_EMAIL,
+      subject: customerSubject,
+      html: customerHtml,
+    });
+    if (customerResult.error) problems.push(`customer email: ${customerResult.error.message}`);
   } catch (error: any) {
-    console.error("[Email] Resend error:", error);
-    return { success: false, error: error?.message || "Failed to send emails" };
+    problems.push(`customer email: ${error?.message || "failed"}`);
   }
+
+  try {
+    const adminResult = await resend.emails.send({
+      from: FROM_EMAIL,
+      to: ADMIN_EMAIL,
+      replyTo: rawOrder.email,
+      subject: adminSubject,
+      html: adminHtml,
+    });
+    if (adminResult.error) problems.push(`admin email: ${adminResult.error.message}`);
+  } catch (error: any) {
+    problems.push(`admin email: ${error?.message || "failed"}`);
+  }
+
+  if (problems.length > 0) {
+    console.error("[Email] Problems for", rawOrder.order_reference, problems);
+    return { success: false, error: problems.join(" | ") };
+  }
+  return { success: true };
 }
 
 /**

@@ -16,6 +16,8 @@ export interface BookOrder {
   country?: string | null;
   status?: string;
   created_at?: string;
+  paid_at?: string | null;
+  payment_method?: string | null; // "paystack" or "bank_transfer"
 }
 
 // In-memory fallback if DATABASE_URL is not set yet in Vercel
@@ -57,6 +59,9 @@ export async function ensureTableExists(): Promise<void> {
         created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
       );
     `;
+    // Added later: when and how the order was paid (safe to run on an existing table)
+    await sql`ALTER TABLE book_orders ADD COLUMN IF NOT EXISTS paid_at TIMESTAMP WITH TIME ZONE;`;
+    await sql`ALTER TABLE book_orders ADD COLUMN IF NOT EXISTS payment_method VARCHAR(30);`;
   } catch (error) {
     console.error("Error creating book_orders table:", error);
   }
@@ -195,4 +200,49 @@ export async function getAllOrders(): Promise<BookOrder[]> {
   }
 
   return [...fallbackOrders];
+}
+
+/** Statuses that mean "this order has been paid" */
+export const PAID_STATUSES = ["paid_and_confirmed", "confirmed"];
+
+/**
+ * Mark an order as paid. Safe to call many times, and safe if Paystack's webhook and the
+ * customer's redirect arrive at the same moment: only ONE caller ever gets changed = true,
+ * so only one set of confirmation emails is sent.
+ */
+export async function markOrderPaid(
+  order_reference: string,
+  method: "paystack" | "bank_transfer"
+): Promise<{ order: BookOrder | null; changed: boolean }> {
+  const sql = getDbClient();
+
+  if (sql) {
+    try {
+      await ensureTableExists();
+      const updated = (await sql`
+        UPDATE book_orders
+        SET status = 'paid_and_confirmed', paid_at = CURRENT_TIMESTAMP, payment_method = ${method}
+        WHERE order_reference = ${order_reference}
+          AND status NOT IN ('paid_and_confirmed', 'confirmed')
+        RETURNING *;
+      `) as BookOrder[];
+      if (updated && updated.length > 0) return { order: updated[0], changed: true };
+
+      // Nothing changed: either it was already paid, or the reference does not exist
+      const existing = (await sql`
+        SELECT * FROM book_orders WHERE order_reference = ${order_reference} LIMIT 1;
+      `) as BookOrder[];
+      return { order: existing && existing.length > 0 ? existing[0] : null, changed: false };
+    } catch (err) {
+      console.error("Neon DB markOrderPaid error, trying memory fallback:", err);
+    }
+  }
+
+  const found = fallbackOrders.find((o) => o.order_reference === order_reference);
+  if (!found) return { order: null, changed: false };
+  if (found.status && PAID_STATUSES.includes(found.status)) return { order: found, changed: false };
+  found.status = "paid_and_confirmed";
+  found.paid_at = new Date().toISOString();
+  found.payment_method = method;
+  return { order: found, changed: true };
 }

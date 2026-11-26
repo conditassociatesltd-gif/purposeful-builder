@@ -41,8 +41,6 @@ export default function OrderBookPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           order_reference: orderSuccess.order_reference,
-          email: orderSuccess.email || email,
-          amount: orderSuccess.total_amount,
         }),
       });
 
@@ -55,7 +53,7 @@ export default function OrderBookPage() {
         window.location.href = data.authorization_url;
       } else {
         setPaystackNotice(
-          "Paystack is awaiting your PAYSTACK_SECRET_KEY in Vercel settings. You can complete your order using the direct bank transfer details below!"
+          "Online payment is not available right now. Please pay by bank transfer using the details below."
         );
       }
     } catch (err: any) {
