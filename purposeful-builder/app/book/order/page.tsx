@@ -493,7 +493,7 @@ export default function OrderBookPage() {
                 required
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
-                placeholder="e.g. Austin Okechukwu"
+                placeholder="e.g. Chukwuma Adebayo"
                 className="w-full px-4 py-3 rounded-md border border-black/20 dark:border-white/20 bg-transparent dark:bg-[#121212] text-base text-stone-900 dark:text-white placeholder:text-stone-400 dark:placeholder:text-stone-500 focus:border-[#c4572a] outline-none transition-colors"
               />
             </div>
@@ -507,7 +507,7 @@ export default function OrderBookPage() {
                 required
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                placeholder="e.g. 08137862124"
+                placeholder="e.g. 08012345678"
                 className="w-full px-4 py-3 rounded-md border border-black/20 dark:border-white/20 bg-transparent dark:bg-[#121212] text-base text-stone-900 dark:text-white placeholder:text-stone-400 dark:placeholder:text-stone-500 focus:border-[#c4572a] outline-none transition-colors"
               />
             </div>
