@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ThemeToggle from "@/components/ThemeToggle";
 import MobileMenu from "@/components/MobileMenu";
-import { ArrowRight, PenTool, Mic } from "lucide-react";
+import { ArrowRight, PenTool, Mic, BookOpen } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
 
 export const metadata = {
@@ -49,6 +49,7 @@ export default function AboutPage() {
           <div className="flex items-center gap-6">
             <nav className="hidden md:flex items-center gap-6 text-xs tracking-[0.25em] uppercase">
               <Link href="/" className="hover:text-[var(--rust)] transition-colors">Home</Link>
+              <a href="https://books.austinokechukwu.com" className="hover:text-[var(--rust)] transition-colors">Books</a>
               <Link href="/podcast" className="hover:text-[var(--rust)] transition-colors">Podcast</Link>
               <Link href="/writing" className="hover:text-[var(--rust)] transition-colors">Writing</Link>
               <Link href="/#portfolio" className="hover:text-[var(--rust)] transition-colors">Portfolio</Link>
@@ -279,17 +280,23 @@ export default function AboutPage() {
             Where to go next
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            <Link href="/writing" className="group flex flex-col items-center justify-center p-12 rounded-2xl border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all">
-              <PenTool size={32} className="mb-6 opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all text-[var(--rust)]" />
-              <h3 className="font-serif text-2xl mb-2">Read the Essays</h3>
-              <p className="text-sm opacity-60">Articles on faith, structure, and manhood.</p>
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <a href="https://books.austinokechukwu.com" className="group flex flex-col items-center justify-center p-10 rounded-2xl border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all text-center">
+              <BookOpen size={32} className="mb-5 opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all text-[var(--rust)]" />
+              <h3 className="font-serif text-xl mb-2">Read the Books</h3>
+              <p className="text-xs opacity-60">"The Boy and Addictions" & upcoming works.</p>
+            </a>
+
+            <Link href="/writing" className="group flex flex-col items-center justify-center p-10 rounded-2xl border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all text-center">
+              <PenTool size={32} className="mb-5 opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all text-[var(--rust)]" />
+              <h3 className="font-serif text-xl mb-2">Read the Essays</h3>
+              <p className="text-xs opacity-60">Articles on faith, structure, and manhood.</p>
             </Link>
 
-            <Link href="/podcast" className="group flex flex-col items-center justify-center p-12 rounded-2xl border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all">
-              <Mic size={32} className="mb-6 opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all text-[var(--rust)]" />
-              <h3 className="font-serif text-2xl mb-2">Listen to the Podcast</h3>
-              <p className="text-sm opacity-60">Audio reflections formed in silence.</p>
+            <Link href="/podcast" className="group flex flex-col items-center justify-center p-10 rounded-2xl border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all text-center">
+              <Mic size={32} className="mb-5 opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all text-[var(--rust)]" />
+              <h3 className="font-serif text-xl mb-2">Listen to the Podcast</h3>
+              <p className="text-xs opacity-60">Audio reflections formed in silence.</p>
             </Link>
           </div>
         </div>

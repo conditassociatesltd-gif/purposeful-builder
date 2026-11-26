@@ -1,8 +1,13 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, BookOpen, Bell } from "lucide-react";
+import { ArrowLeft, BookOpen, Bell, ChevronDown, ChevronUp } from "lucide-react";
 
 export default function BookPage() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <main className="min-h-screen" style={{ background: "var(--parchment)", color: "var(--ink)" }}>
 
@@ -22,9 +27,17 @@ export default function BookPage() {
             <span className="font-black tracking-tight uppercase text-black hidden sm:inline">Austin Okechukwu</span>
           </Link>
 
-          <Link href="/" className="flex items-center gap-2 text-[10px] tracking-[0.2em] uppercase font-bold text-black/60 hover:text-black transition-colors">
-            <ArrowLeft size={14} /> Back to Home
-          </Link>
+          <div className="flex items-center gap-4 sm:gap-6">
+            <a
+              href="https://austinokechukwu.com/about"
+              className="text-xs sm:text-[11px] tracking-[0.15em] sm:tracking-[0.2em] uppercase font-bold text-black/80 hover:text-[#c4572a] transition-colors"
+            >
+              About the Author
+            </a>
+            <Link href="/" className="flex items-center gap-1.5 text-xs sm:text-[10px] tracking-[0.15em] sm:tracking-[0.2em] uppercase font-bold text-black/60 hover:text-black transition-colors">
+              <ArrowLeft size={14} /> <span className="hidden sm:inline">Back to </span>Home
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -72,10 +85,10 @@ export default function BookPage() {
                 </div>
                 <Link
                   href="/book/order"
-                  className="block w-full py-4 text-xs tracking-[0.2em] uppercase text-white font-bold hover:opacity-90 transition-opacity rounded-sm shadow-md"
-                  style={{ background: "var(--rust)" }}
+                  className="block w-full py-4 text-xs tracking-[0.2em] uppercase !text-white font-bold hover:opacity-90 transition-opacity rounded-sm shadow-md"
+                  style={{ background: "var(--rust)", color: "#ffffff" }}
                 >
-                  Order the Book
+                  ORDER YOUR COPY
                 </Link>
                 <p className="text-[11px] opacity-60 mt-3">Personal copies & School Outreach Program</p>
               </div>
@@ -87,7 +100,9 @@ export default function BookPage() {
               Launch: 29 November 2026
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-6">The Boy and Addictions</h2>
-            <div className="prose max-w-none space-y-6 text-base sm:text-lg leading-relaxed opacity-90 font-serif">
+
+            {/* Desktop View: Full Extract without any shortening */}
+            <div className="hidden md:block prose max-w-none space-y-6 text-lg leading-relaxed opacity-90 font-serif">
               <p>I attended one of the best secondary schools in southeastern Nigeria — Dennis Memorial Grammar School, Onitsha. We used to brag about it, we still do and we had reason to. The school has a reputation for excellence. It has produced brilliant thinkers, successful businessmen, respected professionals, and influential politicians.</p>
               <p>We wore our white uniforms with pride, but the badge made it even more special. There was a certain pride that came with wearing it, knowing how difficult it is to earn a place in DMGS. To us, it was not just a school; it was proof that we were headed to a glorious future.</p>
               <p>Every school day, I trekked thirty minutes to get there and another thirty minutes back home. Under the sun and in the rain, with dedication and pride, that was the routine — an hour of walking every day.</p>
@@ -102,13 +117,69 @@ export default function BookPage() {
               <div className="pt-6">
                 <Link
                   href="/book/order"
-                  className="inline-flex items-center gap-3 px-8 py-4 text-xs tracking-[0.2em] uppercase text-white font-bold hover:opacity-90 transition-opacity rounded-sm shadow-md"
-                  style={{ background: "var(--rust)" }}
+                  className="inline-flex items-center gap-3 px-8 py-4 text-xs tracking-[0.2em] uppercase !text-white font-bold hover:opacity-90 transition-opacity rounded-sm shadow-md"
+                  style={{ background: "var(--rust)", color: "#ffffff" }}
                 >
-                  Continue Reading — Order the Book →
+                  ORDER YOUR COPY →
                 </Link>
               </div>
             </div>
+
+            {/* Mobile View: Collapsible Extract with Read More / Read Less */}
+            <div className="md:hidden prose max-w-none space-y-5 text-base leading-relaxed opacity-90 font-serif">
+              {/* Initially displayed portion (approximately half) */}
+              <p>I attended one of the best secondary schools in southeastern Nigeria — Dennis Memorial Grammar School, Onitsha. We used to brag about it, we still do and we had reason to. The school has a reputation for excellence. It has produced brilliant thinkers, successful businessmen, respected professionals, and influential politicians.</p>
+              <p>We wore our white uniforms with pride, but the badge made it even more special. There was a certain pride that came with wearing it, knowing how difficult it is to earn a place in DMGS. To us, it was not just a school; it was proof that we were headed to a glorious future.</p>
+              <p>Every school day, I trekked thirty minutes to get there and another thirty minutes back home. Under the sun and in the rain, with dedication and pride, that was the routine — an hour of walking every day.</p>
+              <p>Back then, I thought the things that would shape my life would happen in the classroom. I thought my future would be decided only by the lessons I learned, the books I read, and the exams I passed.</p>
+              <p className="font-bold text-lg">I was wrong.</p>
+
+              {/* Second half: smoothly revealed when isExpanded is true */}
+              <div
+                className={`space-y-5 transition-all duration-500 ease-in-out overflow-hidden ${
+                  isExpanded ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <p>One sunny afternoon, I got back from school and saw something I was never meant to see. When no one else was looking, something in my own living room that had nothing to do with textbooks, teachers, or the bright future everyone around me expected me to have entered my life.</p>
+                <p>That single encounter pulled me into years of struggle with addiction before I even knew what addiction meant.</p>
+                <p>I wrote this book because I have never forgotten what it felt like to be that boy. Years later, I have spoken with young men, married men, pastors, professionals, business owners, and students enough to know my story is not unique.</p>
+                <p>The details change: the generation, the device, the substance. Nevertheless, the pattern is the same — one moment of exposure that grows into a life of secrecy.</p>
+                <p>What surprised me was not how many people struggled but how many struggled alone. Most addictions thrive in secrecy, and I have come to realize that struggling alone fundamentally prolonged my struggle and theirs.</p>
+              </div>
+
+              {/* Read More / Read Less Toggle Button */}
+              <div className="pt-2">
+                <button
+                  type="button"
+                  onClick={() => setIsExpanded(!isExpanded)}
+                  className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#c4572a] hover:opacity-80 py-2 transition-colors cursor-pointer"
+                >
+                  {isExpanded ? (
+                    <>
+                      <span>Read Less</span>
+                      <ChevronUp size={16} />
+                    </>
+                  ) : (
+                    <>
+                      <span>Read More</span>
+                      <ChevronDown size={16} />
+                    </>
+                  )}
+                </button>
+              </div>
+
+              {/* Mobile CTA */}
+              <div className="pt-4">
+                <Link
+                  href="/book/order"
+                  className="inline-flex items-center justify-center w-full py-4 px-6 text-xs tracking-[0.2em] uppercase !text-white font-bold hover:opacity-90 transition-opacity rounded-sm shadow-md text-center"
+                  style={{ background: "var(--rust)", color: "#ffffff" }}
+                >
+                  ORDER YOUR COPY →
+                </Link>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -144,7 +215,7 @@ export default function BookPage() {
                     placeholder="Your email address"
                     className="w-full px-4 py-3 border border-black/20 text-sm outline-none focus:border-[#c4572a] transition-colors"
                   />
-                  <button type="submit" className="w-full py-3.5 text-xs tracking-[0.2em] uppercase text-white font-bold hover:bg-black/90 transition-colors" style={{ background: "var(--rust)" }}>
+                  <button type="submit" className="w-full py-3.5 text-xs tracking-[0.2em] uppercase !text-white font-bold hover:bg-black/90 transition-colors" style={{ background: "var(--rust)", color: "#ffffff" }}>
                     Notify Me
                   </button>
                 </form>
